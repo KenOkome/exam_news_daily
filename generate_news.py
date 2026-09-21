@@ -39,13 +39,6 @@ CATEGORIES = [
         "query": "(首都圏 OR 東京 OR 千葉大 OR 共通テスト OR 大学入試センター OR 国公立大 OR 早慶 OR MARCH) (大学受験 OR 大学入試)",
         "icon": "🎓",
         "desc": "首都圏難関大・千葉大を中心に共通テスト速報・新課程入試の重要動向"
-    },
-    {
-        "id": "cert",
-        "name": "英検・漢検・数検",
-        "query": "(英検 OR 漢検 OR 数検 OR 英語検定 OR 漢字検定 OR 数学検定 OR 算数検定) (入試 OR 優遇 OR 日程 OR 加点 OR 活用 OR 対策 OR 検定 OR 合格)",
-        "icon": "📝",
-        "desc": "中学・高校・大学入試での優遇・加点情報、検定日程、新形式・対策法"
     }
 ]
 
@@ -370,12 +363,10 @@ def main():
     rendered = rendered.replace("{{JUNIOR_COUNT}}", str(len(all_news.get("junior", []))))
     rendered = rendered.replace("{{HIGH_COUNT}}", str(len(all_news.get("high", []))))
     rendered = rendered.replace("{{UNIV_COUNT}}", str(len(all_news.get("univ", []))))
-    rendered = rendered.replace("{{CERT_COUNT}}", str(len(all_news.get("cert", []))))
     
     rendered = rendered.replace("{{JUNIOR_NEWS_CARDS}}", render_news_cards(all_news.get("junior", [])))
     rendered = rendered.replace("{{HIGH_NEWS_CARDS}}", render_news_cards(all_news.get("high", [])))
     rendered = rendered.replace("{{UNIV_NEWS_CARDS}}", render_news_cards(all_news.get("univ", [])))
-    rendered = rendered.replace("{{CERT_NEWS_CARDS}}", render_news_cards(all_news.get("cert", [])))
     
     # 出力
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
