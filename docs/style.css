@@ -203,20 +203,53 @@ body {
 .tab-btn.active[data-tab="high"] .tab-count { background: var(--color-high-bg); color: var(--color-high); }
 .tab-btn.active[data-tab="univ"] .tab-count { background: var(--color-univ-bg); color: var(--color-univ); }
 
-/* タブコンテンツ表示制御 */
-.tab-content {
+/* タブスライダー（横スワイプ対応） */
+.tabs-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.tabs-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    touch-action: pan-y pinch-zoom;
+    will-change: scroll-position;
+}
+
+.tabs-slider::-webkit-scrollbar {
     display: none;
-    animation: fadeIn 0.3s ease;
 }
 
-.tab-content.active {
+.tab-content {
+    flex: 0 0 100%;
+    min-width: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    box-sizing: border-box;
     display: block;
+    padding: 0 2px 20px 2px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(6px); }
-    to { opacity: 1; transform: translateY(0); }
+/* スワイプガイドヒント */
+.swipe-hint {
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: -12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    opacity: 0.8;
 }
+
 
 /* セクションイントロ */
 .section-intro {
