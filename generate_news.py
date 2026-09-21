@@ -39,6 +39,13 @@ CATEGORIES = [
         "query": "(首都圏 OR 東京 OR 千葉大 OR 共通テスト OR 大学入試センター OR 国公立大 OR 早慶 OR MARCH) (大学受験 OR 大学入試)",
         "icon": "🎓",
         "desc": "首都圏難関大・千葉大を中心に共通テスト速報・新課程入試の重要動向"
+    },
+    {
+        "id": "cert",
+        "name": "英検・漢検・数検",
+        "query": "(英検 OR 漢検 OR 数検 OR 英語検定 OR 漢字検定 OR 数学検定 OR 算数検定) (入試 OR 優遇 OR 日程 OR 加点 OR 活用 OR 対策 OR 検定 OR 合格)",
+        "icon": "📝",
+        "desc": "中学・高校・大学入試での優遇・加点情報、検定日程、新形式・対策法"
     }
 ]
 
@@ -212,8 +219,20 @@ def fallback_smart_summaries(category_name, news_items):
         t = item["title"]
         src = item["source"]
         
+        # 0. 英検・漢検・数検に特化した要約
+        if re.search(r"(英検|英語検定|漢検|漢字検定|数検|数学検定|算数検定)", t):
+            match_cert = re.search(r"(英検|英語検定|漢検|漢字検定|数検|数学検定|算数検定)", t)
+            cert_name = match_cert.group(0) if match_cert else "各種検定"
+            item["headline"] = f"{cert_name}の最新入試活用・対策トピック（{src}）"
+            item["points"] = [
+                f"{cert_name}に関する入試優遇（加点・みなし満点）や、最新の受検・学習対策情報が共有されました。",
+                "中学・高校・大学受験のいずれにおいても、検定資格の保有が出願要件や内申点加点に直結する事例が増加。",
+                "新形式問題（英検の要約ライティング等）への対応や、計画的な級取得スケジュールの重要性が高まっています。"
+            ]
+            item["takeaway"] = f"志望校の募集要項で{cert_name}の優遇基準（何級から加点対象か）を確認し、出願期限に間に合う受検回を押さえましょう。"
+
         # 1. 調査書・内申点・配点・10:0関連
-        if re.search(r"(調査書|内申点|傾斜配点|点数化|配点|10:0)", t):
+        elif re.search(r"(調査書|内申点|傾斜配点|点数化|配点|10:0)", t):
             match_school = re.search(r"(国公立大|都立高|千葉県公立高|船橋|柏|駿台|高校|大学)", t)
             target = match_school.group(0) if match_school else "入試選抜"
             item["headline"] = f"{target}における調査書・配点基準の最新動向（{src}）"
@@ -351,10 +370,12 @@ def main():
     rendered = rendered.replace("{{JUNIOR_COUNT}}", str(len(all_news.get("junior", []))))
     rendered = rendered.replace("{{HIGH_COUNT}}", str(len(all_news.get("high", []))))
     rendered = rendered.replace("{{UNIV_COUNT}}", str(len(all_news.get("univ", []))))
+    rendered = rendered.replace("{{CERT_COUNT}}", str(len(all_news.get("cert", []))))
     
     rendered = rendered.replace("{{JUNIOR_NEWS_CARDS}}", render_news_cards(all_news.get("junior", [])))
     rendered = rendered.replace("{{HIGH_NEWS_CARDS}}", render_news_cards(all_news.get("high", [])))
     rendered = rendered.replace("{{UNIV_NEWS_CARDS}}", render_news_cards(all_news.get("univ", [])))
+    rendered = rendered.replace("{{CERT_NEWS_CARDS}}", render_news_cards(all_news.get("cert", [])))
     
     # 出力
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

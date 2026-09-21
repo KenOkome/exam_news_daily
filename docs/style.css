@@ -20,6 +20,8 @@
     --color-high-bg: rgba(14, 165, 233, 0.12);
     --color-univ: #8B5CF6;        /* パープル */
     --color-univ-bg: rgba(139, 92, 246, 0.12);
+    --color-cert: #F59E0B;        /* アンバー・ゴールド */
+    --color-cert-bg: rgba(245, 158, 11, 0.12);
 
     --border-color: rgba(255, 255, 255, 0.08);
     --border-highlight: rgba(255, 255, 255, 0.15);
@@ -149,10 +151,10 @@ body {
 /* カテゴリー切り替えタブ */
 .category-tabs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
     background: rgba(30, 41, 59, 0.6);
-    padding: 6px;
+    padding: 5px;
     border-radius: 14px;
     border: 1px solid var(--border-color);
     margin-bottom: 20px;
@@ -167,26 +169,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    padding: 8px 4px;
+    gap: 2px;
+    padding: 7px 2px;
     border: none;
     background: transparent;
     color: var(--text-muted);
     font-family: var(--font-heading);
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     border-radius: 10px;
     cursor: pointer;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .tab-btn .tab-icon {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tab-btn .tab-count {
-    font-size: 10px;
-    padding: 1px 6px;
+    font-size: 9px;
+    padding: 1px 5px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     color: var(--text-dim);
@@ -202,6 +205,7 @@ body {
 .tab-btn.active[data-tab="junior"] .tab-count { background: var(--color-junior-bg); color: var(--color-junior); }
 .tab-btn.active[data-tab="high"] .tab-count { background: var(--color-high-bg); color: var(--color-high); }
 .tab-btn.active[data-tab="univ"] .tab-count { background: var(--color-univ-bg); color: var(--color-univ); }
+.tab-btn.active[data-tab="cert"] .tab-count { background: var(--color-cert-bg); color: var(--color-cert); }
 
 /* タブコンテンツ表示制御 */
 .tab-content {
@@ -244,8 +248,6 @@ body {
     opacity: 0.8;
 }
 
-
-
 /* セクションイントロ */
 .section-intro {
     display: flex;
@@ -260,6 +262,7 @@ body {
 .section-intro.junior { background: var(--color-junior-bg); border-color: rgba(16, 185, 129, 0.25); }
 .section-intro.high { background: var(--color-high-bg); border-color: rgba(14, 165, 233, 0.25); }
 .section-intro.univ { background: var(--color-univ-bg); border-color: rgba(139, 92, 246, 0.25); }
+.section-intro.cert { background: var(--color-cert-bg); border-color: rgba(245, 158, 11, 0.25); }
 
 .section-intro .intro-icon {
     font-size: 24px;
@@ -274,11 +277,13 @@ body {
 .section-intro.junior h2 { color: var(--color-junior); }
 .section-intro.high h2 { color: var(--color-high); }
 .section-intro.univ h2 { color: var(--color-univ); }
+.section-intro.cert h2 { color: var(--color-cert); }
 
 .section-intro p {
     font-size: 12px;
     color: var(--text-muted);
 }
+
 
 /* ニュースグリッド */
 .news-grid {

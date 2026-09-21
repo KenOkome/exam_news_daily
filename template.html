@@ -58,6 +58,11 @@
                 <span class="tab-text">大学受験</span>
                 <span class="tab-count">{{UNIV_COUNT}}</span>
             </button>
+            <button class="tab-btn" data-tab="cert" role="tab" aria-selected="false">
+                <span class="tab-icon">📝</span>
+                <span class="tab-text">英検・漢検・数検</span>
+                <span class="tab-count">{{CERT_COUNT}}</span>
+            </button>
         </nav>
         <div class="swipe-hint"><span>⇄</span> 画面を左右にスワイプして切り替え</div>
 
@@ -102,6 +107,20 @@
                 {{UNIV_NEWS_CARDS}}
             </div>
         </section>
+
+        <!-- 英検・漢検・数検セクション -->
+        <section id="cert-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro cert">
+                <div class="intro-icon">📝</div>
+                <div>
+                    <h2>英検・漢検・数検 最新情報</h2>
+                    <p>入試優遇、加点制度、日程速報、新形式・対策の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                {{CERT_NEWS_CARDS}}
+            </div>
+        </section>
     </main>
 
     <!-- フッター -->
@@ -123,7 +142,7 @@
     <!-- インタラクション用スクリプト -->
     <script>
         let currentTabIndex = 0;
-        const categories = ['junior', 'high', 'univ'];
+        const categories = ['junior', 'high', 'univ', 'cert'];
         const tabs = document.querySelectorAll('.tab-btn');
         const panels = document.querySelectorAll('.tab-content');
 
