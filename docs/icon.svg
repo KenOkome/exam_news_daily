@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <!-- 背景角丸四角形 -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+
+  <!-- 本とペンシルモチーフ -->
+  <g transform="translate(106, 126)">
+    <!-- 本 -->
+    <path d="M150 210 C90 190 30 190 0 200 L0 30 C30 20 90 20 150 40 C210 20 270 20 300 30 L300 200 C270 190 210 190 150 210 Z" fill="none" stroke="url(#iconGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 本の中心線 -->
+    <line x1="150" y1="40" x2="150" y2="210" stroke="url(#iconGrad)" stroke-width="16" stroke-linecap="round"/>
+    
+    <!-- 輝き・星 -->
+    <path d="M150 -30 L158 -10 L180 -2 L158 6 L150 26 L142 6 L120 -2 L142 -10 Z" fill="#FDE047"/>
+    <path d="M250 -10 L254 2 L266 6 L254 10 L250 22 L246 10 L234 6 L246 2 Z" fill="#38BDF8"/>
+  </g>
+</svg>

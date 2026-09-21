@@ -1,0 +1,17 @@
+{
+  "name": "受験ニュース要約",
+  "short_name": "受験ニュース",
+  "description": "毎朝最新の中学・高校・大学受験ニュースを3行要約。隙間時間の3分で把握。",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

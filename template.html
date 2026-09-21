@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>毎朝3分！受験ニュース要約 | 中学・高校・大学受験</title>
+    <meta name="description" content="毎朝最新の「中学受験」「高校受験」「大学受験」ニュースをAIが3行要約。隙間時間の3分で受験トレンドが丸わかり。">
+    
+    <!-- PWA / モバイル対応 -->
+    <meta name="theme-color" content="#0F172A">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="受験ニュース">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="app-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">📚</div>
+                <div>
+                    <h1 class="logo-title">受験ニュース要約</h1>
+                    <p class="logo-subtitle">朝の3分で最新トレンドを把握</p>
+                </div>
+            </div>
+            <div class="update-badge" id="updateBadge">
+                <span class="pulse-dot"></span>
+                <span>{{UPDATED_TIME}} 更新</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-container">
+        <!-- カテゴリー切り替えタブ -->
+        <nav class="category-tabs" role="tablist">
+            <button class="tab-btn active" data-tab="junior" role="tab" aria-selected="true">
+                <span class="tab-icon">🏫</span>
+                <span class="tab-text">中学受験</span>
+                <span class="tab-count">{{JUNIOR_COUNT}}</span>
+            </button>
+            <button class="tab-btn" data-tab="high" role="tab" aria-selected="false">
+                <span class="tab-icon">🎒</span>
+                <span class="tab-text">高校受験</span>
+                <span class="tab-count">{{HIGH_COUNT}}</span>
+            </button>
+            <button class="tab-btn" data-tab="univ" role="tab" aria-selected="false">
+                <span class="tab-icon">🎓</span>
+                <span class="tab-text">大学受験</span>
+                <span class="tab-count">{{UNIV_COUNT}}</span>
+            </button>
+        </nav>
+
+        <!-- 中学受験セクション -->
+        <section id="junior-tab" class="tab-content active" role="tabpanel">
+            <div class="section-intro junior">
+                <div class="intro-icon">🏫</div>
+                <div>
+                    <h2>中学受験 最新ニュース</h2>
+                    <p>志願倍率、入試日程、学校改革、塾動向の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                {{JUNIOR_NEWS_CARDS}}
+            </div>
+        </section>
+
+        <!-- 高校受験セクション -->
+        <section id="high-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro high">
+                <div class="intro-icon">🎒</div>
+                <div>
+                    <h2>高校受験 最新ニュース</h2>
+                    <p>公立・私立高入試、倍率速報、制度変更、推薦入試の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                {{HIGH_NEWS_CARDS}}
+            </div>
+        </section>
+
+        <!-- 大学受験セクション -->
+        <section id="univ-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro univ">
+                <div class="intro-icon">🎓</div>
+                <div>
+                    <h2>大学受験 最新ニュース</h2>
+                    <p>共通テスト、新課程、国公立・私立大動向、総合型選抜の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                {{UNIV_NEWS_CARDS}}
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="app-footer">
+        <div class="footer-inner">
+            <p class="footer-desc">
+                🤖 Google News RSS より自動収集・Gemini AI による自動要約<br>
+                毎朝 6:00（JST）自動更新 | 完全無料運用中
+            </p>
+            <p class="footer-tip">
+                📱 <strong>スマホのホーム画面に追加</strong> するとアプリのようにサッと読めます！
+            </p>
+            <div class="footer-copy">
+                &copy; {{CURRENT_YEAR}} 受験ニュース要約 - Powered by GitHub Pages & Gemini
+            </div>
+        </div>
+    </footer>
+
+    <!-- インタラクション用スクリプト -->
+    <script>
+        // タブ切り替えロジック
+        const tabs = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.tab;
+                
+                tabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                panels.forEach(p => p.classList.remove('active'));
+
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+                const activePanel = document.getElementById(`${target}-tab`);
+                if (activePanel) activePanel.classList.add('active');
+
+                // スムーズスクロール
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // サービスワーカー登録（PWA用）
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>
