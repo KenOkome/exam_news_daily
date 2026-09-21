@@ -13,6 +13,7 @@ import re
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
+import time
 from datetime import datetime, timezone, timedelta
 
 # 日本時間 (JST)
@@ -131,6 +132,10 @@ def summarize_with_gemini(category_name, news_items, api_key):
     if not api_key or not news_items:
         return fallback_smart_summaries(category_name, news_items)
     
+    # 欠落防止のため事前にフォールバック要約で初期化
+    news_items = fallback_smart_summaries(category_name, news_items)
+    total_count = len(news_items)
+    
     # 複数記事を1回のリクエストでまとめて要約（API回数を最小化）
     articles_text = "\n\n".join([
         f"【記事{i+1}】\n見出し: {item['title']}\n配信元: {item['source']}"
@@ -138,7 +143,7 @@ def summarize_with_gemini(category_name, news_items, api_key):
     ])
     
     prompt = f"""あなたは「受験情報専門のシニアアナリスト」です。
-以下の【{category_name}】の最新ニュース見出しを深く読み解き、忙しい受験生や保護者が朝の隙間時間（30秒）で重要な変化やトレンドを即座に理解できる要約を作成してください。
+以下の【{category_name}】の最新ニュース見出し全{total_count}件を深く読み解き、忙しい受験生や保護者が朝の隙間時間（30秒）で重要な変化やトレンドを即座に理解できる要約を作成してください。
 
 ※特に千葉県・首都圏の受験動向や、全国レベルの入試改革・重要制度変更に焦点を当ててください。
 ※定型文や一般論ではなく、記事見出しに含まれる具体的な学校名、塾名、制度名、数値、日程などを必ず反映して具体的に記述してください。
@@ -146,28 +151,28 @@ def summarize_with_gemini(category_name, news_items, api_key):
 【対象記事】
 {articles_text}
 
-【必須指示】
-各記事について、以下のJSON配列形式で必ず出力してください（Markdownの ```json で囲む）。
-- index: 記事番号（1から始まる整数）
+【最重要指示】
+- 必ず記事1から記事{total_count}まで全{total_count}件を1件も漏らさず出力してください。
+- 見出しの単なる言い換え・オウム返しは禁止です。「〜が話題となっています」「〜が報じられました」といった曖昧な表現は避け、具体的な出来事・変更点・影響を記述してください。
 - headline: 記事の核心をズバリ一言で（30文字以内。何が起きたか／何が決定したかの結論）
-- points: ニュースの重要なポイントや背景・具体的詳細を2〜3点（各35〜55文字程度。具体的な対象や内容を明記）
+- points: ニュースの重要なポイントや背景・具体的詳細を2〜3点（各35〜65文字程度。具体的な対象や内容を明記）
 - takeaway: 受験生・保護者が知っておくべきこと、今後の対策や心構え（40〜65文字程度）
 
-【出力例】
+【出力形式】
+以下のJSON配列形式のみで出力してください（Markdownの ```json で囲む）。
 [
   {{
     "index": 1,
-    "headline": "千葉県公立高入試、船橋・柏など8校で傾斜配点を導入",
+    "headline": "記事の核心結論（30文字以内）",
     "points": [
-      "千葉県教育委員会が2027年度公立高入試の実施内容を公表、上位校で特色ある配点へ。",
-      "理数科や英語関連学科を中心に特定教科の配点を高く設定し、専門的な適性を評価。",
-      "学力検査と調査書（内申点）の比率が学校ごとに異なるため事前の確認が必須。"
+      "重要な事実や決定事項の詳細（35〜65文字）",
+      "その背景や制度・入試への影響（35〜65文字）"
     ],
-    "takeaway": "志望校がどの教科を重視しているかを把握し、傾斜配点対象科目の得点力を重点的に引き上げましょう。"
+    "takeaway": "受験生・保護者への具体的なアドバイス（40〜65文字）"
   }}
 ]"""
 
-    models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    models_to_try = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.5-flash", "gemini-flash-latest"]
     
     for model in models_to_try:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
@@ -194,9 +199,12 @@ def summarize_with_gemini(category_name, news_items, api_key):
                     for s in summaries:
                         idx = s.get("index", 1) - 1
                         if 0 <= idx < len(news_items):
-                            news_items[idx]["headline"] = s.get("headline", "")
-                            news_items[idx]["points"] = s.get("points", [])
-                            news_items[idx]["takeaway"] = s.get("takeaway", "")
+                            if s.get("headline"):
+                                news_items[idx]["headline"] = s.get("headline", "")
+                            if s.get("points"):
+                                news_items[idx]["points"] = s.get("points", [])
+                            if s.get("takeaway"):
+                                news_items[idx]["takeaway"] = s.get("takeaway", "")
                     print(f"  -> Gemini API ({model}) による要約生成に成功！")
                     return news_items
         except Exception as e:
@@ -204,7 +212,7 @@ def summarize_with_gemini(category_name, news_items, api_key):
             continue
             
     print("  -> API未接続または失敗のため、高度インテリジェント要約エンジンで要約を生成します。")
-    return fallback_smart_summaries(category_name, news_items)
+    return news_items
 
 def fallback_smart_summaries(category_name, news_items):
     """API未接続時でも、タイトルから学校名・制度・数値を高精度に解析して具体的な要約を動的に合成するエンジン"""
@@ -350,6 +358,7 @@ def main():
         print(f"  -> {len(items)} 件取得。Gemini で要約生成中...")
         summarized_items = summarize_with_gemini(cat["name"], items, api_key)
         all_news[cat["id"]] = summarized_items
+        time.sleep(1)
     
     # 現在日時 (JST)
     now_jst = datetime.now(JST)

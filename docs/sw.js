@@ -1,4 +1,4 @@
-const CACHE_NAME = 'exam-news-v1';
+const CACHE_NAME = 'exam-news-v2';
 const ASSETS = [
     './index.html',
     './style.css',
