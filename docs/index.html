@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2.2">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -34,7 +34,7 @@
             </div>
             <div class="update-badge" id="updateBadge">
                 <span class="pulse-dot"></span>
-                <span>09月21日 19:57 更新</span>
+                <span>09月21日 20:01 更新</span>
             </div>
         </div>
     </header>
@@ -59,22 +59,19 @@
                 <span class="tab-count">5</span>
             </button>
         </nav>
-        <div class="swipe-hint"><span>⇄</span> 横スワイプで切り替えできます</div>
+        <div class="swipe-hint"><span>⇄</span> 画面を左右にスワイプして切り替え</div>
 
-        <!-- スワイプスライダーコンテナ -->
-        <div class="tabs-slider-wrapper">
-            <div class="tabs-slider" id="tabsSlider">
-                <!-- 中学受験セクション -->
-                <section id="junior-tab" class="tab-content" role="tabpanel" data-index="0">
-                    <div class="section-intro junior">
-                        <div class="intro-icon">🏫</div>
-                        <div>
-                            <h2>中学受験 最新ニュース</h2>
-                            <p>志願倍率、入試日程、学校改革、塾動向の要約まとめ</p>
-                        </div>
-                    </div>
-                    <div class="news-grid">
-                        
+        <!-- 中学受験セクション -->
+        <section id="junior-tab" class="tab-content active" role="tabpanel">
+            <div class="section-intro junior">
+                <div class="intro-icon">🏫</div>
+                <div>
+                    <h2>中学受験 最新ニュース</h2>
+                    <p>志願倍率、入試日程、学校改革、塾動向の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                
         <article class="news-card">
             <div class="card-header">
                 <span class="card-source">リセマム</span>
@@ -99,12 +96,12 @@
 
         <article class="news-card">
             <div class="card-header">
-                <span class="card-source">Yahoo!ニュース</span>
+                <span class="card-source">news.yahoo.co.jp</span>
                 <span class="card-date">09/19 08:53</span>
             </div>
             <h3 class="card-title">【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)</h3>
             <div class="summary-box">
-                <div class="summary-headline">「渋幕」等に見る合格への学習戦略と家庭の伴走法（Yahoo!ニュース）</div>
+                <div class="summary-headline">「渋幕」等に見る合格への学習戦略と家庭の伴走法（news.yahoo.co.jp）</div>
                 <div class="summary-points">
                     <div class="summary-point"><span class="dot">•</span><span>大手塾のカリキュラムを軸に据えつつ、秋以降の志望校別特訓や弱点補強をどのように組み合わせるかの実例が公開されました。</span></div><div class="summary-point"><span class="dot">•</span><span>塾の講座を闇雲に増やすのではなく、過去問の出題傾向に合わせて教材を取捨選択した家庭が成果を出しています。</span></div><div class="summary-point"><span class="dot">•</span><span>親の役割は勉強を教えることではなく、スケジュール調整や体調・メンタル管理のサポートが合否の分かれ目に。</span></div>
                 </div>
@@ -121,12 +118,12 @@
 
         <article class="news-card">
             <div class="card-header">
-                <span class="card-source">朝日新聞</span>
+                <span class="card-source">asahi.com</span>
                 <span class="card-date">09/17 07:33</span>
             </div>
             <h3 class="card-title">【戸辺誠七段対談③】環境が良すぎる東京で信念を持って我が子を育てる 中学受験よりファーストを伸ばして</h3>
             <div class="summary-box">
-                <div class="summary-headline">中学受験の最新トレンド＆思考力対策（朝日新聞）</div>
+                <div class="summary-headline">中学受験の最新トレンド＆思考力対策（asahi.com）</div>
                 <div class="summary-points">
                     <div class="summary-point"><span class="dot">•</span><span>中学受験において求められる思考力・記述力を問う良問の分析や、直前期の学力伸長の秘訣が解説されました。</span></div><div class="summary-point"><span class="dot">•</span><span>丸暗記では対応できない新傾向問題へのアプローチ法や、時間配分を意識した過去問演習の重要性が指摘されています。</span></div><div class="summary-point"><span class="dot">•</span><span>基礎事項の総点検と、ケアレスミスを防ぐ解答プロセスの確立が入試本番での得点力に直結します。</span></div>
                 </div>
@@ -184,20 +181,20 @@
             </div>
         </article>
         
-                    </div>
-                </section>
+            </div>
+        </section>
 
-                <!-- 高校受験セクション -->
-                <section id="high-tab" class="tab-content" role="tabpanel" data-index="1">
-                    <div class="section-intro high">
-                        <div class="intro-icon">🎒</div>
-                        <div>
-                            <h2>高校受験 最新ニュース</h2>
-                            <p>公立・私立高入試、倍率速報、制度変更、推薦入試の要約まとめ</p>
-                        </div>
-                    </div>
-                    <div class="news-grid">
-                        
+        <!-- 高校受験セクション -->
+        <section id="high-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro high">
+                <div class="intro-icon">🎒</div>
+                <div>
+                    <h2>高校受験 最新ニュース</h2>
+                    <p>公立・私立高入試、倍率速報、制度変更、推薦入試の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                
         <article class="news-card">
             <div class="card-header">
                 <span class="card-source">選挙ドットコム</span>
@@ -222,12 +219,12 @@
 
         <article class="news-card">
             <div class="card-header">
-                <span class="card-source">Yahoo!ニュース</span>
+                <span class="card-source">news.yahoo.co.jp</span>
                 <span class="card-date">09/14 17:45</span>
             </div>
             <h3 class="card-title">【高校受験2027】千葉県公立高、船橋・柏など8校8学科が傾斜配点（リセマム）</h3>
             <div class="summary-box">
-                <div class="summary-headline">高校における調査書・配点基準の最新動向（Yahoo!ニュース）</div>
+                <div class="summary-headline">高校における調査書・配点基準の最新動向（news.yahoo.co.jp）</div>
                 <div class="summary-points">
                     <div class="summary-point"><span class="dot">•</span><span>高校における調査書（内申書）の点数化や、各校ごとの傾斜配点の導入方針が明らかになりました。</span></div><div class="summary-point"><span class="dot">•</span><span>ペーパーテストの一発勝負だけでなく、高校生活の実績や特定教科の学力をより多面的に評価する動きが強まっています。</span></div><div class="summary-point"><span class="dot">•</span><span>志望校によって学力検査と調査書の判定比率が大きく異なるため、綿密な戦略設計が求められます。</span></div>
                 </div>
@@ -307,20 +304,20 @@
             </div>
         </article>
         
-                    </div>
-                </section>
+            </div>
+        </section>
 
-                <!-- 大学受験セクション -->
-                <section id="univ-tab" class="tab-content" role="tabpanel" data-index="2">
-                    <div class="section-intro univ">
-                        <div class="intro-icon">🎓</div>
-                        <div>
-                            <h2>大学受験 最新ニュース</h2>
-                            <p>共通テスト、新課程、国公立・私立大動向、総合型選抜の要約まとめ</p>
-                        </div>
-                    </div>
-                    <div class="news-grid">
-                        
+        <!-- 大学受験セクション -->
+        <section id="univ-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro univ">
+                <div class="intro-icon">🎓</div>
+                <div>
+                    <h2>大学受験 最新ニュース</h2>
+                    <p>共通テスト、新課程、国公立・私立大動向、総合型選抜の要約まとめ</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                
         <article class="news-card">
             <div class="card-header">
                 <span class="card-source">リセマム</span>
@@ -367,12 +364,12 @@
 
         <article class="news-card">
             <div class="card-header">
-                <span class="card-source">朝日新聞</span>
+                <span class="card-source">asahi.com</span>
                 <span class="card-date">09/13 16:00</span>
             </div>
             <h3 class="card-title">【参加募集】大学入試センター理事長が語る共通テストの現在地 牛木辰男さん、石原賢一さんが「未来の先生フォーラム」で登壇</h3>
             <div class="summary-box">
-                <div class="summary-headline">入試制度改革・選抜基準の変更と最新影響（朝日新聞）</div>
+                <div class="summary-headline">入試制度改革・選抜基準の変更と最新影響（asahi.com）</div>
                 <div class="summary-points">
                     <div class="summary-point"><span class="dot">•</span><span>国公立大の2段階選抜（足切り）実施基準や、高校無償化政策が志望校選びに与える影響が報告されました。</span></div><div class="summary-point"><span class="dot">•</span><span>私立高校の実質無償化に伴う志願者動向の地殻変動や、新課程入試に伴う出題傾向の刷新が注目されています。</span></div><div class="summary-point"><span class="dot">•</span><span>従来の偏差値序列だけでなく、教育内容や進路実績を重視した学校選択が加速しています。</span></div>
                 </div>
@@ -430,10 +427,8 @@
             </div>
         </article>
         
-                    </div>
-                </section>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- フッター -->
@@ -454,82 +449,86 @@
 
     <!-- インタラクション用スクリプト -->
     <script>
-        const slider = document.getElementById('tabsSlider');
+        let currentTabIndex = 0;
+        const categories = ['junior', 'high', 'univ'];
         const tabs = document.querySelectorAll('.tab-btn');
-        const tabList = ['junior', 'high', 'univ'];
+        const panels = document.querySelectorAll('.tab-content');
 
-        // タブボタンのアクティブ表示更新
-        function setActiveTab(index) {
-            tabs.forEach((t, i) => {
-                const isActive = (i === index);
-                t.classList.toggle('active', isActive);
-                t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        function switchTab(newIndex, direction = 'right') {
+            if (newIndex < 0 || newIndex >= categories.length) return;
+            currentTabIndex = newIndex;
+
+            tabs.forEach((tab, i) => {
+                const isActive = (i === newIndex);
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
             });
-        }
 
-        // タブクリック時のスライド移動
-        tabs.forEach((tab, index) => {
-            tab.addEventListener('click', () => {
-                setActiveTab(index);
-                const targetLeft = index * slider.clientWidth;
-                slider.scrollTo({
-                    left: targetLeft,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // スワイプ・スクロール時のタブ連動（スナップ検出）
-        let scrollTimeout;
-        slider.addEventListener('scroll', () => {
-            clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(() => {
-                const width = slider.clientWidth;
-                if (width > 0) {
-                    const currentIndex = Math.round(slider.scrollLeft / width);
-                    if (currentIndex >= 0 && currentIndex < tabs.length) {
-                        setActiveTab(currentIndex);
+            panels.forEach((panel, i) => {
+                panel.classList.remove('active', 'slide-from-left');
+                if (i === newIndex) {
+                    panel.classList.add('active');
+                    if (direction === 'left') {
+                        panel.classList.add('slide-from-left');
                     }
                 }
-            }, 50);
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // タブボタンクリック
+        tabs.forEach((tab, i) => {
+            tab.addEventListener('click', () => {
+                const dir = (i < currentTabIndex) ? 'left' : 'right';
+                switchTab(i, dir);
+            });
+        });
+
+        // スマホ用タッチスワイプ検知
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
         }, { passive: true });
 
-        // PCマウスでのドラッグスワイプ対応
-        let isDown = false;
-        let startX = 0;
-        let scrollLeftPos = 0;
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+        }, { passive: true });
 
-        slider.addEventListener('mousedown', (e) => {
-            // リンクやボタンクリックは除外
-            if (e.target.closest('a') || e.target.closest('button')) return;
-            isDown = true;
-            slider.style.cursor = 'grabbing';
-            slider.style.scrollBehavior = 'auto';
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeftPos = slider.scrollLeft;
-        });
+        function handleSwipe() {
+            const diffX = touchEndX - touchStartX;
+            const diffY = touchEndY - touchStartY;
+            // 縦スクロール優先ガード（縦移動が大きい、または横移動が40px未満なら無視）
+            if (Math.abs(diffX) < Math.abs(diffY) || Math.abs(diffX) < 40) {
+                return;
+            }
+            if (diffX < 0) {
+                // 左スワイプ（次へ進む）
+                if (currentTabIndex < categories.length - 1) {
+                    switchTab(currentTabIndex + 1, 'right');
+                }
+            } else {
+                // 右スワイプ（前に戻る）
+                if (currentTabIndex > 0) {
+                    switchTab(currentTabIndex - 1, 'left');
+                }
+            }
+        }
 
-        window.addEventListener('mouseup', () => {
-            if (!isDown) return;
-            isDown = false;
-            slider.style.cursor = '';
-            slider.style.scrollBehavior = 'smooth';
-            // 最も近いタブにスナップ
-            const width = slider.clientWidth;
-            const targetIndex = Math.round(slider.scrollLeft / width);
-            slider.scrollTo({
-                left: targetIndex * width,
-                behavior: 'smooth'
-            });
-            setActiveTab(targetIndex);
-        });
-
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 1.5;
-            slider.scrollLeft = scrollLeftPos - walk;
+        // キーボード左右矢印キー対応
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' && currentTabIndex < categories.length - 1) {
+                switchTab(currentTabIndex + 1, 'right');
+            } else if (e.key === 'ArrowLeft' && currentTabIndex > 0) {
+                switchTab(currentTabIndex - 1, 'left');
+            }
         });
 
         // サービスワーカー登録（PWA用）

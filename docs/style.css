@@ -203,37 +203,31 @@ body {
 .tab-btn.active[data-tab="high"] .tab-count { background: var(--color-high-bg); color: var(--color-high); }
 .tab-btn.active[data-tab="univ"] .tab-count { background: var(--color-univ-bg); color: var(--color-univ); }
 
-/* タブスライダー（横スワイプ対応） */
-.tabs-slider-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.tabs-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    touch-action: pan-y pinch-zoom;
-    will-change: scroll-position;
-}
-
-.tabs-slider::-webkit-scrollbar {
-    display: none;
-}
-
+/* タブコンテンツ表示制御 */
 .tab-content {
-    flex: 0 0 100%;
-    min-width: 100%;
-    width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    box-sizing: border-box;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.tab-content.active {
     display: block;
-    padding: 0 2px 20px 2px;
+    opacity: 1;
+    animation: slideInFromRight 0.25s ease;
+}
+
+.tab-content.slide-from-left {
+    animation: slideInFromLeft 0.25s ease;
+}
+
+@keyframes slideInFromRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 /* スワイプガイドヒント */
@@ -249,6 +243,7 @@ body {
     gap: 6px;
     opacity: 0.8;
 }
+
 
 
 /* セクションイントロ */
