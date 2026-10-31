@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31T16:48:55.025511+09:00",
-  "count": 21,
+  "updated_at": "2026-10-31T16:50:28.965190+09:00",
+  "count": 24,
   "articles": {
     "fcab49c32c": {
       "id": "fcab49c32c",
@@ -462,6 +462,72 @@
         "難関校の推薦入試で合否を分ける集団討論や自己PRの対策を、実践的な形式で集中的に学べるプログラムとなっている。"
       ],
       "takeaway": "都立トップ校の推薦受検を控える生徒は、他者との議論を通じた発信力を磨くために専門対策講座の活用を検討してください。",
+      "is_ai_summary": true
+    },
+    "f822a43022": {
+      "id": "f822a43022",
+      "category_id": "high",
+      "title": "東京都、２０２８年開校の新都立高校に国際金融教育 有識者４人を助言役に",
+      "raw_title": "東京都、２０２８年開校の新都立高校に国際金融教育 有識者４人を助言役に - 月刊私塾界",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE91d19rNnFlNWF0ejNUWHI5OFpYSGVPcVUzc2xGaTdBaVM1Z18wdjlVU2pvc1ZpVEh0ZHlGeXlLel9JdzRLY3p4RTk2aFI1dmNQeHc?oc=5",
+      "pub_date": "10/07 17:49",
+      "pub_iso": "2026-10-07T17:49:48+09:00",
+      "pub_ts": 1791362988,
+      "is_new": false,
+      "source": "月刊私塾界",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "2028年新設の都立高が国際金融教育へ",
+      "points": [
+        "2028年開校の新しい都立高校において国際金融教育の導入が正式に決定された。",
+        "有識者4人が助言役に就任し、グローバル経済に対応できる専門的なカリキュラムを構築する。"
+      ],
+      "takeaway": "グローバル志向の受験生に向けた新たな選択肢となるため、今後の具体的なカリキュラム案や設置場所の発表に注目しておきましょう。",
+      "is_ai_summary": true
+    },
+    "5103bf7e4d": {
+      "id": "5103bf7e4d",
+      "category_id": "high",
+      "title": "【都立高校の内申点改革がさらに前進！】足立区の皆さんの声から、子どもたちの可能性を広げる制度へ - 後藤なみ（ゴトウナミ）",
+      "raw_title": "【都立高校の内申点改革がさらに前進！】足立区の皆さんの声から、子どもたちの可能性を広げる制度へ - 後藤なみ（ゴトウナミ） - 選挙ドットコム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1EQkpzUHNDN1RESTlPaC1TaXBxa0p5TXBwSF9haFRQQkVuQzE5QjZnMGNTcXBsU3RYR3BsRmFRMG14RmI2VHNvWlJzcUt0TXZVUjUxY0xmaHFFVlMzci04?oc=5",
+      "pub_date": "10/06 16:00",
+      "pub_iso": "2026-10-06T16:00:00+09:00",
+      "pub_ts": 1791270000,
+      "is_new": false,
+      "source": "選挙ドットコム",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "足立区の声で都立高の内申点改革が前進",
+      "points": [
+        "足立区における住民や保護者の要望を契機として、都立高校入試の内申点制度改革がさらに前進した。",
+        "子どもたちの可能性をより広く評価できるよう、現在の評価基準や選抜方法の見直しが期待される。"
+      ],
+      "takeaway": "内申点制度の変更は受験戦略に直結するため、自治体ごとの最新の動向や換算方法の改定情報を細かくチェックしましょう。",
+      "is_ai_summary": true
+    },
+    "4f0606a808": {
+      "id": "4f0606a808",
+      "category_id": "high",
+      "title": "埼玉の高校入試に変化…調査書の「特別活動等の記録」「その他」などがなくなると、受験生はどう対応すべきか 「特別活動等の記録」に生徒会・部活動の成績が記載、「その他」は",
+      "raw_title": "埼玉の高校入試に変化…調査書の「特別活動等の記録」「その他」などがなくなると、受験生はどう対応すべきか 「特別活動等の記録」に生徒会・部活動の成績が記載、「その他」は - 埼玉新聞",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA0YlM0MFU2UTV6Qm52eDBDUWdNVGxkdDBYdWJVWGt1OEQ4bEE5NXc2VFYyTjVVa2ZLZTFPa0hrSGd1Y1l1Y2RCTFNKRXk1U3c3WmladDhCaw?oc=5",
+      "pub_date": "10/05 16:00",
+      "pub_iso": "2026-10-05T16:00:00+09:00",
+      "pub_ts": 1791183600,
+      "is_new": false,
+      "source": "埼玉新聞",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "埼玉公立入試の調査書から特別活動が削除",
+      "points": [
+        "埼玉県高校入試の調査書から「特別活動等の記録」や「その他」の項目が削除される変更が発生。",
+        "生徒会活動や部活動の成績記載欄がなくなるため、今後は学力検査や面接等の配点比率に影響する。"
+      ],
+      "takeaway": "調査書の記録簡略化に伴い当日の学力検査の得点がより重要になるため、主要5教科の基礎学力を徹底的に固めましょう。",
       "is_ai_summary": true
     }
   }
