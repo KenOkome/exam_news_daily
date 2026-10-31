@@ -2,180 +2,400 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>毎朝3分！受験ニュース要約 | 中学・高校・大学受験</title>
-    <meta name="description" content="毎朝最新の「中学受験」「高校受験」「大学受験」ニュースをAIが3行要約。隙間時間の3分で受験トレンドが丸わかり。">
+    <meta name="description" content="毎朝最新の「中学受験」「高校受験」「大学受験」ニュースをAIが3行要約。千葉県・首都圏の入試トレンドと面談・対策ポイントが隙間時間の3分で丸わかり。">
     
     <!-- PWA / モバイル対応 -->
-    <meta name="theme-color" content="#0F172A">
+    <meta name="theme-color" content="#0F172A" id="metaThemeColor">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="受験ニュース">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json?v=3.0">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2.2">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <script>
+        // 初期描画時のフラッシュ防止（テーマ即時適用）
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('exam_news_theme');
+                if (savedTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
-<body>
-    <!-- ヘッダー -->
-    <header class="app-header">
-        <div class="header-inner">
-            <div class="logo-area">
-                <div class="logo-icon">📚</div>
-                <div>
-                    <h1 class="logo-title">受験ニュース要約</h1>
-                    <p class="logo-subtitle">朝の3分で最新トレンドを把握</p>
+<body data-updated-time="10月31日 16:48" data-updated-date="2026-10-31">
+    <!-- 上部固定ヘッダー＆タブ領域 -->
+    <div class="sticky-top-shell">
+        <header class="app-header">
+            <div class="header-inner">
+                <div class="logo-area">
+                    <div class="logo-icon">📚</div>
+                    <div>
+                        <h1 class="logo-title">受験ニュース要約</h1>
+                        <p class="logo-subtitle">千葉・首都圏の最新動向を30秒で把握</p>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <div class="update-badge" id="updateBadge" title="最終自動更新日時">
+                        <span class="pulse-dot"></span>
+                        <span id="updateTimeText">10月31日 16:48 更新</span>
+                    </div>
+                    <button type="button" class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" aria-label="表示テーマ切り替え" title="ライト/ダークモード切替">
+                        <span id="themeIcon">☀️</span>
+                    </button>
                 </div>
             </div>
-            <div class="update-badge" id="updateBadge">
-                <span class="pulse-dot"></span>
-                <span>10月30日 09:28 更新</span>
-            </div>
+        </header>
+
+        <!-- カテゴリー切り替えタブ -->
+        <div class="tabs-container">
+            <nav class="category-tabs" role="tablist" aria-label="受験カテゴリー">
+                <button type="button" class="tab-btn active" data-tab="junior" role="tab" aria-selected="true">
+                    <span class="tab-icon">🏫</span>
+                    <span class="tab-text">中学受験</span>
+                    <span class="tab-count">6</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="high" role="tab" aria-selected="false">
+                    <span class="tab-icon">🎒</span>
+                    <span class="tab-text">高校受験</span>
+                    <span class="tab-count">6</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="univ" role="tab" aria-selected="false">
+                    <span class="tab-icon">🎓</span>
+                    <span class="tab-text">大学受験</span>
+                    <span class="tab-count">6</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="saved" role="tab" aria-selected="false">
+                    <span class="tab-icon">⭐</span>
+                    <span class="tab-text">保存済み</span>
+                    <span class="tab-count" id="savedCountBadge">0</span>
+                </button>
+            </nav>
         </div>
-    </header>
+    </div>
 
     <!-- メインコンテンツ -->
-    <main class="main-container">
-        <!-- カテゴリー切り替えタブ -->
-        <nav class="category-tabs" role="tablist">
-            <button class="tab-btn active" data-tab="junior" role="tab" aria-selected="true">
-                <span class="tab-icon">🏫</span>
-                <span class="tab-text">中学受験</span>
-                <span class="tab-count">5</span>
-            </button>
-            <button class="tab-btn" data-tab="high" role="tab" aria-selected="false">
-                <span class="tab-icon">🎒</span>
-                <span class="tab-text">高校受験</span>
-                <span class="tab-count">5</span>
-            </button>
-            <button class="tab-btn" data-tab="univ" role="tab" aria-selected="false">
-                <span class="tab-icon">🎓</span>
-                <span class="tab-text">大学受験</span>
-                <span class="tab-count">5</span>
-            </button>
-        </nav>
-        <div class="swipe-hint"><span>⇄</span> 画面を左右にスワイプして切り替え</div>
+    <main class="main-container" id="mainContainer">
+        <div class="swipe-hint">
+            <span>⇄ 左右スワイプでタブ切替</span>
+            <span class="hint-divider">|</span>
+            <span>📋 コピー・📤 LINE共有対応</span>
+        </div>
 
         <!-- 中学受験セクション -->
         <section id="junior-tab" class="tab-content active" role="tabpanel">
             <div class="section-intro junior">
                 <div class="intro-icon">🏫</div>
                 <div>
-                    <h2>中学受験 最新ニュース</h2>
-                    <p>志願倍率、入試日程、学校改革、塾動向の要約まとめ</p>
+                    <h2>中学受験 最新ニュース（最新順）</h2>
+                    <p>千葉（渋幕・市川・東邦・秀英・専松等）・四谷大塚・首都圏入試の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
                 
-        <article class="news-card">
+        <article class="news-card" data-article-id="fcab49c32c" data-is-new="true">
             <div class="card-header">
-                <span class="card-source">リセマム</span>
-                <span class="card-date">10/29 15:15</span>
-            </div>
-            <h3 class="card-title">【中学受験2027】東京都私立中学の入試日程・定員・偏差値まとめ（男子版）</h3>
-            <div class="summary-box">
-                <div class="summary-headline">2027年男子向け東京都私立中学入試の最新動向</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>東京都内の私立男子中学校を対象とした2027年入試の日程、募集定員、最新の偏差値データを網羅している。</span></div><div class="summary-point"><span class="dot">•</span><span>首都圏最難関校を含む男子校の受験スケジュールや定員枠の変動を早期に把握するための必須情報がまとめられている。</span></div>
+                <div class="card-badges">
+                    <span class="badge-new">🔥 NEW</span>
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">ダイヤモンド・オンライン</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 2027年入試に向け、志望校の最新偏差値や日程変更の可能性を早めに確認し、長期的な併願戦略を組み立てましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">本日 08:00</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">東京男子校2027年入試は城北・都市大・攻玉社に注目</h3>
+            <p class="card-original-title">📰 元記事: 攻勢を強める「城北」、コース一本化「都市大付属」の成果、続伸する「攻玉社」東京男子校の注目点【首都圏中学入試2027】</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>城北の攻勢や都市大付属のコース一本化など改革校の成果が表れている</span></div><div class="summary-point"><span class="dot">•</span><span>続伸する攻玉社も含め首都圏男子難関校の動向が激化している</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 伝統校のブランドだけでなく最新のコース改編や合格実績の伸びを注視し、志望校のトレンド変化に対応した併願戦略を早めに構築しましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GREFQek1JYlg0SXFTNXhlcmFEN3ZyZUQ0OXRseTlaakNEVWlzaWJqank0QmhYSzZLdEsyenBhaTZqY0IzOXlLWXJDOGdpeWRWV3R6OGt2UzNTWFY2?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】東京男子校2027年入試は城北・都市大・攻玉社に注目
+📰 攻勢を強める「城北」、コース一本化「都市大付属」の成果、続伸する「攻玉社」東京男子校の注目点【首都圏中学入試2027】（ダイヤモンド・オンライン / 本日 08:00）
+・城北の攻勢や都市大付属のコース一本化など改革校の成果が表れている
+・続伸する攻玉社も含め首都圏男子難関校の動向が激化している
+💡 ポイント: 伝統校のブランドだけでなく最新のコース改編や合格実績の伸びを注視し、志望校のトレンド変化に対応した併願戦略を早めに構築しましょう。
+🔗 https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzMUFsTVROaVIybDNFNGl6dDJobk5tOWdsWE9DYmgtdndGY1VNVVJnN0w0Sy00a2Mycmhubk02cmxGVFVydGQwQktqdjbSAU9BVV95cUxNZkU4Q2RpVFBuUVdaSTViWld1ZTNFVVRmQ0Z3alQ2bGtQcHB2T2habTJlM1RqaDh2aVFLa1dQbC1NeG5fZklKcUMwczFNVXlz?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】東京男子校2027年入試は城北・都市大・攻玉社に注目
+📰 攻勢を強める「城北」、コース一本化「都市大付属」の成果、続伸する「攻玉社」東京男子校の注目点【首都圏中学入試2027】（ダイヤモンド・オンライン / 本日 08:00）
+・城北の攻勢や都市大付属のコース一本化など改革校の成果が表れている
+・続伸する攻玉社も含め首都圏男子難関校の動向が激化している
+💡 ポイント: 伝統校のブランドだけでなく最新のコース改編や合格実績の伸びを注視し、志望校のトレンド変化に対応した併願戦略を早めに構築しましょう。
+🔗 https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzMUFsTVROaVIybDNFNGl6dDJobk5tOWdsWE9DYmgtdndGY1VNVVJnN0w0Sy00a2Mycmhubk02cmxGVFVydGQwQktqdjbSAU9BVV95cUxNZkU4Q2RpVFBuUVdaSTViWld1ZTNFVVRmQ0Z3alQ2bGtQcHB2T2habTJlM1RqaDh2aVFLa1dQbC1NeG5fZklKcUMwczFNVXlz?oc=5" data-title="東京男子校2027年入試は城北・都市大・攻玉社に注目" data-url="https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzMUFsTVROaVIybDNFNGl6dDJobk5tOWdsWE9DYmgtdndGY1VNVVJnN0w0Sy00a2Mycmhubk02cmxGVFVydGQwQktqdjbSAU9BVV95cUxNZkU4Q2RpVFBuUVdaSTViWld1ZTNFVVRmQ0Z3alQ2bGtQcHB2T2habTJlM1RqaDh2aVFLa1dQbC1NeG5fZklKcUMwczFNVXlz?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="fcab49c32c" onclick="toggleBookmark(this, 'fcab49c32c')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzMUFsTVROaVIybDNFNGl6dDJobk5tOWdsWE9DYmgtdndGY1VNVVJnN0w0Sy00a2Mycmhubk02cmxGVFVydGQwQktqdjbSAU9BVV95cUxNZkU4Q2RpVFBuUVdaSTViWld1ZTNFVVRmQ0Z3alQ2bGtQcHB2T2habTJlM1RqaDh2aVFLa1dQbC1NeG5fZklKcUMwczFNVXlz?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('fcab49c32c')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="fd964c4b4e" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">Yahoo!ニュース</span>
-                <span class="card-date">10/28 13:15</span>
-            </div>
-            <h3 class="card-title">【中学受験2027】千葉県私立中学の入試日程・定員・偏差値まとめ（男女）（リセマム）</h3>
-            <div class="summary-box">
-                <div class="summary-headline">2027年千葉県私立中学入試の日程・偏差値情報</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>千葉県内の男女私立中学校における2027年度入試のスケジュール、募集定員、最新の偏差値一覧が公開された。</span></div><div class="summary-point"><span class="dot">•</span><span>首都圏入試の本格的な幕開けとなる千葉県内の1月入試に向けた、正確な定員数と難易度データを確認できる。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">ニコニコニュース</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 千葉エリアの1月校は前哨戦として重要です。最新の偏差値と日程を照らし合わせ、万全の出願計画を立てましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 23:45</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">栄光ゼミナールが最難関女子向け新1年生の冬期講習受付開始</h3>
+            <p class="card-original-title">📰 元記事: 【栄光ゼミナール】最難関女子中学受験専門館、冬期講習より現小学1年生の受付を開始！「授業体験会」を12月に開催</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>栄光ゼミナールが最難関女子中学受験専門館で新小1生の受付を12月に開始</span></div><div class="summary-point"><span class="dot">•</span><span>低学年からの専門的な授業体験会を通じて早期の学習環境整備を狙う</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 最難関女子を目指す家庭は、低学年次からの系統立てた学習習慣の確立と専門塾の活用を視野に入れ、体験会への参加を検討してください。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBEcDBwQXlOVDFEdXM2NUJvLWVqak5hbVBaRGh2QlJ5aTBzS1gtbEx4UExEN1ZXOU5jQ0NxcVFiZlhTa1YwYlQzRkk4ZkdKQl9JeG1TN25ydkVzTk5PTHdzV1N2RmpNVjhqR0dDUExkV29DS21rWVN0RTE0NVJ0QkU?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】栄光ゼミナールが最難関女子向け新1年生の冬期講習受付開始
+📰 【栄光ゼミナール】最難関女子中学受験専門館、冬期講習より現小学1年生の受付を開始！「授業体験会」を12月に開催（ニコニコニュース / 10/29 23:45）
+・栄光ゼミナールが最難関女子中学受験専門館で新小1生の受付を12月に開始
+・低学年からの専門的な授業体験会を通じて早期の学習環境整備を狙う
+💡 ポイント: 最難関女子を目指す家庭は、低学年次からの系統立てた学習習慣の確立と専門塾の活用を視野に入れ、体験会への参加を検討してください。
+🔗 https://news.google.com/rss/articles/CBMie0FVX3lxTFBVbl83d0oydThUQ0FmQzBING9RTWdJT2VLanotQ2NxQzNXOGtvMl9SUS04WExlQW1Pcm9qbFZsaFRfTFFHYWlidk9INHNPZ2I2ckMxdXFzNFRwZVkzc2NhZURVV0E5ZmV5eVRGYVAyZmZMQnBndlhkTFE3aw?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】栄光ゼミナールが最難関女子向け新1年生の冬期講習受付開始
+📰 【栄光ゼミナール】最難関女子中学受験専門館、冬期講習より現小学1年生の受付を開始！「授業体験会」を12月に開催（ニコニコニュース / 10/29 23:45）
+・栄光ゼミナールが最難関女子中学受験専門館で新小1生の受付を12月に開始
+・低学年からの専門的な授業体験会を通じて早期の学習環境整備を狙う
+💡 ポイント: 最難関女子を目指す家庭は、低学年次からの系統立てた学習習慣の確立と専門塾の活用を視野に入れ、体験会への参加を検討してください。
+🔗 https://news.google.com/rss/articles/CBMie0FVX3lxTFBVbl83d0oydThUQ0FmQzBING9RTWdJT2VLanotQ2NxQzNXOGtvMl9SUS04WExlQW1Pcm9qbFZsaFRfTFFHYWlidk9INHNPZ2I2ckMxdXFzNFRwZVkzc2NhZURVV0E5ZmV5eVRGYVAyZmZMQnBndlhkTFE3aw?oc=5" data-title="栄光ゼミナールが最難関女子向け新1年生の冬期講習受付開始" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTFBVbl83d0oydThUQ0FmQzBING9RTWdJT2VLanotQ2NxQzNXOGtvMl9SUS04WExlQW1Pcm9qbFZsaFRfTFFHYWlidk9INHNPZ2I2ckMxdXFzNFRwZVkzc2NhZURVV0E5ZmV5eVRGYVAyZmZMQnBndlhkTFE3aw?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="fd964c4b4e" onclick="toggleBookmark(this, 'fd964c4b4e')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBVbl83d0oydThUQ0FmQzBING9RTWdJT2VLanotQ2NxQzNXOGtvMl9SUS04WExlQW1Pcm9qbFZsaFRfTFFHYWlidk9INHNPZ2I2ckMxdXFzNFRwZVkzc2NhZURVV0E5ZmV5eVRGYVAyZmZMQnBndlhkTFE3aw?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('fd964c4b4e')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="50f49a7af5" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">ダイヤモンド・オンライン</span>
-                <span class="card-date">10/27 08:00</span>
-            </div>
-            <h3 class="card-title">「昭和学院秀英」の付属戦略、コース一本化した「麗澤」、絶好調の「流通経済大柏」「八千代松陰」千葉1月入試の注目点【首都圏中学入試2027】</h3>
-            <div class="summary-box">
-                <div class="summary-headline">昭和学院秀英・麗澤など千葉1月入試の注目点</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>昭和学院秀英の付属戦略や、コース一本化した麗澤、絶好調の流通経済大柏と八千代松陰の動向を詳しく分析している。</span></div><div class="summary-point"><span class="dot">•</span><span>千葉の1月入試において、各校の教育改革やコース改編が受験生の出願動向や難易度に与える影響が浮き彫りになっている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-exam">📊模試・倍率</span>
+                    <span class="card-source">OTONA SALONE</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 千葉1月入試のトレンド変化を見極め、学校のコース戦略や実績に合わせた効率的な併願校選定を行いましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 20:31</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">低倍率の志望校が数年で激変するリスクと学校選びの盲点</h3>
+            <p class="card-original-title">📰 元記事: 「低倍率で娘に合う学校」が入学時には別の学校になる！？【中受志望校選び】想定外の変化をどう乗り越えるのか</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>入学時の低倍率が改革や人気急上昇により入学後には大きく変貌する場合がある</span></div><div class="summary-point"><span class="dot">•</span><span>志望校選定時は単年の倍率だけでなく学校の中長期的な改革動向を見極める必要がある</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 現時点の偏差値や倍率だけに頼らず、教育内容や経営方針の変化が生徒層に与える影響を想定した現実的な学校選びを行いましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE95WW9SR0ZibUE1M25NSW1RNnRJMEZlUDdZUTRHdkNFWTRMMGFnRXVJVFllVXN4YmZMU1VXYVFjdnNodWk5MzZYOGxLc0PSAU9BVV95cUxQejVpYlYySkVUVVdmVFBWRXdsTVZiZTBRRlAyYzFUcGtXNHUyNGJWTG96TVBYeTRQeHcwOFZuTUxwOGRNemM4R2JLWFpudHVV?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】低倍率の志望校が数年で激変するリスクと学校選びの盲点
+📰 「低倍率で娘に合う学校」が入学時には別の学校になる！？【中受志望校選び】想定外の変化をどう乗り越えるのか（OTONA SALONE / 10/29 20:31）
+・入学時の低倍率が改革や人気急上昇により入学後には大きく変貌する場合がある
+・志望校選定時は単年の倍率だけでなく学校の中長期的な改革動向を見極める必要がある
+💡 ポイント: 現時点の偏差値や倍率だけに頼らず、教育内容や経営方針の変化が生徒層に与える影響を想定した現実的な学校選びを行いましょう。
+🔗 https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UYXNjYW1zN3ZDdHJKSWN4alhwTzV5Q09lTW9yTmNPS05wY2NhT0E3R1ZmSGRaNTlES1dVdTRaaFQ1NmMtbFE?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】低倍率の志望校が数年で激変するリスクと学校選びの盲点
+📰 「低倍率で娘に合う学校」が入学時には別の学校になる！？【中受志望校選び】想定外の変化をどう乗り越えるのか（OTONA SALONE / 10/29 20:31）
+・入学時の低倍率が改革や人気急上昇により入学後には大きく変貌する場合がある
+・志望校選定時は単年の倍率だけでなく学校の中長期的な改革動向を見極める必要がある
+💡 ポイント: 現時点の偏差値や倍率だけに頼らず、教育内容や経営方針の変化が生徒層に与える影響を想定した現実的な学校選びを行いましょう。
+🔗 https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UYXNjYW1zN3ZDdHJKSWN4alhwTzV5Q09lTW9yTmNPS05wY2NhT0E3R1ZmSGRaNTlES1dVdTRaaFQ1NmMtbFE?oc=5" data-title="低倍率の志望校が数年で激変するリスクと学校選びの盲点" data-url="https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UYXNjYW1zN3ZDdHJKSWN4alhwTzV5Q09lTW9yTmNPS05wY2NhT0E3R1ZmSGRaNTlES1dVdTRaaFQ1NmMtbFE?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="50f49a7af5" onclick="toggleBookmark(this, '50f49a7af5')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UYXNjYW1zN3ZDdHJKSWN4alhwTzV5Q09lTW9yTmNPS05wY2NhT0E3R1ZmSGRaNTlES1dVdTRaaFQ1NmMtbFE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('50f49a7af5')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="6f5075fc23" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">OTONA SALONE</span>
-                <span class="card-date">10/29 20:30</span>
-            </div>
-            <h3 class="card-title">「先生も校風も良いのに倍率は低い」中学受験で伴走中の母が娘に勧めたかった母校で、“まさかの大改革”</h3>
-            <div class="summary-box">
-                <div class="summary-headline">穴場だった母校の大改革と中学受験の現実</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>「先生や校風は良いのに倍率が低い」という魅力的な条件が揃った学校で、予想外の大規模な改革が進行している。</span></div><div class="summary-point"><span class="dot">•</span><span>学校側の戦略的な改革によって、これまで穴場とされていた学校の人気や偏差値構造が急変するリスクとチャンスがある。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-exam">📊模試・倍率</span>
+                    <span class="card-source">OTONA SALONE</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 過去の倍率やイメージにとらわれず、志望校の現在進行形の改革や最新の出願動向を常にリサーチしておきましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 20:30</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">好条件でも低倍率だった母校で起きた大改革の背景と影響</h3>
+            <p class="card-original-title">📰 元記事: 「先生も校風も良いのに倍率は低い」中学受験で伴走中の母が娘に勧めたかった母校で、“まさかの大改革”</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>環境が良いのに倍率が低かった学校で予想外の大改革が進んでいる事例が注目される</span></div><div class="summary-point"><span class="dot">•</span><span>保護者の期待と実際の学校側の改革スピードのギャップに注意が必要</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 過去のイメージや親世代の印象だけで母校を推奨せず、直近の学校説明会や入試結果の分析を通じて現在の学校のリアルな姿を確認しましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TMXV6MEViYjE2cmJfNVlkN1otYnppTERNR2VlYmE5YmE3ci1fWkZRTGpmaWtnNG00MjlaV3VDMGk4TjNtZ2c?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】好条件でも低倍率だった母校で起きた大改革の背景と影響
+📰 「先生も校風も良いのに倍率は低い」中学受験で伴走中の母が娘に勧めたかった母校で、“まさかの大改革”（OTONA SALONE / 10/29 20:30）
+・環境が良いのに倍率が低かった学校で予想外の大改革が進んでいる事例が注目される
+・保護者の期待と実際の学校側の改革スピードのギャップに注意が必要
+💡 ポイント: 過去のイメージや親世代の印象だけで母校を推奨せず、直近の学校説明会や入試結果の分析を通じて現在の学校のリアルな姿を確認しましょう。
+🔗 https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TMXV6MEViYjE2cmJfNVlkN1otYnppTERNR2VlYmE5YmE3ci1fWkZRTGpmaWtnNG00MjlaV3VDMGk4TjNtZ2c?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】好条件でも低倍率だった母校で起きた大改革の背景と影響
+📰 「先生も校風も良いのに倍率は低い」中学受験で伴走中の母が娘に勧めたかった母校で、“まさかの大改革”（OTONA SALONE / 10/29 20:30）
+・環境が良いのに倍率が低かった学校で予想外の大改革が進んでいる事例が注目される
+・保護者の期待と実際の学校側の改革スピードのギャップに注意が必要
+💡 ポイント: 過去のイメージや親世代の印象だけで母校を推奨せず、直近の学校説明会や入試結果の分析を通じて現在の学校のリアルな姿を確認しましょう。
+🔗 https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TMXV6MEViYjE2cmJfNVlkN1otYnppTERNR2VlYmE5YmE3ci1fWkZRTGpmaWtnNG00MjlaV3VDMGk4TjNtZ2c?oc=5" data-title="好条件でも低倍率だった母校で起きた大改革の背景と影響" data-url="https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TMXV6MEViYjE2cmJfNVlkN1otYnppTERNR2VlYmE5YmE3ci1fWkZRTGpmaWtnNG00MjlaV3VDMGk4TjNtZ2c?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="6f5075fc23" onclick="toggleBookmark(this, '6f5075fc23')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TMXV6MEViYjE2cmJfNVlkN1otYnppTERNR2VlYmE5YmE3ci1fWkZRTGpmaWtnNG00MjlaV3VDMGk4TjNtZ2c?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('6f5075fc23')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="a931943dde" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">ニコニコニュース</span>
-                <span class="card-date">10/29 23:45</span>
-            </div>
-            <h3 class="card-title">【栄光ゼミナール】最難関女子中学受験専門館、冬期講習より現小学1年生の受付を開始！「授業体験会」を12月に開催</h3>
-            <div class="summary-box">
-                <div class="summary-headline">栄光ゼミナールが最難関女子中専門館で新1年受付</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>栄光ゼミナールの最難関女子中学受験専門館が、冬期講習より現小学1年生の受講受付を開始し12月に体験会を実施する。</span></div><div class="summary-point"><span class="dot">•</span><span>低学年からの早期アプローチを通じて、最難関女子中学を目指す家庭に向けた専門的な学習環境と機会が提供される。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-exam">📊模試・倍率</span>
+                    <span class="card-source">リセマム</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 最難関校を目指す場合は、低学年からの学習習慣の定着と専門的な指導環境の活用を視野に入れて動き出しましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 15:15</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">2027年中学受験向け東京都私立男子版の最新データが公開</h3>
+            <p class="card-original-title">📰 元記事: 【中学受験2027】東京都私立中学の入試日程・定員・偏差値まとめ（男子版）</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>リセマムが2027年入試に向けた東京都私立中の日程や定員および偏差値を総まとめ</span></div><div class="summary-point"><span class="dot">•</span><span>男子難関校を中心とした最新の入試構造変化を把握するための基礎資料となる</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 最新の定員数や日程変更のデータをいち早く確認し、併願パターンのシミュレーションを今から段階的に進めておきましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBVbl83d0oydThUQ0FmQzBING9RTWdJT2VLanotQ2NxQzNXOGtvMl9SUS04WExlQW1Pcm9qbFZsaFRfTFFHYWlidk9INHNPZ2I2ckMxdXFzNFRwZVkzc2NhZURVV0E5ZmV5eVRGYVAyZmZMQnBndlhkTFE3aw?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】2027年中学受験向け東京都私立男子版の最新データが公開
+📰 【中学受験2027】東京都私立中学の入試日程・定員・偏差値まとめ（男子版）（リセマム / 10/29 15:15）
+・リセマムが2027年入試に向けた東京都私立中の日程や定員および偏差値を総まとめ
+・男子難関校を中心とした最新の入試構造変化を把握するための基礎資料となる
+💡 ポイント: 最新の定員数や日程変更のデータをいち早く確認し、併願パターンのシミュレーションを今から段階的に進めておきましょう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GREFQek1JYlg0SXFTNXhlcmFEN3ZyZUQ0OXRseTlaakNEVWlzaWJqank0QmhYSzZLdEsyenBhaTZqY0IzOXlLWXJDOGdpeWRWV3R6OGt2UzNTWFY2?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】2027年中学受験向け東京都私立男子版の最新データが公開
+📰 【中学受験2027】東京都私立中学の入試日程・定員・偏差値まとめ（男子版）（リセマム / 10/29 15:15）
+・リセマムが2027年入試に向けた東京都私立中の日程や定員および偏差値を総まとめ
+・男子難関校を中心とした最新の入試構造変化を把握するための基礎資料となる
+💡 ポイント: 最新の定員数や日程変更のデータをいち早く確認し、併願パターンのシミュレーションを今から段階的に進めておきましょう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GREFQek1JYlg0SXFTNXhlcmFEN3ZyZUQ0OXRseTlaakNEVWlzaWJqank0QmhYSzZLdEsyenBhaTZqY0IzOXlLWXJDOGdpeWRWV3R6OGt2UzNTWFY2?oc=5" data-title="2027年中学受験向け東京都私立男子版の最新データが公開" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GREFQek1JYlg0SXFTNXhlcmFEN3ZyZUQ0OXRseTlaakNEVWlzaWJqank0QmhYSzZLdEsyenBhaTZqY0IzOXlLWXJDOGdpeWRWV3R6OGt2UzNTWFY2?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="a931943dde" onclick="toggleBookmark(this, 'a931943dde')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GREFQek1JYlg0SXFTNXhlcmFEN3ZyZUQ0OXRseTlaakNEVWlzaWJqank0QmhYSzZLdEsyenBhaTZqY0IzOXlLWXJDOGdpeWRWV3R6OGt2UzNTWFY2?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('a931943dde')">
+                    <span>元記事</span>
+                    <span>↗</span>
+                </a>
+            </div>
+        </article>
+        
+
+        <article class="news-card" data-article-id="be07db2bc0" data-is-new="false">
+            <div class="card-header">
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-exam">📊模試・倍率</span>
+                    <span class="card-source">with class</span>
+                </div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 12:00</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">元SAPIX母が明かす中学受験における親の壮絶な伴走現実</h3>
+            <p class="card-original-title">📰 元記事: 「こんなに大変なの、うちだけ!?」２人の元SAPIXママが語る中学受験。始める前には見えなかった「親の伴走」</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2人の元SAPIX保護者が中学受験における想像を絶する親の伴走負担を告白</span></div><div class="summary-point"><span class="dot">•</span><span>始める前には見えにくい家庭内でのサポートの重要性と精神的負担が浮き彫りに</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 受験生活を乗り切るため、スケジュール管理やメンタルケアの役割分担を事前に夫婦や塾講師と相談し、家庭崩壊を防ぐ体制を作りましょう。</div>
+            </div>
+            <div class="card-footer">
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【中学受験】元SAPIX母が明かす中学受験における親の壮絶な伴走現実
+📰 「こんなに大変なの、うちだけ!?」２人の元SAPIXママが語る中学受験。始める前には見えなかった「親の伴走」（with class / 10/29 12:00）
+・2人の元SAPIX保護者が中学受験における想像を絶する親の伴走負担を告白
+・始める前には見えにくい家庭内でのサポートの重要性と精神的負担が浮き彫りに
+💡 ポイント: 受験生活を乗り切るため、スケジュール管理やメンタルケアの役割分担を事前に夫婦や塾講師と相談し、家庭崩壊を防ぐ体制を作りましょう。
+🔗 https://news.google.com/rss/articles/CBMic0FVX3lxTE5US3ZIMHFoX1ZvMkVSZEp4Mnk0Tko4Uzl0dmk5Q1p1U0FLeE11ME9wVEMzUXlDOXFNTVJfZFQwQTlaY0RTQUtobWZyR2ZVQkFtdFVvZ0lMdi1zSmZnOFFlaW05OGVSSnVPd1N2MTJqZ0NLVDA?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【中学受験】元SAPIX母が明かす中学受験における親の壮絶な伴走現実
+📰 「こんなに大変なの、うちだけ!?」２人の元SAPIXママが語る中学受験。始める前には見えなかった「親の伴走」（with class / 10/29 12:00）
+・2人の元SAPIX保護者が中学受験における想像を絶する親の伴走負担を告白
+・始める前には見えにくい家庭内でのサポートの重要性と精神的負担が浮き彫りに
+💡 ポイント: 受験生活を乗り切るため、スケジュール管理やメンタルケアの役割分担を事前に夫婦や塾講師と相談し、家庭崩壊を防ぐ体制を作りましょう。
+🔗 https://news.google.com/rss/articles/CBMic0FVX3lxTE5US3ZIMHFoX1ZvMkVSZEp4Mnk0Tko4Uzl0dmk5Q1p1U0FLeE11ME9wVEMzUXlDOXFNTVJfZFQwQTlaY0RTQUtobWZyR2ZVQkFtdFVvZ0lMdi1zSmZnOFFlaW05OGVSSnVPd1N2MTJqZ0NLVDA?oc=5" data-title="元SAPIX母が明かす中学受験における親の壮絶な伴走現実" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTE5US3ZIMHFoX1ZvMkVSZEp4Mnk0Tko4Uzl0dmk5Q1p1U0FLeE11ME9wVEMzUXlDOXFNTVJfZFQwQTlaY0RTQUtobWZyR2ZVQkFtdFVvZ0lMdi1zSmZnOFFlaW05OGVSSnVPd1N2MTJqZ0NLVDA?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="be07db2bc0" onclick="toggleBookmark(this, 'be07db2bc0')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5US3ZIMHFoX1ZvMkVSZEp4Mnk0Tko4Uzl0dmk5Q1p1U0FLeE11ME9wVEMzUXlDOXFNTVJfZFQwQTlaY0RTQUtobWZyR2ZVQkFtdFVvZ0lMdi1zSmZnOFFlaW05OGVSSnVPd1N2MTJqZ0NLVDA?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('be07db2bc0')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
@@ -189,116 +409,306 @@
             <div class="section-intro high">
                 <div class="intro-icon">🎒</div>
                 <div>
-                    <h2>高校受験 最新ニュース</h2>
-                    <p>公立・私立高入試、倍率速報、制度変更、推薦入試の要約まとめ</p>
+                    <h2>高校受験 最新ニュース（最新順）</h2>
+                    <p>千葉県公立・私立高入試（船高・千高・東葛・八千代・Vもぎ等）・首都圏の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
                 
-        <article class="news-card">
+        <article class="news-card" data-article-id="f479e6319b" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">Yahoo!ニュース</span>
-                <span class="card-date">10/28 13:15</span>
-            </div>
-            <h3 class="card-title">【中学受験2027】千葉県私立中学の入試日程・定員・偏差値まとめ（男女）（リセマム）</h3>
-            <div class="summary-box">
-                <div class="summary-headline">2027年中学受験：千葉の私立入試情報公開</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>リセマムが2027年度の千葉県私立中学における入試日程、募集定員、偏差値をまとめて配信した。</span></div><div class="summary-point"><span class="dot">•</span><span>首都圏の併願校選定において重要な指標となる最新データであり、早期の傾向把握が不可欠である。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">Yahoo!ニュース</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 2027年入試に向けた最新の偏差値や日程変動をいち早く確認し、志望校選びの精度を高めましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/29 12:48</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">埼玉進路希望調査で市立川越普通科が2.84倍の高倍率</h3>
+            <p class="card-original-title">📰 元記事: 【高校受験2027】埼玉県進路希望調査（10/1現在）市立川越（普通）2.84倍など（リセマム）</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>10月1日時点の埼玉県進路希望調査結果が公表され、市立川越高校（普通科）が2.84倍の高い倍率を記録した。</span></div><div class="summary-point"><span class="dot">•</span><span>人気校への志望集中傾向が数値として表れており、今後の出願動向や他校への影響に十分注意する必要がある。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 志望校の現時点での倍率傾向を早めに把握し、安全圏と挑戦校のバランスを見直す面談材料として活用してください。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBEcDBwQXlOVDFEdXM2NUJvLWVqak5hbVBaRGh2QlJ5aTBzS1gtbEx4UExEN1ZXOU5jQ0NxcVFiZlhTa1YwYlQzRkk4ZkdKQl9JeG1TN25ydkVzTk5PTHdzV1N2RmpNVjhqR0dDUExkV29DS21rWVN0RTE0NVJ0QkU?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】埼玉進路希望調査で市立川越普通科が2.84倍の高倍率
+📰 【高校受験2027】埼玉県進路希望調査（10/1現在）市立川越（普通）2.84倍など（リセマム）（Yahoo!ニュース / 10/29 12:48）
+・10月1日時点の埼玉県進路希望調査結果が公表され、市立川越高校（普通科）が2.84倍の高い倍率を記録した。
+・人気校への志望集中傾向が数値として表れており、今後の出願動向や他校への影響に十分注意する必要がある。
+💡 ポイント: 志望校の現時点での倍率傾向を早めに把握し、安全圏と挑戦校のバランスを見直す面談材料として活用してください。
+🔗 https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMVZWMjdpeU9WMnFxMGNoLUdnMVFkN3pwZ0Rhd3NxQi1iNUhXbzBYRE5reko2R2xHaVdJVndmMTgzdjhiYks2aTNPQzlzQlB1VEFrTHlyNUJja0FkaWRYSFkza0dteGlHMnBQVWZLdTVpaVdjeldUckRiVFhCMXBtQXk4cC1CaEI5?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】埼玉進路希望調査で市立川越普通科が2.84倍の高倍率
+📰 【高校受験2027】埼玉県進路希望調査（10/1現在）市立川越（普通）2.84倍など（リセマム）（Yahoo!ニュース / 10/29 12:48）
+・10月1日時点の埼玉県進路希望調査結果が公表され、市立川越高校（普通科）が2.84倍の高い倍率を記録した。
+・人気校への志望集中傾向が数値として表れており、今後の出願動向や他校への影響に十分注意する必要がある。
+💡 ポイント: 志望校の現時点での倍率傾向を早めに把握し、安全圏と挑戦校のバランスを見直す面談材料として活用してください。
+🔗 https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMVZWMjdpeU9WMnFxMGNoLUdnMVFkN3pwZ0Rhd3NxQi1iNUhXbzBYRE5reko2R2xHaVdJVndmMTgzdjhiYks2aTNPQzlzQlB1VEFrTHlyNUJja0FkaWRYSFkza0dteGlHMnBQVWZLdTVpaVdjeldUckRiVFhCMXBtQXk4cC1CaEI5?oc=5" data-title="埼玉進路希望調査で市立川越普通科が2.84倍の高倍率" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMVZWMjdpeU9WMnFxMGNoLUdnMVFkN3pwZ0Rhd3NxQi1iNUhXbzBYRE5reko2R2xHaVdJVndmMTgzdjhiYks2aTNPQzlzQlB1VEFrTHlyNUJja0FkaWRYSFkza0dteGlHMnBQVWZLdTVpaVdjeldUckRiVFhCMXBtQXk4cC1CaEI5?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="f479e6319b" onclick="toggleBookmark(this, 'f479e6319b')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMVZWMjdpeU9WMnFxMGNoLUdnMVFkN3pwZ0Rhd3NxQi1iNUhXbzBYRE5reko2R2xHaVdJVndmMTgzdjhiYks2aTNPQzlzQlB1VEFrTHlyNUJja0FkaWRYSFkza0dteGlHMnBQVWZLdTVpaVdjeldUckRiVFhCMXBtQXk4cC1CaEI5?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('f479e6319b')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="d50a72c5db" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">東京都教育委員会</span>
-                <span class="card-date">10/06 16:00</span>
-            </div>
-            <h3 class="card-title">障害のある受検者に対する配慮|入試案内等</h3>
-            <div class="summary-box">
-                <div class="summary-headline">東京都立入試における障害配慮の案内開始</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>東京都教育委員会が障害のある受検者に対する配慮事項や入試案内の詳細を公式に発表した。</span></div><div class="summary-point"><span class="dot">•</span><span>受験上の合理的配慮を希望する生徒や保護者に向けて、必要な手続きや申請方法が示されている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-system">📝制度・日程</span>
+                    <span class="card-source">YouTube</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 特別な配慮が必要な受験生は、出願前に必ず最新の申請手順を確認し、余裕を持って準備を進めましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/27 20:38</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">令和9年度神奈川県公立高校入試の募集定員が発表</h3>
+            <p class="card-original-title">📰 元記事: ＜令和９年度神奈川県公立高校入試＞速報！募集定員【学習塾ステップ】</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>学習塾ステップにより、令和9年度入試における神奈川県立高校の募集定員速報いち早く公開された。</span></div><div class="summary-point"><span class="dot">•</span><span>近年の受検者動向を踏まえた各校の定員増減は、志望校選びや模試の志望校判定に直結する重要な情報となる。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 最新の定員変化を確認し、志望校の合格ライン変動を予測して秋以降の学習計画をブラッシュアップしましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNRU1Hc3NRS1BkUm40QVJCbXZpNFZnMUZ3cVVVSTlCcDI0NGFyNERZZkJoanlrV3F5eGtwNVN0WlVNY0dYTmpCbzBZOGhWUkF5V1pYc0syZ2R3dGlxem55NFJ0X1UzUGRSRjk5bzNIaG04NzhBRGtSY1g1QndzU3FGUjhmN01fd05pZWF0OWNB?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】令和9年度神奈川県公立高校入試の募集定員が発表
+📰 ＜令和９年度神奈川県公立高校入試＞速報！募集定員【学習塾ステップ】（YouTube / 10/27 20:38）
+・学習塾ステップにより、令和9年度入試における神奈川県立高校の募集定員速報いち早く公開された。
+・近年の受検者動向を踏まえた各校の定員増減は、志望校選びや模試の志望校判定に直結する重要な情報となる。
+💡 ポイント: 最新の定員変化を確認し、志望校の合格ライン変動を予測して秋以降の学習計画をブラッシュアップしましょう。
+🔗 https://news.google.com/rss/articles/CBMiQkFVX3lxTE5PYmtNWW9VWlhScEZLd21EUGlsajJEZDN1WkpQeWh3UzM5LW90ZzFXcmx6cVRFZ1BkV01IQkx6UWpHZw?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】令和9年度神奈川県公立高校入試の募集定員が発表
+📰 ＜令和９年度神奈川県公立高校入試＞速報！募集定員【学習塾ステップ】（YouTube / 10/27 20:38）
+・学習塾ステップにより、令和9年度入試における神奈川県立高校の募集定員速報いち早く公開された。
+・近年の受検者動向を踏まえた各校の定員増減は、志望校選びや模試の志望校判定に直結する重要な情報となる。
+💡 ポイント: 最新の定員変化を確認し、志望校の合格ライン変動を予測して秋以降の学習計画をブラッシュアップしましょう。
+🔗 https://news.google.com/rss/articles/CBMiQkFVX3lxTE5PYmtNWW9VWlhScEZLd21EUGlsajJEZDN1WkpQeWh3UzM5LW90ZzFXcmx6cVRFZ1BkV01IQkx6UWpHZw?oc=5" data-title="令和9年度神奈川県公立高校入試の募集定員が発表" data-url="https://news.google.com/rss/articles/CBMiQkFVX3lxTE5PYmtNWW9VWlhScEZLd21EUGlsajJEZDN1WkpQeWh3UzM5LW90ZzFXcmx6cVRFZ1BkV01IQkx6UWpHZw?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="d50a72c5db" onclick="toggleBookmark(this, 'd50a72c5db')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE5PYmtNWW9VWlhScEZLd21EUGlsajJEZDN1WkpQeWh3UzM5LW90ZzFXcmx6cVRFZ1BkV01IQkx6UWpHZw?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('d50a72c5db')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="8da3d51bc7" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">千葉県公式ホームページ</span>
-                <span class="card-date">09/12 16:00</span>
-            </div>
-            <h3 class="card-title">県立高校全日制普通科の通学区域の御案内</h3>
-            <div class="summary-box">
-                <div class="summary-headline">千葉県立高校全日制普通科の通学区域案内</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>千葉県公式ホームページが県立高校全日制普通科における最新の通学区域情報を公開した。</span></div><div class="summary-point"><span class="dot">•</span><span>居住地域から出願可能な学校の範囲を正確に把握することが、志望校選定の基本条件となる。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-system">📝制度・日程</span>
+                    <span class="card-source">月刊私塾界</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 通学区域のルールを正確に理解し、自身の居住地から受験可能な高校の選択肢を確実に洗い出しましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/21 14:48</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">都立高入試の内申不問10対0判定が北園など3校に拡大</h3>
+            <p class="card-original-title">📰 元記事: 都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。</span></div><div class="summary-point"><span class="dot">•</span><span>当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE03Tmd3dGhMSmRPWjE4SE1IQ2xwY2F5dGVtc3VKQXlsdTV2R1hKMFBVS21aWXlPZkNlbV8wODhrTlhEajYwU25wTTM3cDViZDQ1VHEyUENCZ2FfY2dHX0c4LW8ybFdoWmZpNUZr?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】都立高入試の内申不問10対0判定が北園など3校に拡大
+📰 都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校（月刊私塾界 / 10/21 14:48）
+・2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。
+・当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。
+💡 ポイント: 内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。
+🔗 https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】都立高入試の内申不問10対0判定が北園など3校に拡大
+📰 都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校（月刊私塾界 / 10/21 14:48）
+・2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。
+・当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。
+💡 ポイント: 内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。
+🔗 https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5" data-title="都立高入試の内申不問10対0判定が北園など3校に拡大" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="8da3d51bc7" onclick="toggleBookmark(this, '8da3d51bc7')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('8da3d51bc7')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="f3c568bb54" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">UMKテレビ宮崎</span>
-                <span class="card-date">04/02 16:00</span>
-            </div>
-            <h3 class="card-title">県立高校入試制度が大きく変わる 2年後に「推薦・一般の一本化」と「複数志願制」導入へ 「臆することなく第1志望への挑戦を」 県立高校の魅力向上も課題に</h3>
-            <div class="summary-box">
-                <div class="summary-headline">宮崎県立高校入試：2年後に大改革を断行</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>UMKテレビ宮崎の報道によると、2年後に推薦・一般の一本化と複数志願制が導入されることが判明した。</span></div><div class="summary-point"><span class="dot">•</span><span>県立高校入試制度が大きく変わり、第1志望への挑戦を促すとともに学校の魅力向上が課題となっている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">埼玉新聞社 高校受験ナビ</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 制度変更の過渡期にあたるため、新しい入試制度の仕組みを正確に把握し、早期から対策を講じましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/20 09:34</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">久喜工業高の機械科生徒が製作した特典を図書館で配布</h3>
+            <p class="card-original-title">📰 元記事: 機械科生徒がキーホルダー製作 図書館イベント特典にー久喜工業高校</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>久喜工業高校の機械科の生徒が技術を活かしてキーホルダーを製作し、地域の図書館イベント特典として提供した。</span></div><div class="summary-point"><span class="dot">•</span><span>工業高校における実践的な学びや地域連携の成果が示されており、学校の特色を測る材料としてアピール度が高い。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 学校説明会やパンフレットだけでは分からない生徒の活動実績に注目し、工科系高への進学モチベーションを高めましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSd01mNWcwTFVWanRNMUVudkdCdzdwVm9tM1BrRHZmaVJPM2o5U2lkYXlkTXY0c2hDUWJjWWI2S182RGNXRDBFbVhpQnZjVU1yeEl6ekN5d1hTWXhSZVZqLVZRUnE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】久喜工業高の機械科生徒が製作した特典を図書館で配布
+📰 機械科生徒がキーホルダー製作 図書館イベント特典にー久喜工業高校（埼玉新聞社 高校受験ナビ / 10/20 09:34）
+・久喜工業高校の機械科の生徒が技術を活かしてキーホルダーを製作し、地域の図書館イベント特典として提供した。
+・工業高校における実践的な学びや地域連携の成果が示されており、学校の特色を測る材料としてアピール度が高い。
+💡 ポイント: 学校説明会やパンフレットだけでは分からない生徒の活動実績に注目し、工科系高への進学モチベーションを高めましょう。
+🔗 https://news.google.com/rss/articles/CBMi4gJBVV95cUxQdXVJR2pILWlaSnUwNm80ODRRQlc2YmNkN0lMTmlmaFl0Z0V6VFhWbnR1cU5FanE0WHBLVm0ydTRDTTYzSlVDZUk0OW1ic19rMW8xZlRZeVhNeWlQNWt2d1l5ZFF3WENMSVRIQW9PUU5iamFQVjRGNUJVcVZSU0NwMG4teFZVOUMtZ1hsQ0Q1R0lXRmc5Z04wM2lKa1pXckEzdkNLVmJ0aGk4TVFaR1NwM2VDWVJUcGpjN2FucVZ3UVdMTjVoMWh0NVhETE1MemxCQVdwU1JrQk9HOEFoZWJpdlFpUGhRQVp2d3NvMGJlbTNlZjFoN3lBSVc0bHBBVjUweFhBMjlRZjhXOTJybVJXMUpkU3JBMnQ4ckkwQzhrcnVpaDI5QmhURWJEUGE1MnF4TTZkeXd3SjBZam8zQjVFVVFwckY3aHRRWU5hNDA5LVo3VU9UdFp1WDVBU3BRb1J6NFE?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】久喜工業高の機械科生徒が製作した特典を図書館で配布
+📰 機械科生徒がキーホルダー製作 図書館イベント特典にー久喜工業高校（埼玉新聞社 高校受験ナビ / 10/20 09:34）
+・久喜工業高校の機械科の生徒が技術を活かしてキーホルダーを製作し、地域の図書館イベント特典として提供した。
+・工業高校における実践的な学びや地域連携の成果が示されており、学校の特色を測る材料としてアピール度が高い。
+💡 ポイント: 学校説明会やパンフレットだけでは分からない生徒の活動実績に注目し、工科系高への進学モチベーションを高めましょう。
+🔗 https://news.google.com/rss/articles/CBMi4gJBVV95cUxQdXVJR2pILWlaSnUwNm80ODRRQlc2YmNkN0lMTmlmaFl0Z0V6VFhWbnR1cU5FanE0WHBLVm0ydTRDTTYzSlVDZUk0OW1ic19rMW8xZlRZeVhNeWlQNWt2d1l5ZFF3WENMSVRIQW9PUU5iamFQVjRGNUJVcVZSU0NwMG4teFZVOUMtZ1hsQ0Q1R0lXRmc5Z04wM2lKa1pXckEzdkNLVmJ0aGk4TVFaR1NwM2VDWVJUcGpjN2FucVZ3UVdMTjVoMWh0NVhETE1MemxCQVdwU1JrQk9HOEFoZWJpdlFpUGhRQVp2d3NvMGJlbTNlZjFoN3lBSVc0bHBBVjUweFhBMjlRZjhXOTJybVJXMUpkU3JBMnQ4ckkwQzhrcnVpaDI5QmhURWJEUGE1MnF4TTZkeXd3SjBZam8zQjVFVVFwckY3aHRRWU5hNDA5LVo3VU9UdFp1WDVBU3BRb1J6NFE?oc=5" data-title="久喜工業高の機械科生徒が製作した特典を図書館で配布" data-url="https://news.google.com/rss/articles/CBMi4gJBVV95cUxQdXVJR2pILWlaSnUwNm80ODRRQlc2YmNkN0lMTmlmaFl0Z0V6VFhWbnR1cU5FanE0WHBLVm0ydTRDTTYzSlVDZUk0OW1ic19rMW8xZlRZeVhNeWlQNWt2d1l5ZFF3WENMSVRIQW9PUU5iamFQVjRGNUJVcVZSU0NwMG4teFZVOUMtZ1hsQ0Q1R0lXRmc5Z04wM2lKa1pXckEzdkNLVmJ0aGk4TVFaR1NwM2VDWVJUcGpjN2FucVZ3UVdMTjVoMWh0NVhETE1MemxCQVdwU1JrQk9HOEFoZWJpdlFpUGhRQVp2d3NvMGJlbTNlZjFoN3lBSVc0bHBBVjUweFhBMjlRZjhXOTJybVJXMUpkU3JBMnQ4ckkwQzhrcnVpaDI5QmhURWJEUGE1MnF4TTZkeXd3SjBZam8zQjVFVVFwckY3aHRRWU5hNDA5LVo3VU9UdFp1WDVBU3BRb1J6NFE?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="f3c568bb54" onclick="toggleBookmark(this, 'f3c568bb54')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMi4gJBVV95cUxQdXVJR2pILWlaSnUwNm80ODRRQlc2YmNkN0lMTmlmaFl0Z0V6VFhWbnR1cU5FanE0WHBLVm0ydTRDTTYzSlVDZUk0OW1ic19rMW8xZlRZeVhNeWlQNWt2d1l5ZFF3WENMSVRIQW9PUU5iamFQVjRGNUJVcVZSU0NwMG4teFZVOUMtZ1hsQ0Q1R0lXRmc5Z04wM2lKa1pXckEzdkNLVmJ0aGk4TVFaR1NwM2VDWVJUcGpjN2FucVZ3UVdMTjVoMWh0NVhETE1MemxCQVdwU1JrQk9HOEFoZWJpdlFpUGhRQVp2d3NvMGJlbTNlZjFoN3lBSVc0bHBBVjUweFhBMjlRZjhXOTJybVJXMUpkU3JBMnQ4ckkwQzhrcnVpaDI5QmhURWJEUGE1MnF4TTZkeXd3SjBZam8zQjVFVVFwckY3aHRRWU5hNDA5LVo3VU9UdFp1WDVBU3BRb1J6NFE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('f3c568bb54')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="e760bd0ef6" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">下野新聞社</span>
-                <span class="card-date">09/01 16:00</span>
-            </div>
-            <h3 class="card-title">栃木県立高校入試は2027年度からどう変わる？ 日程一本化、再募集…《時系列まとめ》</h3>
-            <div class="summary-box">
-                <div class="summary-headline">栃木県立高校入試：2027年度の変更点整理</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>下野新聞社が2027年度からの栃木県立高校入試における日程一本化や再募集の時系列まとめを報じた。</span></div><div class="summary-point"><span class="dot">•</span><span>入試日程の大幅な見直しに伴い、中学生の受検スケジュールや準備の進め方に大きな影響を与える。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">埼玉新聞社 高校受験ナビ</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 2027年度入試のスケジュール変化に備え、中学1・2年生段階から新しい日程を意識した学習計画を立てましょう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/14 09:44</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">埼玉県高校新人大会のテニスおよび柔道の結果が決定</h3>
+            <p class="card-original-title">📰 元記事: 県高校新人大会 テニス 柔道 結果</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>埼玉新聞社が運営する高校受験ナビにて、県高校新人大会のテニス競技と柔道競技の試合結果が詳細に報じられた。</span></div><div class="summary-point"><span class="dot">•</span><span>スポーツ推薦や部活動の盛んな学校を志望する中学生にとって、各高校の部活実績を知るための有用な情報源となる。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 文武両道を目指す受験生は、志望校の部活動の戦績や活動環境を入試情報の選定基準の一つとしてチェックしましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnRFFjc0tVYjRkaXJQMWNuNmd2R0lES0xZMkhVTnk3MDB5T1NtQndQdDNRX0JFaktSWlFvM2ZLYWtBZ3hjOUwyZXhHNGFrR0NBLTRYWkV5bGpGMGM?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】埼玉県高校新人大会のテニスおよび柔道の結果が決定
+📰 県高校新人大会 テニス 柔道 結果（埼玉新聞社 高校受験ナビ / 10/14 09:44）
+・埼玉新聞社が運営する高校受験ナビにて、県高校新人大会のテニス競技と柔道競技の試合結果が詳細に報じられた。
+・スポーツ推薦や部活動の盛んな学校を志望する中学生にとって、各高校の部活実績を知るための有用な情報源となる。
+💡 ポイント: 文武両道を目指す受験生は、志望校の部活動の戦績や活動環境を入試情報の選定基準の一つとしてチェックしましょう。
+🔗 https://news.google.com/rss/articles/CBMipgJBVV95cUxOT0Z1R3hldllQd0x6enRnYlBCbEFGS3BMUkkzbGdONnlLSEhVUXFGcUQzTjU0LVJMTXNLZG9uSnlCbVQ2MlAzWDJ5M1JMeDZaRlVoYUJISlpxWjE3QWRla0NaQ0hCNXZ5N3JsTVlkc0tfY2hOUWN2bWtuN2lBOUh6eFM4cVFoa3ZGRXc1U1hoWlRTQnItLVRLcXpsd2d6dlJ2dzBtQnJKX294RUoyRGM0bzVablpKcVExNjB6OTR4RDBCLUhQaTJ6dWR3MDc1VWNaRHFVci00d2FZWmRQMW1uamZVZ1lnRFZRT2FCVHJ6T3k1aUF2N2NSSThXTE5MUzY4TnlqM2xidloxTnNudlEtTjdnSlNUYXdWMXJfRXJ1a3BHcWFzOUE?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】埼玉県高校新人大会のテニスおよび柔道の結果が決定
+📰 県高校新人大会 テニス 柔道 結果（埼玉新聞社 高校受験ナビ / 10/14 09:44）
+・埼玉新聞社が運営する高校受験ナビにて、県高校新人大会のテニス競技と柔道競技の試合結果が詳細に報じられた。
+・スポーツ推薦や部活動の盛んな学校を志望する中学生にとって、各高校の部活実績を知るための有用な情報源となる。
+💡 ポイント: 文武両道を目指す受験生は、志望校の部活動の戦績や活動環境を入試情報の選定基準の一つとしてチェックしましょう。
+🔗 https://news.google.com/rss/articles/CBMipgJBVV95cUxOT0Z1R3hldllQd0x6enRnYlBCbEFGS3BMUkkzbGdONnlLSEhVUXFGcUQzTjU0LVJMTXNLZG9uSnlCbVQ2MlAzWDJ5M1JMeDZaRlVoYUJISlpxWjE3QWRla0NaQ0hCNXZ5N3JsTVlkc0tfY2hOUWN2bWtuN2lBOUh6eFM4cVFoa3ZGRXc1U1hoWlRTQnItLVRLcXpsd2d6dlJ2dzBtQnJKX294RUoyRGM0bzVablpKcVExNjB6OTR4RDBCLUhQaTJ6dWR3MDc1VWNaRHFVci00d2FZWmRQMW1uamZVZ1lnRFZRT2FCVHJ6T3k1aUF2N2NSSThXTE5MUzY4TnlqM2xidloxTnNudlEtTjdnSlNUYXdWMXJfRXJ1a3BHcWFzOUE?oc=5" data-title="埼玉県高校新人大会のテニスおよび柔道の結果が決定" data-url="https://news.google.com/rss/articles/CBMipgJBVV95cUxOT0Z1R3hldllQd0x6enRnYlBCbEFGS3BMUkkzbGdONnlLSEhVUXFGcUQzTjU0LVJMTXNLZG9uSnlCbVQ2MlAzWDJ5M1JMeDZaRlVoYUJISlpxWjE3QWRla0NaQ0hCNXZ5N3JsTVlkc0tfY2hOUWN2bWtuN2lBOUh6eFM4cVFoa3ZGRXc1U1hoWlRTQnItLVRLcXpsd2d6dlJ2dzBtQnJKX294RUoyRGM0bzVablpKcVExNjB6OTR4RDBCLUhQaTJ6dWR3MDc1VWNaRHFVci00d2FZWmRQMW1uamZVZ1lnRFZRT2FCVHJ6T3k1aUF2N2NSSThXTE5MUzY4TnlqM2xidloxTnNudlEtTjdnSlNUYXdWMXJfRXJ1a3BHcWFzOUE?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="e760bd0ef6" onclick="toggleBookmark(this, 'e760bd0ef6')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMipgJBVV95cUxOT0Z1R3hldllQd0x6enRnYlBCbEFGS3BMUkkzbGdONnlLSEhVUXFGcUQzTjU0LVJMTXNLZG9uSnlCbVQ2MlAzWDJ5M1JMeDZaRlVoYUJISlpxWjE3QWRla0NaQ0hCNXZ5N3JsTVlkc0tfY2hOUWN2bWtuN2lBOUh6eFM4cVFoa3ZGRXc1U1hoWlRTQnItLVRLcXpsd2d6dlJ2dzBtQnJKX294RUoyRGM0bzVablpKcVExNjB6OTR4RDBCLUhQaTJ6dWR3MDc1VWNaRHFVci00d2FZWmRQMW1uamZVZ1lnRFZRT2FCVHJ6T3k1aUF2N2NSSThXTE5MUzY4TnlqM2xidloxTnNudlEtTjdnSlNUYXdWMXJfRXJ1a3BHcWFzOUE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('e760bd0ef6')">
+                    <span>元記事</span>
+                    <span>↗</span>
+                </a>
+            </div>
+        </article>
+        
+
+        <article class="news-card" data-article-id="037df28199" data-is-new="false">
+            <div class="card-header">
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-system">📝制度・日程</span>
+                    <span class="card-source">valuepress</span>
+                </div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/13 16:00</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">洋々が日比谷・西高などの推薦向け集団討論対策を開催</h3>
+            <p class="card-original-title">📰 元記事: 日比谷高校・西高校など都立高校推薦入試向け集団討論対策講座を12月・1月に開催【高校推薦入試の個別指導塾 洋々】</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>個別指導塾の洋々が、日比谷高校や西高校をはじめとする都立トップ校の推薦入試に向けた集団討論対策講座を冬期に実施する。</span></div><div class="summary-point"><span class="dot">•</span><span>難関校の推薦入試で合否を分ける集団討論や自己PRの対策を、実践的な形式で集中的に学べるプログラムとなっている。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 都立トップ校の推薦受検を控える生徒は、他者との議論を通じた発信力を磨くために専門対策講座の活用を検討してください。</div>
+            </div>
+            <div class="card-footer">
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【高校受験】洋々が日比谷・西高などの推薦向け集団討論対策を開催
+📰 日比谷高校・西高校など都立高校推薦入試向け集団討論対策講座を12月・1月に開催【高校推薦入試の個別指導塾 洋々】（valuepress / 10/13 16:00）
+・個別指導塾の洋々が、日比谷高校や西高校をはじめとする都立トップ校の推薦入試に向けた集団討論対策講座を冬期に実施する。
+・難関校の推薦入試で合否を分ける集団討論や自己PRの対策を、実践的な形式で集中的に学べるプログラムとなっている。
+💡 ポイント: 都立トップ校の推薦受検を控える生徒は、他者との議論を通じた発信力を磨くために専門対策講座の活用を検討してください。
+🔗 https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YamZsOXlZVVpjVUZwNlI4eVhzZC0wbFM1cTg3eXlkSThjRGtDZ3N4UTR3ZDJJWHIydzRBeGxzelc3MDBVZkR5OVA3TGFDM3RoOHJrOTlTTmY0blk?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【高校受験】洋々が日比谷・西高などの推薦向け集団討論対策を開催
+📰 日比谷高校・西高校など都立高校推薦入試向け集団討論対策講座を12月・1月に開催【高校推薦入試の個別指導塾 洋々】（valuepress / 10/13 16:00）
+・個別指導塾の洋々が、日比谷高校や西高校をはじめとする都立トップ校の推薦入試に向けた集団討論対策講座を冬期に実施する。
+・難関校の推薦入試で合否を分ける集団討論や自己PRの対策を、実践的な形式で集中的に学べるプログラムとなっている。
+💡 ポイント: 都立トップ校の推薦受検を控える生徒は、他者との議論を通じた発信力を磨くために専門対策講座の活用を検討してください。
+🔗 https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YamZsOXlZVVpjVUZwNlI4eVhzZC0wbFM1cTg3eXlkSThjRGtDZ3N4UTR3ZDJJWHIydzRBeGxzelc3MDBVZkR5OVA3TGFDM3RoOHJrOTlTTmY0blk?oc=5" data-title="洋々が日比谷・西高などの推薦向け集団討論対策を開催" data-url="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YamZsOXlZVVpjVUZwNlI4eVhzZC0wbFM1cTg3eXlkSThjRGtDZ3N4UTR3ZDJJWHIydzRBeGxzelc3MDBVZkR5OVA3TGFDM3RoOHJrOTlTTmY0blk?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="037df28199" onclick="toggleBookmark(this, '037df28199')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YamZsOXlZVVpjVUZwNlI4eVhzZC0wbFM1cTg3eXlkSThjRGtDZ3N4UTR3ZDJJWHIydzRBeGxzelc3MDBVZkR5OVA3TGFDM3RoOHJrOTlTTmY0blk?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('037df28199')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
@@ -312,116 +722,306 @@
             <div class="section-intro univ">
                 <div class="intro-icon">🎓</div>
                 <div>
-                    <h2>大学受験 最新ニュース</h2>
-                    <p>共通テスト、新課程、国公立・私立大動向、総合型選抜の要約まとめ</p>
+                    <h2>大学受験 最新ニュース（最新順）</h2>
+                    <p>千葉大・首都圏難関大・GMARCH・共通テスト・総合型選抜の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
                 
-        <article class="news-card">
+        <article class="news-card" data-article-id="b0629cdc4a" data-is-new="true">
             <div class="card-header">
-                <span class="card-source">リセマム</span>
-                <span class="card-date">10/28 17:45</span>
-            </div>
-            <h3 class="card-title">【大学受験2027】首都圏「医学系」国公私立大学…学園祭7選</h3>
-            <div class="summary-box">
-                <div class="summary-headline">首都圏の医学系国公私立大、学園祭7選</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>2027年入試を見据え、首都圏の医学系を擁する国公私立大学の学園祭情報が注目を集めている。</span></div><div class="summary-point"><span class="dot">•</span><span>キャンパスの雰囲気や研究の特色を生で知る絶好の機会であり、受験モチベーション向上に直結する。</span></div>
+                <div class="card-badges">
+                    <span class="badge-new">🔥 NEW</span>
+                    <span class="topic-badge badge-system">📝制度・日程</span>
+                    <span class="card-source">PR TIMES</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 志望校のリアルな雰囲気を体感するため、秋の学園祭を活用してモチベーションを高めよう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">昨日 11:00</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">Ｚ会が大学受験の秋フェアを開催</h3>
+            <p class="card-original-title">📰 元記事: 【Ｚ会の本】大学受験の秋を応援！全国書店にて「学参処方箋」＆「共通テスト攻略」秋フェアを10月13日（火）より開催</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>10月13日より全国書店にて、参考書選びを支援する「学参処方箋」および共通テスト攻略フェアが開催。</span></div><div class="summary-point"><span class="dot">•</span><span>受験の天王山である秋以降の学習効率を高めるため、最新の受験対策参考書や問題集をまとめて比較可能。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 秋以降は基礎の総復習と演習量のバランスが合否を分けます。書店フェアを活用して現在の学力に直結する参考書を選定しましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yLTJJTjNQeVBwdnFCTF9CU1BtZm16cVFmRmRmY2p6Q25aQVR6WjUyN0VsT0todEF1cXB2cTRjeTRoT0xHUUJiT0J6NlRoajNtb0Q2MG1LdkhCd3VG?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】Ｚ会が大学受験の秋フェアを開催
+📰 【Ｚ会の本】大学受験の秋を応援！全国書店にて「学参処方箋」＆「共通テスト攻略」秋フェアを10月13日（火）より開催（PR TIMES / 昨日 11:00）
+・10月13日より全国書店にて、参考書選びを支援する「学参処方箋」および共通テスト攻略フェアが開催。
+・受験の天王山である秋以降の学習効率を高めるため、最新の受験対策参考書や問題集をまとめて比較可能。
+💡 ポイント: 秋以降は基礎の総復習と演習量のバランスが合否を分けます。書店フェアを活用して現在の学力に直結する参考書を選定しましょう。
+🔗 https://news.google.com/rss/articles/CBMiakFVX3lxTE1XWTNLcW5pN04zNWstaDhyajF0WkJncGtMOUtzN2dOa0Z4Rjl3ZUE4OUFmTDFpYzV6YVpQcDQ0SWtiYVRoSzFmZjMwNzM0emVjWmZrZHBQUy1HQ0xyWDJST0hSa0xVeV9FelE?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】Ｚ会が大学受験の秋フェアを開催
+📰 【Ｚ会の本】大学受験の秋を応援！全国書店にて「学参処方箋」＆「共通テスト攻略」秋フェアを10月13日（火）より開催（PR TIMES / 昨日 11:00）
+・10月13日より全国書店にて、参考書選びを支援する「学参処方箋」および共通テスト攻略フェアが開催。
+・受験の天王山である秋以降の学習効率を高めるため、最新の受験対策参考書や問題集をまとめて比較可能。
+💡 ポイント: 秋以降は基礎の総復習と演習量のバランスが合否を分けます。書店フェアを活用して現在の学力に直結する参考書を選定しましょう。
+🔗 https://news.google.com/rss/articles/CBMiakFVX3lxTE1XWTNLcW5pN04zNWstaDhyajF0WkJncGtMOUtzN2dOa0Z4Rjl3ZUE4OUFmTDFpYzV6YVpQcDQ0SWtiYVRoSzFmZjMwNzM0emVjWmZrZHBQUy1HQ0xyWDJST0hSa0xVeV9FelE?oc=5" data-title="Ｚ会が大学受験の秋フェアを開催" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE1XWTNLcW5pN04zNWstaDhyajF0WkJncGtMOUtzN2dOa0Z4Rjl3ZUE4OUFmTDFpYzV6YVpQcDQ0SWtiYVRoSzFmZjMwNzM0emVjWmZrZHBQUy1HQ0xyWDJST0hSa0xVeV9FelE?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="b0629cdc4a" onclick="toggleBookmark(this, 'b0629cdc4a')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1XWTNLcW5pN04zNWstaDhyajF0WkJncGtMOUtzN2dOa0Z4Rjl3ZUE4OUFmTDFpYzV6YVpQcDQ0SWtiYVRoSzFmZjMwNzM0emVjWmZrZHBQUy1HQ0xyWDJST0hSa0xVeV9FelE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('b0629cdc4a')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="a6cc7a9e24" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">毎日新聞</span>
-                <span class="card-date">10/14 15:44</span>
-            </div>
-            <h3 class="card-title">［PR］大学受験NOW 27年度 難関国立大は志望減、私立大は人気継続</h3>
-            <div class="summary-box">
-                <div class="summary-headline">27年度難関国立は志望減、私立は人気</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>毎日新聞の大学受験NOWによると、27年度入試では難関国立大で志望者が減少する傾向にある。</span></div><div class="summary-point"><span class="dot">•</span><span>一方で私立大学への人気は引き続き高く、安全志向や併願パターンの見直しが求められている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">リセマム</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 国立大の志望動向の変化に惑わされず、私立大の最新の人気傾向も踏まえた戦略的な併願作戦を立てよう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/28 17:45</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">首都圏医学系7大学で学園祭開催</h3>
+            <p class="card-original-title">📰 元記事: 【大学受験2027】首都圏「医学系」国公私立大学…学園祭7選</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2027年度入試の受験生向けに、首都圏の国公私立の医学系大学が学園祭を通じてキャンパスを公開。</span></div><div class="summary-point"><span class="dot">•</span><span>志望動機や面接対策の材料集めとして、現役医学生の雰囲気を直接確認できる貴重な機会となっている。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 医学部受験では強い志望動機が不可欠です。学園祭やキャンパスビジットを活用してモチベーションを高め、面接資料のネタを収集しましょう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ObENTdmVaLXB4OXV5NlNzNHdJN2FHa2RXR1o5aWRlOHFZR3o0WWw3VFF4QXc1OWNoUGQwbjEyMjROYU4wU25uSHdXVDd4Mkw0VXBVYw?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】首都圏医学系7大学で学園祭開催
+📰 【大学受験2027】首都圏「医学系」国公私立大学…学園祭7選（リセマム / 10/28 17:45）
+・2027年度入試の受験生向けに、首都圏の国公私立の医学系大学が学園祭を通じてキャンパスを公開。
+・志望動機や面接対策の材料集めとして、現役医学生の雰囲気を直接確認できる貴重な機会となっている。
+💡 ポイント: 医学部受験では強い志望動機が不可欠です。学園祭やキャンパスビジットを活用してモチベーションを高め、面接資料のネタを収集しましょう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yLTJJTjNQeVBwdnFCTF9CU1BtZm16cVFmRmRmY2p6Q25aQVR6WjUyN0VsT0todEF1cXB2cTRjeTRoT0xHUUJiT0J6NlRoajNtb0Q2MG1LdkhCd3VG?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】首都圏医学系7大学で学園祭開催
+📰 【大学受験2027】首都圏「医学系」国公私立大学…学園祭7選（リセマム / 10/28 17:45）
+・2027年度入試の受験生向けに、首都圏の国公私立の医学系大学が学園祭を通じてキャンパスを公開。
+・志望動機や面接対策の材料集めとして、現役医学生の雰囲気を直接確認できる貴重な機会となっている。
+💡 ポイント: 医学部受験では強い志望動機が不可欠です。学園祭やキャンパスビジットを活用してモチベーションを高め、面接資料のネタを収集しましょう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yLTJJTjNQeVBwdnFCTF9CU1BtZm16cVFmRmRmY2p6Q25aQVR6WjUyN0VsT0todEF1cXB2cTRjeTRoT0xHUUJiT0J6NlRoajNtb0Q2MG1LdkhCd3VG?oc=5" data-title="首都圏医学系7大学で学園祭開催" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yLTJJTjNQeVBwdnFCTF9CU1BtZm16cVFmRmRmY2p6Q25aQVR6WjUyN0VsT0todEF1cXB2cTRjeTRoT0xHUUJiT0J6NlRoajNtb0Q2MG1LdkhCd3VG?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="a6cc7a9e24" onclick="toggleBookmark(this, 'a6cc7a9e24')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yLTJJTjNQeVBwdnFCTF9CU1BtZm16cVFmRmRmY2p6Q25aQVR6WjUyN0VsT0todEF1cXB2cTRjeTRoT0xHUUJiT0J6NlRoajNtb0Q2MG1LdkhCd3VG?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('a6cc7a9e24')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="8e6c26adf1" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">高校生新聞</span>
-                <span class="card-date">10/27 15:00</span>
-            </div>
-            <h3 class="card-title">2027年大学入試予測・国公立編 東大志望者が大幅増、「難関大志向」が鮮明に</h3>
-            <div class="summary-box">
-                <div class="summary-headline">2027年国公立編、東大志望者が大幅増</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>高校生新聞の予測によると、2027年入試の国公立編では東大志望者が大幅に増加している。</span></div><div class="summary-point"><span class="dot">•</span><span>上位層を中心に「難関大志向」が非常に鮮明になっており、ハイレベルな競争が予想される。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">リセマム</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 難関国立大を目指す受験生は、早期からの徹底した基礎固めと過去問分析による高い得点力が不可欠だ。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/27 19:45</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">聖学院大が2027年新入試で外国ルーツの生徒支援を導入</h3>
+            <p class="card-original-title">📰 元記事: 【大学受験2027】聖学院大が新入試、外国ルーツ生徒の学びを支援</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2027年度入試より外国ルーツを持つ生徒の多様な学びを支える新たな選抜方式を導入する。</span></div><div class="summary-point"><span class="dot">•</span><span>グローバル化が進む大学受験において、バックグラウンドに配慮した評価軸が注目されている。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 外国ルーツの生徒を持つ家庭は、2027年以降の総合型や推薦の出願資格を早めに確認しておこう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlVEpXQmNCYmlfeHBKbFdVVzM3clUxN3pGNXRiazJaNkRkS2VzM1FTR3U2a3Q2Wk50VjNDdVBXVVZGaU96YlF2VWs3ajJhcmtuLXg3OHNsaVRTMlpF?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】聖学院大が2027年新入試で外国ルーツの生徒支援を導入
+📰 【大学受験2027】聖学院大が新入試、外国ルーツ生徒の学びを支援（リセマム / 10/27 19:45）
+・2027年度入試より外国ルーツを持つ生徒の多様な学びを支える新たな選抜方式を導入する。
+・グローバル化が進む大学受験において、バックグラウンドに配慮した評価軸が注目されている。
+💡 ポイント: 外国ルーツの生徒を持つ家庭は、2027年以降の総合型や推薦の出願資格を早めに確認しておこう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMWHdleVZISlVmbHFORXloZTV2T05JTno0STJLbnFscUtXd2hxb21YcEtkUnBCQll3QVlIT193ODkzSnh2ck92RmtvSHZudFpOZGNPcXlxWnNBb2JB?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】聖学院大が2027年新入試で外国ルーツの生徒支援を導入
+📰 【大学受験2027】聖学院大が新入試、外国ルーツ生徒の学びを支援（リセマム / 10/27 19:45）
+・2027年度入試より外国ルーツを持つ生徒の多様な学びを支える新たな選抜方式を導入する。
+・グローバル化が進む大学受験において、バックグラウンドに配慮した評価軸が注目されている。
+💡 ポイント: 外国ルーツの生徒を持つ家庭は、2027年以降の総合型や推薦の出願資格を早めに確認しておこう。
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMWHdleVZISlVmbHFORXloZTV2T05JTno0STJLbnFscUtXd2hxb21YcEtkUnBCQll3QVlIT193ODkzSnh2ck92RmtvSHZudFpOZGNPcXlxWnNBb2JB?oc=5" data-title="聖学院大が2027年新入試で外国ルーツの生徒支援を導入" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMWHdleVZISlVmbHFORXloZTV2T05JTno0STJLbnFscUtXd2hxb21YcEtkUnBCQll3QVlIT193ODkzSnh2ck92RmtvSHZudFpOZGNPcXlxWnNBb2JB?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="8e6c26adf1" onclick="toggleBookmark(this, '8e6c26adf1')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMWHdleVZISlVmbHFORXloZTV2T05JTno0STJLbnFscUtXd2hxb21YcEtkUnBCQll3QVlIT193ODkzSnh2ck92RmtvSHZudFpOZGNPcXlxWnNBb2JB?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('8e6c26adf1')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="eea0dcc304" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">ダイヤモンド・オンライン</span>
-                <span class="card-date">10/22 13:35</span>
-            </div>
-            <h3 class="card-title">【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説</h3>
-            <div class="summary-box">
-                <div class="summary-headline">2027年度MARCHの合格者数動向</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>ダイヤモンド・オンラインにて、高校生専門塾講師がMARCHで合格者数が増える大学・学部を解説。</span></div><div class="summary-point"><span class="dot">•</span><span>定員厳格化の動向や学部ごとの募集枠の変更が、合格難易度や選択に大きな影響を与えている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-chiba">📍千葉注目</span>
+                    <span class="card-source">Yahoo!ニュース</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> MARCH志望者は、各大学・学部の合格者数増減トレンドをいち早く把握し、出願校を慎重に選定しよう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/26 19:38</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">2027進研模試の合格可能性偏差値</h3>
+            <p class="card-original-title">📰 元記事: 【大学受験2027】進研模試「合格可能性偏差値」第1回（リセマム）</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2027年度入試に対応する第1回進研模試の合格可能性偏差値データがリセマム等で公開された。</span></div><div class="summary-point"><span class="dot">•</span><span>現高2生が新課程入試を見据え、自身の現時点での全国的な立ち位置と志望校の難易度を把握する基準となる。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 模試結果は判定だけに一喜一憂せず、分野別正答率から弱点を特定し、冬期講習までに克服する単元を明確化してください。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1kWkxpcnVJejJvUzY0eXJpX0JybGQtaXpBdzJtakJDQnYzNmhGV2djSHBHVm0zWWdibjAzakZCWEt3MEVicXBCQUtISlBRM2ZoTko3My1CbWw1MlM0Y2l0bE5JbVhUdGpUWFVydnZwNFB4SjA?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】2027進研模試の合格可能性偏差値
+📰 【大学受験2027】進研模試「合格可能性偏差値」第1回（リセマム）（Yahoo!ニュース / 10/26 19:38）
+・2027年度入試に対応する第1回進研模試の合格可能性偏差値データがリセマム等で公開された。
+・現高2生が新課程入試を見据え、自身の現時点での全国的な立ち位置と志望校の難易度を把握する基準となる。
+💡 ポイント: 模試結果は判定だけに一喜一憂せず、分野別正答率から弱点を特定し、冬期講習までに克服する単元を明確化してください。
+🔗 https://news.google.com/rss/articles/CBMif0FVX3lxTE96TlBwWGdHRWlISEJGT3lZRjYwV3NXOUpnby1IbmJkeVd2dWNEY3JvUGZJY0NWSXFOSFFtaFZ6Vkl3Rm54OTJTakM0cTRrckRqNGlmWFR6WWlsRXI2VEdnOC13dVVTUjgzXzlQdzBMNWo3ZUhMX0FlV3pZNXY0RFE?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】2027進研模試の合格可能性偏差値
+📰 【大学受験2027】進研模試「合格可能性偏差値」第1回（リセマム）（Yahoo!ニュース / 10/26 19:38）
+・2027年度入試に対応する第1回進研模試の合格可能性偏差値データがリセマム等で公開された。
+・現高2生が新課程入試を見据え、自身の現時点での全国的な立ち位置と志望校の難易度を把握する基準となる。
+💡 ポイント: 模試結果は判定だけに一喜一憂せず、分野別正答率から弱点を特定し、冬期講習までに克服する単元を明確化してください。
+🔗 https://news.google.com/rss/articles/CBMif0FVX3lxTE96TlBwWGdHRWlISEJGT3lZRjYwV3NXOUpnby1IbmJkeVd2dWNEY3JvUGZJY0NWSXFOSFFtaFZ6Vkl3Rm54OTJTakM0cTRrckRqNGlmWFR6WWlsRXI2VEdnOC13dVVTUjgzXzlQdzBMNWo3ZUhMX0FlV3pZNXY0RFE?oc=5" data-title="2027進研模試の合格可能性偏差値" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE96TlBwWGdHRWlISEJGT3lZRjYwV3NXOUpnby1IbmJkeVd2dWNEY3JvUGZJY0NWSXFOSFFtaFZ6Vkl3Rm54OTJTakM0cTRrckRqNGlmWFR6WWlsRXI2VEdnOC13dVVTUjgzXzlQdzBMNWo3ZUhMX0FlV3pZNXY0RFE?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="eea0dcc304" onclick="toggleBookmark(this, 'eea0dcc304')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE96TlBwWGdHRWlISEJGT3lZRjYwV3NXOUpnby1IbmJkeVd2dWNEY3JvUGZJY0NWSXFOSFFtaFZ6Vkl3Rm54OTJTakM0cTRrckRqNGlmWFR6WWlsRXI2VEdnOC13dVVTUjgzXzlQdzBMNWo3ZUhMX0FlV3pZNXY0RFE?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('eea0dcc304')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
         </article>
         
 
-        <article class="news-card">
+        <article class="news-card" data-article-id="8bc08c3d6e" data-is-new="false">
             <div class="card-header">
-                <span class="card-source">みんなの学校新聞</span>
-                <span class="card-date">10/16 16:00</span>
-            </div>
-            <h3 class="card-title">国公立大の一般選抜枠が縮小 総合型・学校推薦型は拡大続く 理工系「女子枠」は42大学53学部に 2027年度大学入試ー文科省</h3>
-            <div class="summary-box">
-                <div class="summary-headline">国公立一般縮小と理工系女子枠の拡大</div>
-                <div class="summary-points">
-                    <div class="summary-point"><span class="dot">•</span><span>文科省発表によると、国公立大の一般選抜枠が縮小し、総合型・学校推薦型は拡大が続いている。</span></div><div class="summary-point"><span class="dot">•</span><span>理工系の「女子枠」は42大学53学部に広がり、27年度入試の大きなトピックとなっている。</span></div>
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-cert">🏅英語・検定</span>
+                    <span class="card-source">Yahoo!ニュース</span>
                 </div>
-                <div class="summary-takeaway">💡 <strong>ポイント:</strong> 一般選抜の狭き門化に備えつつ、女子生徒は新設される理工系の女子枠なども視野に入れた多様な受験準備を進めよう。</div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/25 09:10</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">共通テスト検定料は3教科以上で1万8000円に設定</h3>
+            <p class="card-original-title">📰 元記事: 【大学入試】共通テスト検定料は教科数で変わる？3教科以上は1万8000円 (LIMO)</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>大学入学共通テストの検定料は受験する教科数に応じて金額が変動する仕組みとなっている。</span></div><div class="summary-point"><span class="dot">•</span><span>3教科以上の受験の場合は一律で1万8000円が必要となり、出願時の予算管理が重要である。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 受験校の選定と併せて、共通テストの受験教科数を早期に決定し検定料の予算を計画的に確保しよう。</div>
             </div>
             <div class="card-footer">
-                <a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBfenlqd210c0loVVhOYVdtNENIZmY5dG5OUjNBcUJKTlJxOWE4NVgzZnJkXzdlUmhHdU1LNEpXdkFjV0lFZVZZX21R?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more">
-                    <span>元記事を読む</span>
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】共通テスト検定料は3教科以上で1万8000円に設定
+📰 【大学入試】共通テスト検定料は教科数で変わる？3教科以上は1万8000円 (LIMO)（Yahoo!ニュース / 10/25 09:10）
+・大学入学共通テストの検定料は受験する教科数に応じて金額が変動する仕組みとなっている。
+・3教科以上の受験の場合は一律で1万8000円が必要となり、出願時の予算管理が重要である。
+💡 ポイント: 受験校の選定と併せて、共通テストの受験教科数を早期に決定し検定料の予算を計画的に確保しよう。
+🔗 https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHNKOTByZ01JTHY1Q3preVN1bmJua2htTEN6SnlPc3RFc3pHSzlNRGMtX0kxR2RLdksxS0dGOUNSRm9DanhKQVl2NHJfQ0lnR0g1MlE1dlNIWkZvMElLUTl4SkptYnkyTjIxUnlBXy1lVkMzTi1YYjU5cFJ0TFkzZ0JJRjkyWFRlRk12alZB?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】共通テスト検定料は3教科以上で1万8000円に設定
+📰 【大学入試】共通テスト検定料は教科数で変わる？3教科以上は1万8000円 (LIMO)（Yahoo!ニュース / 10/25 09:10）
+・大学入学共通テストの検定料は受験する教科数に応じて金額が変動する仕組みとなっている。
+・3教科以上の受験の場合は一律で1万8000円が必要となり、出願時の予算管理が重要である。
+💡 ポイント: 受験校の選定と併せて、共通テストの受験教科数を早期に決定し検定料の予算を計画的に確保しよう。
+🔗 https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHNKOTByZ01JTHY1Q3preVN1bmJua2htTEN6SnlPc3RFc3pHSzlNRGMtX0kxR2RLdksxS0dGOUNSRm9DanhKQVl2NHJfQ0lnR0g1MlE1dlNIWkZvMElLUTl4SkptYnkyTjIxUnlBXy1lVkMzTi1YYjU5cFJ0TFkzZ0JJRjkyWFRlRk12alZB?oc=5" data-title="共通テスト検定料は3教科以上で1万8000円に設定" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHNKOTByZ01JTHY1Q3preVN1bmJua2htTEN6SnlPc3RFc3pHSzlNRGMtX0kxR2RLdksxS0dGOUNSRm9DanhKQVl2NHJfQ0lnR0g1MlE1dlNIWkZvMElLUTl4SkptYnkyTjIxUnlBXy1lVkMzTi1YYjU5cFJ0TFkzZ0JJRjkyWFRlRk12alZB?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="8bc08c3d6e" onclick="toggleBookmark(this, '8bc08c3d6e')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHNKOTByZ01JTHY1Q3preVN1bmJua2htTEN6SnlPc3RFc3pHSzlNRGMtX0kxR2RLdksxS0dGOUNSRm9DanhKQVl2NHJfQ0lnR0g1MlE1dlNIWkZvMElLUTl4SkptYnkyTjIxUnlBXy1lVkMzTi1YYjU5cFJ0TFkzZ0JJRjkyWFRlRk12alZB?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('8bc08c3d6e')">
+                    <span>元記事</span>
+                    <span>↗</span>
+                </a>
+            </div>
+        </article>
+        
+
+        <article class="news-card" data-article-id="c01d6cebf4" data-is-new="false">
+            <div class="card-header">
+                <div class="card-badges">
+                    
+                    <span class="topic-badge badge-strategy">💡学習・戦略</span>
+                    <span class="card-source">Yahoo!ニュース</span>
+                </div>
+                <div class="card-meta-right">
+                    <span class="read-indicator" title="既読">✓ 既読</span>
+                    <span class="card-date">10/22 16:00</span>
+                </div>
+            </div>
+            <h3 class="card-headline-main">2027年度MARCH入試の動向と合格者数の予測</h3>
+            <p class="card-original-title">📰 元記事: 【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）</p>
+            <div class="summary-box">
+                <div class="summary-points">
+                    <div class="summary-point"><span class="dot">•</span><span>2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。</span></div><div class="summary-point"><span class="dot">•</span><span>私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。</span></div>
+                </div>
+                <div class="summary-takeaway">💬 <strong>面談・対策ポイント:</strong> 志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。</div>
+            </div>
+            <div class="card-footer">
+                <div class="card-actions">
+                    <button type="button" class="btn-action btn-copy" data-copy="【大学受験】2027年度MARCH入試の動向と合格者数の予測
+📰 【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）（Yahoo!ニュース / 10/22 16:00）
+・2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。
+・私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。
+💡 ポイント: 志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。
+🔗 https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5" onclick="copySummary(this)" title="要約テキストをコピー">
+                        <span>📋</span><span>要約コピー</span>
+                    </button>
+                    <button type="button" class="btn-action btn-share" data-copy="【大学受験】2027年度MARCH入試の動向と合格者数の予測
+📰 【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）（Yahoo!ニュース / 10/22 16:00）
+・2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。
+・私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。
+💡 ポイント: 志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。
+🔗 https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5" data-title="2027年度MARCH入試の動向と合格者数の予測" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                        <span>📤</span><span>共有</span>
+                    </button>
+                    <button type="button" class="btn-action btn-bookmark" data-article-id="c01d6cebf4" onclick="toggleBookmark(this, 'c01d6cebf4')" title="あとで読む（保存）">
+                        <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                    </button>
+                </div>
+                <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('c01d6cebf4')">
+                    <span>元記事</span>
                     <span>↗</span>
                 </a>
             </div>
@@ -429,31 +1029,244 @@
         
             </div>
         </section>
+
+        <!-- 保存済み（ブックマーク）セクション -->
+        <section id="saved-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro saved">
+                <div class="intro-icon">⭐</div>
+                <div>
+                    <h2>保存した記事（あとで読む・面談資料）</h2>
+                    <p>各カードの「☆保存」ボタンを押した記事がここにストックされます</p>
+                </div>
+            </div>
+            <div class="news-grid" id="savedNewsGrid">
+                <div class="empty-state">
+                    <div class="icon">⭐</div>
+                    <p>保存された記事はまだありません。<br>気になるニュースの「☆保存」ボタンを押すと、ここに一覧表示されます。</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- トースト通知 -->
+    <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
 
     <!-- フッター -->
     <footer class="app-footer">
         <div class="footer-inner">
             <p class="footer-desc">
-                🤖 Google News RSS より自動収集・Gemini AI による自動要約<br>
-                毎朝 6:00（JST）自動更新 | 完全無料運用中
+                🤖 Google News RSS より自動収集・Gemini AI による3行要約<br>
+                毎朝早朝に自動更新 | 千葉県・首都圏の受験指導・家庭学習サポート仕様
             </p>
             <p class="footer-tip">
-                📱 <strong>スマホのホーム画面に追加</strong> するとアプリのようにサッと読めます！
+                📱 <strong>スマホのホーム画面に追加</strong> すると毎朝1タップで最新記事をチェックできます！
             </p>
             <div class="footer-copy">
-                &copy; 2026 受験ニュース要約 - Powered by GitHub Pages & Gemini
+                &copy; 2026 受験ニュース要約 - Powered by GitHub Pages &amp; Gemini
             </div>
         </div>
     </footer>
 
     <!-- インタラクション用スクリプト -->
     <script>
+        const STORAGE_KEY_READ = 'exam_news_read_v1';
+        const STORAGE_KEY_BOOKMARKS = 'exam_news_bookmarks_v1';
+        const STORAGE_KEY_THEME = 'exam_news_theme';
+
         let currentTabIndex = 0;
-        const categories = ['junior', 'high', 'univ'];
+        const categories = ['junior', 'high', 'univ', 'saved'];
         const tabs = document.querySelectorAll('.tab-btn');
         const panels = document.querySelectorAll('.tab-content');
 
+        // --- トースト通知 ---
+        let toastTimer = null;
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            if (!toast) return;
+            toast.textContent = message;
+            toast.classList.add('visible');
+            if (toastTimer) clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.remove('visible');
+            }, 2600);
+        }
+
+        // --- テーマ切り替え（ダーク / ライト） ---
+        function updateThemeUI() {
+            const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+            const icon = document.getElementById('themeIcon');
+            const metaTheme = document.getElementById('metaThemeColor');
+            if (icon) icon.textContent = isLight ? '🌙' : '☀️';
+            if (metaTheme) metaTheme.setAttribute('content', isLight ? '#F8FAFC' : '#0F172A');
+        }
+
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = (current === 'light') ? 'dark' : 'light';
+            if (next === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            try {
+                localStorage.setItem(STORAGE_KEY_THEME, next);
+            } catch (e) {}
+            updateThemeUI();
+            showToast(next === 'light' ? '☀️ ライトモードに切り替えました' : '🌙 ダークモードに切り替えました');
+        }
+
+        // --- 既読管理 ---
+        function getReadMap() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY_READ) || '{}');
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function markAsRead(articleId) {
+            if (!articleId) return;
+            const readMap = getReadMap();
+            readMap[articleId] = Date.now();
+            try {
+                localStorage.setItem(STORAGE_KEY_READ, JSON.stringify(readMap));
+            } catch (e) {}
+            document.querySelectorAll(`.news-card[data-article-id="${articleId}"]`).forEach(card => {
+                card.classList.add('is-read');
+            });
+        }
+
+        function applyReadStates() {
+            const readMap = getReadMap();
+            document.querySelectorAll('.news-card[data-article-id]').forEach(card => {
+                const id = card.getAttribute('data-article-id');
+                if (id && readMap[id]) {
+                    card.classList.add('is-read');
+                }
+            });
+        }
+
+        // --- 要約コピー機能 ---
+        async function copySummary(btn) {
+            const text = btn.getAttribute('data-copy') || '';
+            const card = btn.closest('.news-card');
+            if (card) {
+                markAsRead(card.getAttribute('data-article-id'));
+            }
+            try {
+                await navigator.clipboard.writeText(text);
+                showToast('📋 3行要約をコピーしました！LINEやメモに貼付できます');
+            } catch (err) {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('📋 3行要約をコピーしました！');
+            }
+        }
+
+        // --- 共有機能（Web Share API / LINE フォールバック） ---
+        async function shareArticle(btn) {
+            const text = btn.getAttribute('data-copy') || '';
+            const title = btn.getAttribute('data-title') || '受験ニュース要約';
+            const card = btn.closest('.news-card');
+            if (card) {
+                markAsRead(card.getAttribute('data-article-id'));
+            }
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: title,
+                        text: text
+                    });
+                    return;
+                } catch (err) {
+                    if (err && err.name === 'AbortError') return;
+                }
+            }
+            // Web Share 非対応環境（PC等）ではLINE共有ウィンドウまたはクリップボードコピー
+            const lineUrl = 'https://social-plugins.line.me/lineit/share?text=' + encodeURIComponent(text);
+            window.open(lineUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // --- 保存（ブックマーク）機能 ---
+        function getBookmarks() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY_BOOKMARKS) || '{}');
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveBookmarks(bm) {
+            try {
+                localStorage.setItem(STORAGE_KEY_BOOKMARKS, JSON.stringify(bm));
+            } catch (e) {}
+        }
+
+        function toggleBookmark(btn, articleId) {
+            if (!articleId) return;
+            const bm = getBookmarks();
+            const card = btn.closest('.news-card');
+
+            if (bm[articleId]) {
+                delete bm[articleId];
+                saveBookmarks(bm);
+                showToast('☆ 保存済みから解除しました');
+            } else if (card) {
+                const clone = card.cloneNode(true);
+                bm[articleId] = {
+                    id: articleId,
+                    savedAt: Date.now(),
+                    html: clone.outerHTML
+                };
+                saveBookmarks(bm);
+                showToast('⭐ 記事を「保存済み」タブにストックしました');
+            }
+            syncBookmarksUI();
+        }
+
+        function syncBookmarksUI() {
+            const bm = getBookmarks();
+            const ids = Object.keys(bm);
+            const countBadge = document.getElementById('savedCountBadge');
+            if (countBadge) countBadge.textContent = String(ids.length);
+
+            // 保存済みタブの描画更新
+            const savedGrid = document.getElementById('savedNewsGrid');
+            if (savedGrid) {
+                if (ids.length === 0) {
+                    savedGrid.innerHTML = `
+                        <div class="empty-state">
+                            <div class="icon">⭐</div>
+                            <p>保存された記事はまだありません。<br>気になるニュースの「☆保存」ボタンを押すと、ここに一覧表示されます。</p>
+                        </div>
+                    `;
+                } else {
+                    const sorted = ids.map(k => bm[k]).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+                    savedGrid.innerHTML = sorted.map(item => item.html).join('\n');
+                }
+            }
+
+            // 全カード上の保存ボタン状態を同期
+            document.querySelectorAll('.btn-bookmark[data-article-id]').forEach(btn => {
+                const id = btn.getAttribute('data-article-id');
+                const isSaved = Boolean(id && bm[id]);
+                btn.classList.toggle('active', isSaved);
+                const iconSpan = btn.querySelector('.bm-icon');
+                const textSpan = btn.querySelector('.bm-text');
+                if (iconSpan) iconSpan.textContent = isSaved ? '⭐' : '☆';
+                if (textSpan) textSpan.textContent = isSaved ? '保存済' : '保存';
+            });
+
+            applyReadStates();
+        }
+
+        // --- タブ切り替え ---
         function switchTab(newIndex, direction = 'right') {
             if (newIndex < 0 || newIndex >= categories.length) return;
             currentTabIndex = newIndex;
@@ -474,10 +1287,12 @@
                 }
             });
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // 下部までスクロールしていた場合のみ、アニメーションと競合しないよう即座に上部へ戻す
+            if (window.scrollY > 140) {
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            }
         }
 
-        // タブボタンクリック
         tabs.forEach((tab, i) => {
             tab.addEventListener('click', () => {
                 const dir = (i < currentTabIndex) ? 'left' : 'right';
@@ -485,42 +1300,39 @@
             });
         });
 
-        // スマホ用タッチスワイプ検知
+        // --- スマホ用タッチスワイプ検知（縦スクロール時の誤爆防止強化版） ---
         let touchStartX = 0;
         let touchStartY = 0;
-        let touchEndX = 0;
-        let touchEndY = 0;
+        let touchStartTime = 0;
 
         document.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            touchStartY = e.changedTouches[0].screenY;
+            if (e.touches.length !== 1) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchStartTime = Date.now();
         }, { passive: true });
 
         document.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            touchEndY = e.changedTouches[0].screenY;
-            handleSwipe();
-        }, { passive: true });
+            if (e.changedTouches.length !== 1) return;
+            const elapsed = Date.now() - touchStartTime;
+            // 長押しやゆっくりしたスクロール（600ms超）、またはテキスト選択中はスワイプ無視
+            if (elapsed > 600) return;
+            const sel = window.getSelection();
+            if (sel && sel.toString().length > 0) return;
 
-        function handleSwipe() {
-            const diffX = touchEndX - touchStartX;
-            const diffY = touchEndY - touchStartY;
-            // 縦スクロール優先ガード（縦移動が大きい、または横移動が40px未満なら無視）
-            if (Math.abs(diffX) < Math.abs(diffY) || Math.abs(diffX) < 40) {
+            const diffX = e.changedTouches[0].clientX - touchStartX;
+            const diffY = e.changedTouches[0].clientY - touchStartY;
+
+            // 横移動75px以上、かつ横移動が縦移動の1.8倍以上（明確な水平スワイプのみ反応）
+            if (Math.abs(diffX) < 75 || Math.abs(diffX) < Math.abs(diffY) * 1.8) {
                 return;
             }
-            if (diffX < 0) {
-                // 左スワイプ（次へ進む）
-                if (currentTabIndex < categories.length - 1) {
-                    switchTab(currentTabIndex + 1, 'right');
-                }
-            } else {
-                // 右スワイプ（前に戻る）
-                if (currentTabIndex > 0) {
-                    switchTab(currentTabIndex - 1, 'left');
-                }
+            if (diffX < 0 && currentTabIndex < categories.length - 1) {
+                switchTab(currentTabIndex + 1, 'right');
+            } else if (diffX > 0 && currentTabIndex > 0) {
+                switchTab(currentTabIndex - 1, 'left');
             }
-        }
+        }, { passive: true });
 
         // キーボード左右矢印キー対応
         document.addEventListener('keydown', (e) => {
@@ -531,10 +1343,35 @@
             }
         });
 
+        // --- 初期化＆PWAバックグラウンド復帰時の最新ニュースチェック ---
+        window.addEventListener('DOMContentLoaded', () => {
+            updateThemeUI();
+            syncBookmarksUI();
+            applyReadStates();
+        });
+
+        // ホーム画面追加（PWA）で翌朝開いた際、最新HTMLが配信されていれば自動更新
+        let lastCheckTime = Date.now();
+        document.addEventListener('visibilitychange', async () => {
+            if (document.visibilityState !== 'visible') return;
+            if (Date.now() - lastCheckTime < 5 * 60 * 1000) return; // 5分以内の再チェックは省略
+            lastCheckTime = Date.now();
+            try {
+                const resp = await fetch('./index.html?t=' + Date.now(), { cache: 'no-store' });
+                if (!resp.ok) return;
+                const htmlText = await resp.text();
+                const currentUpdated = document.body.getAttribute('data-updated-time');
+                const match = htmlText.match(/data-updated-time="([^"]+)"/);
+                if (match && match[1] && currentUpdated && match[1] !== currentUpdated) {
+                    window.location.reload();
+                }
+            } catch (e) {}
+        });
+
         // サービスワーカー登録（PWA用）
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').catch(() => {});
+                navigator.serviceWorker.register('./sw.js?v=3.0').catch(() => {});
             });
         }
     </script>

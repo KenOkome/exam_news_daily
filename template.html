@@ -2,72 +2,102 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>毎朝3分！受験ニュース要約 | 中学・高校・大学受験</title>
-    <meta name="description" content="毎朝最新の「中学受験」「高校受験」「大学受験」ニュースをAIが3行要約。隙間時間の3分で受験トレンドが丸わかり。">
+    <meta name="description" content="毎朝最新の「中学受験」「高校受験」「大学受験」ニュースをAIが3行要約。千葉県・首都圏の入試トレンドと面談・対策ポイントが隙間時間の3分で丸わかり。">
     
     <!-- PWA / モバイル対応 -->
-    <meta name="theme-color" content="#0F172A">
+    <meta name="theme-color" content="#0F172A" id="metaThemeColor">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="受験ニュース">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json?v=3.0">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2.2">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <script>
+        // 初期描画時のフラッシュ防止（テーマ即時適用）
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('exam_news_theme');
+                if (savedTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
-<body>
-    <!-- ヘッダー -->
-    <header class="app-header">
-        <div class="header-inner">
-            <div class="logo-area">
-                <div class="logo-icon">📚</div>
-                <div>
-                    <h1 class="logo-title">受験ニュース要約</h1>
-                    <p class="logo-subtitle">朝の3分で最新トレンドを把握</p>
+<body data-updated-time="{{UPDATED_TIME}}" data-updated-date="{{UPDATED_DATE_ISO}}">
+    <!-- 上部固定ヘッダー＆タブ領域 -->
+    <div class="sticky-top-shell">
+        <header class="app-header">
+            <div class="header-inner">
+                <div class="logo-area">
+                    <div class="logo-icon">📚</div>
+                    <div>
+                        <h1 class="logo-title">受験ニュース要約</h1>
+                        <p class="logo-subtitle">千葉・首都圏の最新動向を30秒で把握</p>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <div class="update-badge" id="updateBadge" title="最終自動更新日時">
+                        <span class="pulse-dot"></span>
+                        <span id="updateTimeText">{{UPDATED_TIME}} 更新</span>
+                    </div>
+                    <button type="button" class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" aria-label="表示テーマ切り替え" title="ライト/ダークモード切替">
+                        <span id="themeIcon">☀️</span>
+                    </button>
                 </div>
             </div>
-            <div class="update-badge" id="updateBadge">
-                <span class="pulse-dot"></span>
-                <span>{{UPDATED_TIME}} 更新</span>
-            </div>
+        </header>
+
+        <!-- カテゴリー切り替えタブ -->
+        <div class="tabs-container">
+            <nav class="category-tabs" role="tablist" aria-label="受験カテゴリー">
+                <button type="button" class="tab-btn active" data-tab="junior" role="tab" aria-selected="true">
+                    <span class="tab-icon">🏫</span>
+                    <span class="tab-text">中学受験</span>
+                    <span class="tab-count">{{JUNIOR_COUNT}}</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="high" role="tab" aria-selected="false">
+                    <span class="tab-icon">🎒</span>
+                    <span class="tab-text">高校受験</span>
+                    <span class="tab-count">{{HIGH_COUNT}}</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="univ" role="tab" aria-selected="false">
+                    <span class="tab-icon">🎓</span>
+                    <span class="tab-text">大学受験</span>
+                    <span class="tab-count">{{UNIV_COUNT}}</span>
+                </button>
+                <button type="button" class="tab-btn" data-tab="saved" role="tab" aria-selected="false">
+                    <span class="tab-icon">⭐</span>
+                    <span class="tab-text">保存済み</span>
+                    <span class="tab-count" id="savedCountBadge">0</span>
+                </button>
+            </nav>
         </div>
-    </header>
+    </div>
 
     <!-- メインコンテンツ -->
-    <main class="main-container">
-        <!-- カテゴリー切り替えタブ -->
-        <nav class="category-tabs" role="tablist">
-            <button class="tab-btn active" data-tab="junior" role="tab" aria-selected="true">
-                <span class="tab-icon">🏫</span>
-                <span class="tab-text">中学受験</span>
-                <span class="tab-count">{{JUNIOR_COUNT}}</span>
-            </button>
-            <button class="tab-btn" data-tab="high" role="tab" aria-selected="false">
-                <span class="tab-icon">🎒</span>
-                <span class="tab-text">高校受験</span>
-                <span class="tab-count">{{HIGH_COUNT}}</span>
-            </button>
-            <button class="tab-btn" data-tab="univ" role="tab" aria-selected="false">
-                <span class="tab-icon">🎓</span>
-                <span class="tab-text">大学受験</span>
-                <span class="tab-count">{{UNIV_COUNT}}</span>
-            </button>
-        </nav>
-        <div class="swipe-hint"><span>⇄</span> 画面を左右にスワイプして切り替え</div>
+    <main class="main-container" id="mainContainer">
+        <div class="swipe-hint">
+            <span>⇄ 左右スワイプでタブ切替</span>
+            <span class="hint-divider">|</span>
+            <span>📋 コピー・📤 LINE共有対応</span>
+        </div>
 
         <!-- 中学受験セクション -->
         <section id="junior-tab" class="tab-content active" role="tabpanel">
             <div class="section-intro junior">
                 <div class="intro-icon">🏫</div>
                 <div>
-                    <h2>中学受験 最新ニュース</h2>
-                    <p>志願倍率、入試日程、学校改革、塾動向の要約まとめ</p>
+                    <h2>中学受験 最新ニュース（最新順）</h2>
+                    <p>千葉（渋幕・市川・東邦・秀英・専松等）・四谷大塚・首都圏入試の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
@@ -80,8 +110,8 @@
             <div class="section-intro high">
                 <div class="intro-icon">🎒</div>
                 <div>
-                    <h2>高校受験 最新ニュース</h2>
-                    <p>公立・私立高入試、倍率速報、制度変更、推薦入試の要約まとめ</p>
+                    <h2>高校受験 最新ニュース（最新順）</h2>
+                    <p>千葉県公立・私立高入試（船高・千高・東葛・八千代・Vもぎ等）・首都圏の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
@@ -94,39 +124,252 @@
             <div class="section-intro univ">
                 <div class="intro-icon">🎓</div>
                 <div>
-                    <h2>大学受験 最新ニュース</h2>
-                    <p>共通テスト、新課程、国公立・私立大動向、総合型選抜の要約まとめ</p>
+                    <h2>大学受験 最新ニュース（最新順）</h2>
+                    <p>千葉大・首都圏難関大・GMARCH・共通テスト・総合型選抜の要約まとめ</p>
                 </div>
             </div>
             <div class="news-grid">
                 {{UNIV_NEWS_CARDS}}
             </div>
         </section>
+
+        <!-- 保存済み（ブックマーク）セクション -->
+        <section id="saved-tab" class="tab-content" role="tabpanel">
+            <div class="section-intro saved">
+                <div class="intro-icon">⭐</div>
+                <div>
+                    <h2>保存した記事（あとで読む・面談資料）</h2>
+                    <p>各カードの「☆保存」ボタンを押した記事がここにストックされます</p>
+                </div>
+            </div>
+            <div class="news-grid" id="savedNewsGrid">
+                <div class="empty-state">
+                    <div class="icon">⭐</div>
+                    <p>保存された記事はまだありません。<br>気になるニュースの「☆保存」ボタンを押すと、ここに一覧表示されます。</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- トースト通知 -->
+    <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
 
     <!-- フッター -->
     <footer class="app-footer">
         <div class="footer-inner">
             <p class="footer-desc">
-                🤖 Google News RSS より自動収集・Gemini AI による自動要約<br>
-                毎朝 6:00（JST）自動更新 | 完全無料運用中
+                🤖 Google News RSS より自動収集・Gemini AI による3行要約<br>
+                毎朝早朝に自動更新 | 千葉県・首都圏の受験指導・家庭学習サポート仕様
             </p>
             <p class="footer-tip">
-                📱 <strong>スマホのホーム画面に追加</strong> するとアプリのようにサッと読めます！
+                📱 <strong>スマホのホーム画面に追加</strong> すると毎朝1タップで最新記事をチェックできます！
             </p>
             <div class="footer-copy">
-                &copy; {{CURRENT_YEAR}} 受験ニュース要約 - Powered by GitHub Pages & Gemini
+                &copy; {{CURRENT_YEAR}} 受験ニュース要約 - Powered by GitHub Pages &amp; Gemini
             </div>
         </div>
     </footer>
 
     <!-- インタラクション用スクリプト -->
     <script>
+        const STORAGE_KEY_READ = 'exam_news_read_v1';
+        const STORAGE_KEY_BOOKMARKS = 'exam_news_bookmarks_v1';
+        const STORAGE_KEY_THEME = 'exam_news_theme';
+
         let currentTabIndex = 0;
-        const categories = ['junior', 'high', 'univ'];
+        const categories = ['junior', 'high', 'univ', 'saved'];
         const tabs = document.querySelectorAll('.tab-btn');
         const panels = document.querySelectorAll('.tab-content');
 
+        // --- トースト通知 ---
+        let toastTimer = null;
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            if (!toast) return;
+            toast.textContent = message;
+            toast.classList.add('visible');
+            if (toastTimer) clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.remove('visible');
+            }, 2600);
+        }
+
+        // --- テーマ切り替え（ダーク / ライト） ---
+        function updateThemeUI() {
+            const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+            const icon = document.getElementById('themeIcon');
+            const metaTheme = document.getElementById('metaThemeColor');
+            if (icon) icon.textContent = isLight ? '🌙' : '☀️';
+            if (metaTheme) metaTheme.setAttribute('content', isLight ? '#F8FAFC' : '#0F172A');
+        }
+
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = (current === 'light') ? 'dark' : 'light';
+            if (next === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            try {
+                localStorage.setItem(STORAGE_KEY_THEME, next);
+            } catch (e) {}
+            updateThemeUI();
+            showToast(next === 'light' ? '☀️ ライトモードに切り替えました' : '🌙 ダークモードに切り替えました');
+        }
+
+        // --- 既読管理 ---
+        function getReadMap() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY_READ) || '{}');
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function markAsRead(articleId) {
+            if (!articleId) return;
+            const readMap = getReadMap();
+            readMap[articleId] = Date.now();
+            try {
+                localStorage.setItem(STORAGE_KEY_READ, JSON.stringify(readMap));
+            } catch (e) {}
+            document.querySelectorAll(`.news-card[data-article-id="${articleId}"]`).forEach(card => {
+                card.classList.add('is-read');
+            });
+        }
+
+        function applyReadStates() {
+            const readMap = getReadMap();
+            document.querySelectorAll('.news-card[data-article-id]').forEach(card => {
+                const id = card.getAttribute('data-article-id');
+                if (id && readMap[id]) {
+                    card.classList.add('is-read');
+                }
+            });
+        }
+
+        // --- 要約コピー機能 ---
+        async function copySummary(btn) {
+            const text = btn.getAttribute('data-copy') || '';
+            const card = btn.closest('.news-card');
+            if (card) {
+                markAsRead(card.getAttribute('data-article-id'));
+            }
+            try {
+                await navigator.clipboard.writeText(text);
+                showToast('📋 3行要約をコピーしました！LINEやメモに貼付できます');
+            } catch (err) {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('📋 3行要約をコピーしました！');
+            }
+        }
+
+        // --- 共有機能（Web Share API / LINE フォールバック） ---
+        async function shareArticle(btn) {
+            const text = btn.getAttribute('data-copy') || '';
+            const title = btn.getAttribute('data-title') || '受験ニュース要約';
+            const card = btn.closest('.news-card');
+            if (card) {
+                markAsRead(card.getAttribute('data-article-id'));
+            }
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: title,
+                        text: text
+                    });
+                    return;
+                } catch (err) {
+                    if (err && err.name === 'AbortError') return;
+                }
+            }
+            // Web Share 非対応環境（PC等）ではLINE共有ウィンドウまたはクリップボードコピー
+            const lineUrl = 'https://social-plugins.line.me/lineit/share?text=' + encodeURIComponent(text);
+            window.open(lineUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // --- 保存（ブックマーク）機能 ---
+        function getBookmarks() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY_BOOKMARKS) || '{}');
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveBookmarks(bm) {
+            try {
+                localStorage.setItem(STORAGE_KEY_BOOKMARKS, JSON.stringify(bm));
+            } catch (e) {}
+        }
+
+        function toggleBookmark(btn, articleId) {
+            if (!articleId) return;
+            const bm = getBookmarks();
+            const card = btn.closest('.news-card');
+
+            if (bm[articleId]) {
+                delete bm[articleId];
+                saveBookmarks(bm);
+                showToast('☆ 保存済みから解除しました');
+            } else if (card) {
+                const clone = card.cloneNode(true);
+                bm[articleId] = {
+                    id: articleId,
+                    savedAt: Date.now(),
+                    html: clone.outerHTML
+                };
+                saveBookmarks(bm);
+                showToast('⭐ 記事を「保存済み」タブにストックしました');
+            }
+            syncBookmarksUI();
+        }
+
+        function syncBookmarksUI() {
+            const bm = getBookmarks();
+            const ids = Object.keys(bm);
+            const countBadge = document.getElementById('savedCountBadge');
+            if (countBadge) countBadge.textContent = String(ids.length);
+
+            // 保存済みタブの描画更新
+            const savedGrid = document.getElementById('savedNewsGrid');
+            if (savedGrid) {
+                if (ids.length === 0) {
+                    savedGrid.innerHTML = `
+                        <div class="empty-state">
+                            <div class="icon">⭐</div>
+                            <p>保存された記事はまだありません。<br>気になるニュースの「☆保存」ボタンを押すと、ここに一覧表示されます。</p>
+                        </div>
+                    `;
+                } else {
+                    const sorted = ids.map(k => bm[k]).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+                    savedGrid.innerHTML = sorted.map(item => item.html).join('\n');
+                }
+            }
+
+            // 全カード上の保存ボタン状態を同期
+            document.querySelectorAll('.btn-bookmark[data-article-id]').forEach(btn => {
+                const id = btn.getAttribute('data-article-id');
+                const isSaved = Boolean(id && bm[id]);
+                btn.classList.toggle('active', isSaved);
+                const iconSpan = btn.querySelector('.bm-icon');
+                const textSpan = btn.querySelector('.bm-text');
+                if (iconSpan) iconSpan.textContent = isSaved ? '⭐' : '☆';
+                if (textSpan) textSpan.textContent = isSaved ? '保存済' : '保存';
+            });
+
+            applyReadStates();
+        }
+
+        // --- タブ切り替え ---
         function switchTab(newIndex, direction = 'right') {
             if (newIndex < 0 || newIndex >= categories.length) return;
             currentTabIndex = newIndex;
@@ -147,10 +390,12 @@
                 }
             });
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // 下部までスクロールしていた場合のみ、アニメーションと競合しないよう即座に上部へ戻す
+            if (window.scrollY > 140) {
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            }
         }
 
-        // タブボタンクリック
         tabs.forEach((tab, i) => {
             tab.addEventListener('click', () => {
                 const dir = (i < currentTabIndex) ? 'left' : 'right';
@@ -158,42 +403,39 @@
             });
         });
 
-        // スマホ用タッチスワイプ検知
+        // --- スマホ用タッチスワイプ検知（縦スクロール時の誤爆防止強化版） ---
         let touchStartX = 0;
         let touchStartY = 0;
-        let touchEndX = 0;
-        let touchEndY = 0;
+        let touchStartTime = 0;
 
         document.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            touchStartY = e.changedTouches[0].screenY;
+            if (e.touches.length !== 1) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchStartTime = Date.now();
         }, { passive: true });
 
         document.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            touchEndY = e.changedTouches[0].screenY;
-            handleSwipe();
-        }, { passive: true });
+            if (e.changedTouches.length !== 1) return;
+            const elapsed = Date.now() - touchStartTime;
+            // 長押しやゆっくりしたスクロール（600ms超）、またはテキスト選択中はスワイプ無視
+            if (elapsed > 600) return;
+            const sel = window.getSelection();
+            if (sel && sel.toString().length > 0) return;
 
-        function handleSwipe() {
-            const diffX = touchEndX - touchStartX;
-            const diffY = touchEndY - touchStartY;
-            // 縦スクロール優先ガード（縦移動が大きい、または横移動が40px未満なら無視）
-            if (Math.abs(diffX) < Math.abs(diffY) || Math.abs(diffX) < 40) {
+            const diffX = e.changedTouches[0].clientX - touchStartX;
+            const diffY = e.changedTouches[0].clientY - touchStartY;
+
+            // 横移動75px以上、かつ横移動が縦移動の1.8倍以上（明確な水平スワイプのみ反応）
+            if (Math.abs(diffX) < 75 || Math.abs(diffX) < Math.abs(diffY) * 1.8) {
                 return;
             }
-            if (diffX < 0) {
-                // 左スワイプ（次へ進む）
-                if (currentTabIndex < categories.length - 1) {
-                    switchTab(currentTabIndex + 1, 'right');
-                }
-            } else {
-                // 右スワイプ（前に戻る）
-                if (currentTabIndex > 0) {
-                    switchTab(currentTabIndex - 1, 'left');
-                }
+            if (diffX < 0 && currentTabIndex < categories.length - 1) {
+                switchTab(currentTabIndex + 1, 'right');
+            } else if (diffX > 0 && currentTabIndex > 0) {
+                switchTab(currentTabIndex - 1, 'left');
             }
-        }
+        }, { passive: true });
 
         // キーボード左右矢印キー対応
         document.addEventListener('keydown', (e) => {
@@ -204,10 +446,35 @@
             }
         });
 
+        // --- 初期化＆PWAバックグラウンド復帰時の最新ニュースチェック ---
+        window.addEventListener('DOMContentLoaded', () => {
+            updateThemeUI();
+            syncBookmarksUI();
+            applyReadStates();
+        });
+
+        // ホーム画面追加（PWA）で翌朝開いた際、最新HTMLが配信されていれば自動更新
+        let lastCheckTime = Date.now();
+        document.addEventListener('visibilitychange', async () => {
+            if (document.visibilityState !== 'visible') return;
+            if (Date.now() - lastCheckTime < 5 * 60 * 1000) return; // 5分以内の再チェックは省略
+            lastCheckTime = Date.now();
+            try {
+                const resp = await fetch('./index.html?t=' + Date.now(), { cache: 'no-store' });
+                if (!resp.ok) return;
+                const htmlText = await resp.text();
+                const currentUpdated = document.body.getAttribute('data-updated-time');
+                const match = htmlText.match(/data-updated-time="([^"]+)"/);
+                if (match && match[1] && currentUpdated && match[1] !== currentUpdated) {
+                    window.location.reload();
+                }
+            } catch (e) {}
+        });
+
         // サービスワーカー登録（PWA用）
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').catch(() => {});
+                navigator.serviceWorker.register('./sw.js?v=3.0').catch(() => {});
             });
         }
     </script>
