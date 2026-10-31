@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31T16:50:28.965190+09:00",
-  "count": 24,
+  "updated_at": "2026-11-01T07:28:34.051887+09:00",
+  "count": 26,
   "articles": {
     "fcab49c32c": {
       "id": "fcab49c32c",
@@ -9,7 +9,7 @@
       "raw_title": "攻勢を強める「城北」、コース一本化「都市大付属」の成果、続伸する「攻玉社」東京男子校の注目点【首都圏中学入試2027】 - ダイヤモンド・オンライン",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzMUFsTVROaVIybDNFNGl6dDJobk5tOWdsWE9DYmgtdndGY1VNVVJnN0w0Sy00a2Mycmhubk02cmxGVFVydGQwQktqdjbSAU9BVV95cUxNZkU4Q2RpVFBuUVdaSTViWld1ZTNFVVRmQ0Z3alQ2bGtQcHB2T2habTJlM1RqaDh2aVFLa1dQbC1NeG5fZklKcUMwczFNVXlz?oc=5",
-      "pub_date": "本日 08:00",
+      "pub_date": "昨日 08:00",
       "pub_iso": "2026-10-31T08:00:00+09:00",
       "pub_ts": 1793401200,
       "is_new": true,
@@ -200,6 +200,28 @@
       "takeaway": "受験生活を乗り切るため、スケジュール管理やメンタルケアの役割分担を事前に夫婦や塾講師と相談し、家庭崩壊を防ぐ体制を作りましょう。",
       "is_ai_summary": true
     },
+    "e7f0ccac3e": {
+      "id": "e7f0ccac3e",
+      "category_id": "junior",
+      "title": "【中学受験の良問・社会】「東北地方の県で生産が盛んな伝統的工芸品はどれ？」開成・早稲田・吉女で類題の「伝統工芸品」の問題",
+      "raw_title": "【中学受験の良問・社会】「東北地方の県で生産が盛んな伝統的工芸品はどれ？」開成・早稲田・吉女で類題の「伝統工芸品」の問題 - ダイヤモンド・オンライン",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9jQXdmWXpLYTl6NlF0OTNOVUFfYzc2dHQ3UmpQUlhzSlJjbUtuczJfVmNLYUo2YkcwWkVJOHZHNHExTGtla1RZeGlJNFLSAU9BVV95cUxNOXZNc2pLUmhJejQxS1ZXM3FURFZKRDNCMmdCazJSRC02ekgxVjlzcF91UElyamhBc09hcmRUdjVkX2pNNXFuRHdkQ2pISjRN?oc=5",
+      "pub_date": "10/29 04:15",
+      "pub_iso": "2026-10-29T04:15:00+09:00",
+      "pub_ts": 1793214900,
+      "is_new": false,
+      "source": "ダイヤモンド・オンライン",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "開成・早稲田等で頻出の伝統工芸品問題対策",
+      "points": [
+        "開成中や早稲田中、吉女などで類題が出題される東北地方の伝統工芸品に関する社会の入試問題に注目が集まっている。",
+        "単なる暗記ではなく生産地や背景知識を問う思考力型のアプローチが難関校合格のカギとなる重要なテーマである。"
+      ],
+      "takeaway": "過去問の類似問題を分析し産地名だけでなく原料や製造工程と結びつけた知識の定着を家庭学習で徹底させてください。",
+      "is_ai_summary": true
+    },
     "a6cc7a9e24": {
       "id": "a6cc7a9e24",
       "category_id": "univ",
@@ -352,6 +374,28 @@
         "私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。"
       ],
       "takeaway": "志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。",
+      "is_ai_summary": true
+    },
+    "e05c616e82": {
+      "id": "e05c616e82",
+      "category_id": "high",
+      "title": "地区トップは桐高１・３２倍 県全体は初めて１倍下回る 公立高校入試第１回進路希望調査",
+      "raw_title": "地区トップは桐高１・３２倍 県全体は初めて１倍下回る 公立高校入試第１回進路希望調査 - 桐生タイムス",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xdXlFSV96V3hiWHJaOGRhUW1hNEo1ZlozVmNFT3M5clZEVnl4V1NRZ20yOTE1TWxDVXVFc1ktcWY5anVTZHJQbnRqVVFhb1px?oc=5",
+      "pub_date": "10/22 00:00",
+      "pub_iso": "2026-10-22T00:00:00+09:00",
+      "pub_ts": 1792594800,
+      "is_new": false,
+      "source": "桐生タイムス",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "群馬県公立前期倍率が初の1倍割れ",
+      "points": [
+        "県全体の第1回進路希望調査の平均倍率が初めて1倍を下回り、安全志向と私立併願の動きが顕著になっています。",
+        "桐生高校などの地区トップ校は1.32倍と依然として高く、進学校における二極化が鮮明です。"
+      ],
+      "takeaway": "全体倍率の低下に油断せず、志望校の過去の推移や私立併願校の確保を慎重に検討し、個別面談で合格可能性を再確認しましょう。",
       "is_ai_summary": true
     },
     "8da3d51bc7": {
