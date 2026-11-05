@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-11-04T08:58:11.221221+09:00",
-  "count": 43,
+  "updated_at": "2026-11-05T09:22:23.405021+09:00",
+  "count": 46,
   "articles": {
+    "67e1317d16": {
+      "id": "67e1317d16",
+      "category_id": "high",
+      "title": "【Ｚ会の教室】「Ｚ会進学教室」が2026年 オリコン顧客満足度(R)ランキング「高校受験 塾 首都圏 東京都」で第1位を獲得しました。",
+      "raw_title": "【Ｚ会の教室】「Ｚ会進学教室」が2026年 オリコン顧客満足度(R)ランキング「高校受験 塾 首都圏 東京都」で第1位を獲得しました。 - ライブドアニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ESnB3WXBVVFVlYkMwRFVnbV9CaDdqOWloXzRVX3NLbTg3R2tXLWV1ajl4S2VHUjNlNjl3ZmFCVVllQWlZdmFSUUhvVnc3QTV1aTZfdFk1RWcxZzB2MklSQ2pR?oc=5",
+      "pub_date": "昨日 15:20",
+      "pub_iso": "2026-11-04T15:20:00+09:00",
+      "pub_ts": 1793773200,
+      "is_new": true,
+      "source": "ライブドアニュース",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "Ｚ会進学教室が東京都の高校受験塾ランキングで第1位",
+      "points": [
+        "Ｚ会の教室が2026年オリコン顧客満足度ランキングの高校受験塾首都圏東京都部門で第1位を獲得した。",
+        "難関校を目指す受験生の間で高い指導力とサポート体制が評価されており塾選びの有力な選択肢となる。"
+      ],
+      "takeaway": "難関校受験を検討中のご家庭は実績のある指導ノウハウを持つ上位校対策コースの体験授業を早めに受講しましょう。",
+      "is_ai_summary": true
+    },
+    "694acd1e92": {
+      "id": "694acd1e92",
+      "category_id": "junior",
+      "title": "オリコン『塾』に関する顧客満足度ランキング、『中学受験』『高校受験』『大学受験』『小学生向け学習塾』など",
+      "raw_title": "オリコン『塾』に関する顧客満足度ランキング、『中学受験』『高校受験』『大学受験』『小学生向け学習塾』など - ICT教育ニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBxcXBxSUFRRWJ5ZXIxckFoaG9PUDF0SEpDTW04UExlLTZlSFVWdmk2YjBaTFBYeWNZMldQVFlUblBjOVc5eXN3aGlfRG85M0Qtc3FB?oc=5",
+      "pub_date": "昨日 09:40",
+      "pub_iso": "2026-11-04T09:40:19+09:00",
+      "pub_ts": 1793752819,
+      "is_new": true,
+      "source": "ICT教育ニュース",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "オリコン最新『塾』満足度発表",
+      "points": [
+        "オリコン顧客満足度調査から中学受験や高校受験など各セグメント別の最新ランキングが発表された。",
+        "首都圏における集団指導や個別指導塾選びの客観的な実績指標として保護者の関心が非常に高い。"
+      ],
+      "takeaway": "ランキングの順位だけに頼らず、合格実績の傾向や講師の質をお子様の性格と照らし合わせて個別面談で必ず確認しましょう。",
+      "is_ai_summary": true
+    },
     "7e844f992b": {
       "id": "7e844f992b",
       "category_id": "junior",
@@ -9,7 +53,7 @@
       "raw_title": "中学受験「偏差値50」にがっかりする親が知らないこと 頑張っても偏差値が上がらないのはなぜ？ - SYNCHRONOUS シンクロナス",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03QVVKdnZpZEN6bmwtUWdXOFFyRzdGemdEcGlIY3NYY1lkd085RXlzZG5LWXoxVU5xT2lsNk5sYVBNNmFZUEVkYVpGdFVzUWh4eG9TbA?oc=5",
-      "pub_date": "本日 06:00",
+      "pub_date": "昨日 06:00",
       "pub_iso": "2026-11-04T06:00:00+09:00",
       "pub_ts": 1793739600,
       "is_new": true,
@@ -97,10 +141,10 @@
       "raw_title": "各地域で満足度の高い『高校受験 - ニコニコニュース",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBaMUFNTXNrUnZJY0MybjlMX1hVUWdUMTV4UDh6TmFEOUUzcnI0MVdMVkczVTNNUnBRak9NbWJiY0VOVVBVOWZQR25HcDRTM3dmajNRQ0dWNkhMalB1TmdHaXhsbGF6eURhUm1jUmZlcENsZ0RmLThveWJrRQ?oc=5",
-      "pub_date": "昨日 01:00",
+      "pub_date": "11/03 01:00",
       "pub_iso": "2026-11-03T01:00:21+09:00",
       "pub_ts": 1793635221,
-      "is_new": true,
+      "is_new": false,
       "source": "ニコニコニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
@@ -858,6 +902,28 @@
         "難関校の推薦入試で合否を分ける集団討論や自己PRの対策を、実践的な形式で集中的に学べるプログラムとなっている。"
       ],
       "takeaway": "都立トップ校の推薦受検を控える生徒は、他者との議論を通じた発信力を磨くために専門対策講座の活用を検討してください。",
+      "is_ai_summary": true
+    },
+    "9793fa2106": {
+      "id": "9793fa2106",
+      "category_id": "high",
+      "title": "城東がサヨナラでベスト16進出！終盤まで緊迫の投手戦、最後はタイブレークで昭和第一学園下す【東京都】",
+      "raw_title": "城東がサヨナラでベスト16進出！終盤まで緊迫の投手戦、最後はタイブレークで昭和第一学園下す【東京都】 - Yahoo!ニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zZENOa3hDTnBNdmlhZTY5UWYyX2tHMGRYTnJzYVZkWktNcmFmMllKbTZzbl9jYUQxMW1qSHc5TDlBOWliZEFQV0VKb1l2MFUxeXZQNGQxQVJFVEZKdGpIMlFTUzZpYWJEOHJBTlJGY1RoOEdiYjVDbzF5bnFfSUE?oc=5",
+      "pub_date": "10/13 16:00",
+      "pub_iso": "2026-10-13T16:00:00+09:00",
+      "pub_ts": 1791874800,
+      "is_new": false,
+      "source": "Yahoo!ニュース",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "城東がサヨナラ勝ちで東京都の高校野球ベスト16進出",
+      "points": [
+        "城東高校が昭和第一学園との緊迫した投手戦を制しタイブレークの末にサヨナラ勝ちでベスト16に進出した。",
+        "終盤の勝負強さと粘り強い投手リレーが光り都立勢としての躍進が注目を集めている。"
+      ],
+      "takeaway": "文武両道を掲げる進学校の部活動実績は学校説明会での雰囲気や生徒の自立心を測る重要な判断材料になります。",
       "is_ai_summary": true
     },
     "f822a43022": {
