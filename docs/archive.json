@@ -1,7 +1,161 @@
 {
-  "updated_at": "2026-11-05T09:22:23.405021+09:00",
-  "count": 46,
+  "updated_at": "2026-11-06T09:14:20.967142+09:00",
+  "count": 55,
   "articles": {
+    "ad7b89e904": {
+      "id": "ad7b89e904",
+      "category_id": "univ",
+      "title": "【大学受験2027】筑波大、医学群医学類の募集人員発表",
+      "raw_title": "【大学受験2027】筑波大、医学群医学類の募集人員発表 - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uZ1o0V2tOTzNRd2N5Wk5IcnVjWjhUa0F4bGNiSDg1M2ZJMHFJX3o0MUthZGhWaUs4YU1ZSVBfSkc0M2JQelpqaWEycnhid2l4V1FPUUdodVlTMnpJ?oc=5",
+      "pub_date": "昨日 18:45",
+      "pub_iso": "2026-11-05T18:45:03+09:00",
+      "pub_ts": 1793871903,
+      "is_new": true,
+      "source": "リセマム",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "筑波大医学群2027年募集人員決定、最新動向に注目",
+      "points": [
+        "筑波大学医学群医学類の2027年度入試における募集人員が正式に発表され、受験生の関心が高まっています。",
+        "国公立医学部を目指す受験生にとって定員枠の変動は出願戦略に直結するため、早めの情報確認が必須です。"
+      ],
+      "takeaway": "志望校の募集定員や配点変更の有無を夏前までに必ず確認し、共通テストと二次試験の目標得点率を再設定しましょう。",
+      "is_ai_summary": true
+    },
+    "700d69b72d": {
+      "id": "700d69b72d",
+      "category_id": "high",
+      "title": "千葉県立高のあり方、理数教育の課題や遠隔授業で意見まとめ",
+      "raw_title": "千葉県立高のあり方、理数教育の課題や遠隔授業で意見まとめ - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jM2RtQ2RnckJJdkFfbktKdnhpUUZzN0NxcXJXVFZBVE9aSTVqOU1xcmVETVkzcGJBSUQzdE1reXBpRkpYaGxDVjctWndLZ3NJMHlrdUZzWlhUWWpEeFVzaVAwNTE4UQ?oc=5",
+      "pub_date": "昨日 14:55",
+      "pub_iso": "2026-11-05T14:55:02+09:00",
+      "pub_ts": 1793858102,
+      "is_new": true,
+      "source": "リセマム",
+      "badge_label": "📍千葉注目",
+      "badge_cls": "badge-chiba",
+      "headline": "千葉県立高改革：理数教育と遠隔授業導入へ",
+      "points": [
+        "千葉県立高校の今後のあり方について、理数教育の強化や遠隔授業の活用に関する具体的な意見がまとめられました。",
+        "これからの時代に求められる専門性の高い学びや、地域間格差を是正する新しい授業形態の導入に向けた議論が加速します。"
+      ],
+      "takeaway": "志望校選びの際は、各校の理数系プログラムの充実度やICT教育・オンライン授業の導入状況を事前に確認しておきましょう。",
+      "is_ai_summary": true
+    },
+    "36e2332384": {
+      "id": "36e2332384",
+      "category_id": "univ",
+      "title": "【大学受験2027】国立理系大「電農名繊」学園祭4選",
+      "raw_title": "【大学受験2027】国立理系大「電農名繊」学園祭4選 - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdlNVYlFHYVdOd3pORTUxcmp1MmdTejczcjJmUDhycU5oNjVQT0UxenpUV2RnZFJFMWV5RUpaUlFzS2pWOGhraWx5a1Q2cmVmVmI2TTExdFdkd1pt?oc=5",
+      "pub_date": "昨日 12:15",
+      "pub_iso": "2026-11-05T12:15:03+09:00",
+      "pub_ts": 1793848503,
+      "is_new": true,
+      "source": "リセマム",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "電農名繊の学園祭情報、2027年受験生のモチベ維持に",
+      "points": [
+        "電気通信大・東京農工大・名古屋工業大・京都工芸繊維大の難関国立理系4大学による学園祭情報が公開されました。",
+        "高1・高2段階からのキャンパス訪問は、理系特有の研究環境を肌で感じモチベーションを高める絶好の機会です。"
+      ],
+      "takeaway": "秋の学園祭を活用して研究室の雰囲気や学生の様子を直接確認し、具体的な志望動機を固める材料にしましょう。",
+      "is_ai_summary": true
+    },
+    "10907ce9e6": {
+      "id": "10907ce9e6",
+      "category_id": "univ",
+      "title": "【大学受験】保護者も知りたい「情報I」共通テスト対策のポイント",
+      "raw_title": "【大学受験】保護者も知りたい「情報I」共通テスト対策のポイント - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VRmlUZlpqbFZnalNjWUVJYkltdVZ1em85RFhyZWdBQnNTX3lEU0NZQVhSR1ZCZjdqZ1lPM19lMmZHVkxIQklWY3pFaDN6NHN5RlhCUFNpT0ExdC1V?oc=5",
+      "pub_date": "昨日 12:00",
+      "pub_iso": "2026-11-05T12:00:04+09:00",
+      "pub_ts": 1793847604,
+      "is_new": true,
+      "source": "リセマム",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "共通テスト情報I対策、保護者が知るべき学習のポイント",
+      "points": [
+        "新課程で導入された共通テスト「情報I」について、保護者が押さえておくべき対策の重要ポイントが解説されました。",
+        "プログラミングやデータ活用など新科目は配点が高く、合否を分ける鍵となるため早期の対策が求められます。"
+      ],
+      "takeaway": "塾の模試結果を活用して苦手分野を早期に特定し、プログラミングやデータの分析手法を中心に実践的な演習を重ねましょう。",
+      "is_ai_summary": true
+    },
+    "abfcaccf68": {
+      "id": "abfcaccf68",
+      "category_id": "high",
+      "title": "東京・昭島市の都立高校で「スプレーをまいてけが人がいる」119番通報 (2026年11月5日掲載)",
+      "raw_title": "東京・昭島市の都立高校で「スプレーをまいてけが人がいる」119番通報 (2026年11月5日掲載) - ライブドアニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81a2dWeFdqdHdmd0FoYWlyenUyLWFMcWRzMU5INi05QXd1ZEFQWWE1UmRISUlqaFB4Q2NtU1JkUmpJZW5kWUo4V2FMNGVKQTZHa3RZMUE3dVBIbjNrZlE?oc=5",
+      "pub_date": "昨日 11:48",
+      "pub_iso": "2026-11-05T11:48:00+09:00",
+      "pub_ts": 1793846880,
+      "is_new": true,
+      "source": "ライブドアニュース",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "都立高校でスプレー噴霧事故、安全対策に懸念",
+      "points": [
+        "東京・昭島市の都立高校において、校内でスプレーがまかれ負傷者が出たとする119番通報が入り、大きな騒ぎとなりました。",
+        "学校内の安全管理体制や、生徒間のトラブル防止策、緊急時の対応手順についての見直しと点検が急務となっています。"
+      ],
+      "takeaway": "学校説明会や見学の機会には、日常の防犯体制や生活指導の方針、いじめ対策などの安全面についても必ず確認しましょう。",
+      "is_ai_summary": true
+    },
+    "d95088bc7c": {
+      "id": "d95088bc7c",
+      "category_id": "high",
+      "title": "熊谷高校創立130周年記念式典",
+      "raw_title": "熊谷高校創立130周年記念式典 - 埼玉新聞社 高校受験ナビ",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbnBTMWlGY2pfaWFsMUd5T1U1bURPdzFPMV9CbURBUWRQbFducXdvc1k2WnEtbldNdWdzSFlPQW9QbUVDZ0h4WU1XckNlRVBsNmRjeF9xVGJCSEVKQmc0SUd1MEVSMEVlQzdtdFJ4QXVQU21HMklNT0l1Ykd4ZWx5VVJiZ1NnYkxpQUx0WDJyalJibjNfU0VxVWliSGFRLXlMMUFwbGxYbDhDRDFSZWVfNFZsamR6WmM4OHNIVnF1NzV0M2VOSVNuRWxSWXJxRm8xNHN0NEpDb0lUeldpX0N1SnJ1dnBvSFdkR3huWVBn?oc=5",
+      "pub_date": "昨日 10:28",
+      "pub_iso": "2026-11-05T10:28:30+09:00",
+      "pub_ts": 1793842110,
+      "is_new": true,
+      "source": "埼玉新聞社 高校受験ナビ",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "伝統校・熊谷高校が創立130周年記念式典を挙行",
+      "points": [
+        "埼玉県を代表する伝統進学校である熊谷高校が、創立130周年の節目を迎えて盛大な記念式典を執り行いました。",
+        "長年にわたり培われてきた豊かな歴史と独自の校風、そして多くの優秀な人材を輩出してきた実績が改めて注目されています。"
+      ],
+      "takeaway": "伝統校を目指す受験生は、進学実績だけでなく、OB・OGのネットワークや自主自立を重んじる校風が自分に合うか考えましょう。",
+      "is_ai_summary": true
+    },
+    "21f2600488": {
+      "id": "21f2600488",
+      "category_id": "junior",
+      "title": "首都圏の中学受験、1人あたり平均出願校数は過去最多の7.76校。家族の「誰が・いつ・何をするか」をひとめにまとめる無料ツール「hitomeru 中学受験」",
+      "raw_title": "首都圏の中学受験、1人あたり平均出願校数は過去最多の7.76校。家族の「誰が・いつ・何をするか」をひとめにまとめる無料ツール「hitomeru 中学受験」 - PR TIMES",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HZkM3UEVTanppM1hHUHpINGZoV0IzVzVPZXRibzFOMjZlUUxwZ1diUzJzejRtTDBIdDRQNnpCN053ZTFjaUJMclF3cTgwblVEVDRKeW5MTk9jNHZ4TF9qa0ZST0Y0TEY3d0E?oc=5",
+      "pub_date": "昨日 10:10",
+      "pub_iso": "2026-11-05T10:10:01+09:00",
+      "pub_ts": 1793841001,
+      "is_new": true,
+      "source": "PR TIMES",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "首都圏の中学受験は多校化が加速、出願平均は過去最多の7.76校に",
+      "points": [
+        "首都圏の中学受験における1人あたりの平均出願校数が過去最多の7.76校に達し、併願戦略の負担が増大している。",
+        "複雑化する出願日程や家族の役割分担を視覚化し、管理漏れを防ぐ無料ツール「hitomeru 中学受験」の活用が有効。"
+      ],
+      "takeaway": "併願校増加によるスケジュール管理の複雑化を防ぐため、家族間で最新の共有ツールを導入し、出願・手続きの担当を明確化してください。",
+      "is_ai_summary": true
+    },
     "67e1317d16": {
       "id": "67e1317d16",
       "category_id": "high",
@@ -31,10 +185,10 @@
       "raw_title": "オリコン『塾』に関する顧客満足度ランキング、『中学受験』『高校受験』『大学受験』『小学生向け学習塾』など - ICT教育ニュース",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBxcXBxSUFRRWJ5ZXIxckFoaG9PUDF0SEpDTW04UExlLTZlSFVWdmk2YjBaTFBYeWNZMldQVFlUblBjOVc5eXN3aGlfRG85M0Qtc3FB?oc=5",
-      "pub_date": "昨日 09:40",
+      "pub_date": "11/04 09:40",
       "pub_iso": "2026-11-04T09:40:19+09:00",
       "pub_ts": 1793752819,
-      "is_new": true,
+      "is_new": false,
       "source": "ICT教育ニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
@@ -68,6 +222,28 @@
       "takeaway": "面談では単に偏差値を追うのではなく過去問の傾向分析と弱点補強の具体的なスケジュールを提示しましょう。",
       "is_ai_summary": true
     },
+    "82d4d045ca": {
+      "id": "82d4d045ca",
+      "category_id": "high",
+      "title": "ねんりんピック 高校生も選手を歓迎",
+      "raw_title": "ねんりんピック 高校生も選手を歓迎 - 埼玉新聞社 高校受験ナビ",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOZjZKcDZzWGtxSldmS1NkU2NTNlpTX2FUa3d4NDdYQnpZYkRFMFpEeHdRS3pDeEg5aDN3QzJQVFF2X2lZY25Sa1diR2x0R0w3djhJVXl4MzNnVHJhd2czcEpfVjZkRi04bHc4VXU3Nm5hN1NoTXZJYnNsQ3VhaFJqUDNHR2RXUnIybHJGY2xmcnpsa1RJRkxMSXZOWlRyODFnRWtBeDMwUXY4M2lVdHBmcUNHYkh5WXVpckpVaHFSdFBDbm5FV29Xem01SmlCd20xX3d4WmV3RWd4Sm9xc015U0JBdjRhYXd3a0ZsaldkeHdnRGMtangtX0JaR1RkMlJjWWtzVXdDQ3dBQUtuM2ZOSXlWMnRpMmZOMmltOXJuZnFSSnY0Rnc?oc=5",
+      "pub_date": "11/03 17:00",
+      "pub_iso": "2026-11-03T17:00:00+09:00",
+      "pub_ts": 1793692800,
+      "is_new": false,
+      "source": "埼玉新聞社 高校受験ナビ",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "ねんりんピック：埼玉の高校生が選手を温かく歓迎",
+      "points": [
+        "地域の一大イベントである「ねんりんピック」において、地元の高校生たちがボランティア等で選手を温かく歓迎しました。",
+        "地域社会との交流や主体的なボランティア活動への参加が、生徒たちの人間性を育む貴重な経験となっています。"
+      ],
+      "takeaway": "内申点や面接対策として、地域貢献やボランティア活動に積極的な高校の姿勢や、総合型選抜への影響も意識しておきましょう。",
+      "is_ai_summary": true
+    },
     "3cdd1424f1": {
       "id": "3cdd1424f1",
       "category_id": "high",
@@ -97,10 +273,10 @@
       "raw_title": "【大学受験の交通費】もし仙台から東京の私大4校受験するとしたら…「スケジュール3パターン」を新幹線の学割で試算（LIMO） - Yahoo!ニュース",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10VHp4dkxwV01talFCV1ZkVnByRjlWcGNtTW91VE1oVjhPa05LdmczNXFzSVFOMjBNT3c4OU9Fa1RxZllsNk5VVTFUX0pINVN5WEZqbU9kTXdOaHRtMlVOYTZrT1B5ellhLW1VdS1ZZ2xWQXVQYWdtNTFoXzJtRmM?oc=5",
-      "pub_date": "昨日 04:31",
+      "pub_date": "11/03 04:31",
       "pub_iso": "2026-11-03T04:31:03+09:00",
       "pub_ts": 1793647863,
-      "is_new": true,
+      "is_new": false,
       "source": "Yahoo!ニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
@@ -132,6 +308,28 @@
         "2泊3日の日程を2回にまとめることで、新幹線代を約4万1480円まで大幅に削減できるデータが示されました。"
       ],
       "takeaway": "宿泊費と交通費のトータルバランスを計算し、滞在型の日程調整で保護者の経済的負担を賢く軽減させましょう。",
+      "is_ai_summary": true
+    },
+    "f93a353104": {
+      "id": "f93a353104",
+      "category_id": "junior",
+      "title": "満足度の高い『中学受験 塾』『中学受験 個別指導塾』『公立中高一貫校対策 塾』ランキング┃『中学受験 塾』首都圏【啓明館】が4年連続の総合1位（オリコン顧客満足度(R)調査）",
+      "raw_title": "満足度の高い『中学受験 塾』『中学受験 個別指導塾』『公立中高一貫校対策 塾』ランキング┃『中学受験 塾』首都圏【啓明館】が4年連続の総合1位（オリコン顧客満足度(R)調査） - STRAIGHT PRESS",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9QTWRjV1hPdW5mUXZKUUFVNWZHZ1ZHdzJ4MERVRk9lUXR2Zmt2TjNSRUJxYkhBZVJ6VHpLXzgzcWhQbXFaQnNTRndtbGMzSTBrT1k1S3dvYzcwUjNSeFhJMUgzRGpvUFYxZnlrZG5rN3Q4MzR2R0E?oc=5",
+      "pub_date": "11/03 03:11",
+      "pub_iso": "2026-11-03T03:11:42+09:00",
+      "pub_ts": 1793643102,
+      "is_new": false,
+      "source": "STRAIGHT PRESS",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "オリコン顧客満足度調査の中学受験塾部門で啓明館が4年連続総合1位",
+      "points": [
+        "最新のオリコン顧客満足度調査における「中学受験 塾」部門で、首都圏の啓明館が4年連続で総合1位を獲得した。",
+        "集団指導だけでなく「個別指導塾」や「公立中高一貫校対策 塾」も含め、多様な選択肢の評価基準が明確化された。"
+      ],
+      "takeaway": "塾選びの際はランキングの総合結果だけでなく、子供の性格や志望校の傾向に合致する指導形態であるかを体験授業で必ず確認しましょう。",
       "is_ai_summary": true
     },
     "feda54a852": {
