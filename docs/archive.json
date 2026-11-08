@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-11-08T07:43:39.603894+09:00",
-  "count": 64,
+  "updated_at": "2026-11-09T07:52:14.182786+09:00",
+  "count": 69,
   "articles": {
+    "06764a6d06": {
+      "id": "06764a6d06",
+      "category_id": "high",
+      "title": "「授業料タダでも」喜べない親たち……高校無償化で激化する“課金ゲー”、結局勝つのは富裕層？",
+      "raw_title": "「授業料タダでも」喜べない親たち……高校無償化で激化する“課金ゲー”、結局勝つのは富裕層？ - ｄメニューニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0yMlhjSTlOLWFsZXFRS3g3ZmNtcXI5bG5qbUJobklyeDBBbWJLSmZoSVFIVTNnR3ZCQ1hjcjE0NlI4eFF3M1lHX3c0bDV5VEl5UDM3UlQtVTNkbUd6NTFQZEZEanlZYW8tVGYwbF9RODlZQmJmVU52WNIBfkFVX3lxTE5BZUc1TkR2YkFobnZXbzA5YjZkRW5UekZ5NUk1c0lnZ1FJRWtCQWxtdmNxTDBrSEJ6aUtrckthWmRBYThsM3M5VXM1SjllTm9VdzNTaDdmWmQxMkFMSGgtNWt6UHZDdC1LQTFpNE1YZFB1ekVNelQ5SWNEVmRJdw?oc=5",
+      "pub_date": "本日 07:48",
+      "pub_iso": "2026-11-09T07:48:37+09:00",
+      "pub_ts": 1794178117,
+      "is_new": true,
+      "source": "ｄメニューニュース",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "高校無償化の裏で激化する教育格差",
+      "points": [
+        "授業料無償化の導入後も塾代や教材費などの追加負担が増大している。",
+        "経済的支援の拡充が結果として富裕層の課金力勝負を加速させている。"
+      ],
+      "takeaway": "無償化の浮いた財源を塾や外部学習に回す家庭が増加しており、志望校選びでは隠れた教育費の総額をあらかじめ試算しておく必要がある。",
+      "is_ai_summary": true
+    },
     "d37dd539f5": {
       "id": "d37dd539f5",
       "category_id": "high",
@@ -31,7 +53,7 @@
       "raw_title": "都市と地方、親の経済力…入試をめぐる「格差」どう埋める 総合型選抜の大学受験塾「リザプロ」孫辰洋さん - 東京新聞",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzRVFFdnVHWHFBVUpfRHMxWU82aU1IbGdSM2ZlVkVCNFdJbDVnVnhKc0dDbm5CR0xxZ2FyZER5dU1Ia0M0dF9NM2hVcVNULThTS3I4?oc=5",
-      "pub_date": "本日 05:00",
+      "pub_date": "昨日 05:00",
       "pub_iso": "2026-11-08T05:00:00+09:00",
       "pub_ts": 1794081600,
       "is_new": true,
@@ -44,6 +66,28 @@
         "受験塾リザプロの孫辰洋氏が、格差を埋めるための具体的な支援のあり方や対策について言及した。"
       ],
       "takeaway": "総合型選抜は早期の対策と情報収集が合否を左右するため、経済的負担を抑えたオンライン塾や自治体の支援制度の活用を検討してください。",
+      "is_ai_summary": true
+    },
+    "bc75f5044e": {
+      "id": "bc75f5044e",
+      "category_id": "high",
+      "title": "都立高校で沖縄修学旅行の事前学習 講師が「バスの窓から気づいてね」と呼びかけたこと",
+      "raw_title": "都立高校で沖縄修学旅行の事前学習 講師が「バスの窓から気づいてね」と呼びかけたこと - 琉球新報デジタル",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yWk5tVnM3czZiWGNtYVJXVlpUemlwZWhrNFFBSzJCay1TQnJHMVNSWGlVV0JIMUt1LXlwS3pWNU9CTTl5RW9fOUw0MkxBdFVDWHY1cnUzQTJBVFVyTDdhMA?oc=5",
+      "pub_date": "昨日 05:00",
+      "pub_iso": "2026-11-08T05:00:00+09:00",
+      "pub_ts": 1794081600,
+      "is_new": true,
+      "source": "琉球新報デジタル",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "都立高の沖縄修学旅行で事前学習実施",
+      "points": [
+        "都立高校の沖縄修学旅行に向けた事前学習で現地理解が深められている。",
+        "講師の具体的な呼びかけにより歴史や地域背景への主体的な気づきを促す。"
+      ],
+      "takeaway": "近年の公立高校では単なる観光旅行ではなく深い教養を問う体験型学習を重視しており、学校説明会やパンフレットで内容を確認しよう。",
       "is_ai_summary": true
     },
     "b68b85274f": {
@@ -198,6 +242,28 @@
         "国公立医学部を目指す受験生にとって定員枠の変動は出願戦略に直結するため、早めの情報確認が必須です。"
       ],
       "takeaway": "志望校の募集定員や配点変更の有無を夏前までに必ず確認し、共通テストと二次試験の目標得点率を再設定しましょう。",
+      "is_ai_summary": true
+    },
+    "e4529d316e": {
+      "id": "e4529d316e",
+      "category_id": "univ",
+      "title": "【大学受験2027】筑波大、医学群医学類の募集人員発表（リセマム）",
+      "raw_title": "【大学受験2027】筑波大、医学群医学類の募集人員発表（リセマム） - Yahoo!ニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRUU5GZzdvWW9ueFVuUGZBZ3dWWURVeEhzNkFkc0hlWXJUSDJtZTRhVThiVE1zYWJfTV9RX09rTEFsSEJPSEhNcGxqODA0WTZaY3g3alJvbnRTQzFJWGtMNjFTUE9raDVsLWZXYnRnTW1yWnZDOGdMeGtweGpJVEE?oc=5",
+      "pub_date": "11/05 18:45",
+      "pub_iso": "2026-11-05T18:45:03+09:00",
+      "pub_ts": 1793871903,
+      "is_new": false,
+      "source": "Yahoo!ニュース",
+      "badge_label": "📝制度・日程",
+      "badge_cls": "badge-system",
+      "headline": "筑波大医学群医学類2027年募集人員判明、国公立医学部志望者は定員動向の緻密な把握が必須",
+      "points": [
+        "筑波大学が2027年度入試における医学群医学類の募集人員を正式に公表し、受験生間での注目が高まっている。",
+        "国公立大医学部はわずかな定員変動が倍率や合格ラインに直結するため、早期の正確な情報収集が不可欠となる。"
+      ],
+      "takeaway": "高1・高2生は最新の募集人員を前提に志望校計画を再点検し、科目別の早期対策で合格可能性を高めましょう。",
       "is_ai_summary": true
     },
     "700d69b72d": {
@@ -1212,6 +1278,28 @@
       "takeaway": "内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。",
       "is_ai_summary": true
     },
+    "17e52c3597": {
+      "id": "17e52c3597",
+      "category_id": "univ",
+      "title": "【大学受験】新高1-3生向け医学部入試ガイダンス、首都圏4会場11/22・29",
+      "raw_title": "【大学受験】新高1-3生向け医学部入試ガイダンス、首都圏4会場11/22・29 - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOZ2ZNMlkzRTc0MFF5SVEwVXJiUGxialA3bzhOMlZDWHFhVUhqYjR4Tlo5V2FQZWk3REhrN09HRG01Z2RmdV9nNGVMU01zUVptb3RvZ2x4VWNuV2FQ?oc=5",
+      "pub_date": "10/20 16:00",
+      "pub_iso": "2026-10-20T16:00:00+09:00",
+      "pub_ts": 1792479600,
+      "is_new": false,
+      "source": "リセマム",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "headline": "新高1〜3生対象の医学部入試ガイダンス首都圏4会場開催、最新トレンドを早期に把握",
+      "points": [
+        "11月22日と29日に首都圏の4会場で、新高1から高3生を対象とした医学部入試ガイダンスが実施される。",
+        "激化する医学部受験の最新動向や合格に向けたロードマップを直接確認できる貴重な機会となっている。"
+      ],
+      "takeaway": "保護者同伴で積極的に参加し、最新の入試難易度や求められる学力レベルを把握して今後の学習計画に反映させましょう。",
+      "is_ai_summary": true
+    },
     "f3c568bb54": {
       "id": "f3c568bb54",
       "category_id": "high",
@@ -1276,6 +1364,28 @@
         "スポーツ推薦や部活動の盛んな学校を志望する中学生にとって、各高校の部活実績を知るための有用な情報源となる。"
       ],
       "takeaway": "文武両道を目指す受験生は、志望校の部活動の戦績や活動環境を入試情報の選定基準の一つとしてチェックしましょう。",
+      "is_ai_summary": true
+    },
+    "1c7ca85018": {
+      "id": "1c7ca85018",
+      "category_id": "high",
+      "title": "写真・図版（1枚目）| 公立高校を目指す受験生と保護者を悩ませる「内申格差」の実態 千葉県は「学校間のばらつき」が大きく、神奈川県は「ブラックボックス」",
+      "raw_title": "写真・図版（1枚目）| 公立高校を目指す受験生と保護者を悩ませる「内申格差」の実態 千葉県は「学校間のばらつき」が大きく、神奈川県は「ブラックボックス」 - AERA DIGITAL",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DVy13OC1BeU9ybDJDQWZ0SFdUWlJJR0hvcGVQZ2pNNlBucTNGdDdGeG1TSTRPeHlwdnVFc3Q3WVdqQkFOWTJqX1FNR0hQcWwxNlA5VENB?oc=5",
+      "pub_date": "10/14 08:40",
+      "pub_iso": "2026-10-14T08:40:36+09:00",
+      "pub_ts": 1791934836,
+      "is_new": false,
+      "source": "AERA DIGITAL",
+      "badge_label": "📍千葉注目",
+      "badge_cls": "badge-chiba",
+      "headline": "千葉・神奈川で広がる内申格差の実態",
+      "points": [
+        "千葉県は学校間の評価基準のばらつきが大きく受験生を悩ませている。",
+        "神奈川県は評価基準が不透明なブラックボックス状態が続いている。"
+      ],
+      "takeaway": "公立トップ校を狙う受験生は当日点での逆転を想定し、内申のばらつきに左右されない早期からの模試対策と過去問演習を徹底しよう。",
       "is_ai_summary": true
     },
     "037df28199": {
