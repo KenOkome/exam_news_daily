@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3.0">
+    <link rel="stylesheet" href="style.css?v=3.1">
     <script>
         // 初期描画時のフラッシュ防止（テーマ即時適用）
         (function() {
@@ -45,9 +45,16 @@
                     </div>
                 </div>
                 <div class="header-controls">
-                    <div class="update-badge" id="updateBadge" title="最終自動更新日時">
-                        <span class="pulse-dot"></span>
-                        <span id="updateTimeText">{{UPDATED_TIME}} 更新</span>
+                    <!-- 過去履歴（アーカイブ）日付切り替えナビ -->
+                    <div class="archive-nav" id="archiveNav">
+                        <button type="button" class="date-nav-btn" id="prevDateBtn" aria-label="前日のニュースを表示" title="前日のニュース">◀</button>
+                        <div class="update-badge" id="updateBadge" title="表示日付">
+                            <span class="pulse-dot" id="liveDot"></span>
+                            <select id="dateSelect" class="date-select" aria-label="表示する日付を選択">
+                                <option value="latest">{{UPDATED_TIME}} 更新</option>
+                            </select>
+                        </div>
+                        <button type="button" class="date-nav-btn" id="nextDateBtn" aria-label="翌日のニュースを表示" title="翌日のニュース" disabled>▶</button>
                     </div>
                     <button type="button" class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" aria-label="表示テーマ切り替え" title="ライト/ダークモード切替">
                         <span id="themeIcon">☀️</span>
@@ -55,6 +62,12 @@
                 </div>
             </div>
         </header>
+
+        <!-- 過去アーカイブ閲覧中バナー（過去日選択時のみ表示） -->
+        <div class="archive-banner" id="archiveBanner" hidden>
+            <span id="archiveBannerText">📅 過去のアーカイブを表示中</span>
+            <button type="button" class="btn-return-latest" id="returnLatestBtn">最新日に戻る ↩</button>
+        </div>
 
         <!-- カテゴリー切り替えタブ -->
         <div class="tabs-container">
@@ -446,11 +459,265 @@
             }
         });
 
+
+        // ====================================================================
+        // 過去アーカイブ（日付選択・前後日移動）機能
+        // ====================================================================
+        let archiveDates = [];
+        let currentDateIndex = 0;
+        let latestHtmlSnapshot = {
+            junior: null,
+            high: null,
+            univ: null,
+            juniorCount: null,
+            highCount: null,
+            univCount: null
+        };
+
+        const dateSelect = document.getElementById('dateSelect');
+        const prevDateBtn = document.getElementById('prevDateBtn');
+        const nextDateBtn = document.getElementById('nextDateBtn');
+        const archiveBanner = document.getElementById('archiveBanner');
+        const archiveBannerText = document.getElementById('archiveBannerText');
+        const returnLatestBtn = document.getElementById('returnLatestBtn');
+        const liveDot = document.getElementById('liveDot');
+
+        function renderNewsCardsClient(newsList, categoryName, categoryId) {
+            if (!newsList || newsList.length === 0) {
+                return `
+                    <div class="empty-state">
+                        <div class="icon">📭</div>
+                        <p>この日の【${escapeHtml(categoryName)}】ニュースはありません。</p>
+                    </div>
+                `;
+            }
+            return newsList.map(item => {
+                const artId = escapeHtml(item.id || '');
+                const isNew = Boolean(item.is_new);
+                const newBadgeHtml = isNew ? '<span class="badge-new">🔥 NEW</span>' : '';
+                const badgeLabel = escapeHtml(item.badge_label || categoryName);
+                const badgeCls = escapeHtml(item.badge_cls || `badge-${categoryId}`);
+                const source = escapeHtml(item.source || '');
+                const pubDate = escapeHtml(item.pub_date || '');
+                const headline = escapeHtml(item.headline || item.title || '');
+                const title = escapeHtml(item.title || '');
+                const link = (item.link && /^https?:\/\//i.test(item.link)) ? escapeHtml(item.link) : '#';
+
+                const pointsHtml = (item.points || []).map(p => `
+                    <div class="summary-point">
+                        <span class="dot">•</span>
+                        <span>${escapeHtml(p)}</span>
+                    </div>
+                `).join('');
+
+                let takeawayHtml = '';
+                if (item.takeaway) {
+                    const cleanTk = String(item.takeaway).replace(/^[📣💡\s]*ポイント[:：]?\s*/g, '');
+                    takeawayHtml = `
+                        <div class="summary-takeaway">
+                            <span>💡</span>
+                            <span><strong>ポイント:</strong> ${escapeHtml(cleanTk)}</span>
+                        </div>
+                    `;
+                }
+
+                const copyLines = [
+                    `【${badgeLabel}】${item.headline || item.title}`,
+                    `📰 ${item.title} (${item.source || ''})`
+                ];
+                (item.points || []).forEach(p => copyLines.push(`・${p}`));
+                if (item.takeaway) copyLines.push(`💡 ポイント: ${item.takeaway}`);
+                copyLines.push(`🔗 ${item.link || ''}`);
+                const copyTextEsc = escapeHtml(copyLines.join('\n'));
+
+                return `
+                <article class="news-card" data-article-id="${artId}" data-is-new="${isNew ? 'true' : 'false'}">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            ${newBadgeHtml}
+                            <span class="topic-badge ${badgeCls}">${badgeLabel}</span>
+                            <span class="card-source">${source}</span>
+                        </div>
+                        <div class="card-meta-right">
+                            <span class="read-indicator" title="既読">✓ 既読</span>
+                            <span class="card-date">${pubDate}</span>
+                        </div>
+                    </div>
+                    <h3 class="card-headline-main">${headline}</h3>
+                    <p class="card-original-title">📰 元記事: ${title}</p>
+                    <div class="summary-box">
+                        <div class="summary-points">
+                            ${pointsHtml}
+                        </div>
+                        ${takeawayHtml}
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-actions">
+                            <button type="button" class="btn-action btn-copy" data-copy="${copyTextEsc}" onclick="copySummary(this)" title="要約テキストをコピー">
+                                <span>📋</span><span>要約コピー</span>
+                            </button>
+                            <button type="button" class="btn-action btn-share" data-copy="${copyTextEsc}" data-title="${headline}" data-url="${link}" onclick="shareArticle(this)" title="LINEや他アプリで共有">
+                                <span>📤</span><span>共有</span>
+                            </button>
+                            <button type="button" class="btn-action btn-bookmark" data-article-id="${artId}" onclick="toggleBookmark(this, '${artId}')" title="あとで読む（保存）">
+                                <span class="bm-icon">☆</span><span class="bm-text">保存</span>
+                            </button>
+                        </div>
+                        <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-read-more" onclick="markAsRead('${artId}')">
+                            <span>元記事</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+                `;
+            }).join('\n');
+        }
+
+        function updateDateNavButtons() {
+            if (!prevDateBtn || !nextDateBtn) return;
+            prevDateBtn.disabled = (currentDateIndex >= archiveDates.length - 1);
+            nextDateBtn.disabled = (currentDateIndex <= 0);
+
+            if (archiveBanner && archiveBannerText && archiveDates[currentDateIndex]) {
+                if (currentDateIndex === 0) {
+                    archiveBanner.hidden = true;
+                    if (liveDot) liveDot.style.display = 'inline-block';
+                } else {
+                    const d = archiveDates[currentDateIndex];
+                    archiveBannerText.textContent = `📅 過去ログ表示中：${d.date}（${d.updated_at || d.label}）`;
+                    archiveBanner.hidden = false;
+                    if (liveDot) liveDot.style.display = 'none';
+                }
+            }
+        }
+
+        async function loadArchiveDate(index) {
+            if (index < 0 || index >= archiveDates.length) return;
+            currentDateIndex = index;
+            const entry = archiveDates[index];
+            if (dateSelect) dateSelect.value = entry.date;
+            updateDateNavButtons();
+
+            // 最新日（インデックス0）に戻った場合、初期スナップショットがあれば完全復元
+            if (index === 0 && latestHtmlSnapshot.junior !== null) {
+                const jGrid = document.querySelector('#junior-tab .news-grid');
+                const hGrid = document.querySelector('#high-tab .news-grid');
+                const uGrid = document.querySelector('#univ-tab .news-grid');
+                if (jGrid) jGrid.innerHTML = latestHtmlSnapshot.junior;
+                if (hGrid) hGrid.innerHTML = latestHtmlSnapshot.high;
+                if (uGrid) uGrid.innerHTML = latestHtmlSnapshot.univ;
+
+                const jTabCount = document.querySelector('.tab-btn[data-tab="junior"] .tab-count');
+                const hTabCount = document.querySelector('.tab-btn[data-tab="high"] .tab-count');
+                const uTabCount = document.querySelector('.tab-btn[data-tab="univ"] .tab-count');
+                if (jTabCount) jTabCount.textContent = latestHtmlSnapshot.juniorCount;
+                if (hTabCount) hTabCount.textContent = latestHtmlSnapshot.highCount;
+                if (uTabCount) uTabCount.textContent = latestHtmlSnapshot.univCount;
+
+                syncBookmarksUI();
+                applyReadStates();
+                return;
+            }
+
+            try {
+                const resp = await fetch(`./data/archive/${entry.date}.json`, { cache: 'no-cache' });
+                if (!resp.ok) return;
+                const data = await resp.json();
+                const cats = [
+                    { id: 'junior', name: '中学受験' },
+                    { id: 'high', name: '高校受験' },
+                    { id: 'univ', name: '大学受験' }
+                ];
+                cats.forEach(c => {
+                    const catData = (data.categories && data.categories[c.id]) || { news: [] };
+                    const grid = document.querySelector(`#${c.id}-tab .news-grid`);
+                    const countEl = document.querySelector(`.tab-btn[data-tab="${c.id}"] .tab-count`);
+                    if (grid) {
+                        grid.innerHTML = renderNewsCardsClient(catData.news, c.name, c.id);
+                    }
+                    if (countEl) {
+                        countEl.textContent = String((catData.news || []).length);
+                    }
+                });
+                syncBookmarksUI();
+                applyReadStates();
+            } catch (e) {
+                console.error('アーカイブ読み込みエラー:', e);
+            }
+        }
+
+        async function initArchiveNav() {
+            // 初期の最新HTMLスナップショットを退避
+            const jGrid = document.querySelector('#junior-tab .news-grid');
+            const hGrid = document.querySelector('#high-tab .news-grid');
+            const uGrid = document.querySelector('#univ-tab .news-grid');
+            const jCount = document.querySelector('.tab-btn[data-tab="junior"] .tab-count');
+            const hCount = document.querySelector('.tab-btn[data-tab="high"] .tab-count');
+            const uCount = document.querySelector('.tab-btn[data-tab="univ"] .tab-count');
+            latestHtmlSnapshot = {
+                junior: jGrid ? jGrid.innerHTML : '',
+                high: hGrid ? hGrid.innerHTML : '',
+                univ: uGrid ? uGrid.innerHTML : '',
+                juniorCount: jCount ? jCount.textContent : '0',
+                highCount: hCount ? hCount.textContent : '0',
+                univCount: uCount ? uCount.textContent : '0'
+            };
+
+            try {
+                const resp = await fetch('./data/index.json', { cache: 'no-cache' });
+                if (!resp.ok) return;
+                const idxData = await resp.json();
+                if (!idxData.dates || !idxData.dates.length) return;
+                archiveDates = idxData.dates;
+                currentDateIndex = 0;
+
+                if (dateSelect) {
+                    dateSelect.innerHTML = archiveDates.map((d, i) => {
+                        const suffix = (i === 0) ? ' (最新)' : '';
+                        const timeLabel = d.updated_at ? d.updated_at : d.date;
+                        return `<option value="${escapeHtml(d.date)}">${escapeHtml(timeLabel)}${suffix}</option>`;
+                    }).join('');
+
+                    dateSelect.addEventListener('change', (e) => {
+                        const targetDate = e.target.value;
+                        const foundIdx = archiveDates.findIndex(d => d.date === targetDate);
+                        if (foundIdx !== -1) {
+                            loadArchiveDate(foundIdx);
+                        }
+                    });
+                }
+
+                if (prevDateBtn) {
+                    prevDateBtn.addEventListener('click', () => {
+                        if (currentDateIndex < archiveDates.length - 1) {
+                            loadArchiveDate(currentDateIndex + 1);
+                        }
+                    });
+                }
+                if (nextDateBtn) {
+                    nextDateBtn.addEventListener('click', () => {
+                        if (currentDateIndex > 0) {
+                            loadArchiveDate(currentDateIndex - 1);
+                        }
+                    });
+                }
+                if (returnLatestBtn) {
+                    returnLatestBtn.addEventListener('click', () => {
+                        loadArchiveDate(0);
+                    });
+                }
+                updateDateNavButtons();
+            } catch (e) {
+                console.error('index.json 読み込み失敗:', e);
+            }
+        }
+
         // --- 初期化＆PWAバックグラウンド復帰時の最新ニュースチェック ---
         window.addEventListener('DOMContentLoaded', () => {
             updateThemeUI();
             syncBookmarksUI();
             applyReadStates();
+            initArchiveNav();
         });
 
         // ホーム画面追加（PWA）で翌朝開いた際、最新HTMLが配信されていれば自動更新
@@ -474,7 +741,7 @@
         // サービスワーカー登録（PWA用）
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js?v=3.0').catch(() => {});
+                navigator.serviceWorker.register('./sw.js?v=3.1').catch(() => {});
             });
         }
     </script>

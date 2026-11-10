@@ -617,6 +617,80 @@ def render_news_cards(news_items, category_name):
     return "\n".join(html_cards)
 
 
+
+def save_daily_archive(script_dir, now_jst, updated_str, all_news):
+    """本日のニュース要約データを docs/data/archive/YYYY-MM-DD.json に保存し、docs/data/index.json を更新"""
+    archive_dir = os.path.join(script_dir, "docs", "data", "archive")
+    index_path = os.path.join(script_dir, "docs", "data", "index.json")
+    os.makedirs(archive_dir, exist_ok=True)
+
+    date_key = now_jst.strftime("%Y-%m-%d")
+    categories_payload = {}
+    for cat in CATEGORIES:
+        cid = cat["id"]
+        clean_news = []
+        for n in all_news.get(cid, []):
+            clean_news.append({
+                "id": n.get("id", ""),
+                "category_id": cid,
+                "title": n.get("title", ""),
+                "headline": n.get("headline", ""),
+                "points": n.get("points", []),
+                "takeaway": n.get("takeaway", ""),
+                "source": n.get("source", ""),
+                "pub_date": n.get("pub_date", ""),
+                "link": n.get("link", "#"),
+                "is_new": bool(n.get("is_new", False)),
+                "badge_label": n.get("badge_label", cat["name"]),
+                "badge_cls": n.get("badge_cls", f"badge-{cid}")
+            })
+        categories_payload[cid] = {
+            "news": clean_news
+        }
+
+    daily_payload = {
+        "date": date_key,
+        "updated_at": updated_str,
+        "categories": categories_payload
+    }
+
+    daily_file = os.path.join(archive_dir, f"{date_key}.json")
+    try:
+        with open(daily_file, "w", encoding="utf-8") as f:
+            json.dump(daily_payload, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"  [警告] 日別アーカイブJSON保存に失敗: {e}", file=sys.stderr)
+
+    # 全アーカイブJSONを走査して index.json を更新・再構築
+    try:
+        all_files = sorted([f[:-5] for f in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", f)], reverse=True)
+        index_entries = []
+        for d in all_files:
+            fpath = os.path.join(archive_dir, f"{d}.json")
+            try:
+                with open(fpath, "r", encoding="utf-8") as f:
+                    rec = json.load(f)
+                tot = sum(len(c.get("news", [])) for c in rec.get("categories", {}).values())
+                index_entries.append({
+                    "date": d,
+                    "updated_at": rec.get("updated_at", ""),
+                    "label": f"{int(d[5:7])}/{int(d[8:10])}",
+                    "total_news": tot
+                })
+            except Exception:
+                continue
+
+        with open(index_path, "w", encoding="utf-8") as f:
+            json.dump({
+                "latest_date": all_files[0] if all_files else date_key,
+                "total_days": len(index_entries),
+                "dates": index_entries
+            }, f, ensure_ascii=False, indent=2)
+        print(f"=== 日別アーカイブ保存完了: {daily_file} (全 {len(index_entries)} 日分) ===")
+    except Exception as e:
+        print(f"  [警告] index.json 再構築に失敗: {e}", file=sys.stderr)
+
+
 def main():
     print("=== 受験ニュース要約 生成開始 ===")
     api_key = load_api_key()
@@ -669,6 +743,9 @@ def main():
 
     updated_str = now_jst.strftime("%m月%d日 %H:%M")
     updated_iso = now_jst.strftime("%Y-%m-%d")
+
+    # 日別アーカイブJSONと index.json を保存
+    save_daily_archive(script_dir, now_jst, updated_str, all_news)
 
     junior_items = all_news.get("junior", [])
     high_items = all_news.get("high", [])

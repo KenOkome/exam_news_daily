@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-15",
+  "updated_at": "10月15日",
+  "categories": {
+    "junior": {
+      "news": [
+        {
+          "id": "f04e1895165b",
+          "category_id": "junior",
+          "title": "人気上昇「早稲田佐賀」東京出張入試、茨城「江戸取」「茗溪」はどうなる？1月入試の新動向【首都圏中学入試2027】",
+          "headline": "人気上昇「早稲田佐賀」東京出張入試、茨城「江戸取」「茗溪」はどうなる？1月入試の新動向【首都圏中学入試2027】",
+          "points": [
+            "早稲田佐賀の東京出張入試が人気を集め、茨城の江戸川学園取手や茗溪学園など1月入試の勢力図が変化している。",
+            "首都圏受験生の併願戦略において、1月校の選択肢として地方進学校の存在感が急速に高まっている。"
+          ],
+          "takeaway": "首都圏近郊や地方校の東京入試は日程調整の鍵を握るため、最新の出願動向と試験会場の変更に注意しよう。",
+          "source": "ダイヤモンド・オンライン",
+          "pub_date": "10/15 08:00",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBfN09Ha0x6dHpkZGFEMjViazRZT0JneGJoOG1iVk1uckpKQWExbmlDcEd0ZG5SbkIxSTMtWkVxeUlpTklxSzdhbmlQSE_SAU9BVV95cUxQT0pZX01CNXBvbEwtOWViMEoxcUtRLVFmUDVEXy1XRHo3VUpaZjJqOHhhVENuMDFxTi0tVTJ1YllHOVpQSVBKMFN1ZVE0QkFF?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "1b13e99e0a9b",
+          "category_id": "junior",
+          "title": "【中学受験2027】四谷大塚、第4回合不合判定テスト（10/11実施）偏差値…筑駒74・桜蔭70＜PR＞",
+          "headline": "【中学受験2027】四谷大塚、第4回合不合判定テスト（10/11実施）偏差値…筑駒74・桜蔭70＜PR＞",
+          "points": [
+            "10月11日に実施された第4回合不合判定テストの偏差値が判明し、筑波大学附属駒場は74、桜蔭は70を記録した。",
+            "最難関校志望者の現在の立ち位置と合格可能性を測る極めて重要な指標として受験界で大きな注目を集めている。"
+          ],
+          "takeaway": "志望校との距離感を正確に把握し、秋以降の過去問演習や弱点補強に向けた具体的な学習計画の修正に活かそう。",
+          "source": "リセマム",
+          "pub_date": "10/14 18:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zb3dlYTUwVzVWTjNDVVJqbWVfYzQ2RVg5aGRycmg1eVJXbWRLME1fOVc4Z2hmcW1nSmw2bDFkckRPV2piTXVOUThQZEFlUmZ1Wjg2bkhZUGQyTWFN?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "5a7fd4176944",
+          "category_id": "junior",
+          "title": "最難関校に挑む中学受験塾が集結！塾選びのポイントを深掘り",
+          "headline": "最難関校に挑む中学受験塾が集結！塾選びのポイントを深掘り",
+          "points": [
+            "最難関校に挑む受験生を支える主要な中学受験塾が一堂に会し、指導方針や合格実績の強みをアピールした。",
+            "各塾の指導カリキュラムやサポート体制の違いが深掘りされ、家庭の教育方針に合う塾選びの基準が示された。"
+          ],
+          "takeaway": "合格実績だけでなく、子どもの性格や学習スタイルに合致した塾の環境を見極めることが合格への近道となる。",
+          "source": "テレビ東京",
+          "pub_date": "10/10 16:00",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ292RE5sNlVaVkRFUXJIYy1OZWFkQU5hQno1WkNGQXAweXNIak5XNEdkbDBTV0hmRHcyWE5xRjI1Z1FZS0tHZFBXTmNJakdIcVdsb2pjcmloOHhQSXhIWGF1eEhEbENVZExpclBuNE1TSkZLcEVRX0pFb3NmMGVBMXZ5Z1pETlZmSG50cEVHNA?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "6944f0d55db0",
+          "category_id": "junior",
+          "title": "【帰国子女アカデミーに聞く①】中学受験の「英語入試」は一つではない スコアだけでは測れない、難関校が見る力",
+          "headline": "【帰国子女アカデミーに聞く①】中学受験の「英語入試」は一つではない スコアだけでは測れない、難関校が見る力",
+          "points": [
+            "帰国子女アカデミーの分析により、中学受験の英語入試は単なる外部資格のスコア測定ではないことが判明した。",
+            "思考力や発信力など、難関校が求める総合的な英語運用能力の具体的な測り方と出題傾向が明らかになった。"
+          ],
+          "takeaway": "資格試験のスコア取得にとどまらず、実践的な思考力や自分の言葉で表現する訓練を日常的に積み重ねよう。",
+          "source": "朝日新聞",
+          "pub_date": "09/29 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yU3BNYkdleWduYXhpRDBQUmpiWXl1N1dOeWE0NXdNLUVKMk1CekJHQzR6V19XalI4cVI5YktUcVpQbUt5MXRKTENCRG01SDhOMWl2M3dn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "ecf875439a12",
+          "category_id": "junior",
+          "title": "【栄光ゼミナール】最難関女子中学受験専門館、小学2・3年生対象「桜蔭・女子学院診断テスト」10・11月開催",
+          "headline": "【栄光ゼミナール】最難関女子中学受験専門館、小学2・3年生対象「桜蔭・女子学院診断テスト」10・11月開催",
+          "points": [
+            "栄光ゼミナールの最難関女子中学受験専門館が、小学2・3年生を対象とした専用の診断テストを10・11月に開催する。",
+            "最難関女子校を早期に見据えた学習意欲の喚起と、低段階からの思考力を試す絶好の機会となっている。"
+          ],
+          "takeaway": "低学年のうちから難関校特有の思考問題に触れ、早い段階で中学受験への基礎的な学力と意識を養っておこう。",
+          "source": "PR TIMES",
+          "pub_date": "09/29 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBGd292UzlvRW5VV2V4NHhnYy1iTmVYeFA1aFFFcXJGeGg3VV9yVldXQV9KZzhYOWNvTmRjbTA0MGNoZ3JycFVuTG1NOE9jMzktUHJpdV9kVFlmYk02aWt4ZC1uN0hFNVRaX1E?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        }
+      ]
+    },
+    "high": {
+      "news": [
+        {
+          "id": "8507badc93c2",
+          "category_id": "high",
+          "title": "障害のある受検者に対する配慮|入試案内等",
+          "headline": "障害のある受検者に対する配慮|入試案内等",
+          "points": [
+            "東京都立高校の入試において、障害のある受検者を対象とした受験上の配慮に関する申請方法や案内が公表された。",
+            "具体的な配慮事項や事前相談の手続きを確認し、早めに各関係機関や志望校へ確認・相談を行う必要がある。"
+          ],
+          "takeaway": "必要な配慮がある場合は、出願前の事前相談期間を見落とさないよう最新の入試案内を必ず確認しましょう。",
+          "source": "東京都教育委員会",
+          "pub_date": "10/06 16:00",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRU1Hc3NRS1BkUm40QVJCbXZpNFZnMUZ3cVVVSTlCcDI0NGFyNERZZkJoanlrV3F5eGtwNVN0WlVNY0dYTmpCbzBZOGhWUkF5V1pYc0syZ2R3dGlxem55NFJ0X1UzUGRSRjk5bzNIaG04NzhBRGtSY1g1QndzU3FGUjhmN01fd05pZWF0OWNB?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "4874233630c7",
+          "category_id": "high",
+          "title": "【高校受験2027】東京都立高募集人員、全日制3万9,195人…前年度比1,045人減（リセマム）",
+          "headline": "【高校受験2027】東京都立高募集人員、全日制3万9,195人…前年度比1,045人減（リセマム）",
+          "points": [
+            "2027年度入試における東京都立高校全日制の募集人員が3万9195人となり、前年度から1045人減少する。",
+            "少子化に伴う定員見直しが進む中、都立高校の定員減が合格ラインや競争率に与える影響を注視する必要がある。"
+          ],
+          "takeaway": "都立高の募集人員縮小に伴い競争激化が予想されるため、私立併願校の選定も含めた多角的な戦略が不可欠です。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/09 12:15",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhWDl6TlNQbDlfQkRGZmlDWF9weENpdHl2YVN3VVRneE5rS2RZQ1g5UlQwYjE4clJlc1pHYzdUbHphbnBNR0tDS1l5dHlYQldCd0ZkMzgwcEloZmY3aTY4SlpGWk5LcER4SFB4VnAyanhRUWIzUHVMSWRjb2hUc0E?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "6f6b9d866036",
+          "category_id": "high",
+          "title": "県立高校入試制度が大きく変わる 2年後に「推薦・一般の一本化」と「複数志願制」導入へ 「臆することなく第1志望への挑戦を」 県立高校の魅力向上も課題に",
+          "headline": "県立高校入試制度が大きく変わる 2年後に「推薦・一般の一本化」と「複数志願制」導入へ 「臆することなく第1志望への挑戦を」 県立高校の魅力向上も課題に",
+          "points": [
+            "宮崎県立高校入試は2年後に「推薦・一般の一本化」と「複数志願制」を新たに導入する大きな制度改革を控えている。",
+            "制度変更に伴い、県立高校の魅力向上や第1志望への挑戦を後押しする新たな入試戦略への適応が求められる。"
+          ],
+          "takeaway": "全国的な入試制度の一本化・多様化の流れを把握し、自身の志望校における選抜方法の変更点を早めに把握しましょう。",
+          "source": "UMKテレビ宮崎",
+          "pub_date": "04/02 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSd01mNWcwTFVWanRNMUVudkdCdzdwVm9tM1BrRHZmaVJPM2o5U2lkYXlkTXY0c2hDUWJjWWI2S182RGNXRDBFbVhpQnZjVU1yeEl6ekN5d1hTWXhSZVZqLVZRUnE?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "79e2495cea43",
+          "category_id": "high",
+          "title": "栃木県立高校入試は2027年度からどう変わる？ 日程一本化、再募集…《時系列まとめ》",
+          "headline": "栃木県立高校入試は2027年度からどう変わる？ 日程一本化、再募集…《時系列まとめ》",
+          "points": [
+            "栃木県立高校入試は2027年度からの改革として、試験日程の一本化や再募集の仕組みなどの変更が時系列で発表された。",
+            "選抜日程の短縮や一本化により、受検生の出願動向や学習スケジュールに直接的な影響を及ぼすことになる。"
+          ],
+          "takeaway": "日程一本化に対応するため、出願校の決定時期や過去問演習のスケジュールを前倒しして準備を進めましょう。",
+          "source": "下野新聞社",
+          "pub_date": "09/01 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnRFFjc0tVYjRkaXJQMWNuNmd2R0lES0xZMkhVTnk3MDB5T1NtQndQdDNRX0JFaktSWlFvM2ZLYWtBZ3hjOUwyZXhHNGFrR0NBLTRYWkV5bGpGMGM?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "98252c9ee94f",
+          "category_id": "high",
+          "title": "都立高校にすればよかった…\"無償化\"特需で生徒急増した｢私立｣想定外の惨状､次々と改革打ち出す｢都立｣に回帰の兆し？",
+          "headline": "都立高校にすればよかった…\"無償化\"特需で生徒急増した｢私立｣想定外の惨状､次々と改革打ち出す｢都立｣に回帰の兆し？",
+          "points": [
+            "授業料無償化の特需で私立高校に生徒が急増した一方、私立が想定外の惨状を迎える中で改革を進める都立への回帰傾向が見られる。",
+            "私立の急増と都立の改革という構図の変化が、首都圏全体の高校選びの勢力図や倍率に影響を与え始めている。"
+          ],
+          "takeaway": "無償化制度だけでなく各校の教育内容や改革スピードを冷静に見極め、公私を問わず最適な高校選択を行いましょう。",
+          "source": "東洋経済オンライン",
+          "pub_date": "07/01 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA4QXVRVzh3elJxbmx4SWRyNllwX2ozRHlpM0w1cjlRNExqM1pfbXBiN0xabFd1d2xURUpmUEtpbXV5eXItNTY3bUlzZ1J5bndsZjAtaTBqeEFvVjg?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        }
+      ]
+    },
+    "univ": {
+      "news": [
+        {
+          "id": "e3b6e8cb6c26",
+          "category_id": "univ",
+          "title": "【大学受験2027】国公立大の募集人員13万1,325人、前年度比512人増",
+          "headline": "【大学受験2027】国公立大の募集人員13万1,325人、前年度比512人増",
+          "points": [
+            "2027年度の国公立大学の総募集人員は13万1,325人で、前年度から512人増加しました。",
+            "定員数の微増が各大学の出願倍率や合格ラインに与える影響を注視する必要があります。"
+          ],
+          "takeaway": "募集人員のわずかな変動に惑わされず、志望校の正確な定員増減を確認して出願戦略を立てましょう。",
+          "source": "リセマム",
+          "pub_date": "10/15 15:45",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9rakh4S255eFZPRG9LWV9uMHphcnJLWU5SaDBGZ3NOWGRsR3BpNUZpUHB6SU9WNDYwRnM4Qlh4RE15T3lmWGVqTWF1THczSGVVVktXeDZadkxobnhzakFNN0lnc0ttUQ?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "4e9b1b8731fe",
+          "category_id": "univ",
+          "title": "［PR］大学受験NOW 27年度 難関国立大は志望減、私立大は人気継続",
+          "headline": "［PR］大学受験NOW 27年度 難関国立大は志望減、私立大は人気継続",
+          "points": [
+            "27年度入試では難関国立大学で志望者が減少する一方、私立大学の人気は継続する傾向が見られます。",
+            "受験生の安全志望や私立大への傾斜が、今後の模試の判定や出願動向に大きく影響を与えます。"
+          ],
+          "takeaway": "私立大の激戦化に備えつつ、難関国立大の志望減の隙を突く戦略的な併願プランの検討が有効です。",
+          "source": "毎日新聞",
+          "pub_date": "10/14 15:44",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ObENTdmVaLXB4OXV5NlNzNHdJN2FHa2RXR1o5aWRlOHFZR3o0WWw3VFF4QXc1OWNoUGQwbjEyMjROYU4wU25uSHdXVDd4Mkw0VXBVYw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "531e778cbe86",
+          "category_id": "univ",
+          "title": "【2027年度 大学受験編】高松西高「国公立大に１００人近くが合格」",
+          "headline": "【2027年度 大学受験編】高松西高「国公立大に１００人近くが合格」",
+          "points": [
+            "高松西高において、国公立大学の合格者が100人近くに達する優れた進学実績を上げました。",
+            "地方の公立高校における手厚い進路指導や学習サポート体制が着実に成果を結んでいます。"
+          ],
+          "takeaway": "学校のカリキュラムや指導体制を最大限に活用し、日々の授業の予習復習を徹底することが合格の鍵です。",
+          "source": "四国新聞",
+          "pub_date": "10/12 13:21",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeVgwRnhXT08wSVY4SHFzVHdSTWdNWkp5MVc3bjFULWswNDVVX21BUXI4MEtwTUVaMzRHVUo4OE5POWx2SkVvRjNPc1ZCODF2Y2xISE9adUpxSGU2VmpnclRhdEV3MEZ0TVg4cG9LWnJtSEVSY0dqVmdjR2FIdUFNbGRCMDl3Zw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "6a37f97fe312",
+          "category_id": "univ",
+          "title": "【大学受験2027】旧帝大ら難関国立大、秋の「学園祭」8選（リセマム）",
+          "headline": "【大学受験2027】旧帝大ら難関国立大、秋の「学園祭」8選（リセマム）",
+          "points": [
+            "旧帝大をはじめとする難関国立大学で、秋の学園祭が次々と開催され注目を集めています。",
+            "キャンパスの雰囲気や研究内容を直接肌で感じることで、受験勉強へのモチベーションを高められます。"
+          ],
+          "takeaway": "秋の学園祭を活用して志望校のキャンパスを訪れ、モチベーション向上と具体的な目標再確認に繋げましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/14 18:39",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82NkJ1NjlzTXpxRFYxdGV2azJ6bDVuZWV5X0pIcm95NTVhQTdmMVh4RjlYMjE4UW5TS3pncGs4UmpNMnlHalE3WV81d080QzBHRFdrd2JILUlHLV80UzNLWlFLbGpHYklsLUdiaGxkNWNIeUowN2hVSV95V2pYVkk?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "2ffbe315fe97",
+          "category_id": "univ",
+          "title": "大学入試センター 公式SNSの偽アカウントを確認 偽アカウント名は“大学入試セソター” 個人情報悪用の恐れも",
+          "headline": "大学入試センター 公式SNSの偽アカウントを確認 偽アカウント名は“大学入試セソター” 個人情報悪用の恐れも",
+          "points": [
+            "大学入試センターの公式SNSを装う偽アカウント「大学入試セソター」の存在が確認されました。",
+            "偽アカウントによる個人情報の不正取得や悪用の恐れがあり、受験生への注意喚起がなされています。"
+          ],
+          "takeaway": "SNS上の不審なアカウントやリンクにはアクセスせず、必ず公式サイトで情報を確認してください。",
+          "source": "ABEMA",
+          "pub_date": "09/30 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XUk1SdFhXMFg1T2x4VVpRc1VkZmJ5M3lfTVFVSG5HbjNpeFphMFlHRE1xVThYcmRZNDZWbno4b3FEdGgxbzZXRXZ6cXkyeHVSblVVazQxWDJZdw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        }
+      ]
+    }
+  }
+}

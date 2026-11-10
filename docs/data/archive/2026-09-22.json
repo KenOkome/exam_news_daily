@@ -1,0 +1,273 @@
+{
+  "date": "2026-09-22",
+  "updated_at": "9月22日",
+  "categories": {
+    "junior": {
+      "news": [
+        {
+          "id": "801b44beb8ee",
+          "category_id": "junior",
+          "title": "【中学受験】保護者327名が語るリアル…転塾・伴走、買ってよかったもの",
+          "headline": "【中学受験】保護者327名が語るリアル…転塾・伴走、買ってよかったもの",
+          "points": [
+            "中学受験を経験した保護者327名を対象に、リアルな転塾事情や伴走の工夫、実際に役立った購入品が調査された。",
+            "直前期の学習環境の見直しや、親子二人三脚で乗り切るための具体的なサポート実態が明らかにされている。"
+          ],
+          "takeaway": "他家庭のリアルな失敗談や成功した伴走の工夫を参考にし、自らの直前対策や家庭内サポート体制を見直そう。",
+          "source": "resemom.jp",
+          "pub_date": "09/22 15:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9mYUxPSS1sRWlDQ2NYamNsWjJoNHRGSXV1azNHYWU2ak5URVp4aXJuSmJOT0dOV3NXdktRbXpGRkdmeDRHQ3hramxOZW8yS0s5YmpZOW5RekZNZGFw?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "344192ced0ef",
+          "category_id": "junior",
+          "title": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "headline": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "points": [
+            "東邦大東邦中学校が10月17日に説明会を実施し、各教科の教員による入試解説が行われる予定である。",
+            "全体説明に加えて個別相談も用意されており、千葉県上位校の具体的な出題傾向や対策を直接確認できる。"
+          ],
+          "takeaway": "千葉県の難関校である同校の最新入試情報を直接得るため、教科別解説や個別相談を活用して対策を具体化しよう。",
+          "source": "読売新聞",
+          "pub_date": "09/18 05:00",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa08xc0llWFhhMENQU3FFaDVvY3ZHZXN1TjdGUmhZLXhCeEd1Rmp1RVh3clRPXzlUMGxCb25oWEJ0RDVMYlAyOFNVSHJ3bC1UX1RwcmhOLVZnMnZoNnlob2ZOVjJmVmJ5VzFrNUJhSHFkelk5UTZKMjM3Mm5zeC1yS2szdGJTUktvX1E?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "27a949003bd9",
+          "category_id": "junior",
+          "title": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "headline": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "points": [
+            "四谷大塚と早稲田アカデミーを併用した小6秋の学習スタイルから、渋谷幕張合格に至る勝因と塾への本音が語られている。",
+            "大手進学塾の特長を見極め、単一塾に依存せず子どもに最適な学習環境を選択する重要性が示されている。"
+          ],
+          "takeaway": "秋以降の成績推移や志望校対策に不安がある場合、既存の塾に囚われず外部の指導や模試も活用した柔軟な判断を持とう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/19 08:53",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVnM3ZFlqTlBONTdHQUpaWUJndElDMElLTERRdW5xMGQzQUxocTJnVFRVLXhiQy1BUUltQVpQbmN5c3RJU1NGelpiM3pianctald5Y3ZuM0xCeks5RDBXdGJKMjRVVHZXMkZNeVZsQldSNlZEMEFjS18ta3pNMWtZaXpaVl9jMGNpVnhibmtn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "6005673a4c86",
+          "category_id": "junior",
+          "title": "【戸辺誠七段対談③】環境が良すぎる東京で信念を持って我が子を育てる 中学受験よりファーストを伸ばして",
+          "headline": "【戸辺誠七段対談③】環境が良すぎる東京で信念を持って我が子を育てる 中学受験よりファーストを伸ばして",
+          "points": [
+            "将棋の戸辺誠七段との対談を通じて、東京の恵まれた教育環境下での信念を持った子育て論が展開されている。",
+            "中学受験の過熱にとらわれず、子どもの本来の強みである「ファースト」を優先して伸ばす姿勢が強調されている。"
+          ],
+          "takeaway": "受験一色になりがちな時期だからこそ、子どもの長所や本質的な才能を最優先に育てる家庭の軸を再確認しよう。",
+          "source": "朝日新聞",
+          "pub_date": "09/17 07:33",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JbnYyS3RGNFJyeVBHNk5SRk95V3ItNXh2TUtBYTNMX0JNUnBwZ0g1UFB6S1JLR2QwNHVlZ29YYlQtMXotckppUmlULTMtdU5UNThqcnhn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "1b682fb9d9fb",
+          "category_id": "junior",
+          "title": "【中学受験】今週末行ける中高一貫「学校見学」9/26-27…栄光、世田谷学園など10校",
+          "headline": "【中学受験】今週末行ける中高一貫「学校見学」9/26-27…栄光、世田谷学園など10校",
+          "points": [
+            "9月26日・27日の週末に、栄光中や世田谷学園など中高一貫校10校で学校見学が実施される。",
+            "秋の直前期に向けて、各校の教育方針や実際の生徒の様子、キャンパス環境を肌で感じる絶好の機会となっている。"
+          ],
+          "takeaway": "秋以降のモチベーション向上と志望校の最終確認のため、公開行事や見学を活用して学校のリアルな空気を体感しよう。",
+          "source": "resemom.jp",
+          "pub_date": "09/21 09:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9KSGR5YWFSeHdTTjVmdEVUR0h6R2NLYTJ5cFlheUlocEUtcEZDc3BYdHlYdnhnOU1GZlJROEF4ZlRCZW9iSHMtTEh4aWRGajZKWWstWVEtVS15aGly?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        }
+      ]
+    },
+    "high": {
+      "news": [
+        {
+          "id": "b1b3db9fec8b",
+          "category_id": "high",
+          "title": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "headline": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "points": [
+            "府中市を含む東京都内の公立中学校卒業予定者らを対象とした、来春の都立高校入試のスケジュールが正式決定した。",
+            "学力検査の実施日が2月21日に定められ、今後の出願や合格発表に向けた具体的な準備期間が明確になった。"
+          ],
+          "takeaway": "試験日が確定したことで逆算的な学習計画が可能に。早めに年間スケジュールを把握し、直前の追い込み期間を逆算して日々の演習量を十分に確保しましょう。",
+          "source": "選挙ドットコム",
+          "pub_date": "09/21 05:31",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGcDRmRk5NWlQ5WURNSGhPdm1nU204SGNLZjFKMU5rREpNRzR0eDJuSXNSdll1Sjg3S3NwTlA2ZlpQUG5uMm5QVHVONmRfd0YxUm1tVVN3dlJoSXk1WnNr?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "1c9af482685e",
+          "category_id": "high",
+          "title": "【高校受験2027】都立3万9,600人、私立2万7,000人受入れ",
+          "headline": "【高校受験2027】都立3万9,600人、私立2万7,000人受入れ",
+          "points": [
+            "東京都教育委員会より2027年度入試における都立高校と私立高校の募集・受入予定人数がそれぞれ発表された。",
+            "都立高校で3万9,600人、私立高校で2万7,000人の受入規模が設定され、進路選択のパイプラインが示された。"
+          ],
+          "takeaway": "募集定員の規模感を把握することで、公私併願の戦略を早期に立てられます。倍率変動のトレンドに注意しながら、志望校の幅を柔軟に持たせましょう。",
+          "source": "リセマム",
+          "pub_date": "09/10 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XRFo2YUdmVTRHSUlVeElGYnl4cVRNekJjUG96RFZ3SmUtVTJkQ2dvQjlNc2VkcW1scDA3Zk1LREtYWWtNZzZLYVFVdFhOMGVLa3FYdk5aSEJNOFlpNnlnZnBSQWFUUQ?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "06078de9dcdd",
+          "category_id": "high",
+          "title": "【高校受験2027】千葉県公立高、船橋・柏など8校8学科が傾斜配点 (リセマム)",
+          "headline": "【高校受験2027】千葉県公立高、船橋・柏など8校8学科が傾斜配点 (リセマム)",
+          "points": [
+            "千葉県公立高校入試の2027年度選抜において、船橋高校や柏高校など計8校の8学科で傾斜配点が実施されることが判明した。",
+            "特定教科の配点を高くすることで、各高校が求める専門性や学力特性に合致した生徒をより重視して選抜する仕組みとなっている。"
+          ],
+          "takeaway": "対象校を志望する場合、傾斜配点の実施教科で高得点を取ることが合格の鍵になります。早い段階から得意科目をさらに伸ばす戦略的学習が不可欠です。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/14 17:45",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdXhDNzdUc3R1MFktNS1jT2loWEdmcmhxUk1rY003UFZMUU44NVY2Mk80c0VXZmJnRnpyWGJ0OUs2TExCa0lhQWlyYVhoYl9aNkxWUGlQZVdqSHdDOWlJOEZPRFpmT1NjcXpQN0N5OU9EN2JfbnlXdU9WcHFUaExWZThENmQ1eDhrVjl6ZE13?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "79e2495cea43",
+          "category_id": "high",
+          "title": "栃木県立高校入試は2027年度からどう変わる？ 日程一本化、再募集…《時系列まとめ》",
+          "headline": "栃木県立高校入試は2027年度からどう変わる？ 日程一本化、再募集…《時系列まとめ》",
+          "points": [
+            "栃木県立高校入試は2027年度から入試日程の一本化や再募集の仕組みなど、制度の大幅な変更が予定されている。",
+            "従来の複数回に分かれていた選抜制度から移行するため、受験生の出願プロセスや合否判定の仕組みが大きく様変わりする。"
+          ],
+          "takeaway": "首都圏近郊の入試制度改革の動きとして注目されます。近隣県の動向も視野に入れつつ、最新の募集要項や変更点をこまめにチェックする習慣をつけましょう。",
+          "source": "下野新聞社",
+          "pub_date": "09/01 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnRFFjc0tVYjRkaXJQMWNuNmd2R0lES0xZMkhVTnk3MDB5T1NtQndQdDNRX0JFaktSWlFvM2ZLYWtBZ3hjOUwyZXhHNGFrR0NBLTRYWkV5bGpGMGM?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "16acfd0710ae",
+          "category_id": "high",
+          "title": "都立学校への入学に関するお問い合わせについて|生徒・保護者",
+          "headline": "都立学校への入学に関するお問い合わせについて|生徒・保護者",
+          "points": [
+            "東京都教育委員会は、生徒や保護者を対象にした都立学校への入学に関する公式なお問い合わせ窓口を案内している。",
+            "出願手続きや入学要件など、制度に関する疑問や不明点を直接確認するためのサポート体制が整備されている。"
+          ],
+          "takeaway": "出願や制度上のルールで迷った際は、憶測で判断せず公式の問い合わせ窓口を活用し、正確な情報を確実に把握して手続きのミスを防ぎましょう。",
+          "source": "kyoiku.metro.tokyo.lg.jp",
+          "pub_date": "04/01 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oMFlTMjdRdDZLcFVJSV9YS2dQSGhTWFZJT0tNYWlxTWxSM09KY3FPZXJGVDVTeEU0V0Z2d3o1emtoeWkwT0NsRm9hMnU4YjBnLUxEcnBLQjRISVNwVTlackhGVTVNSURjMmQ1cEtXV01kVFZ3TVVsZG9KQmNnOVk?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        }
+      ]
+    },
+    "univ": {
+      "news": [
+        {
+          "id": "ffb197a5574c",
+          "category_id": "univ",
+          "title": "【大学受験2027】国公立大2段階選抜の実施基準を一覧化…駿台",
+          "headline": "【大学受験2027】国公立大2段階選抜の実施基準を一覧化…駿台",
+          "points": [
+            "2027年度入試に向けた国公立大学の2段階選抜（プレテスト等）の実施基準を駿台が一覧化して発表した。",
+            "志望校の足切りラインや予告倍率の変化を早期に把握し、出願戦略を立てる上で欠かせない重要データとなる。"
+          ],
+          "takeaway": "高2の冬を迎える前に志望校の足切り基準を確認し、共通テスト対策の目標点を明確に設定しましょう。",
+          "source": "resemom.jp",
+          "pub_date": "09/17 15:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oRVV4dldxMHFDNFlPRVVMVFBHbDhLbUhwYlZzanNqenZZZWg3OUdqQnIyYXRJNlhVVi1idHRtWlNFV0dhM3FMYWlNazhQN2Q4UkZjNEh0dXlZODI5?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "8692a3664c46",
+          "category_id": "univ",
+          "title": "【大学受験2027】調査書を点数化する国公立大…駿台が一覧公開 (リセマム)",
+          "headline": "【大学受験2027】調査書を点数化する国公立大…駿台が一覧公開 (リセマム)",
+          "points": [
+            "駿台が調査書を合否判定で点数化する国公立大学の情報をまとめ、一覧として新たに公開した。",
+            "学力試験の点数だけでなく、学校での評定や活動記録が合否に影響する大学の傾向が把握できる。"
+          ],
+          "takeaway": "日頃の定期テストや評定平均の維持が、国公立大の合否を分ける鍵になるため高校生活の記録を重視しよう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/18 09:45",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUVQ3Q3dWbkNqZWVYZmRLUU0yYXJVMElPd1c2dXBWZlJSSGlFc3E4ZWcyc0x3SXF6TUpRblRjazVpeEJJNWJmeC1RbjNFdHByT3VUcTF2bElwOU5zVUhUTmdPSmpvQk1hZUlHUVFnOENDNU5VNXd5RVV0R0FlUVRwbVBSN1Y1Ry1Kck9BT2d3?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "37dedab29dd5",
+          "category_id": "univ",
+          "title": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "headline": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "points": [
+            "大学入試センターは共通テストのウェブ出願受付を開始し、出願期間は来月2日までとなっている。",
+            "従来の紙の出願冊子からオンライン手続きへ移行する過渡期であり、手順の確認と確実な完了が求められる。"
+          ],
+          "takeaway": "出願締め切り間際のシステムトラブルや入力ミスを防ぐため、余裕を持って早めに手続きを完了させましょう。",
+          "source": "時事ドットコム",
+          "pub_date": "09/15 14:52",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BTHEzdnRMNG1wYVMxRnl0dWYzTGxlcHliZjlmUzRpVEdZbG5zbkRiQ0ZZOEVBOGIzam5TVEprNDNVa3NSUVJGZGItaVZwWHpMRVhXc2x3OU0tS3MtTjE3T2dGaw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "54a934c4cedb",
+          "category_id": "univ",
+          "title": "2027年度の国公立大学入試要項まとまる 共通テスト、前期日程…今後の主なスケジュールは？",
+          "headline": "2027年度の国公立大学入試要項まとまる 共通テスト、前期日程…今後の主なスケジュールは？",
+          "points": [
+            "2027年度入試に向けた国公立大学の全体的な入試要項がまとまり、共通テストや前期日程等のスケジュールが明らかになった。",
+            "新課程入試に対応した各大学の個別試験の変更点や配点比率を詳細に確認する必要がある。"
+          ],
+          "takeaway": "夏以降に発表される最新の大学別入試要項を必ず取り寄せ、募集定員や試験科目の変更点を徹底的に分析しよう。",
+          "source": "新潟日報",
+          "pub_date": "09/04 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1HRXkwZkEwZ1UtNm9Xb181WGpiam42dWpremVlUWhmczJmUUlNNW1WYTY1U05HSzhVYVdETlY2YVdLYjFwb1dWXzlyVG5OeENpM0ZUT0UydnJObUw1N1E?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "74b710caa465",
+          "category_id": "univ",
+          "title": "大学入試センター、公式サイトの資料一覧ページが公開状態に 非公開化は「誤解を避けるため」",
+          "headline": "大学入試センター、公式サイトの資料一覧ページが公開状態に 非公開化は「誤解を避けるため」",
+          "points": [
+            "大学入試センターは誤解を避けるため非公開としていた公式サイトの資料一覧ページを再び公開状態に戻した。",
+            "受験生や高校の進路指導部が公式の入試関連データや通知にアクセスしやすくなり、情報収集の不安が解消された。"
+          ],
+          "takeaway": "噂やフェイクニュースに惑わされないよう、大学入試センター等の一次情報をこまめに確認する習慣をつけましょう。",
+          "source": "ITmedia",
+          "pub_date": "08/28 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SVHdsSnM3Z1dVTVBFakRocmZ3dlVib0U4OGM0cTg5T0ZZRXdxcC1xZ3NJeUFWb0dJaHZrYWJfLXFkbFZiU1dwQ2d3LWJBenllNF8tdGh5S3hxYkhLYUxXTFFfZ2NjdVR6VUE?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        }
+      ]
+    }
+  }
+}

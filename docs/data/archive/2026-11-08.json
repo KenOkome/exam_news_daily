@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-08",
+  "updated_at": "11月08日 07:43",
+  "categories": {
+    "junior": {
+      "news": [
+        {
+          "id": "e0fef2db42",
+          "category_id": "junior",
+          "title": "中学入試の過去問が電車内広告に、首都圏各線・日能研が掲示…西武文理",
+          "headline": "日能研が首都圏私鉄で西武文理の中学入試過去問広告を展開",
+          "points": [
+            "日能研が首都圏各線の電車内広告にて、西武文理中学校の実際の入試過去問を公開・掲示した。",
+            "受験生に日常の移動時間を利用した実践的な問題演習の機会を提供し、学習意欲を高める狙いがある。"
+          ],
+          "takeaway": "毎日の通学電車などの隙間時間を活用し、他校の良問にも触れることで実戦力を効率的に高めましょう。",
+          "source": "読売新聞",
+          "pub_date": "11/06 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTXk1UzRmbGZaZEM2Qm9kUEZGZGVOZkZ4U25zTm5xc1ktRzZLUEFfeEk1NzJLVFJvcERWWmdSeFpXVzBHNDJOQjRsX09vZUpLaHJmcGlDV1NGdjdNMVBOMkVCOGduWVNBdURUeklNYmc3bVBjanlmUjBQdW1GbVhtX1phQzIyZHEtVHc?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "2fdf353127",
+          "category_id": "junior",
+          "title": "【中学受験】併願日程を家族で共有…無料ツール「hitomeru」",
+          "headline": "複雑な併願日程を家族で共有できる無料ツール「hitomeru」",
+          "points": [
+            "中学受験の多様化する複雑な併願スケジュールを、家族間で簡単に一元共有できる無料ツールが公開された。",
+            "複数日程の出願締切や受験日、合格発表日の管理ミスを防ぎ、直前期の家族間の連携を円滑にする。"
+          ],
+          "takeaway": "出願日や試験日の見落としを防ぐため、保護者と受験生でデジタルツールを活用しスケジュールを完全共有しましょう。",
+          "source": "リセマム",
+          "pub_date": "11/06 11:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1WeF9rZ1ZybmltY3hPUW5zWi1JRkpJRDh1bmN2blM1Q3ZkTWwtRm5LMG8teFo1MFEwc3VFUWFpN0FuMFQ1Tk5BajllZ19zc0FfS0thV3ZIZ3ozRWdS?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "17d2948ef5",
+          "category_id": "junior",
+          "title": "【中村太地八段対談③】将棋と中学受験は“相性がいい” 考える力と待つ力を培い、優しい心を育てる",
+          "headline": "将棋と中学受験の共通点、考える力と待つ力を育む指導法",
+          "points": [
+            "中村太地八段の対談により、将棋の思考プロセスと中学受験の学習が相性抜群であることが解説された。",
+            "試行錯誤を重ねて深く考える力や、粘り強く耐える忍耐力を培うことで子どもの優しい心も育まれる。"
+          ],
+          "takeaway": "日々の学習ではすぐに答えを出させず、粘り強く自力で思考するプロセスを家庭でも意識的に見守りましょう。",
+          "source": "朝日新聞",
+          "pub_date": "11/06 07:33",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tWG8zVy00ZEtackNxOUFBTFhVa2RFQkxHQ2ljWGVkdXVqRVotNUtRMTZpX2N4U0Y0Q0FrSlRoTU1qUThmUHNETzUxTXY0NGQyTlU0SkVB?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "846c918627",
+          "category_id": "junior",
+          "title": "東大・京大・東京科学大・一橋大の合格率が高い「首都圏中高一貫校」ランキング トップ常連・筑駒に肉薄した男子校はどこ？【2026年版】",
+          "headline": "難関国立大に強い首都圏中高一貫校ランキング最新版が発表",
+          "points": [
+            "東大や京大などの合格率が高い首都圏中高一貫校の2026年版ランキングがAERA DIGITALで公開された。",
+            "トップ常連の筑駒に肉薄する男子校の動向など、最難関校を狙う受験生の学校選びの重要指標となる。"
+          ],
+          "takeaway": "単なる偏差値だけでなく、志望校の大学合格実績の伸びや学校の教育方針を照らし合わせて併願校を検討しましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/06 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fXzNiVGRmSDZrLTc3NlZyNXRTWGYzVXo1YWN6NmtqeDZjZEc3bDNFZ0dyWFdRd0NpVzZaWFdzZUo2TlRsbHpUSHlxOG01VmxtWVNNaVBJeVpvZEFF?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "21f2600488",
+          "category_id": "junior",
+          "title": "首都圏の中学受験、1人あたり平均出願校数は過去最多の7.76校。家族の「誰が・いつ・何をするか」をひとめにまとめる無料ツール「hitomeru 中学受験」",
+          "headline": "首都圏の中学受験は多校化が加速、出願平均は過去最多の7.76校に",
+          "points": [
+            "首都圏の中学受験における1人あたりの平均出願校数が過去最多の7.76校に達し、併願戦略の負担が増大している。",
+            "複雑化する出願日程や家族の役割分担を視覚化し、管理漏れを防ぐ無料ツール「hitomeru 中学受験」の活用が有効。"
+          ],
+          "takeaway": "併願校増加によるスケジュール管理の複雑化を防ぐため、家族間で最新の共有ツールを導入し、出願・手続きの担当を明確化してください。",
+          "source": "PR TIMES",
+          "pub_date": "11/05 10:10",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HZkM3UEVTanppM1hHUHpINGZoV0IzVzVPZXRibzFOMjZlUUxwZ1diUzJzejRtTDBIdDRQNnpCN053ZTFjaUJMclF3cTgwblVEVDRKeW5MTk9jNHZ4TF9qa0ZST0Y0TEY3d0E?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "7e844f992b",
+          "category_id": "junior",
+          "title": "中学受験「偏差値50」にがっかりする親が知らないこと 頑張っても偏差値が上がらないのはなぜ？",
+          "headline": "偏差値50の壁を超えるための正しい分析視点",
+          "points": [
+            "頑張っても偏差値が上がらないのは努力不足ではなく学習の質や志望校の傾向と現在の実力とのミスマッチが主な原因です。",
+            "テストの点数だけでなく失点の原因を細かく分析し基礎の抜け漏れを徹底的に潰すことで停滞期を脱却できます。"
+          ],
+          "takeaway": "面談では単に偏差値を追うのではなく過去問の傾向分析と弱点補強の具体的なスケジュールを提示しましょう。",
+          "source": "SYNCHRONOUS シンクロナス",
+          "pub_date": "11/04 06:00",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03QVVKdnZpZEN6bmwtUWdXOFFyRzdGemdEcGlIY3NYY1lkd085RXlzZG5LWXoxVU5xT2lsNk5sYVBNNmFZUEVkYVpGdFVzUWh4eG9TbA?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        }
+      ]
+    },
+    "high": {
+      "news": [
+        {
+          "id": "d37dd539f5",
+          "category_id": "high",
+          "title": "都立高校で沖縄戦語る 高山さん「修学旅行で気づいて」",
+          "headline": "都立高校で沖縄戦語る 高山さん「修学旅行で気づいて」",
+          "points": [
+            "琉球新報デジタルによる「都立高校で沖縄戦語る 高山さん「修学旅行で気づいて」」の最新レポートです。",
+            "高校受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "琉球新報デジタル",
+          "pub_date": "本日 05:00",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yWk5tVnM3czZiWGNtYVJXVlpUemlwZWhrNFFBSzJCay1TQnJHMVNSWGlVV0JIMUt1LXlwS3pWNU9CTTl5RW9fOUw0MkxBdFVDWHY1cnUzQTJBVFVyTDdhMA?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "700d69b72d",
+          "category_id": "high",
+          "title": "千葉県立高のあり方、理数教育の課題や遠隔授業で意見まとめ",
+          "headline": "千葉県立高改革：理数教育と遠隔授業導入へ",
+          "points": [
+            "千葉県立高校の今後のあり方について、理数教育の強化や遠隔授業の活用に関する具体的な意見がまとめられました。",
+            "これからの時代に求められる専門性の高い学びや、地域間格差を是正する新しい授業形態の導入に向けた議論が加速します。"
+          ],
+          "takeaway": "志望校選びの際は、各校の理数系プログラムの充実度やICT教育・オンライン授業の導入状況を事前に確認しておきましょう。",
+          "source": "リセマム",
+          "pub_date": "11/05 14:55",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jM2RtQ2RnckJJdkFfbktKdnhpUUZzN0NxcXJXVFZBVE9aSTVqOU1xcmVETVkzcGJBSUQzdE1reXBpRkpYaGxDVjctWndLZ3NJMHlrdUZzWlhUWWpEeFVzaVAwNTE4UQ?oc=5",
+          "is_new": true,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        },
+        {
+          "id": "abfcaccf68",
+          "category_id": "high",
+          "title": "東京・昭島市の都立高校で「スプレーをまいてけが人がいる」119番通報 (2026年11月5日掲載)",
+          "headline": "都立高校でスプレー噴霧事故、安全対策に懸念",
+          "points": [
+            "東京・昭島市の都立高校において、校内でスプレーがまかれ負傷者が出たとする119番通報が入り、大きな騒ぎとなりました。",
+            "学校内の安全管理体制や、生徒間のトラブル防止策、緊急時の対応手順についての見直しと点検が急務となっています。"
+          ],
+          "takeaway": "学校説明会や見学の機会には、日常の防犯体制や生活指導の方針、いじめ対策などの安全面についても必ず確認しましょう。",
+          "source": "ライブドアニュース",
+          "pub_date": "11/05 11:48",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81a2dWeFdqdHdmd0FoYWlyenUyLWFMcWRzMU5INi05QXd1ZEFQWWE1UmRISUlqaFB4Q2NtU1JkUmpJZW5kWUo4V2FMNGVKQTZHa3RZMUE3dVBIbjNrZlE?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "82d4d045ca",
+          "category_id": "high",
+          "title": "ねんりんピック 高校生も選手を歓迎",
+          "headline": "ねんりんピック：埼玉の高校生が選手を温かく歓迎",
+          "points": [
+            "地域の一大イベントである「ねんりんピック」において、地元の高校生たちがボランティア等で選手を温かく歓迎しました。",
+            "地域社会との交流や主体的なボランティア活動への参加が、生徒たちの人間性を育む貴重な経験となっています。"
+          ],
+          "takeaway": "内申点や面接対策として、地域貢献やボランティア活動に積極的な高校の姿勢や、総合型選抜への影響も意識しておきましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "11/03 17:00",
+          "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOZjZKcDZzWGtxSldmS1NkU2NTNlpTX2FUa3d4NDdYQnpZYkRFMFpEeHdRS3pDeEg5aDN3QzJQVFF2X2lZY25Sa1diR2x0R0w3djhJVXl4MzNnVHJhd2czcEpfVjZkRi04bHc4VXU3Nm5hN1NoTXZJYnNsQ3VhaFJqUDNHR2RXUnIybHJGY2xmcnpsa1RJRkxMSXZOWlRyODFnRWtBeDMwUXY4M2lVdHBmcUNHYkh5WXVpckpVaHFSdFBDbm5FV29Xem01SmlCd20xX3d4WmV3RWd4Sm9xc015U0JBdjRhYXd3a0ZsaldkeHdnRGMtangtX0JaR1RkMlJjWWtzVXdDQ3dBQUtuM2ZOSXlWMnRpMmZOMmltOXJuZnFSSnY0Rnc?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "16ce704d28",
+          "category_id": "high",
+          "title": "支援学級だと高校入試で不利？評定・調査書・受検上の配慮を分けて考える",
+          "headline": "支援学級在籍は高校入試で不利？調査書と配慮の実態",
+          "points": [
+            "支援学級の評定や調査書の記載方法が合否や受験校選びに与える影響の実態を整理する必要がある。",
+            "当日の受検上の配慮申請の基準と手続きを踏まえ、中学校との事前の密な連携が合否を左右する。"
+          ],
+          "takeaway": "評定の付け方や調査書の特記事項を中1・中2の段階から担任と確認し、必要な受験上の配慮は早めに学校へ相談しましょう。",
+          "source": "ライブドアニュース",
+          "pub_date": "11/02 09:00",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TY0V1MVRScXF5amdOQzBXTWFSaE1KNDd5dnQwa0ZJRXdaSHM3TUZaUlNkWDhzV3M1MlBWenFaZ2hhWk5pMWNIR2hIc0ZQWWpCQ1ZGd09ZQm9iNV9UaU53?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "b03de04871",
+          "category_id": "high",
+          "title": "【高校受験特集】秋の進路面談を予習しよう",
+          "headline": "秋の進路面談を完全予習、後悔しない三者面談の準備",
+          "points": [
+            "秋の進路面談に向けて保護者と生徒が事前に準備すべき心構えや質問事項のポイントが特集されている。",
+            "併願優遇の最終確認や模試データを踏まえた現実的な出願校の絞り込みを円滑に進めるための必須ノウハウである。"
+          ],
+          "takeaway": "面談前に現在の模試成績と第1〜第3志望までの具体的な併願パターンを親子ですり合わせておきましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "10/31 13:19",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9jSFJsOHV3c21WOVNkaDdPbjJsa1Q1TTRha1hYMjduOUl1M0F2aWRMRGJ1QVNualNuMThDLXEzNHNReHRCaEdVT1Jn?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "univ": {
+      "news": [
+        {
+          "id": "2a9357def5",
+          "category_id": "univ",
+          "title": "都市と地方、親の経済力…入試をめぐる「格差」どう埋める 総合型選抜の大学受験塾「リザプロ」孫辰洋さん",
+          "headline": "総合型選抜が広げる入試格差の現実と対策",
+          "points": [
+            "総合型選抜入試において都市部と地方間や家庭の経済力による情報・準備の格差が課題となっている。",
+            "受験塾リザプロの孫辰洋氏が、格差を埋めるための具体的な支援のあり方や対策について言及した。"
+          ],
+          "takeaway": "総合型選抜は早期の対策と情報収集が合否を左右するため、経済的負担を抑えたオンライン塾や自治体の支援制度の活用を検討してください。",
+          "source": "東京新聞",
+          "pub_date": "本日 05:00",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzRVFFdnVHWHFBVUpfRHMxWU82aU1IbGdSM2ZlVkVCNFdJbDVnVnhKc0dDbm5CR0xxZ2FyZER5dU1Ia0M0dF9NM2hVcVNULThTS3I4?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "b68b85274f",
+          "category_id": "univ",
+          "title": "【共通テスト2027】出願サイト操作マニュアル第3編公開…成績請求・入学確認票",
+          "headline": "共通テスト2027出願マニュアル第3編公開",
+          "points": [
+            "独立行政法人大学入試センターより成績請求および入学確認票に関する出願サイト操作手順の第3編が新たに公開された。",
+            "2027年度入試の出願手続きを円滑に進めるため、受験生や保護者は最新のマニュアルを確認しシステム操作に備える必要がある。"
+          ],
+          "takeaway": "夏以降の出願準備に向けて、保護者はマニュアルの更新情報を定期的に確認し、電子出願システムの操作手順を親子で把握しておきましょう。",
+          "source": "リセマム",
+          "pub_date": "11/06 19:45",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoMHpnOG5kazNoOXhWNkdpTzlUYV9ybWVidk5wbWw5Wnd5MXhrRDNfQnZFckpGMDNpbjVGTWRvZDd6QXJZaDY5a1pxMGd3c1U5UE5FZ3FtUlBXSTR3?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "9f47c6f647",
+          "category_id": "univ",
+          "title": "【大学受験2027】文系比率が上昇…河合塾の動向分析",
+          "headline": "河合塾の動向分析で判明した文系比率の上昇",
+          "points": [
+            "河合塾の最新の動向分析により、大学受験における文系志望者の比率が上昇していることが明らかになった。",
+            "新課程入試への移行や学部再編の動きを背景に、受験生の志望動向や難易度バランスに変化が生じている。"
+          ],
+          "takeaway": "文系志望者の増加による競争激化を見据え、高1・高2生は早めに基礎固めを行い、併願校選定の幅を広げる戦略的な受験計画を立てましょう。",
+          "source": "リセマム",
+          "pub_date": "11/06 18:15",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE15bjJ3elBxN1FmVGVHOThNeklXMkV6Q2RJaURaT0ZhRW9BWDFGYkRvX2lsZE9zQU4yUmVVdVB2ZkFhNEU4bTF4eG1PNTduTmVOblJoanBSQmFQLXB3TXlKcnBXY29xQQ?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "10907ce9e6",
+          "category_id": "univ",
+          "title": "【大学受験】保護者も知りたい「情報I」共通テスト対策のポイント",
+          "headline": "共通テスト情報I対策、保護者が知るべき学習のポイント",
+          "points": [
+            "新課程で導入された共通テスト「情報I」について、保護者が押さえておくべき対策の重要ポイントが解説されました。",
+            "プログラミングやデータ活用など新科目は配点が高く、合否を分ける鍵となるため早期の対策が求められます。"
+          ],
+          "takeaway": "塾の模試結果を活用して苦手分野を早期に特定し、プログラミングやデータの分析手法を中心に実践的な演習を重ねましょう。",
+          "source": "リセマム",
+          "pub_date": "11/05 12:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VRmlUZlpqbFZnalNjWUVJYkltdVZ1em85RFhyZWdBQnNTX3lEU0NZQVhSR1ZCZjdqZ1lPM19lMmZHVkxIQklWY3pFaDN6NHN5RlhCUFNpT0ExdC1V?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "dc70a4121d",
+          "category_id": "univ",
+          "title": "【大学受験の交通費】もし仙台から東京の私大4校受験するとしたら…「スケジュール3パターン」を新幹線の学割で試算（LIMO）",
+          "headline": "地方からの東京私大受験！交通費を抑えるスケジュール試算",
+          "points": [
+            "仙台から東京の私立大学4校を受験する場合の具体的な遠征スケジュールを3パターンで試算しています。",
+            "新幹線の学割を活用した移動コストの比較により、遠方受験における経済的負担の全体像が把握できます。"
+          ],
+          "takeaway": "地方生は受験校の試験日程を緻密に組み、連泊や往復回数を工夫して遠征費用の無駄を徹底的に削りましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/03 04:31",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10VHp4dkxwV01talFCV1ZkVnByRjlWcGNtTW91VE1oVjhPa05LdmczNXFzSVFOMjBNT3c4OU9Fa1RxZllsNk5VVTFUX0pINVN5WEZqbU9kTXdOaHRtMlVOYTZrT1B5ellhLW1VdS1ZZ2xWQXVQYWdtNTFoXzJtRmM?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "c01d6cebf4",
+          "category_id": "univ",
+          "title": "【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）",
+          "headline": "2027年度MARCH入試の動向と合格者数の予測",
+          "points": [
+            "2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。",
+            "私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。"
+          ],
+          "takeaway": "志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/22 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "date": "2026-09-24",
+  "updated_at": "9月24日",
+  "categories": {
+    "junior": {
+      "news": [
+        {
+          "id": "d963dd51e49b",
+          "category_id": "junior",
+          "title": "増える選択肢、注意点は？ 中学受験 広がる英語入試の最新事情（下）",
+          "headline": "増える選択肢、注意点は？ 中学受験 広がる英語入試の最新事情（下）",
+          "points": [
+            "朝日新聞が報じた中学受験における英語入試の最新動向の後半部分であり、受験生側の選択肢増加に伴う留意点を解説。",
+            "英語を武器にする受験が増える中、各校の試験形式やレベル差に応じた戦略的な見極めが求められている。"
+          ],
+          "takeaway": "英語入試を導入する学校が増加する一方、自らの得意分野と各校の出題傾向が合致しているか慎重な見極めが必要です。",
+          "source": "朝日新聞",
+          "pub_date": "09/25 07:31",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE80ZGpLa25XN1F2c3RlblJXcVRwUXI1T2VkblAwREQ5ZWN6bFI3cXVoeUVmajVfVUw3MUV0LWYwOFRYRWk0LVFUTy1lTnJSVURXY1RnaVBR?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "1b682fb9d9fb",
+          "category_id": "junior",
+          "title": "【中学受験】今週末行ける中高一貫「学校見学」9/26-27…栄光、世田谷学園など10校",
+          "headline": "【中学受験】今週末行ける中高一貫「学校見学」9/26-27…栄光、世田谷学園など10校",
+          "points": [
+            "栄光、世田谷学園など全10校の中高一貫校が、9月26日〜27日の週末に学校見学会を実施するとリセマムが報じた。",
+            "秋以降の志望校絞り込みに向け、実際のキャンパスに足を運び教育方針や雰囲気を直接確認する絶好の機会となる。"
+          ],
+          "takeaway": "秋の出願準備に向けて、ウェブ情報だけでなく実際に足を運び学校の雰囲気を肌で感じて志望度を固めましょう。",
+          "source": "リセマム",
+          "pub_date": "09/21 09:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9KSGR5YWFSeHdTTjVmdEVUR0h6R2NLYTJ5cFlheUlocEUtcEZDc3BYdHlYdnhnOU1GZlJROEF4ZlRCZW9iSHMtTEh4aWRGajZKWWstWVEtVS15aGly?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "27a949003bd9",
+          "category_id": "junior",
+          "title": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "headline": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "points": [
+            "渋幕合格を巡り、四谷大塚に加えて早稲アカも追加した小6親子の体験談から、秋以降の塾活用法とリアルな本音を詳報。",
+            "大手進学塾のカリキュラムに対する違和感を乗り越え、直前期に子供に最適な学習環境を再構築する重要性を示している。"
+          ],
+          "takeaway": "模試の結果や過去問演習が進む小6の秋こそ、既存の塾に依存せず合格へ向けて最適な学習環境を主体的に選択しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/19 08:53",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVnM3ZFlqTlBONTdHQUpaWUJndElDMElLTERRdW5xMGQzQUxocTJnVFRVLXhiQy1BUUltQVpQbmN5c3RJU1NGelpiM3pianctald5Y3ZuM0xCeks5RDBXdGJKMjRVVHZXMkZNeVZsQldSNlZEMEFjS18ta3pNMWtZaXpaVl9jMGNpVnhibmtn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "344192ced0ef",
+          "category_id": "junior",
+          "title": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "headline": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "points": [
+            "東邦大東邦中学が10月17日に開催する入試説明会では、各教科の教員による直接の解説と個別相談が予定されている。",
+            "千葉県の難関校である同校の入試傾向を正確に把握し、個別相談で不安を解消できる貴重な機会となっている。"
+          ],
+          "takeaway": "千葉県の難関校を目指す受験生は、教科担当者による直前の解説を聞き、出題傾向の変化を確実に対策に反映させましょう。",
+          "source": "読売新聞",
+          "pub_date": "09/18 05:00",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa08xc0llWFhhMENQU3FFaDVvY3ZHZXN1TjdGUmhZLXhCeEd1Rmp1RVh3clRPXzlUMGxCb25oWEJ0RDVMYlAyOFNVSHJ3bC1UX1RwcmhOLVZnMnZoNnlob2ZOVjJmVmJ5VzFrNUJhSHFkelk5UTZKMjM3Mm5zeC1yS2szdGJTUktvX1E?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "4eaf3755141f",
+          "category_id": "junior",
+          "title": "「英語が得意」は中学受験で武器になる？ 広がる英語入試の最新事情（上）",
+          "headline": "「英語が得意」は中学受験で武器になる？ 広がる英語入試の最新事情（上）",
+          "points": [
+            "朝日新聞の特集記事（上）で、中学受験において「英語が得意」であることがどれほどの強力な武器になるかを検証。",
+            "早期からの英語学習が中学入試の選択肢を劇的に広げ、進路の可能性を大きく引き上げるトレンドを解説している。"
+          ],
+          "takeaway": "英語を強みに持つ受験生は、一般入試だけでなく英語選択型入試を視野に入れることで合格の可能性を広げられます。",
+          "source": "朝日新聞",
+          "pub_date": "09/24 07:34",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAtVkkyX3BES1FzaXdkUEhfcFNfNE4wSlFpMmpiWEZpMFlWanhKLThEbkNQNUlZRWxFM2IweHg3RmZJczhvMVZLa2lFNXc5S093amM3ek1n?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        }
+      ]
+    },
+    "high": {
+      "news": [
+        {
+          "id": "74bf5ea632ab",
+          "category_id": "high",
+          "title": "【高校受験2027】千葉県、帰国生徒など特別選抜の予定人員公表（リセマム）",
+          "headline": "【高校受験2027】千葉県、帰国生徒など特別選抜の予定人員公表（リセマム）",
+          "points": [
+            "千葉県教育委員会が2027年度入試における帰国生徒などの特別選抜の予定人員を正式に公表した。",
+            "帰国生枠での受験を検討している生徒や保護者は、早期に最新の募集要項や人数を確認する必要がある。"
+          ],
+          "takeaway": "対象校の募集人員の増減をいち早く把握し、海外からの帰国スケジュールと合わせた出願準備を進めましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/24 13:45",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBWMVpOVC14QXZpS0R0Y2RaU2JZSktkQjluVDBwamp2WDNVaXVfMExjSHh4S2hlU0dleEdnbjhoMlVnWExCS3lBT1Z0UjFRa3BSMVFjeHZlNlE2Rnl4elpCSUd6VzdkSGR4aGtiT2JKVG5jR1dMMUpUZEVvejJzRHc?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "a8c4d8e7527f",
+          "category_id": "high",
+          "title": "栃木県立高校唯一の鉄道研究部は創部47年、受け継ぐ貴重品の数々 部員大半が「鉄研」目当てに高校受験",
+          "headline": "栃木県立高校唯一の鉄道研究部は創部47年、受け継ぐ貴重品の数々 部員大半が「鉄研」目当てに高校受験",
+          "points": [
+            "創部47年を誇る栃木県立高校の鉄道研究部が、受験生の大きな志望動機となっていることが報じられた。",
+            "部活動の魅力が特定の高校への進学動機を大きく左右するトレンドが、地方の県立高校受験にも表れている。"
+          ],
+          "takeaway": "偏差値だけでなく、独自の部活動や教育内容に注目した学校選びが、モチベーション維持に直結します。",
+          "source": "下野新聞社",
+          "pub_date": "09/24 18:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NdkNQdTRHQkxPOTZvN1lYYjFNUjk2Zk10OENoR2lJRmFCN2x6ZGwzYzFNVlRhMVJBbDVSZjFkYjR2czNodFRoaG56akl1S1FCb1FsT0VnVUxsR2c?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "b1b3db9fec8b",
+          "category_id": "high",
+          "title": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "headline": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "points": [
+            "東京都教育委員会および関連自治体より、都立高校入試の学力検査日が2月21日に正式決定と発表された。",
+            "府中市など都内全域の受験生にとって、出願から本番までの具体的な学習スケジュールが確定した。"
+          ],
+          "takeaway": "検査日からの逆算スケジュールを立て、過去問演習や直前対策の計画を今すぐ具体的に実行に移しましょう。",
+          "source": "選挙ドットコム",
+          "pub_date": "09/21 05:31",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGcDRmRk5NWlQ5WURNSGhPdm1nU204SGNLZjFKMU5rREpNRzR0eDJuSXNSdll1Sjg3S3NwTlA2ZlpQUG5uMm5QVHVONmRfd0YxUm1tVVN3dlJoSXk1WnNr?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "16acfd0710ae",
+          "category_id": "high",
+          "title": "都立学校への入学に関するお問い合わせについて|生徒・保護者",
+          "headline": "都立学校への入学に関するお問い合わせについて|生徒・保護者",
+          "points": [
+            "東京都教育委員会が、都立学校への入学を希望する生徒や保護者に向けて各種問い合わせ窓口を案内している。",
+            "出願手続きや学校生活に関する疑問点を公式に解消するための重要なサポート情報となっている。"
+          ],
+          "takeaway": "出願要件や制度に関する不安点は放置せず、公式窓口を活用して正確な情報を確実に把握しておきましょう。",
+          "source": "kyoiku.metro.tokyo.lg.jp",
+          "pub_date": "04/01 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oMFlTMjdRdDZLcFVJSV9YS2dQSGhTWFZJT0tNYWlxTWxSM09KY3FPZXJGVDVTeEU0V0Z2d3o1emtoeWkwT0NsRm9hMnU4YjBnLUxEcnBLQjRISVNwVTlackhGVTVNSURjMmQ1cEtXV01kVFZ3TVVsZG9KQmNnOVk?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "6f6b9d866036",
+          "category_id": "high",
+          "title": "県立高校入試制度が大きく変わる 2年後に「推薦・一般の一本化」と「複数志願制」導入へ 「臆することなく第1志望への挑戦を」 県立高校の魅力向上も課題に",
+          "headline": "県立高校入試制度が大きく変わる 2年後に「推薦・一般の一本化」と「複数志願制」導入へ 「臆することなく第1志望への挑戦を」 県立高校の魅力向上も課題に",
+          "points": [
+            "宮崎県立高校入試は2年後に大改革を控え、推薦・一般の一本化や複数志願制が新たに導入される予定である。",
+            "制度変更に伴い、臆することなく第1志望に挑戦できる仕組みへ移行する一方、県立高校の魅力向上が課題となる。"
+          ],
+          "takeaway": "入試制度の大きな転換期を迎えるため、新制度の選抜方法に対応した柔軟な併願作戦と学力強化が不可欠です。",
+          "source": "UMKテレビ宮崎",
+          "pub_date": "04/02 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSd01mNWcwTFVWanRNMUVudkdCdzdwVm9tM1BrRHZmaVJPM2o5U2lkYXlkTXY0c2hDUWJjWWI2S182RGNXRDBFbVhpQnZjVU1yeEl6ekN5d1hTWXhSZVZqLVZRUnE?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        }
+      ]
+    },
+    "univ": {
+      "news": [
+        {
+          "id": "a32cee6a023b",
+          "category_id": "univ",
+          "title": "【大学受験2027】国公立大の面接形態を一覧化…駿台",
+          "headline": "【大学受験2027】国公立大の面接形態を一覧化…駿台",
+          "points": [
+            "駿台予備学校が2027年度入試における国公立大学の面接形態の調査結果を一覧にして公開した。",
+            "個別試験での面接実施有無や形式の把握は、医学部や教員養成系などの志望者にとって不可欠である。"
+          ],
+          "takeaway": "志望校の2027年度選抜要項や駿台の公開データを早めに確認し、筆記試験以外の対策スケジュールを立てましょう。",
+          "source": "リセマム",
+          "pub_date": "09/24 12:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9SbG5CN29KbGFBckJSMk1XSFJROVQ1YzhYblZvMG1Hd08xMm90eENtdWJCYVB0dV9wTUtCNXlQUlFGazkwMDgyRFZjSUlCUkdNS0huUGh3WmZmUjhB?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "2297d249a0bc",
+          "category_id": "univ",
+          "title": "乃木坂４６池田瑛紗 大学受験失敗で「悩んでいた時」オーディション挑戦 ２浪の末に東京藝術大学も合格 青葉坂４６応募者にエール",
+          "headline": "乃木坂４６池田瑛紗 大学受験失敗で「悩んでいた時」オーディション挑戦 ２浪の末に東京藝術大学も合格 青葉坂４６応募者にエール",
+          "points": [
+            "乃木坂46の池田瑛紗が2浪の末に東京藝術大学に合格したエピソードが報じられ、受験での苦悩が明かされた。",
+            "大学受験の不合格に直面して悩んでいた時期が、アイドルオーディション挑戦のきっかけになったという。"
+          ],
+          "takeaway": "不合格や浪人という大きな挫折も、その後の人生の転機や新たな挑戦へのエネルギーに変えられることを心に留めましょう。",
+          "source": "デイリースポーツ",
+          "pub_date": "09/23 19:20",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WVXQwUDhTcjY1N3cwWkg1a0ZUUXNpNTRQaHVFSzVBek1ZMDdsQ09XeUc4eF9rN1RDQXE3dmwzZmw3a2xNYzhEbUpvNk9aV2lZSkRONE1VX0lxSGpSU253UU1VbGRhZHA2Z0E?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "455463e5d1a2",
+          "category_id": "univ",
+          "title": "乃木坂46池田瑛紗、大学受験の不合格がオーディション応募のきっかけに 現在は東京藝大に在籍",
+          "headline": "乃木坂46池田瑛紗、大学受験の不合格がオーディション応募のきっかけに 現在は東京藝大に在籍",
+          "points": [
+            "乃木坂46の池田瑛紗が大学受験の不合格をバネにグループのオーディションへ応募した背景が語られた。",
+            "現在はアイドル活動と難関である東京藝大での学業を両立させている実績が注目を集めている。"
+          ],
+          "takeaway": "思い描いた進路とは異なる結果になっても、視野を広げることで新たな才能や可能性を開花させる道が開けます。",
+          "source": "ENCOUNT",
+          "pub_date": "09/23 18:02",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1Pak1ldGRTQ0JIWGMzVEQxaDBsd3Fab2d3eDNTWDkxWnRFd2xiMTBKVHd0UFVXS1FpcnczVVM5cjFQZ2FiekxNaUIzbWRoQjZs?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "37dedab29dd5",
+          "category_id": "univ",
+          "title": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "headline": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "points": [
+            "大学入試センターは、来月2日までの期間で大学入学共通テストのウェブ出願受付を開始した。",
+            "出願手続きのデジタル化により、受験生はパソコンやスマートフォン等からの確実な申請が求められる。"
+          ],
+          "takeaway": "出願締切期限を厳守し、システムトラブルを防ぐためにも余裕を持った早めのウェブ手続きを完了させましょう。",
+          "source": "時事ドットコム",
+          "pub_date": "09/15 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BTHEzdnRMNG1wYVMxRnl0dWYzTGxlcHliZjlmUzRpVEdZbG5zbkRiQ0ZZOEVBOGIzam5TVEprNDNVa3NSUVJGZGItaVZwWHpMRVhXc2x3OU0tS3MtTjE3T2dGaw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "34a60947a50b",
+          "category_id": "univ",
+          "title": "乃木坂46池田瑛紗 大学受験失敗で「悩んでいた時」オーディション挑戦 2浪の末に東京藝術大学も合格 青葉坂46応募者にエール",
+          "headline": "乃木坂46池田瑛紗 大学受験失敗で「悩んでいた時」オーディション挑戦 2浪の末に東京藝術大学も合格 青葉坂46応募者にエール",
+          "points": [
+            "2浪を経て東京藝術大学に合格した乃木坂46の池田瑛紗が、青葉坂46の応募者に向けてエールを送った。",
+            "自身の受験の挫折経験を踏まえたメッセージは、困難に挑む多くの受験生や若者の共感を呼んでいる。"
+          ],
+          "takeaway": "結果が出ない苦しい時期こそ粘り強く挑戦を続け、自分を信じて前へ進む強いメンタルを維持しましょう。",
+          "source": "au Webポータル",
+          "pub_date": "09/23 19:20",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkc0lITVNHQzRfc1J0WUliOFcxUUJ1cThKTmMyR0stMkw4cFp4YjB3elJlY2N1YTBBV1V4cElxLV9Fb0I1R2U5Y1dqNEM4YWF3b0NDX0ZtMlNJWWl1MjRGNnZDRS1jNTNTLVB3QVZ1VEhicXVGSXpoXw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        }
+      ]
+    }
+  }
+}

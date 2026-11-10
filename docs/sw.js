@@ -1,8 +1,8 @@
-const CACHE_NAME = 'exam-news-v3';
+const CACHE_NAME = 'exam-news-v3.1';
 const ASSETS = [
     './index.html',
-    './style.css?v=3.0',
-    './manifest.json?v=3.0',
+    './style.css?v=3.1',
+    './manifest.json?v=3.1',
     './icon.svg'
 ];
 

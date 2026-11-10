@@ -1,0 +1,276 @@
+{
+  "latest_date": "2026-11-10",
+  "total_days": 45,
+  "dates": [
+    {
+      "date": "2026-11-10",
+      "updated_at": "11月10日 11:21",
+      "label": "11/10",
+      "total_news": 17
+    },
+    {
+      "date": "2026-11-09",
+      "updated_at": "11月09日 07:52",
+      "label": "11/9",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-08",
+      "updated_at": "11月08日 07:43",
+      "label": "11/8",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-07",
+      "updated_at": "11月07日 08:43",
+      "label": "11/7",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-06",
+      "updated_at": "11月06日 09:14",
+      "label": "11/6",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-05",
+      "updated_at": "11月05日 09:22",
+      "label": "11/5",
+      "total_news": 15
+    },
+    {
+      "date": "2026-11-04",
+      "updated_at": "11月04日 08:58",
+      "label": "11/4",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-03",
+      "updated_at": "11月03日 10:34",
+      "label": "11/3",
+      "total_news": 18
+    },
+    {
+      "date": "2026-11-02",
+      "updated_at": "11月02日 07:47",
+      "label": "11/2",
+      "total_news": 14
+    },
+    {
+      "date": "2026-11-01",
+      "updated_at": "11月01日 07:28",
+      "label": "11/1",
+      "total_news": 14
+    },
+    {
+      "date": "2026-10-31",
+      "updated_at": "10月31日 16:50",
+      "label": "10/31",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-30",
+      "updated_at": "10月30日",
+      "label": "10/30",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-29",
+      "updated_at": "10月29日",
+      "label": "10/29",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-28",
+      "updated_at": "10月28日",
+      "label": "10/28",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-27",
+      "updated_at": "10月27日",
+      "label": "10/27",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-25",
+      "updated_at": "10月25日",
+      "label": "10/25",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-24",
+      "updated_at": "10月24日",
+      "label": "10/24",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-23",
+      "updated_at": "10月23日",
+      "label": "10/23",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-22",
+      "updated_at": "10月22日",
+      "label": "10/22",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-21",
+      "updated_at": "10月21日",
+      "label": "10/21",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-20",
+      "updated_at": "10月20日",
+      "label": "10/20",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-19",
+      "updated_at": "10月19日",
+      "label": "10/19",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-18",
+      "updated_at": "10月18日",
+      "label": "10/18",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-17",
+      "updated_at": "10月17日",
+      "label": "10/17",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-16",
+      "updated_at": "10月16日",
+      "label": "10/16",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-15",
+      "updated_at": "10月15日",
+      "label": "10/15",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-14",
+      "updated_at": "10月14日",
+      "label": "10/14",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-13",
+      "updated_at": "10月13日",
+      "label": "10/13",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-12",
+      "updated_at": "10月12日",
+      "label": "10/12",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-09",
+      "updated_at": "10月9日",
+      "label": "10/9",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-08",
+      "updated_at": "10月8日",
+      "label": "10/8",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-07",
+      "updated_at": "10月7日",
+      "label": "10/7",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-06",
+      "updated_at": "10月6日",
+      "label": "10/6",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-04",
+      "updated_at": "10月4日",
+      "label": "10/4",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-03",
+      "updated_at": "10月3日",
+      "label": "10/3",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-02",
+      "updated_at": "10月2日",
+      "label": "10/2",
+      "total_news": 15
+    },
+    {
+      "date": "2026-10-01",
+      "updated_at": "10月1日",
+      "label": "10/1",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-29",
+      "updated_at": "9月29日",
+      "label": "9/29",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-27",
+      "updated_at": "9月27日",
+      "label": "9/27",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-26",
+      "updated_at": "9月26日",
+      "label": "9/26",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-25",
+      "updated_at": "9月25日",
+      "label": "9/25",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-24",
+      "updated_at": "9月24日",
+      "label": "9/24",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-23",
+      "updated_at": "9月23日",
+      "label": "9/23",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-22",
+      "updated_at": "9月22日",
+      "label": "9/22",
+      "total_news": 15
+    },
+    {
+      "date": "2026-09-21",
+      "updated_at": "9月21日",
+      "label": "9/21",
+      "total_news": 15
+    }
+  ]
+}

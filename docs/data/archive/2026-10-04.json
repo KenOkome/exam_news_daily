@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-04",
+  "updated_at": "10月4日",
+  "categories": {
+    "junior": {
+      "news": [
+        {
+          "id": "cd6232d25f51",
+          "category_id": "junior",
+          "title": "【中学受験】小2・3対象「桜蔭・女子学院診断テスト」栄光10・11月開催",
+          "headline": "【中学受験】小2・3対象「桜蔭・女子学院診断テスト」栄光10・11月開催",
+          "points": [
+            "栄光ゼミナールが小学2年生と3年生を対象とした「桜蔭・女子学院診断テスト」を10月と11月に実施する。",
+            "最難関女子中学受験を専門に見据え、低学年のうちからトップ校合格に向けた学力測定と現状分析が可能になる。"
+          ],
+          "takeaway": "低学年段階から最難関校を意識した学力測定を受け、早い段階で専用の対策や学習習慣の確立を図りましょう。",
+          "source": "resemom.jp",
+          "pub_date": "10/01 09:45",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LajFOcnVxNFVKV0RFdUNucl9STFZxSDhOc1VYVG5MdDhoRmlmU0s0d2ZyWEpFYlh6NXFTelFHUmhYeHRaTVRXNUJacmlDbHN4U00xazhfcWhyTmpK?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "ecf875439a12",
+          "category_id": "junior",
+          "title": "【栄光ゼミナール】最難関女子中学受験専門館、小学2・3年生対象「桜蔭・女子学院診断テスト」10・11月開催",
+          "headline": "【栄光ゼミナール】最難関女子中学受験専門館、小学2・3年生対象「桜蔭・女子学院診断テスト」10・11月開催",
+          "points": [
+            "栄光ゼミナールの最難関女子中学受験専門館が、小2・小3向けに「桜蔭・女子学院診断テスト」を10・11月に開催。",
+            "最難関校を目指す低学年層に向けて特化した試験を提供し、早期からの志望校別アプローチを強化する狙いがある。"
+          ],
+          "takeaway": "専門館による低学年向け特化テストを活用し、難関女子中合格へ向けた現在の位置づけと課題を正確に把握しましょう。",
+          "source": "PR TIMES",
+          "pub_date": "09/29 14:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBGd292UzlvRW5VV2V4NHhnYy1iTmVYeFA1aFFFcXJGeGg3VV9yVldXQV9KZzhYOWNvTmRjbTA0MGNoZ3JycFVuTG1NOE9jMzktUHJpdV9kVFlmYk02aWt4ZC1uN0hFNVRaX1E?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "6944f0d55db0",
+          "category_id": "junior",
+          "title": "【帰国子女アカデミーに聞く①】中学受験の「英語入試」は一つではない スコアだけでは測れない、難関校が見る力",
+          "headline": "【帰国子女アカデミーに聞く①】中学受験の「英語入試」は一つではない スコアだけでは測れない、難関校が見る力",
+          "points": [
+            "朝日新聞の特集にて、帰国子女アカデミーが中学受験の「英語入試」の多様性や難関校が求める力を解説している。",
+            "単なる英語のスコアだけでは測れない、思考力や表現力など難関校が実際に見極めている重要なポイントが明かされる。"
+          ],
+          "takeaway": "英語入試を検討する際は、外部資格スコアだけでなく、学校ごとの出題傾向や求める人物像を深く理解することが不可欠です。",
+          "source": "朝日新聞",
+          "pub_date": "09/29 07:31",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yU3BNYkdleWduYXhpRDBQUmpiWXl1N1dOeWE0NXdNLUVKMk1CekJHQzR6V19XalI4cVI5YktUcVpQbUt5MXRKTENCRG01SDhOMWl2M3dn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "344192ced0ef",
+          "category_id": "junior",
+          "title": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "headline": "中学入試説明会１０月１７日、各教科の教員が解説・個別相談も…東邦大東邦",
+          "points": [
+            "東邦大東邦中学が10月17日に学校説明会を開催し、各教科の教員自身が入試問題の傾向や対策を詳しく解説する。",
+            "全体会での教科解説に加えて個別相談も実施され、受験生や保護者が直接疑問を解消できる貴重な機会となる。"
+          ],
+          "takeaway": "千葉県の難関校である同校の出題傾向を教員から直接聞き、残り期間の具体的な学習計画と対策に反映させましょう。",
+          "source": "読売新聞",
+          "pub_date": "09/18 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa08xc0llWFhhMENQU3FFaDVvY3ZHZXN1TjdGUmhZLXhCeEd1Rmp1RVh3clRPXzlUMGxCb25oWEJ0RDVMYlAyOFNVSHJ3bC1UX1RwcmhOLVZnMnZoNnlob2ZOVjJmVmJ5VzFrNUJhSHFkelk5UTZKMjM3Mm5zeC1yS2szdGJTUktvX1E?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        },
+        {
+          "id": "27a949003bd9",
+          "category_id": "junior",
+          "title": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "headline": "【中学受験】「“渋幕合格”は四谷大塚だけで十分だったか」小6の秋に見出す“勝因”と塾への違和感 「早稲アカ」も追加した親子が明かす本音 (デイリー新潮)",
+          "points": [
+            "デイリー新潮にて「渋幕合格」に向け四谷大塚と早稲アカを併用した小6親子のリアルな勝因と葛藤が報じられた。",
+            "単一の塾に頼らず、小6の秋という重要な時期に塾を追加して最適化を図る受験戦略の裏側と判断基準が示されている。"
+          ],
+          "takeaway": "志望校合格のためには塾の看板だけに頼らず、秋以降の成績や状況に応じて柔軟に学習環境を見直す勇気を持ちましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/19 08:53",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVnM3ZFlqTlBONTdHQUpaWUJndElDMElLTERRdW5xMGQzQUxocTJnVFRVLXhiQy1BUUltQVpQbmN5c3RJU1NGelpiM3pianctald5Y3ZuM0xCeks5RDBXdGJKMjRVVHZXMkZNeVZsQldSNlZEMEFjS18ta3pNMWtZaXpaVl9jMGNpVnhibmtn?oc=5",
+          "is_new": false,
+          "badge_label": "中学受験",
+          "badge_cls": "badge-junior"
+        }
+      ]
+    },
+    "high": {
+      "news": [
+        {
+          "id": "85d82e926a8f",
+          "category_id": "high",
+          "title": "【高校受験2027】千葉県公立高、県外・海外志願者向け説明会11-12月（リセマム）",
+          "headline": "【高校受験2027】千葉県公立高、県外・海外志願者向け説明会11-12月（リセマム）",
+          "points": [
+            "2027年度入試に向け、千葉県の公立高校が県外や海外からの志願者を対象とした説明会を11月から12月にかけて実施する。",
+            "遠方からの受験希望者に対し、出願要件や試験制度に関する正確な情報を提供し、志願のハードルを下げる狙いがある。"
+          ],
+          "takeaway": "千葉県外や海外から同県立高の受験を検討している家庭は、実施日程を早めに確認し、情報収集に努めましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/29 11:32",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zS09SUkprb2djV3ZiLXhPdU5jS3pMQWllYk42TVNGV2oweXh6eXVDWUtkOTJYajJGNWZQWXlUdHluajVkQUNzZnc5S1VGQ1ZNMmNfbk93MWlmanpfUERfYnRGNGJiTDV3NkxZcUV5VXR3VXg4TDQyeFc2ejF1WlU?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "3fd389d014ab",
+          "category_id": "high",
+          "title": "高校入試《私立の併願確約》が授業料無償化で崩壊寸前？\"グレーな慣行\"任せの行政･･･滑り止めなく窮地の受験生も",
+          "headline": "高校入試《私立の併願確約》が授業料無償化で崩壊寸前？\"グレーな慣行\"任せの行政･･･滑り止めなく窮地の受験生も",
+          "points": [
+            "授業料無償化の拡大に伴う私立高の人気急騰により、長年続いてきた「併願確約」というグレーな慣行が機能不全に陥っている。",
+            "安全圏の滑り止めを確保できなくなる受験生が続出しており、入試戦略の大きな見直しを迫られる事態となっている。"
+          ],
+          "takeaway": "従来の併願確約に頼った受験プランは危険です。複数の選択肢を持ち、確約だけに頼らない柔軟な併願作戦を立てましょう。",
+          "source": "Infoseek",
+          "pub_date": "09/30 07:50",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZN256cVdLVUQwOGd2M0tHbjIzMGR1MEpzWWNtMU43bHhaMXR1ZGlKcVZHaWJxN09adzhYZ21PSHRTaG9BelhLZXVuYzAxbzFscnBtNjd2WmkyTTNjSEtVc2I3VUVGaTFEVnRrdGxCSHo?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "f1d6533ac840",
+          "category_id": "high",
+          "title": "臨海セミナーが首都圏最大規模の私立高校入試相談会を開催 - J",
+          "headline": "臨海セミナーが首都圏最大規模の私立高校入試相談会を開催 - J",
+          "points": [
+            "大手進学塾の臨海セミナー主催により、首都圏最大規模となる私立高校合同の入試相談会が実施された。",
+            "多くの私立高担当者が参加し、個別の基準や学習環境について直接相談できる貴重な機会として多数の親子が訪れた。"
+          ],
+          "takeaway": "個別相談会は併願優遇や出願基準を直接確認する絶好の機会です。塾のイベントを活用して効率よく情報を集めましょう。",
+          "source": "J-CAST ニュース",
+          "pub_date": "09/30 16:45",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9oZUlxeFNaWXJscWhWNmFfZXpXLW5BSjk2bGotaFVWclV2cmRzeEpFYTEyMTBXVmNqeWgtZzhJekNlSTBNc2RaWGdhcW93VEFuVEFjcGNIeWRmZDdialB3MjE2Vkk0YTQ?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "b1b3db9fec8b",
+          "category_id": "high",
+          "title": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "headline": "【府中市】都立高校入試日程が決定。学力検査は2月21日",
+          "points": [
+            "東京都府中市における都立高校一般入試のスケジュールが正式決定し、学力検査が2月21日に実施されることとなった。",
+            "東京都内の受験生にとって最重要イベントとなる本番へ向け、出願から試験当日までの具体的なカウントダウンが始まる。"
+          ],
+          "takeaway": "東京都の受検生は決定した日程をカレンダーに必ず反映し、2月21日の本番から逆算した直前対策を徹底しましょう。",
+          "source": "選挙ドットコム",
+          "pub_date": "09/21 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGcDRmRk5NWlQ5WURNSGhPdm1nU204SGNLZjFKMU5rREpNRzR0eDJuSXNSdll1Sjg3S3NwTlA2ZlpQUG5uMm5QVHVONmRfd0YxUm1tVVN3dlJoSXk1WnNr?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        },
+        {
+          "id": "c7e183064214",
+          "category_id": "high",
+          "title": "【2027年度】三重県立高校入試の日程を発表 前期選抜は2月2日・3日に実施、出願は1月22日開始（中京テレビＮＥＷＳ）",
+          "headline": "【2027年度】三重県立高校入試の日程を発表 前期選抜は2月2日・3日に実施、出願は1月22日開始（中京テレビＮＥＷＳ）",
+          "points": [
+            "2027年度の三重県立高校入試日程が発表され、前期選抜が2月2日と3日に実施、出願受付は1月22日に開始される。",
+            "全国的に次年度入試へ向けたスケジュール公表が相次いでおり、早期の出願準備と年間計画の策定が求められている。"
+          ],
+          "takeaway": "三重県の受験生は1月22日の出願開始日に遅れないよう、中学校との連携を密にして必要書類を確実に準備しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/01 00:09",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsVEtROG1WclBzOU9sYmJjeEdxcUdxa2F5X19QcTZscDAyYTFJcngyRWl5NC1oX0VZazN1Z2NzdnR2VzJQUkJtV0lMS1h6bnJDSG9pbWNSeTFnTDVEVnBZLXF3R0dybjJYZU9lVV9sZGtqNnN6V2Zlc1RYRmpFRTg?oc=5",
+          "is_new": false,
+          "badge_label": "高校受験",
+          "badge_cls": "badge-high"
+        }
+      ]
+    },
+    "univ": {
+      "news": [
+        {
+          "id": "c6791f772aea",
+          "category_id": "univ",
+          "title": "大学入試センター 公式SNSの偽アカウントを確認 偽アカウント名は“大学入試セソター” 個人情報悪用の恐れも（ABEMA TIMES）",
+          "headline": "大学入試センター 公式SNSの偽アカウントを確認 偽アカウント名は“大学入試セソター” 個人情報悪用の恐れも（ABEMA TIMES）",
+          "points": [
+            "大学入試センターの公式SNSを装う“大学入試セソター”という偽アカウントが確認されました。",
+            "フォローやリンクへのアクセスにより、受験生の個人情報が悪用される危険性があります。"
+          ],
+          "takeaway": "不審なアカウントからのDMやリンクは絶対に開かず、必ず大学入試センターの公式サイトを確認しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "09/30 16:06",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1WaU9QdUtVNXp1YzhvNW95N2tvdnhMb2ZzVHFLaFdpc09xVkRTVHlLbVZZUy00dGd0NmxsaXhOaTBaa0RfZDRHdlR2N2ZmTVduLWxsQnVUMUhCYnBFMk9iMTcxRklOYWZsdUdqYWRFOVdTZ040aHpNc3phZEMyM3c?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "0139584e0b64",
+          "category_id": "univ",
+          "title": "大学入試：大学入学共通テスト、49万人出願",
+          "headline": "大学入試：大学入学共通テスト、49万人出願",
+          "points": [
+            "2025年度など近年の傾向と同様に、大学入学共通テストの出願者数が49万人規模に達しました。",
+            "多くの受験生が利用する最大の全国規模の試験であり、今後の動向に注目が集まっています。"
+          ],
+          "takeaway": "出願が完了した受験生は、本番まで約2ヶ月、過去問演習や弱点補強に集中して得点力を高めましょう。",
+          "source": "毎日新聞",
+          "pub_date": "10/03 02:02",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SX1lWYUEzZUhFdlExTGp6bzNrTUdUNzZwbzBNRWVzaUtwcWlfWHJ1VHFQdjgwMXk2WXhzYnlWZkxGWjcxX1dkeXJwMk5EUnlMRFp6WkpkM1VDZUQ2d3VYUVVyN09FN2NWSXo3cU9JNA?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "ffb197a5574c",
+          "category_id": "univ",
+          "title": "【大学受験2027】国公立大2段階選抜の実施基準を一覧化…駿台",
+          "headline": "【大学受験2027】国公立大2段階選抜の実施基準を一覧化…駿台",
+          "points": [
+            "駿台が2027年度入試における国公立大学の2段階選抜（プレテスト等）の実施基準を公開・一覧化しました。",
+            "予告倍率や学部ごとの足切りラインの仕組みを把握し、志望校選びの判断材料にすることができます。"
+          ],
+          "takeaway": "高1・高2生は早い段階から各大学の選抜基準を確認し、共通テスト対策と二次試験対策の配分を考えましょう。",
+          "source": "resemom.jp",
+          "pub_date": "09/17 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oRVV4dldxMHFDNFlPRVVMVFBHbDhLbUhwYlZzanNqenZZZWg3OUdqQnIyYXRJNlhVVi1idHRtWlNFV0dhM3FMYWlNazhQN2Q4UkZjNEh0dXlZODI5?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "37dedab29dd5",
+          "category_id": "univ",
+          "title": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "headline": "共通テスト、ウェブ出願開始 来月２日まで―大学入試センター",
+          "points": [
+            "大学入試センターによる共通テストのウェブ出願手続きがスタートし、受付は来月2日までとなります。",
+            "従来の紙の出願書類に加え、オンラインでの手続きや期間設定に十分な注意が求められます。"
+          ],
+          "takeaway": "出願手続きを控える現役生や既卒生は、締切日直前に慌てないよう、必要書類と期限を今すぐ再確認してください。",
+          "source": "時事ドットコム",
+          "pub_date": "09/15 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BTHEzdnRMNG1wYVMxRnl0dWYzTGxlcHliZjlmUzRpVEdZbG5zbkRiQ0ZZOEVBOGIzam5TVEprNDNVa3NSUVJGZGItaVZwWHpMRVhXc2x3OU0tS3MtTjE3T2dGaw?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        },
+        {
+          "id": "d7eab6646689",
+          "category_id": "univ",
+          "title": "[独占] 大学入試センター、2027年度の大学入学情報フェアの日程を1日延期…「センター試験の成績通知日に合わせる」",
+          "headline": "[独占] 大学入試センター、2027年度の大学入学情報フェアの日程を1日延期…「センター試験の成績通知日に合わせる」",
+          "points": [
+            "大学入試センターは、2027年度の大学入学情報フェアの日程を1日後ろ倒しすることを決定しました。",
+            "かつてのセンター試験の成績通知日に合わせたスケジュール調整となっており、関係者への影響があります。"
+          ],
+          "takeaway": "制度変更が続く新課程入試世代の保護者は、最新のイベント日程や入試スケジュールを常にアップデートしましょう。",
+          "source": "jp.ajunews.com",
+          "pub_date": "09/23 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83enlteWdpMm5Cd09rR3dGSmxMZ3VvaktDT0xrYUUwS3YzdXQ5UGRjNTdXdHFPY2ZURm41dmFkbVZQNEc3MlE5b1dNaWtfNFRRN2lvRk1xUHpVMjg?oc=5",
+          "is_new": false,
+          "badge_label": "大学受験",
+          "badge_cls": "badge-univ"
+        }
+      ]
+    }
+  }
+}
