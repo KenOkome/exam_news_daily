@@ -89,6 +89,72 @@ EXAM_RELEVANCE_REGEX = re.compile(
     r"併願|公立|私立|国立|都立|県立|教育|学習|勉強|学参|参考書|説明会|相談|10：0|10:0|定員|募集人員)"
 )
 
+# ------------------------------------------------------------------------------
+# 煽り・不安商法・ゴシップ記事（Ragebait）検知パターン（受験・教育特化）
+# ------------------------------------------------------------------------------
+# Layer 1: 完全即時除外（悪質不安商法・人格攻撃・記号連打・推量飛ばし構文）
+RAGEBAIT_HARD_PATTERNS = [
+    r"[!?！？]{2,}",  # ！？ や ！！ などの煽り記号連打
+    r"(?:落ちる|受からない)(?:子の親|親|子|生徒|家庭)の(?:特徴|共通点|末路)",
+    r"(?:絶対不合格|不合格確定|人生終了|人生詰む|悲惨な末路|地獄を見る|破産する|後悔しかない|手遅れになる)",
+    r"(?:親の狂気|子どもを潰す親|毒親の(?:典型|特徴)|バカ親|モンスターペアレント|親の罪)",
+    r"(?:家庭|親子関係)崩壊",
+    r"「[^」]+」.*(?:ネット|SNS|コメ欄)?(?:騒然|大荒れ|激怒|批判殺到|呆れた声|物議)",
+    r"(?:ネット(?:騒然|炎上|激怒)|批判殺到|大炎上|ブチギレ|呆れた声|物議を醸す|コメ欄大荒れ)",
+    r"(?:ヤバすぎる実態|闇が深すぎる|裏口疑惑|裏金|オワコン化|凋落の(?:一途|実態))",
+    r"(?:〜のか|〜なのか|理由とは|実態とは|真相とは|本当の理由)[!?！？]?$"
+]
+
+# Layer 2: 大幅減点（タブロイド特有の誇大ワード：-50.0pt）
+SENSATIONAL_SOFT_PATTERNS = [
+    r"衝撃", r"異例", r"波紋", r"まさか", r"惨劇", r"悪夢", r"大誤算", r"怪情報", r"不穏", r"激震", r"大ピンチ", r"落胆", r"罠"
+]
+
+def is_hard_ragebait(title: str) -> bool:
+    """即座に取得候補から破棄する悪質パターン"""
+    return any(re.search(p, title, re.IGNORECASE) for p in RAGEBAIT_HARD_PATTERNS)
+
+def calculate_sensational_penalty(title: str) -> float:
+    """タブロイド誇大見出しに対するペナルティ（-50.0pt）"""
+    hits = sum(1 for p in SENSATIONAL_SOFT_PATTERNS if re.search(p, title, re.IGNORECASE))
+    return hits * 50.0
+
+def score_exam_article(title: str, age_hours: float) -> float:
+    """鮮度 ＋ 受験・進学情報の公的性・具体性をスコアリング（煽り減点適用）"""
+    score = 0.0
+
+    # 1. 鮮度スコア（最大14点）
+    if age_hours <= 24:
+        score += 14.0
+    elif age_hours <= 48:
+        score += 10.0
+    elif age_hours <= 96:
+        score += 6.0
+    elif age_hours <= 168:
+        score += 3.0
+    else:
+        score += 1.0
+
+    # 2. 公的機関・教育入試の信頼性ボーナス（各+2.5点、最大10点）
+    constructive_words = [
+        "出願", "倍率", "入試", "日程", "選抜", "共通テスト", "教育委員会",
+        "都立", "県立", "公立", "私立", "合格", "新課程", "調査書", "内申",
+        "模試", "募集人員", "定員", "志望校", "学力検査", "過去問"
+    ]
+    matched_words = sum(1 for w in constructive_words if w in title)
+    score += min(matched_words * 2.5, 10.0)
+
+    # 3. 具体的な数値や鍵括弧の存在（事実性ボーナス）
+    if re.search(r"\d+", title):
+        score += 2.0
+    if "「" in title and "」" in title:
+        score += 2.0
+
+    # 4. Layer 2: 煽りペナルティ減点
+    score -= calculate_sensational_penalty(title)
+    return score
+
+
 
 def load_api_key():
     """環境変数または .env ファイルから API キーを取得"""
@@ -215,7 +281,7 @@ def fetch_rss_xml(query, retries=3):
 
 
 def fetch_rss_news(category, now_jst, global_seen_keys, global_seen_titles, max_items=MAX_ITEMS_PER_CATEGORY):
-    """Google News RSS から指定カテゴリの最新ニュースを取得・ノイズ除去・最新順ソート"""
+    """Google News RSS から指定カテゴリの最新ニュースを取得・ノイズ除去・スコア順選出"""
     cat_id = category["id"]
     xml_data = fetch_rss_xml(category["query"])
     if not xml_data:
@@ -254,6 +320,10 @@ def fetch_rss_news(category, now_jst, global_seen_keys, global_seen_titles, max_
         if NON_EXAM_NOISE_REGEX.search(clean_title):
             continue
 
+        # Layer 1: 悪質不安商法・煽り見出しの即時完全除外（Ragebait Hard Drop）
+        if is_hard_ragebait(clean_title):
+            continue
+
         # 2. 受験・教育関連キーワードが含まれているか検証
         if not EXAM_RELEVANCE_REGEX.search(clean_title):
             continue
@@ -281,15 +351,8 @@ def fetch_rss_news(category, now_jst, global_seen_keys, global_seen_titles, max_
         if age_days > MAX_ARTICLE_AGE_DAYS:
             continue
 
-        # 6. 重複排除（キー一致＋2-gram類似度判定）
-        dedup_key = make_dedup_key(clean_title)
-        if dedup_key in global_seen_keys:
-            continue
-        if any(is_similar_title(clean_title, prev_t) for prev_t in global_seen_titles):
-            continue
-
-        global_seen_keys.add(dedup_key)
-        global_seen_titles.append(clean_title)
+        age_hours = max((now_jst - dt_jst).total_seconds() / 3600.0, 0.0)
+        score = score_exam_article(clean_title, age_hours)
 
         desc_snippet = clean_rss_description(raw_desc, clean_title)
         badge = detect_topic_badge(cat_id, clean_title)
@@ -309,15 +372,34 @@ def fetch_rss_news(category, now_jst, global_seen_keys, global_seen_titles, max_
             "source": source,
             "badge_label": badge["label"],
             "badge_cls": badge["cls"],
+            "score": score,
             "headline": "",
             "points": [],
             "takeaway": "",
             "is_ai_summary": False
         })
 
-    # 最新順（降順）にソートして上位 max_items 件を返す
-    candidates.sort(key=lambda x: x["pub_ts"], reverse=True)
-    return candidates[:max_items]
+    # スコア（品質・鮮度・信頼性）降順 ＋ 公開日時降順でソート
+    candidates.sort(key=lambda x: (x.get("score", 0.0), x.get("pub_ts", 0)), reverse=True)
+
+    # 高スコア順に重複判定を行って枠数分を選出（低スコア記事によるテーブル汚染を防止）
+    selected = []
+    for cand in candidates:
+        dedup_key = make_dedup_key(cand["title"])
+        if dedup_key in global_seen_keys:
+            continue
+        if any(is_similar_title(cand["title"], prev_t) for prev_t in global_seen_titles):
+            continue
+
+        global_seen_keys.add(dedup_key)
+        global_seen_titles.append(cand["title"])
+        selected.append(cand)
+        if len(selected) >= max_items:
+            break
+
+    # 最終的な表示順は読者体験のため最新順（降順）に並び替える
+    selected.sort(key=lambda x: x["pub_ts"], reverse=True)
+    return selected
 
 
 def load_archive(archive_path):

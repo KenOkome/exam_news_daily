@@ -1,33 +1,16 @@
 {
   "date": "2026-11-10",
-  "updated_at": "11月10日 12:10",
+  "updated_at": "11月10日 15:28",
   "categories": {
     "junior": {
       "report": {
-        "title": "首都圏・関西の入試変更点と模試活用術",
-        "summary": "直近1週間は首都圏4大模試の特性比較や、東京女子校4校の2027年入試変更点、関西難関7校の日程集中など重要な動向が相次いだ。多校化が加速する中、客観的なデータに基づく冷静な分析と戦略的な情報収集が求められている。",
-        "key_trends": "法政大学千代田三番町や大妻などの東京女子校4校が2027年入試での変更を発表し注目を集めている。また関西難関校の日程集中により、複数校の併願シミュレーションと過去問の相性分析の重要性が一段と高まっている。",
-        "advice": "単一の模試に依存せず複数の模試を使い分け、志望校の傾向と自身の成績を多角的に分析しよう。最新の入試要項をいち早く入手し、複雑化する併願日程や過去問演習の計画を家族で共有して前倒しで進めることが重要である。",
-        "analyzed_at": "11/10 12:10"
+        "title": "2027年中学受験の最新動向と首都圏・関西の併願戦略",
+        "summary": "東京女子校4校の2027年入試変更や関西難関校の日程集中など、首都圏および関西圏で入試制度や日程に関する重要な動きが相次いで発表されています。多校化する受験において、最新情報の把握と緻密なスケジュール管理が不可欠な状況です。",
+        "key_trends": "法政大学千代田三番町、大妻、和洋九段女子、東京女学館など東京女子校4校の2027年入試変更が注目されています。また、関西難関7校中6校が1月16日に日程集中するなど、併願戦略の難易度が一段と高まっています。",
+        "advice": "対象校の最新入試要項をいち早く入手し、配点変化や新設日程に応じた過去問演習の計画を前倒しで進めましょう。同日受験を避けるための緻密な併願シミュレーションの作成や、複数模試を活用した客観的な立ち位置の確認が今週の鍵となります。",
+        "analyzed_at": "11/10 15:28"
       },
       "news": [
-        {
-          "id": "bdcd3942c2",
-          "category_id": "junior",
-          "title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉",
-          "headline": "首都圏4大模試の特性と受験者層を完全比較",
-          "points": [
-            "四谷大塚・日能研・首都圏模試・SAPIXの各模試における志望校動向の違いをプロが徹底分析している。",
-            "模試ごとの難易度や母集団の傾向を把握することで、自子に最適な判定データを見極めることが可能になる。"
-          ],
-          "takeaway": "志望校の出題傾向や偏差値帯に合わせ、単一の模試に依存せず複数の模試を使い分ける戦略を立てましょう。",
-          "source": "AERA DIGITAL",
-          "pub_date": "本日 09:47",
-          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RVVA3VTNjTHdPS1BCckZDMzh6eHVIbWxXc2s4M2pGWlJJTGxvY2ZUWGJ0alJMaWVTWERCTTh3M2xZaUFIMmJTNXVsbERHajNIVkJURkFrQTZPdUtVaFptRTdIYXNaQQ?oc=5",
-          "is_new": true,
-          "badge_label": "📊模試・倍率",
-          "badge_cls": "badge-exam"
-        },
         {
           "id": "c3de34776e",
           "category_id": "junior",
@@ -61,6 +44,23 @@
           "is_new": true,
           "badge_label": "📝制度・日程",
           "badge_cls": "badge-system"
+        },
+        {
+          "id": "bdcd3942c2",
+          "category_id": "junior",
+          "title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉",
+          "headline": "首都圏4大模試の特性と受験者層を完全比較",
+          "points": [
+            "四谷大塚・日能研・首都圏模試・SAPIXの各模試における志望校動向の違いをプロが徹底分析している。",
+            "模試ごとの難易度や母集団の傾向を把握することで、自子に最適な判定データを見極めることが可能になる。"
+          ],
+          "takeaway": "志望校の出題傾向や偏差値帯に合わせ、単一の模試に依存せず複数の模試を使い分ける戦略を立てましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/08 17:00",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jMUJzcG5JY0p2eEk5TGtUVm8yX0Zfd3BMRWxDZEI3UVpsbnJMWWFwRGpxRnN5Z3JRLTROeEl0bWV0aEs5YWh0cndFS2JNMUtmT0hIcU5wSGxQQnJQaURZSFotWDBGQQ?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
         },
         {
           "id": "17d2948ef5",
@@ -117,11 +117,11 @@
     },
     "high": {
       "report": {
-        "title": "都立高の新コース設置と教育費負担の実態から読み解く高校受験戦略",
-        "summary": "直近1週間は都立高校における高度情報活用コースの新設や不登校支援強化などの魅力向上策が相次いで発表された。同時に、高校無償化の裏で教育費の負担増大や格差が懸念されるなど、制度の変化が家計と進路選択に大きな影響を与えている。",
-        "key_trends": "都立進学指導特別推進校へのIT教育導入など、学校ごとの特色化が急速に進展している。また、不登校支援や多様な選抜方法の拡充、千葉県立高の理数教育導入など、受験生のニーズに合わせた環境整備が加速している点に注目すべきである。",
-        "advice": "新設コースや特別支援クラスの募集要項を早期に入手し、選抜方法の変更点を正確に把握しよう。授業料無償化だけでなく学校外活動費を含むトータルの教育予算を試算し、個別相談会を活用して我が子に最適な学校を見極めることが重要だ。",
-        "analyzed_at": "11/10 12:10"
+        "title": "都立高の多様化と無償化の裏側：最新入試動向分析",
+        "summary": "直近1週間では、都立高校における「高度情報活用コース」の新設や不登校支援の強化といった魅力向上策が発表される一方、高校無償化に伴う教育費負担の実態や内申不問「10対0」判定の拡大など、入試の多様化と格差に関する議論が活発化しています。",
+        "key_trends": "都立進学指導特別推進校へのIT教育導入や不登校支援の拡充は、志望校選択の大きな転換点となります。また、北園高などで導入が進む内申点を使わない「10：０」判定は、当日点重視の受験生にとって新たな戦略的選択肢となっています。",
+        "advice": "内申点対策に不安がある生徒は、内申不問枠を設ける学校の過去問演習を早めに開始しましょう。また、高校無償化制度だけに頼らず、外部支援の活用や学校外活動費を含めた長期的な教育資金の試算を家族でしっかりと行ってください。",
+        "analyzed_at": "11/10 15:28"
       },
       "news": [
         {
@@ -210,31 +210,31 @@
           "badge_cls": "badge-system"
         },
         {
-          "id": "bc75f5044e",
+          "id": "8da3d51bc7",
           "category_id": "high",
-          "title": "都立高校で沖縄修学旅行の事前学習 講師が「バスの窓から気づいてね」と呼びかけたこと",
-          "headline": "都立高の沖縄修学旅行で事前学習実施",
+          "title": "都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校",
+          "headline": "都立高入試の内申不問10対0判定が北園など3校に拡大",
           "points": [
-            "都立高校の沖縄修学旅行に向けた事前学習で現地理解が深められている。",
-            "講師の具体的な呼びかけにより歴史や地域背景への主体的な気づきを促す。"
+            "2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。",
+            "当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。"
           ],
-          "takeaway": "近年の公立高校では単なる観光旅行ではなく深い教養を問う体験型学習を重視しており、学校説明会やパンフレットで内容を確認しよう。",
-          "source": "琉球新報デジタル",
-          "pub_date": "11/08 05:00",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yWk5tVnM3czZiWGNtYVJXVlpUemlwZWhrNFFBSzJCay1TQnJHMVNSWGlVV0JIMUt1LXlwS3pWNU9CTTl5RW9fOUw0MkxBdFVDWHY1cnUzQTJBVFVyTDdhMA?oc=5",
+          "takeaway": "内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。",
+          "source": "月刊私塾界",
+          "pub_date": "10/21 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5",
           "is_new": false,
-          "badge_label": "💡学習・戦略",
-          "badge_cls": "badge-strategy"
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
         }
       ]
     },
     "univ": {
       "report": {
-        "title": "2027年度大学入試の動向と格差対策の要点",
-        "summary": "総合型選抜の普及による格差や都市・地方の動向が注目される中、国公立大の募集人員確定や河合塾の文系比率上昇の分析、共通テスト情報I対策の重要性が浮き彫りとなり、早期かつ多角的な戦略構築が急務となっています。",
-        "key_trends": "総合型選抜における都市と地方の経済格差や対策の早期化が課題となる一方、国公立大の募集人員や筑波大医学群の動向、MARCHの合格者数予測など、各大学の定員・入試制度の最新動向を緻密に把握することが合否を左右します。",
-        "advice": "高1・2年生は冬期講習を活用して今年度の苦手分野を克服し先取り学習を進めましょう。受験生は共通テスト配点比率を確認し、一般・総合型の併願戦略を柔軟に再構築することが不可欠です。",
-        "analyzed_at": "11/10 12:10"
+        "title": "2027年度大学入試の動向：文系比率上昇と総合型選抜対策の重要性",
+        "summary": "直近1週間では、河合塾の分析により文系比率の上昇が判明し競争激化が予想されます。また、総合型選抜における都市部と地方・経済力の格差や、MARCH・筑波大医学群などの募集人員動向が注目を集めており、正確な情報収集が不可欠となっています。",
+        "key_trends": "文系志望者の増加により、一般選抜における併願校選定の幅を広げる戦略が求められています。さらに、総合型選抜の早期対策や、国公立大・MARCHの定員動向の緻密な把握が、今後の合否を分ける重要なポイントとなっています。",
+        "advice": "高1・2年生は冬期講習を活用して今年度の苦手分野を完全に払拭し、新学年に向けた先取り学習を進めてください。受験生は志望校の最新定員動向や共通テスト・二次試験の配点比率を確認し、柔軟な併願戦略を再構築しましょう。",
+        "analyzed_at": "11/10 15:28"
       },
       "news": [
         {
@@ -247,9 +247,9 @@
             "受験の天王山となる冬期に個々の目標と学力レベルに最適化された指導で、効率的な実力強化を図る。"
           ],
           "takeaway": "高1・2年生は冬期講習で今年度の苦手分野を完全に払拭し、新学年に向けた先取り学習で周囲に差をつけましょう。",
-          "source": "PR TIMES",
+          "source": "宮崎日日新聞",
           "pub_date": "昨日 09:00",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16dHhLbERsZXcwTU1fOVctakJONVFxVktKVU1yTEFNalAtTUhDTkdqbTZaMDRhZkZqZFJpQmgxc1A5aUNHOHlnVjhQQmcwMnhoclNMYWF6UGdGSEM1TzZKMzduWHptYXp2cWc?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGb3pEcTZKc0FOSVoxdENtQjFoZjhLLVdoSXlfQW5oY0hpVExwS3hmbW8zRGlWRnRIaENXNjN1M0NfSjgyWG9JSXVBc1FSSk5fZjN6SWlWb0RfUFhMZG9mSnp1NlBKNlZlUU9NaW9fNlNTa2M?oc=5",
           "is_new": true,
           "badge_label": "📝制度・日程",
           "badge_cls": "badge-system"
@@ -270,6 +270,23 @@
           "is_new": false,
           "badge_label": "📝制度・日程",
           "badge_cls": "badge-system"
+        },
+        {
+          "id": "9f47c6f647",
+          "category_id": "univ",
+          "title": "【大学受験2027】文系比率が上昇…河合塾の動向分析",
+          "headline": "河合塾の動向分析で判明した文系比率の上昇",
+          "points": [
+            "河合塾の最新の動向分析により、大学受験における文系志望者の比率が上昇していることが明らかになった。",
+            "新課程入試への移行や学部再編の動きを背景に、受験生の志望動向や難易度バランスに変化が生じている。"
+          ],
+          "takeaway": "文系志望者の増加による競争激化を見据え、高1・高2生は早めに基礎固めを行い、併願校選定の幅を広げる戦略的な受験計画を立てましょう。",
+          "source": "リセマム",
+          "pub_date": "11/06 18:15",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE15bjJ3elBxN1FmVGVHOThNeklXMkV6Q2RJaURaT0ZhRW9BWDFGYkRvX2lsZE9zQU4yUmVVdVB2ZkFhNEU4bTF4eG1PNTduTmVOblJoanBSQmFQLXB3TXlKcnBXY29xQQ?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
         },
         {
           "id": "c01d6cebf4",

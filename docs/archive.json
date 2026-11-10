@@ -1,29 +1,7 @@
 {
-  "updated_at": "2026-11-10T12:10:48.052644+09:00",
+  "updated_at": "2026-11-10T15:28:34.569980+09:00",
   "count": 79,
   "articles": {
-    "bdcd3942c2": {
-      "id": "bdcd3942c2",
-      "category_id": "junior",
-      "title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉",
-      "raw_title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉 - AERA DIGITAL",
-      "description": "",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RVVA3VTNjTHdPS1BCckZDMzh6eHVIbWxXc2s4M2pGWlJJTGxvY2ZUWGJ0alJMaWVTWERCTTh3M2xZaUFIMmJTNXVsbERHajNIVkJURkFrQTZPdUtVaFptRTdIYXNaQQ?oc=5",
-      "pub_date": "本日 09:47",
-      "pub_iso": "2026-11-10T09:47:38+09:00",
-      "pub_ts": 1794271658,
-      "is_new": true,
-      "source": "AERA DIGITAL",
-      "badge_label": "📊模試・倍率",
-      "badge_cls": "badge-exam",
-      "headline": "首都圏4大模試の特性と受験者層を完全比較",
-      "points": [
-        "四谷大塚・日能研・首都圏模試・SAPIXの各模試における志望校動向の違いをプロが徹底分析している。",
-        "模試ごとの難易度や母集団の傾向を把握することで、自子に最適な判定データを見極めることが可能になる。"
-      ],
-      "takeaway": "志望校の出題傾向や偏差値帯に合わせ、単一の模試に依存せず複数の模試を使い分ける戦略を立てましょう。",
-      "is_ai_summary": true
-    },
     "072847f89c": {
       "id": "072847f89c",
       "category_id": "high",
@@ -38,6 +16,7 @@
       "source": "埼玉新聞社 高校受験ナビ",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 16.5,
       "headline": "関東高校選抜大会：相撲・柔道の競技結果判明",
       "points": [
         "埼玉新聞社が関東高校選抜大会における相撲および柔道の競技結果を速報として報じた。",
@@ -60,6 +39,7 @@
       "source": "ダイヤモンド・オンライン",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 20.5,
       "headline": "東京女子校4校の2027年入試変更点に要注目",
       "points": [
         "法政大学千代田三番町、大妻、和洋九段女子、東京女学館の4校が2027年入試に向け大きな内容変更を行う。",
@@ -82,6 +62,7 @@
       "source": "教育新聞",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 18.5,
       "headline": "都立高の魅力向上：新コース新設と不登校支援強化",
       "points": [
         "都立高校の教育改革として「高度情報活用コース」の新設や不登校生徒への支援体制強化が打ち出された。",
@@ -104,6 +85,7 @@
       "source": "日本教育新聞電子版 NIKKYOWEB",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 18.5,
       "headline": "都立進学指導特別推進校：高度情報活用コース設置へ",
       "points": [
         "東京都教育委員会が「進学指導特別推進校」において新たに高度情報活用コースを設置する方針を固めた。",
@@ -126,6 +108,7 @@
       "source": "ライブドアニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 17.0,
       "headline": "不登校からの進学：無料オンライン入塾説明会開催",
       "points": [
         "不登校を経験した生徒の高校・大学進学をサポートする無料オンライン入塾説明会が開催された。",
@@ -148,6 +131,7 @@
       "source": "リセマム",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 19.5,
       "headline": "関西難関7校中の6校が1月16日に日程集中",
       "points": [
         "関西私立中学7校のうち6校が1月16日に解禁日を集中させ、受験生の併願作戦に深刻な影響を与えている。",
@@ -160,16 +144,17 @@
       "id": "b335cf0c36",
       "category_id": "univ",
       "title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意",
-      "raw_title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意 - PR TIMES",
+      "raw_title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意 - 宮崎日日新聞",
       "description": "",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16dHhLbERsZXcwTU1fOVctakJONVFxVktKVU1yTEFNalAtTUhDTkdqbTZaMDRhZkZqZFJpQmgxc1A5aUNHOHlnVjhQQmcwMnhoclNMYWF6UGdGSEM1TzZKMzduWHptYXp2cWc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGb3pEcTZKc0FOSVoxdENtQjFoZjhLLVdoSXlfQW5oY0hpVExwS3hmbW8zRGlWRnRIaENXNjN1M0NfSjgyWG9JSXVBc1FSSk5fZjN6SWlWb0RfUFhMZG9mSnp1NlBKNlZlUU9NaW9fNlNTa2M?oc=5",
       "pub_date": "昨日 09:00",
-      "pub_iso": "2026-11-09T09:00:02+09:00",
-      "pub_ts": 1794182402,
+      "pub_iso": "2026-11-09T09:00:00+09:00",
+      "pub_ts": 1794182400,
       "is_new": true,
-      "source": "PR TIMES",
+      "source": "宮崎日日新聞",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 16.5,
       "headline": "厚胤塾が12月7日冬期講習開講",
       "points": [
         "高1・2年生向けの総復習や先取り学習から共通テスト、難関医学部対策まで網羅した多彩な冬期特別講座を提供。",
@@ -214,12 +199,36 @@
       "source": "All About（オールアバウト）",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 12.0,
       "headline": "高校無償化の裏側：激化する教育費の課金ゲーム",
       "points": [
         "高校授業料無償化に伴い、塾代や教材費などの追加負担が増加し、実質的な格差を生む懸念が指摘されている。",
         "公的支援の拡充一方で、難関校合格に向けた家庭内での教育投資の差が浮き彫りになっている。"
       ],
       "takeaway": "無償化制度だけでなく、学校外活動費も含めたトータルの教育予算を試算し、長期的な資金計画を立てて準備しましょう。",
+      "is_ai_summary": true
+    },
+    "bdcd3942c2": {
+      "id": "bdcd3942c2",
+      "category_id": "junior",
+      "title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉",
+      "raw_title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉 - AERA DIGITAL",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jMUJzcG5JY0p2eEk5TGtUVm8yX0Zfd3BMRWxDZEI3UVpsbnJMWWFwRGpxRnN5Z3JRLTROeEl0bWV0aEs5YWh0cndFS2JNMUtmT0hIcU5wSGxQQnJQaURZSFotWDBGQQ?oc=5",
+      "pub_date": "11/08 17:00",
+      "pub_iso": "2026-11-08T17:00:00+09:00",
+      "pub_ts": 1794124800,
+      "is_new": false,
+      "source": "AERA DIGITAL",
+      "badge_label": "📊模試・倍率",
+      "badge_cls": "badge-exam",
+      "score": 17.0,
+      "headline": "首都圏4大模試の特性と受験者層を完全比較",
+      "points": [
+        "四谷大塚・日能研・首都圏模試・SAPIXの各模試における志望校動向の違いをプロが徹底分析している。",
+        "模試ごとの難易度や母集団の傾向を把握することで、自子に最適な判定データを見極めることが可能になる。"
+      ],
+      "takeaway": "志望校の出題傾向や偏差値帯に合わせ、単一の模試に依存せず複数の模試を使い分ける戦略を立てましょう。",
       "is_ai_summary": true
     },
     "d37dd539f5": {
@@ -258,6 +267,7 @@
       "source": "ｄメニューニュース",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 13.0,
       "headline": "総合型選抜が広げる入試格差の現実と対策",
       "points": [
         "総合型選抜入試において都市部と地方間や家庭の経済力による情報・準備の格差が課題となっている。",
@@ -324,6 +334,7 @@
       "source": "リセマム",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 8.0,
       "headline": "河合塾の動向分析で判明した文系比率の上昇",
       "points": [
         "河合塾の最新の動向分析により、大学受験における文系志望者の比率が上昇していることが明らかになった。",
@@ -390,6 +401,7 @@
       "source": "朝日新聞",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 3.0,
       "headline": "将棋と中学受験の共通点、考える力と待つ力を育む指導法",
       "points": [
         "中村太地八段の対談により、将棋の思考プロセスと中学受験の学習が相性抜群であることが解説された。",
@@ -412,6 +424,7 @@
       "source": "AERA DIGITAL",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 9.5,
       "headline": "難関国立大に強い首都圏中高一貫校ランキング最新版が発表",
       "points": [
         "東大や京大などの合格率が高い首都圏中高一貫校の2026年版ランキングがAERA DIGITALで公開された。",
@@ -1424,6 +1437,7 @@
       "source": "Yahoo!ニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
+      "score": 8.0,
       "headline": "2027年度MARCH入試の動向と合格者数の予測",
       "points": [
         "2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。",
@@ -1468,6 +1482,7 @@
       "source": "月刊私塾界",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 12.5,
       "headline": "都立高入試の内申不問10対0判定が北園など3校に拡大",
       "points": [
         "2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。",
@@ -1534,6 +1549,7 @@
       "source": "リセマム",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
+      "score": 8.0,
       "headline": "国公立大募集人員13万1325人に",
       "points": [
         "2027年度国公立大学の総募集人員は13万1325人となり、前年度比で512人の増加を記録。",
@@ -1556,6 +1572,7 @@
       "source": "リセマム",
       "badge_label": "📊模試・倍率",
       "badge_cls": "badge-exam",
+      "score": 5.0,
       "headline": "合不合判定テスト結果から人気校の併願動向を分析",
       "points": [
         "四谷大塚の第4回合不合判定テストの結果に基づき、最新の志望者数や上位校の具体的な併願先が判明した。",
