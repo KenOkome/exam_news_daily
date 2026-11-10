@@ -113,6 +113,10 @@
                     <p>千葉（渋幕・市川・東邦・秀英・専松等）・四谷大塚・首都圏入試の要約まとめ</p>
                 </div>
             </div>
+            <!-- 過去1週間のAI調査レポート（上部ピン留めアコーディオン） -->
+            <div id="report-container-junior" class="report-container">
+                {{JUNIOR_AI_REPORT}}
+            </div>
             <div class="news-grid">
                 {{JUNIOR_NEWS_CARDS}}
             </div>
@@ -126,6 +130,10 @@
                     <h2>高校受験 最新ニュース（最新順）</h2>
                     <p>千葉県公立・私立高入試（船高・千高・東葛・八千代・Vもぎ等）・首都圏の要約まとめ</p>
                 </div>
+            </div>
+            <!-- 過去1週間のAI調査レポート（上部ピン留めアコーディオン） -->
+            <div id="report-container-high" class="report-container">
+                {{HIGH_AI_REPORT}}
             </div>
             <div class="news-grid">
                 {{HIGH_NEWS_CARDS}}
@@ -482,6 +490,40 @@
         const returnLatestBtn = document.getElementById('returnLatestBtn');
         const liveDot = document.getElementById('liveDot');
 
+
+        function renderReportClient(cid, r) {
+            if (!r || !r.title) return '';
+            const catIcon = cid === 'junior' ? '🏫' : (cid === 'high' ? '🎒' : '🎓');
+            const analyzedAt = escapeHtml(r.analyzed_at || '');
+            return `
+            <details class="report-card ${cid}" open>
+                <summary class="report-summary-toggle">
+                    <div class="report-header">
+                        <span class="report-badge">📊 過去1週間のAI調査レポート</span>
+                        <span class="report-header-right">
+                            <span class="report-date">${analyzedAt} AI分析</span>
+                            <span class="report-chevron" aria-hidden="true">▾</span>
+                        </span>
+                    </div>
+                    <h3 class="report-title">${escapeHtml(r.title)}</h3>
+                </summary>
+                <div class="report-body">
+                    <div class="report-section">
+                        <div class="report-section-title">📊 <strong>直近1週間の動向総括</strong></div>
+                        <div class="report-section-text">${escapeHtml(r.summary || '')}</div>
+                    </div>
+                    <div class="report-section">
+                        <div class="report-section-title">${catIcon} <strong>注目校・入試制度改革のポイント</strong></div>
+                        <div class="report-section-text">${escapeHtml(r.key_trends || '')}</div>
+                    </div>
+                    <div class="report-section">
+                        <div class="report-section-title">💡 <strong>受験生・保護者への今週のアドバイス</strong></div>
+                        <div class="report-section-text">${escapeHtml(r.advice || '')}</div>
+                    </div>
+                </div>
+            </details>`;
+        }
+
         function renderNewsCardsClient(newsList, categoryName, categoryId) {
             if (!newsList || newsList.length === 0) {
                 return `
@@ -607,6 +649,13 @@
                 if (hGrid) hGrid.innerHTML = latestHtmlSnapshot.high;
                 if (uGrid) uGrid.innerHTML = latestHtmlSnapshot.univ;
 
+                const jRep = document.getElementById('report-container-junior');
+                const hRep = document.getElementById('report-container-high');
+                const uRep = document.getElementById('report-container-univ');
+                if (jRep) jRep.innerHTML = latestHtmlSnapshot.juniorReport;
+                if (hRep) hRep.innerHTML = latestHtmlSnapshot.highReport;
+                if (uRep) uRep.innerHTML = latestHtmlSnapshot.univReport;
+
                 const jTabCount = document.querySelector('.tab-btn[data-tab="junior"] .tab-count');
                 const hTabCount = document.querySelector('.tab-btn[data-tab="high"] .tab-count');
                 const uTabCount = document.querySelector('.tab-btn[data-tab="univ"] .tab-count');
@@ -632,11 +681,16 @@
                     const catData = (data.categories && data.categories[c.id]) || { news: [] };
                     const grid = document.querySelector(`#${c.id}-tab .news-grid`);
                     const countEl = document.querySelector(`.tab-btn[data-tab="${c.id}"] .tab-count`);
+                    const repEl = document.getElementById(`report-container-${c.id}`);
+
                     if (grid) {
                         grid.innerHTML = renderNewsCardsClient(catData.news, c.name, c.id);
                     }
                     if (countEl) {
                         countEl.textContent = String((catData.news || []).length);
+                    }
+                    if (repEl) {
+                        repEl.innerHTML = catData.report ? renderReportClient(c.id, catData.report) : '';
                     }
                 });
                 syncBookmarksUI();
@@ -660,7 +714,10 @@
                 univ: uGrid ? uGrid.innerHTML : '',
                 juniorCount: jCount ? jCount.textContent : '0',
                 highCount: hCount ? hCount.textContent : '0',
-                univCount: uCount ? uCount.textContent : '0'
+                univCount: uCount ? uCount.textContent : '0',
+                juniorReport: document.getElementById('report-container-junior') ? document.getElementById('report-container-junior').innerHTML : '',
+                highReport: document.getElementById('report-container-high') ? document.getElementById('report-container-high').innerHTML : '',
+                univReport: document.getElementById('report-container-univ') ? document.getElementById('report-container-univ').innerHTML : ''
             };
 
             try {

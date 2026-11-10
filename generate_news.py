@@ -618,8 +618,202 @@ def render_news_cards(news_items, category_name):
 
 
 
-def save_daily_archive(script_dir, now_jst, updated_str, all_news):
+
+def load_recent_archive_headlines(script_dir, category_id, now_jst, days=7):
+    """過去7日分の日別アーカイブJSONから指定カテゴリの主要見出しを取得し、レポート生成用の文脈を補強"""
+    archive_dir = os.path.join(script_dir, "docs", "data", "archive")
+    if not os.path.exists(archive_dir):
+        return []
+    today_str = now_jst.strftime("%Y-%m-%d")
+    past_files = sorted(
+        [f for f in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", f) and f[:-5] < today_str],
+        reverse=True
+    )[:days]
+
+    past_lines = []
+    seen = set()
+    for fname in past_files:
+        fpath = os.path.join(archive_dir, fname)
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            cdata = data.get("categories", {}).get(category_id, {})
+            news = cdata.get("news", [])
+            for item in news:
+                hl = item.get("headline") or item.get("title") or ""
+                hl_clean = re.sub(r"^[【\[][^】\]]+[】\]]\s*", "", hl).strip()
+                if hl_clean and hl_clean not in seen and len(hl_clean) > 8:
+                    seen.add(hl_clean)
+                    date_label = item.get("pub_date") or data.get("date", "")[5:]
+                    past_lines.append(f"- [{date_label}] {hl_clean}")
+                    if len(past_lines) >= 10:
+                        break
+        except Exception:
+            continue
+        if len(past_lines) >= 10:
+            break
+    return past_lines
+
+
+def generate_weekly_ai_report(category_id, category_name, news_items, api_key, script_dir, now_jst):
+    """過去1週間のニュースとアーカイブ履歴を横断的に分析した教育アナリスト視点の深掘りレポートを生成"""
+    if not news_items:
+        return "", None
+
+    current_articles_text = "\n".join([
+        f"- [{item.get('badge_label', '')} | {item.get('pub_date', '')}] {item.get('headline') or item.get('title')} (元記事: {item.get('title')} / {item.get('source', '')})"
+        + (f" / 注目: {item['takeaway']}" if item.get("takeaway") else "")
+        for item in news_items
+    ])
+
+    past_lines = load_recent_archive_headlines(script_dir, category_id, now_jst, days=7)
+    past_context = "\n".join(past_lines) if past_lines else "（直近取得記事を参照）"
+
+    prompt = f"""あなたは千葉県および首都圏の教育・入試事情に精通した【プロの入試アナリスト・塾指導顧問】です。
+今週配信された【{category_name}】に関する最新記事および過去1週間の動向見出しに基づき、指導現場および受験生・保護者向けに今週の重要トレンドを深掘りした「過去1週間のAI調査レポート」を作成してください。
+
+【直近配信の重要ニュース】:
+{current_articles_text}
+
+【過去1週間の関連動向・見出し】:
+{past_context}
+
+【厳格ルール】
+1. 根拠のない入試倍率・出願日程・合格点などの勝手な捏造（ハルシネーション）を厳禁とします。提供された情報および公表された客観的事実に基づいて記述してください。
+2. 抽象的な精神論（「体調に気をつけて頑張りましょう」など）に終始せず、具体的な制度改革・注目校の動向・受験スケジュールの要点に踏み込んでください。
+3. 以下のJSONオブジェクトを正確に出力してください:
+   - title: レポート全体の核心をつく総括見出し（25〜35文字程度）
+   - summary: 直近1週間の戦況・動向総括（100〜150文字程度。何が起きておりどう推移しているか）
+   - key_trends: 注目校の動向・入試制度改革のポイント（100〜150文字程度。受験校選びや出願への影響）
+   - advice: 受験生・保護者への今週の具体的アドバイス（100〜150文字程度。今週やるべき具体的アクション）"""
+
+    response_schema = {
+        "type": "OBJECT",
+        "properties": {
+            "title": {"type": "STRING"},
+            "summary": {"type": "STRING"},
+            "key_trends": {"type": "STRING"},
+            "advice": {"type": "STRING"}
+        },
+        "required": ["title", "summary", "key_trends", "advice"]
+    }
+
+    report_obj = None
+    if api_key:
+        models_to_try = ["gemini-3.5-flash-lite", "gemini-2.5-flash", "gemini-flash-latest"]
+        for model in models_to_try:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+            body = {
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "responseMimeType": "application/json",
+                    "responseSchema": response_schema
+                }
+            }
+            try:
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps(body).encode("utf-8"),
+                    headers={
+                        "Content-Type": "application/json",
+                        "x-goog-api-key": api_key
+                    }
+                )
+                with urllib.request.urlopen(req, timeout=35) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    candidates = data.get("candidates", [])
+                    if not candidates:
+                        continue
+                    text = candidates[0].get("content", {}).get("parts", [{}])[0].get("text", "")
+                    report_obj = json.loads(text)
+                    if isinstance(report_obj, dict) and report_obj.get("title") and report_obj.get("summary"):
+                        report_obj["analyzed_at"] = now_jst.strftime("%m/%d %H:%M")
+                        print(f"  -> Gemini API ({model}) による【{category_name}】AI調査レポート生成に成功！")
+                        break
+            except Exception as e:
+                print(f"  [警告] レポート生成失敗 ({model}): {e}", file=sys.stderr)
+                continue
+
+    if not report_obj:
+        print(f"  -> フォールバックレポートを合成します: {category_name}")
+        return fallback_weekly_report(category_id, category_name, news_items, now_jst)
+
+    return render_report_html(category_id, report_obj), report_obj
+
+
+def fallback_weekly_report(category_id, category_name, news_items, now_jst):
+    """API未接続時でも現在の記事見出し群から安全に調査レポートを合成"""
+    now_str = now_jst.strftime("%m/%d %H:%M")
+    top_headlines = [re.sub(r"^[【\[][^】\]]+[】\]]\s*", "", item.get("headline") or item.get("title", "")) for item in news_items[:3]]
+    lead_topic = top_headlines[0][:32] if top_headlines else f"{category_name} 最新動向総括"
+    joined_topics = " / ".join([t[:26] for t in top_headlines])
+
+    if category_id == "junior":
+        trends_text = "首都圏・千葉県の中学入試では、思考力型入試の拡大や午後入試の併願戦略、出願手続きのオンライン化が注目を集めています。"
+        advice_text = "過去問演習の解き直しと時間配分の確認を徹底し、志望校ごとの出題傾向に合わせた弱点補強を進めましょう。"
+    elif category_id == "high":
+        trends_text = "千葉県公立高校入試の一本化や自己表現検査、調査書（内申点）の扱いや私立推薦基準の最新動向に高い関心が集まっています。"
+        advice_text = "定期テスト対策で内申を確保しつつ、Vもぎ・実戦模試の復習を通じて大問1・2の計算・一行問題を完答する力を固めましょう。"
+    else:
+        trends_text = "新課程共通テストの「情報Ⅰ」対応や国公立大・難関私立大の総合型・学校推薦型選抜の定員増が大きな焦点となっています。"
+        advice_text = "共通テストと個別学力検査の配点比率を再確認し、基礎典型問題のスピード向上と記述答案作成の訓練を並行しましょう。"
+
+    report_obj = {
+        "analyzed_at": now_str,
+        "title": f"{lead_topic}",
+        "summary": f"直近の{category_name}では、「{joined_topics}」など受験生・保護者にとって見逃せない重要ニュースが相次いで報じられています。",
+        "key_trends": trends_text,
+        "advice": advice_text
+    }
+    return render_report_html(category_id, report_obj), report_obj
+
+
+def render_report_html(category_id, r):
+    """調査レポートのHTMLをレンダリング（開閉可能なアコーディオン対応＆XSSエスケープ済）"""
+    if not r:
+        return ""
+    now_str = html.escape(str(r.get("analyzed_at", "")), quote=True)
+    title = html.escape(str(r.get("title", "")), quote=True)
+    summary = html.escape(str(r.get("summary", "")), quote=True)
+    key_trends = html.escape(str(r.get("key_trends", "")), quote=True)
+    advice = html.escape(str(r.get("advice", "")), quote=True)
+
+    cat_icon = "🏫" if category_id == "junior" else ("🎒" if category_id == "high" else "🎓")
+
+    return f"""
+    <details class="report-card {category_id}" open>
+        <summary class="report-summary-toggle">
+            <div class="report-header">
+                <span class="report-badge">📊 過去1週間のAI調査レポート</span>
+                <span class="report-header-right">
+                    <span class="report-date">{now_str} AI分析</span>
+                    <span class="report-chevron" aria-hidden="true">▾</span>
+                </span>
+            </div>
+            <h3 class="report-title">{title}</h3>
+        </summary>
+        <div class="report-body">
+            <div class="report-section">
+                <div class="report-section-title">📊 <strong>直近1週間の動向総括</strong></div>
+                <div class="report-section-text">{summary}</div>
+            </div>
+            <div class="report-section">
+                <div class="report-section-title">{cat_icon} <strong>注目校・入試制度改革のポイント</strong></div>
+                <div class="report-section-text">{key_trends}</div>
+            </div>
+            <div class="report-section">
+                <div class="report-section-title">💡 <strong>受験生・保護者への今週のアドバイス</strong></div>
+                <div class="report-section-text">{advice}</div>
+            </div>
+        </div>
+    </details>
+    """
+
+
+def save_daily_archive(script_dir, now_jst, updated_str, all_news, ai_report_objs=None):
     """本日のニュース要約データを docs/data/archive/YYYY-MM-DD.json に保存し、docs/data/index.json を更新"""
+    if ai_report_objs is None:
+        ai_report_objs = {}
     archive_dir = os.path.join(script_dir, "docs", "data", "archive")
     index_path = os.path.join(script_dir, "docs", "data", "index.json")
     os.makedirs(archive_dir, exist_ok=True)
@@ -645,6 +839,7 @@ def save_daily_archive(script_dir, now_jst, updated_str, all_news):
                 "badge_cls": n.get("badge_cls", f"badge-{cid}")
             })
         categories_payload[cid] = {
+            "report": ai_report_objs.get(cid),
             "news": clean_news
         }
 
@@ -744,12 +939,23 @@ def main():
     updated_str = now_jst.strftime("%m月%d日 %H:%M")
     updated_iso = now_jst.strftime("%Y-%m-%d")
 
-    # 日別アーカイブJSONと index.json を保存
-    save_daily_archive(script_dir, now_jst, updated_str, all_news)
-
     junior_items = all_news.get("junior", [])
     high_items = all_news.get("high", [])
     univ_items = all_news.get("univ", [])
+
+    # 各カテゴリの「過去1週間のAI調査レポート」を生成
+    ai_report_objs = {}
+    ai_report_htmls = {}
+    for cat in CATEGORIES:
+        cid = cat["id"]
+        c_items = all_news.get(cid, [])
+        print(f"[{cat['name']}] AI調査レポート作成中...")
+        rep_html, rep_obj = generate_weekly_ai_report(cid, cat["name"], c_items, api_key, script_dir, now_jst)
+        ai_report_htmls[cid] = rep_html
+        ai_report_objs[cid] = rep_obj
+
+    # 日別アーカイブJSONと index.json を保存
+    save_daily_archive(script_dir, now_jst, updated_str, all_news, ai_report_objs)
 
     rendered = template
     rendered = rendered.replace("{{UPDATED_TIME}}", updated_str)
@@ -759,6 +965,10 @@ def main():
     rendered = rendered.replace("{{JUNIOR_COUNT}}", str(len(junior_items)))
     rendered = rendered.replace("{{HIGH_COUNT}}", str(len(high_items)))
     rendered = rendered.replace("{{UNIV_COUNT}}", str(len(univ_items)))
+
+    rendered = rendered.replace("{{JUNIOR_AI_REPORT}}", ai_report_htmls.get("junior", ""))
+    rendered = rendered.replace("{{HIGH_AI_REPORT}}", ai_report_htmls.get("high", ""))
+    rendered = rendered.replace("{{UNIV_AI_REPORT}}", ai_report_htmls.get("univ", ""))
 
     rendered = rendered.replace("{{JUNIOR_NEWS_CARDS}}", render_news_cards(junior_items, "中学受験"))
     rendered = rendered.replace("{{HIGH_NEWS_CARDS}}", render_news_cards(high_items, "高校受験"))

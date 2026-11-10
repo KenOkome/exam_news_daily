@@ -783,3 +783,162 @@ button, a {
     .logo-subtitle { display: none; }
     .btn-action { padding: 5px 8px; font-size: 11.5px; }
 }
+
+
+/* ==========================================================================
+   過去1週間のAI調査レポート（上部ピン留めアコーディオン）
+   ========================================================================== */
+.report-container {
+    margin-bottom: 20px;
+}
+
+.report-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card, 16px);
+    padding: 16px 18px;
+    margin-bottom: 8px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.report-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.report-card.junior::before {
+    background: var(--color-junior);
+}
+
+.report-card.high::before {
+    background: var(--color-high);
+}
+
+.report-card.univ::before {
+    background: var(--color-univ);
+}
+
+.report-summary-toggle {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+.report-summary-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.report-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.report-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.report-card.junior .report-badge {
+    background: var(--color-junior-bg);
+    color: var(--color-junior);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.report-card.high .report-badge {
+    background: var(--color-high-bg);
+    color: var(--color-high);
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.report-card.univ .report-badge {
+    background: var(--color-univ-bg);
+    color: var(--color-univ);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+}
+
+.report-header-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.report-date {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.report-chevron {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--text-muted);
+    transition: transform 0.25s ease;
+}
+
+details.report-card[open] .report-chevron {
+    transform: rotate(0deg);
+}
+
+details.report-card:not([open]) .report-chevron {
+    transform: rotate(-90deg);
+}
+
+.report-title {
+    font-size: 15.5px;
+    font-weight: 800;
+    line-height: 1.45;
+    color: var(--text-main);
+    margin: 0;
+}
+
+details.report-card:not([open]) .report-title {
+    margin-bottom: 0;
+}
+
+.report-body {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-section {
+    background: var(--bg-subtle);
+    border-radius: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+}
+
+.report-section-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.report-section-text {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
