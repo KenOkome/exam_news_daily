@@ -1,7 +1,13 @@
 {
-  "latest_date": "2026-11-10",
-  "total_days": 45,
+  "latest_date": "2026-11-11",
+  "total_days": 46,
   "dates": [
+    {
+      "date": "2026-11-11",
+      "updated_at": "11月11日 09:02",
+      "label": "11/11",
+      "total_news": 16
+    },
     {
       "date": "2026-11-10",
       "updated_at": "11月10日 15:28",
