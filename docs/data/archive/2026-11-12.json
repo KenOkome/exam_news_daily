@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-12",
+  "updated_at": "11月12日 10:32",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "直前期の学校見学と2027年入試改革への備え",
+        "summary": "今週は広尾学園や鴎友学園など共学・女子難関校の12月学校見学情報が相次いで公開され、出願直前での最終確認期に入りました。また、東京女子校4校の2027年入試変更や4大模試の特性比較など、中長期的な戦略も注目されています。",
+        "key_trends": "法政大学千代田三番町や大妻など東京女子校4校で2027年入試の変更点が発表され、配点変化や新設日程への対策が急務です。さらに、首都圏の中学受験における多校化が加速し、平均出願数が過去最多の7.76校に達する中で、併願戦略の精度がより一層求められています。",
+        "advice": "直前期で多忙な時期ですが、12月の学校見学を活用して志望校・併願校の雰囲気を再確認しモチベーションを高めましょう。また、2027年入試や複雑化する併願日程に向けては、家族間でのスケジュール共有ツールなどを活用し、出願計画を早めに固めてください。",
+        "analyzed_at": "11/12 10:32"
+      },
+      "news": [
+        {
+          "id": "526c82c045",
+          "category_id": "junior",
+          "title": "【中学受験】来月行ける中高一貫「学校見学」12月…広尾学園、法政など共学10校（リセマム）",
+          "headline": "12月に実施される共学校10校の学校見学情報",
+          "points": [
+            "広尾学園や法政大学など注目を集める人気共学校10校の12月中の見学日程が公開された。",
+            "直前期のモチベーション向上や最終的な志望校のミスマッチを防ぐ重要な機会となる。"
+          ],
+          "takeaway": "出願直前で忙しい時期ですが、志望校の雰囲気再確認やモチベーション維持のために有効活用しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "本日 10:15",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5VYlo3YkVYOXdqdXRpSDVXcTBrMW04Tl9pUFBFVjJ1djBLZzBsZWFQQmhlOFZHOWxIM2lWQnpmTHZ4cjA1UGp3bmtOSHVPSlByQjFrU2dMN3ZJNWt3TGV2NFRIQnA2bDlsWlZYWUJDSWxQWC1yRlNGaWQ4d1oybEU?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "a02db87e68",
+          "category_id": "junior",
+          "title": "【中学受験】来月行ける中高一貫「学校見学」12月…鴎友、洗足など女子10校",
+          "headline": "鴎友・洗足など女子難関校10校の12月見学情報",
+          "points": [
+            "鴎友学園女子や洗足学園をはじめとする難関女子校10校における12月の学校見学が案内された。",
+            "女子校ならではの教育方針や施設環境を直に確認し受験の最終決定に活かせる。"
+          ],
+          "takeaway": "併願校の最終決定に向けて、女子校特有の指導体制や校風をこの時期に改めて比較検討してください。",
+          "source": "リセマム",
+          "pub_date": "昨日 13:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zVDlfUlNxQ3JWYkR1eGhCTDFLd1k1S0k4TzBWY21hTEl4cFREb3JfbHhaOHpxd2V4SFdtaGE1SjZGOUVZTXJOUGFSZ2NDTmxERGlfVmxRd093OUJo?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "c3de34776e",
+          "category_id": "junior",
+          "title": "「法政大学千代田三番町」「大妻」「和洋九段女子」「東京女学館」の入試内容変更に注目！東京女子校1【首都圏中学入試2027】",
+          "headline": "東京女子校4校の2027年入試変更点に要注目",
+          "points": [
+            "法政大学千代田三番町、大妻、和洋九段女子、東京女学館の4校が2027年入試に向け大きな内容変更を行う。",
+            "首都圏屈指の人気女子校における試験方式の刷新は、周辺校も含めた出願倍率や偏差値の勢力図を大きく左右する。"
+          ],
+          "takeaway": "対象校の最新の入試要項をいち早く入手し、配点変化や新設日程に応じた過去問演習の計画を今から前倒しで進めましょう。",
+          "source": "ダイヤモンド・オンライン",
+          "pub_date": "11/10 08:00",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SQURhb1hLWGJDcTJydnkwUFA5Ym9uWm1zNzRzVFM0SmhvdUxIenpQNXlyWkF6Nnh4a1R2clJXMXlhUHprU1lNU1ZQZE8?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "5115d06cae",
+          "category_id": "junior",
+          "title": "【中学受験】今週末行ける中高一貫「学校見学」11/14-15…早稲田・女子学院など10校",
+          "headline": "早稲田・女子学院など注目10校の週末見学",
+          "points": [
+            "早稲田中や女子学院など最難関校を含む10校が11月14日・15日の週末に見学会を実施する。",
+            "秋から冬へ移る時期にトップ校の教育現場に触れる貴重なタイミングとなっている。"
+          ],
+          "takeaway": "直前期の学習スケジュールを調整し、最難関校のリアルな雰囲気を体感して過去問演習の弾みにしましょう。",
+          "source": "リセマム",
+          "pub_date": "11/09 09:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tcUpSWXJFbEV1UktjU3FXWmtwWmJWWl9vV3MzOGlQN2FBZTZycjZTRU1UNExGY1dMaWhMTjVDaTlWcXZqTFZka0lNWWp4V2xxa2pRemxNT2swRnRr?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "bdcd3942c2",
+          "category_id": "junior",
+          "title": "同じ模試でもここまで違う！ 首都圏中学受験の4大模試、受験者層と志望校動向の違いをプロが分析〈先月読まれた記事〉",
+          "headline": "首都圏4大模試の特性と受験者層を完全比較",
+          "points": [
+            "四谷大塚・日能研・首都圏模試・SAPIXの各模試における志望校動向の違いをプロが徹底分析している。",
+            "模試ごとの難易度や母集団の傾向を把握することで、自子に最適な判定データを見極めることが可能になる。"
+          ],
+          "takeaway": "志望校の出題傾向や偏差値帯に合わせ、単一の模試に依存せず複数の模試を使い分ける戦略を立てましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/08 17:00",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jMUJzcG5JY0p2eEk5TGtUVm8yX0Zfd3BMRWxDZEI3UVpsbnJMWWFwRGpxRnN5Z3JRLTROeEl0bWV0aEs5YWh0cndFS2JNMUtmT0hIcU5wSGxQQnJQaURZSFotWDBGQQ?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "846c918627",
+          "category_id": "junior",
+          "title": "東大・京大・東京科学大・一橋大の合格率が高い「首都圏中高一貫校」ランキング トップ常連・筑駒に肉薄した男子校はどこ？【2026年版】",
+          "headline": "難関国立大に強い首都圏中高一貫校ランキング最新版が発表",
+          "points": [
+            "東大や京大などの合格率が高い首都圏中高一貫校の2026年版ランキングがAERA DIGITALで公開された。",
+            "トップ常連の筑駒に肉薄する男子校の動向など、最難関校を狙う受験生の学校選びの重要指標となる。"
+          ],
+          "takeaway": "単なる偏差値だけでなく、志望校の大学合格実績の伸びや学校の教育方針を照らし合わせて併願校を検討しましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/06 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fXzNiVGRmSDZrLTc3NlZyNXRTWGYzVXo1YWN6NmtqeDZjZEc3bDNFZ0dyWFdRd0NpVzZaWFdzZUo2TlRsbHpUSHlxOG01VmxtWVNNaVBJeVpvZEFF?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "都立高のAI新コース新設と多様化する入試制度の動向",
+        "summary": "今週は都立高校における高度情報活用コースの新設や不登校支援強化、内申不問「10対0」判定の拡大など、制度改革と魅力化の動きが加速しています。さらに教育無償化に伴う教育格差への懸念も浮上し、受験生を取り巻く環境は大きく変化しています。",
+        "key_trends": "都立進学指導特別推進校等へのAI人材育成新コース設置検討により、学校選択の軸が多様化しています。また、北園高校などで採用される内申点不問の「10対0」判定の広がりは、当日点重視の受験戦略に直接的な影響を与えています。",
+        "advice": "内申点に不安がある生徒は、内申不問の「10対0」判定実施校の過去問演習を早めに開始してください。また、新設されるAI人材育成コースなどの募集要項や選抜方法の変更点をいち早くキャッチし、早期から計画的な対策を進めましょう。",
+        "analyzed_at": "11/12 10:32"
+      },
+      "news": [
+        {
+          "id": "43af3b9f14",
+          "category_id": "high",
+          "title": "都立高校推薦入試対策 無料講演会を11月23日（月・祝）に開催（後援：足立区立小学校中学校PTA連合会 / 協力：しもさん株式会社）",
+          "headline": "足立区PTA後援の都立推薦対策講演会が11月23日に開催",
+          "points": [
+            "11月23日の祝日に、足立区立小中PTA連合会後援の都立高校推薦入試対策の無料講演会が実施される。",
+            "倍率の高い都立推薦選抜に向けて、保護者が早期に把握すべき具体的な対策や心構えを無料で学べる機会となる。"
+          ],
+          "takeaway": "推薦入試の合否を分ける作文や面接の配点傾向を早めに把握し、内申点アップに向けた直前の学校生活の過ごし方を親子で確認しましょう。",
+          "source": "PR TIMES",
+          "pub_date": "昨日 17:50",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9MYlRrd0FyRHZ3cnpyRWxnZmlQdk42Zl9fY190UEw4TFRYSWx1WlBLZVlYTWRwYk9lZ3dtWWlzMWhiUWVSMDdsMVRTZ1RxWXVNY1pzVDFiNGtWYjd2UjZfcWgya09KbzVuelE?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "41cd824e82",
+          "category_id": "high",
+          "title": "AI技術活用し人材育成 都教委、都立高での新コース設置を検討",
+          "headline": "都教委が都立高校へAI人材育成の新コース設置を検討",
+          "points": [
+            "東京都教育委員会が、急速に進むAI技術に対応できる高度な人材を育成するため都立高校での新コース設置検討に入った。",
+            "今後の大学入試やグローバルな社会構造の変化を見据え、専門的なIT教育を受けられる新たな進路選択肢として注目される。"
+          ],
+          "takeaway": "ITやAI分野に関心のある中学生は、今後の学科改編や新コース発表の動向に注目し、数学などの基礎学力をしっかり固めておきましょう。",
+          "source": "au Webポータル",
+          "pub_date": "昨日 14:15",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBvTTZnbE9ZcU9LU04yWjdCWG5VYzZLRktnN2ZFVjk1Vm56MkplcjByeHBOa2xIckFfYjhXc2dQM3p5WEdYWHh4UUkxU3BZU3pPcHBIMUFseFd0b2RReGJjN1dMZnAzUTUxN3UwYlRn?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "df3a902e72",
+          "category_id": "high",
+          "title": "県高校将棋王将戦2026 結果",
+          "headline": "県高校将棋王将戦2026の大会結果が発表",
+          "points": [
+            "2026年シーズンの県高校将棋王将戦における各対局の結果が埼玉新聞社高校受験ナビにて速報・公開された。",
+            "文武両道を掲げる高校の生徒たちが日頃の部活動の成果を発揮し、大学入試の推薦等で評価される実績を残している。"
+          ],
+          "takeaway": "部活動や大会での実績は総合型選抜や特別推薦の強力なアピール材料になります。学習と部活の両立スケジュールを管理しましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "昨日 09:48",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcHd5SkVkb2hqeDJlOWNMekFEV0N3ZjBSc09iRi1ucnh0aDczM1Z1Tzdwb0s2LUJydUd5T1kyN2RzdGdiNk5EZVhXck05cDVoNTl6b1gwWU9sNzBBSVBSZFJQX1JlZ0Faa3lmN0V5bVMzVFdQcWlzUmoyRkJMUDl2aFZTU0NFWTBIdmdlQTNoX2FhdVFTMUdMNGRUOHZVekFUUF9TWlliWU5JVHVPZTRjOThCdGlkeFJJdHo1N1Y3YnRqQ29PYnBGQmNTYWVHMG03TFJEOEE4MFdaTW55eVVaNWQtSQ?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b14303e86b",
+          "category_id": "high",
+          "title": "都立高校魅力向上懇談会／高大連携やキャリア教育で年内に中間取りまとめ",
+          "headline": "都立高魅力向上懇談会：高大連携やキャリア教育推進へ",
+          "points": [
+            "年内の中間取りまとめに向け、大学との連携強化や早期からのキャリア教育の具体策を議論している。",
+            "少子化が進む中で都立高校全体のブランド力と教育の質を高め、志願者確保につなげる狙いがある。"
+          ],
+          "takeaway": "今後の学校選択では大学進学実績だけでなく高大連携の内容も注目し、我が子の将来設計に合うか見極めましょう。",
+          "source": "日刊建設工業新聞",
+          "pub_date": "昨日 06:05",
+          "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1ZMzhoV3pPTGl1aWRoMmV4alN4VUZhMG1zX2FPV1ZxbWpRRDhibE1iOThjN19aSldORTNab3hpTHlUYzZHUG1V?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "20a5b43b1f",
+          "category_id": "high",
+          "title": "「高度情報活用コース」新設や不登校支援強化へ 都立高校の魅力向上",
+          "headline": "都立高の魅力向上：新コース新設と不登校支援強化",
+          "points": [
+            "都立高校の教育改革として「高度情報活用コース」の新設や不登校生徒への支援体制強化が打ち出された。",
+            "IT人材育成ニーズの高まりや多様な学びの受け皿拡大に対応する、新たな学校選択の軸となる。"
+          ],
+          "takeaway": "変化する都立入試のトレンドを把握し、新設コースや特別支援クラスの募集要項や選抜方法を早い段階でチェックしておきましょう。",
+          "source": "教育新聞",
+          "pub_date": "11/09 20:55",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE54VDB4cVMwbmhZM2NRaUVRMVRYRHpQcjdJeVBZekVGNTlic1poWnVDWklWWWx6WDNQZzdKQndqTUktODJ0N3JiRlZBREtwaWhESmxZZ3hB?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "8da3d51bc7",
+          "category_id": "high",
+          "title": "都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校",
+          "headline": "都立高入試の内申不問10対0判定が北園など3校に拡大",
+          "points": [
+            "2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。",
+            "当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。"
+          ],
+          "takeaway": "内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。",
+          "source": "月刊私塾界",
+          "pub_date": "10/21 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "【首都圏大学受験】冬期講習と2027年度入試動向分析レポート",
+        "summary": "直近1週間は冬期講習の開講やMARCH・国公立大の定員動向、総合型選抜の実態が大きく注目されています。文系比率の上昇や医学部志望者の動向も判明し、新学年に向けた早期の戦略見直しが不可欠な状況となっています。",
+        "key_trends": "国公立大の募集人員微増に対し、筑波大医学群など医学部志望者は緻密な定員把握が必要です。また、MARCH入試の合格者数予測や総合型選抜の影響を受け、一般選抜との併願戦略を柔軟に再構築する重要性が高まっています。",
+        "advice": "高1・2年生は冬期講習を活用して今年度の苦手分野を完全に払拭し、先取り学習で周囲に差をつけましょう。保護者様は共通テストの「情報I」対策や最新の出願・交通スケジュールを早期に確認し、具体的な対策を進めてください。",
+        "analyzed_at": "11/12 10:32"
+      },
+      "news": [
+        {
+          "id": "b335cf0c36",
+          "category_id": "univ",
+          "title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意",
+          "headline": "厚胤塾が12月7日冬期講習開講",
+          "points": [
+            "高1・2年生向けの総復習や先取り学習から共通テスト、難関医学部対策まで網羅した多彩な冬期特別講座を提供。",
+            "受験の天王山となる冬期に個々の目標と学力レベルに最適化された指導で、効率的な実力強化を図る。"
+          ],
+          "takeaway": "高1・2年生は冬期講習で今年度の苦手分野を完全に払拭し、新学年に向けた先取り学習で周囲に差をつけましょう。",
+          "source": "PR TIMES",
+          "pub_date": "11/09 09:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16dHhLbERsZXcwTU1fOVctakJONVFxVktKVU1yTEFNalAtTUhDTkdqbTZaMDRhZkZqZFJpQmgxc1A5aUNHOHlnVjhQQmcwMnhoclNMYWF6UGdGSEM1TzZKMzduWHptYXp2cWc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "c01d6cebf4",
+          "category_id": "univ",
+          "title": "【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）",
+          "headline": "2027年度MARCH入試の動向と合格者数の予測",
+          "points": [
+            "2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。",
+            "私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。"
+          ],
+          "takeaway": "志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/22 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "a3067ee9c7",
+          "category_id": "univ",
+          "title": "【大学受験2027】国公立大の募集人員13万1,325人、前年度比512人増",
+          "headline": "国公立大募集人員13万1325人に",
+          "points": [
+            "2027年度国公立大学の総募集人員は13万1325人となり、前年度比で512人の増加を記録。",
+            "新課程での入試継続や各大学の定員管理厳格化の動向を受け、全体的な枠の動きを早期に把握する必要がある。"
+          ],
+          "takeaway": "募集人員の微増減に惑わされず、まずは共通テストと二次試験の配点比率を確認し、志望校の出題傾向に合わせた対策を進めましょう。",
+          "source": "リセマム",
+          "pub_date": "10/15 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1mMndHT1BNZWlZbFVvMXV2akVvUURldEYxdEc4TWJDSFhLOXJVNVhSRWpZb2FnOUJUN2h0MlVoc2tYcGJjZklQdzFVdFFNWThFTU1KT2dRQjVzcnpi?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    }
+  }
+}
