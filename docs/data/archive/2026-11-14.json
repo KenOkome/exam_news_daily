@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-14",
+  "updated_at": "11月14日 09:19",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "【中学受験】直前期の親の支援と低学年からの情報戦が本格化",
+        "summary": "直前期を迎えた小6向けに不安解消セミナーや合否判定テストの結果活用が活発化する一方、年長から低学年層を対象としたスタートアップガイダンスや、聖光学院などの大規模な合同イベント・学校見学情報が相次ぎ、早期からの情報収集と直前期の併願校調整が同時進行しています。",
+        "key_trends": "埼玉私立5校の合同相談会や私学49校参加の「学びの祭典」など、首都圏のリアルな校風を知る機会が増加しています。また、医学部合格率ランキングの注目など、出口実績を重視した中高一貫校選びの軸がより鮮明になっています。",
+        "advice": "小6生は模試の数値に一喜一憂せず、過去問の得点率を基に併願校の最終調整を進めてください。低学年層は先取り学習よりも学習習慣と読解力の土台固めに注力し、直前期の保護者は子供のメンターに徹し生活リズム管理に集中しましょう。",
+        "analyzed_at": "11/14 09:19"
+      },
+      "news": [
+        {
+          "id": "acd5be604e",
+          "category_id": "junior",
+          "title": "【中学受験】私学49校参加「学びの祭典」聖光学院で11/23",
+          "headline": "聖光学院で私学49校参加の「学びの祭典」11/23開催",
+          "points": [
+            "神奈川県の難関・聖光学院を会場に私立中学校49校が一同に会する大規模な学校説明・体験イベントとなる。",
+            "首都圏の多様な教育方針を持つ私学の魅力を直接比較し、志望校選びの幅を広げる絶好の機会となる。"
+          ],
+          "takeaway": "低学年から志望校の雰囲気を知るために親子で参加し、パンフレットだけでは分からない校風を肌で感じましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 18:45",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ycTQzSG9feXJYS0YwSUhiRHNVZ1hNdVQwVWRxQ1lRZHBTTDNlSW1uMWdBV2FKdElhSkhGN3M1bk1tSlRwYm1SSS1Ga0xveURqaFdFMWVJSU1ZLWYt?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "cf5842b383",
+          "category_id": "junior",
+          "title": "【中学受験】開智所沢ら埼玉私立5校の合同相談会、池袋11/22",
+          "headline": "開智所沢など埼玉私立5校の合同相談会が池袋で11/22開催",
+          "points": [
+            "開智所沢をはじめとする注目度の高い埼玉県の私立中学校5校が都内で個別相談会を実施する。",
+            "アクセスの良い池袋会場で、埼玉難関校の最新入試傾向やカリキュラムの特色をまとめて効率よく確認できる。"
+          ],
+          "takeaway": "埼玉入試を併願校として検討している東京・千葉の家庭は、複数校の出願基準や過去問対策を直接質問し情報を得ましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 14:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81R2NXV29XdHdjYWl1QWttMmdkV1dVV2R3TXhGVGRfbFdTdGtnUVZyc25vVFQyQjR3Q0pjX0ZIZ3FpdkFZQ0VJdmxsNXNEOGM4c1MxS2swdmVDclFF?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "baa3d2663a",
+          "category_id": "junior",
+          "title": "【中学受験】浜学園 第4回「小6合否判定テスト」偏差値一覧",
+          "headline": "浜学園が第4回「小6合否判定テスト」の偏差値一覧を公開",
+          "points": [
+            "関西圏発祥で難関中学受験に強い浜学園が、小6向け模試の最新偏差値データを受験生と保護者向けに発表した。",
+            "直前期における正確な学力位置の把握と、志望校の合格可能性判定を見極めるための重要な指標となる。"
+          ],
+          "takeaway": "結果の数値だけに一喜一憂せず、苦手単元の補強と過去問の得点率を照らし合わせた併願校の最終調整に活用してください。",
+          "source": "リセマム",
+          "pub_date": "昨日 09:45",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BaXlpalhXNEcwTUJEUU9UV0NMNkhlYVpnZXFaZTgwZXcydTZTYS04c3JIcmcwZWU1TXBCNzF0VXVrRXlna1RxdkR5UHBPcUE0WTBnSGViTGhlOS01?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "09a7718834",
+          "category_id": "junior",
+          "title": "「医学部」合格率が高い「首都圏中高一貫校」ランキング トップ2の女子校は？【2026年版】",
+          "headline": "2026年版「医学部合格率が高い首都圏中高一貫校」ランキング",
+          "points": [
+            "首都圏の中高一貫校における医学部合格実績を徹底分析し、ランキング上位の女子校などの特徴を明らかにした。",
+            "難関医学部への進学に強い学校のカリキュラムや、進路指導における独自のサポート体制が可視化されている。"
+          ],
+          "takeaway": "将来の医学部進学を視野に入れている家庭は、単なる合格者数だけでなく卒業生数に対する現役合格率を学校選びの軸に据えましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "昨日 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjeVcwWVpfY1hIcmZJeEJGMnVMeGNDM19RTTVLWDktNWRUZXp1RVAzNld3a0FaUUtqWnUwLTI3cFpYa1dXSjM2cW9GMk9rQ3Q2cHZneExzT19KUVRq?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "a908b4ef26",
+          "category_id": "junior",
+          "title": "【年長～小3の保護者向け】過熱する中学入試は情報の差が合否を分ける ─ ＴＯＭＡＳ「中学入試 スタートアップガイダンス」をオンラインにて配信",
+          "headline": "TOMASが年長から小3向けオンライン中学入試ガイダンス配信",
+          "points": [
+            "過熱する中学受験市場において、低学年からの情報格差が合否を分ける重要ポイントをTOMASが解説する。",
+            "年長から小学3年生の保護者を対象に、今後の学習スタートダッシュに必要な具体的な準備手順をオンラインで伝える。"
+          ],
+          "takeaway": "低学年のうちは先取り学習の量よりも、机に向う学習習慣の定着と読解力の土台作りに注力する家庭学習を実践してください。",
+          "source": "PR TIMES",
+          "pub_date": "11/12 18:30",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OSk91NFB2ZzJBSDJVMmNxeTdNMUpiNk9JekRPUG5FTnR6ckxnVzVqckdnMklWa3puN1V3MDNfQU9XWWZnWk1zbGRlVUIxbmM1MmpXSThZVDhlelEwNXo0WUF4YXViM2VHOWc?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "f331c11739",
+          "category_id": "junior",
+          "title": "【中学受験2027】入試まであと60日「親の不安にじっくり向き合う」11/29",
+          "headline": "入試まであと60日、親の不安に向き合う支援セミナー11/29",
+          "points": [
+            "2027年中学入試の本番まで残り60日となり、保護者の心理的負担や直前期の関わり方に特化した企画が予定されている。",
+            "受験生を支える保護者が抱えやすい精神的な不安を解消し、家庭内でのサポート体制を整えるための内容。"
+          ],
+          "takeaway": "直前期は子供の成績変動に親が動揺せず、生活リズムの管理と精神的なメンターに徹する心構えを保護者自身が持ちましょう。",
+          "source": "リセマム",
+          "pub_date": "11/12 11:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDZjRYRElmUm5ienNHVk9YRC0teDlMT3c3ZTBCcG1kX3NfS3pWX2RnaE0zNkkwcWprNk9jekpvMFBjNkdjaUcxQVpXRm9ORkNDTGZaUnFSQWVUUm9q?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "首都圏高校入試の最新動向と指導現場への影響分析",
+        "summary": "直近1週間では、都立高校における探究学習支援の外部委託や専門高校の学科再編、AI人材育成コースの新設など、次世代の大学入試を見据えたカリキュラム改革が相次いで発表されました。また、埼玉県における無償化に伴う公立高改革支援の要望など、制度面の動きも活発化しています。",
+        "key_trends": "都立高における探究活動の質的向上や、日比谷高を含む165校での3学期転学・編入学実施が注目されています。さらに、専門高校の構想刷新や内申不問枠の拡大など、多様化する入試制度に対応した学校選びと最新情報のキャッチアップが不可欠となっています。",
+        "advice": "海外大進学実績や外部連携プログラムの有無を志望校選びの基準に加え、推薦入試を控える家庭は作文や面接対策を徹底しましょう。また、志望校の最新募集要項や改編情報を早めに確認し、個別面談を活用して戦略的な出願計画を立てることが重要です。",
+        "analyzed_at": "11/14 09:19"
+      },
+      "news": [
+        {
+          "id": "26f9987c9e",
+          "category_id": "high",
+          "title": "世界の大学生と学び合う、都立高校生～ミネルバ大学生との交流を通じて探究・進路の視野を世界へ～|11月",
+          "headline": "都立高生がミネルバ大生と交流し探究と進路の視野を拡大",
+          "points": [
+            "東京都教育委員会が11月に実施する世界的な学びの機会である",
+            "先進的な探究活動を通じて生徒がグローバルな進路選択を意識する契機となる"
+          ],
+          "takeaway": "難関グローバル大学を目指す生徒にとって動機付けになるため海外大進学実績のある学校の動向を個別面談で確認しましょう。",
+          "source": "東京都教育委員会",
+          "pub_date": "昨日 19:03",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5mcG0tanQ2U20ySjNzSE0wUTVjN0pXekNzRGZsRkhWaWc1QjhlVkYtajZaVDFNV2UySEFIMmd0emFxQ0todXEzWEVkVzl5SnlQVnZjbDloeVZyY1AtSXVMOW1xVlVBWk5QRS1TWllOMk5fQm1fTHlvOWhVZTdiZw?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b9a4297b44",
+          "category_id": "high",
+          "title": "トモノカイ、東京都教育委員会の探究学習支援事業を受託 都立高校等5校で通年支援を実施",
+          "headline": "トモノカイが都立高5校の探究学習支援事業を受託し通年サポート",
+          "points": [
+            "東京都教育委員会の委託を受けトモノカイが都立高校等5校で通年支援を行う",
+            "外部の専門的な知見を活用した質の高い探究プログラムが学校現場に導入される"
+          ],
+          "takeaway": "総合型選抜入試で必須となる探究活動の質が学校によって異なるため志望校選択時は外部連携プログラムの有無も確認しましょう。",
+          "source": "イザ！",
+          "pub_date": "昨日 16:31",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5vUUtFRHhkOWJZQ0hxVExQeDdHTHpmRVA3eE1ZZHdjcGhwUzJDd0tONkc1OGVHeXdQUXRHUkxwRjhJZ0wwZVVnT2I3R0ZQRlJTQzlGanA4ZzREaTBBN3NKRmI5aUVpMHczYlR5RndNNERGcWt4bHhZRWt3?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "d7dffe5873",
+          "category_id": "high",
+          "title": "【高校受験2028】東京都、蔵前工科の学科再編…N-E.X.T.ハイスクール構想",
+          "headline": "都立蔵前工科高の学科再編とN-E.X.T.ハイスクール構想の全貌",
+          "points": [
+            "2028年度の高校受験に向け東京都が蔵前工科高校の学科再編に着手する",
+            "新しい時代に対応した工業教育の深化を目指すN-E.X.T.ハイスクール構想の一環である"
+          ],
+          "takeaway": "専門高校のカリキュラム刷新が進むため2028年入試を見据える中学生は最新の学科改編情報を早めにキャッチしておきましょう。",
+          "source": "au Webポータル",
+          "pub_date": "昨日 14:26",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5IV2dwUTdWUVpJZXpIMlh0YTJ0RlI4UW4xS0dscnoySHBXUDNrcXVud05STmZ1WExudi1ONmRuVDFqbE9RbFlkS2RPMDk2NVc3UEVWcHBLSDhIS3YyREt0bkZCeV9wZW9fd3c5ekZB?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "3cc2709ab6",
+          "category_id": "high",
+          "title": "高校無償化で公立高校の改革支援を 埼玉県知事が文科相に要望 給食費の完全無償化も",
+          "headline": "埼玉県知事が文科相に高校無償化に伴う公立高改革支援と給食費無償化を要望",
+          "points": [
+            "埼玉県知事が高校無償化を契機とした公立高校のさらなる改革支援を文科省へ直接要望した",
+            "あわせて教育格差の是正に向けた給食費の完全無償化の実現も強く働きかけている"
+          ],
+          "takeaway": "今後の自治体ごとの財政支援や公立高の設備・教育内容の格差が変化する可能性があるため埼玉県の教育予算動向に注目しましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "昨日 12:59",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1GWXpOaDh6a3dRb3VQU3hpVmN6VGducUZyVnJ3R1RvN3JOXzBrdmg5ajNIMVF5NzVwcGowc0I1aElkc1libnplSXNn?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "b477b3c0ec",
+          "category_id": "high",
+          "title": "東京都立高、3学期転学・編入学…日比谷など165校が募集（リセマム）",
+          "headline": "都立高3学期転学・編入学：日比谷含む165校で実施",
+          "points": [
+            "日比谷高校などを含む都立高校165校が3学期の転学・編入学募集を実施する予定。",
+            "首都圏における私立からの転籍や帰国生徒等にとって貴重な進路変更の機会となる。"
+          ],
+          "takeaway": "欠員補充の条件や出願スケジュールは学校ごとに異なるため、対象校の最新の募集要項を早急に確認させましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/12 18:45",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXQ3Z1UnJmd0JNUzdZcFhpYjBoOW1CaVRTSU9WcXdaX3hWNV9PMWJ2a2dsVVJkVXNZNnN0SXFPbE9mc0tVam9CQnpmMGxLQXp5eHlBdXR5M29PSjJXSlZUNnZCNWpOZHZ1NWY3Z0pkZXM1ZkxXLWhtcktlZjU5UFE?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "43af3b9f14",
+          "category_id": "high",
+          "title": "都立高校推薦入試対策 無料講演会を11月23日（月・祝）に開催（後援：足立区立小学校中学校PTA連合会 / 協力：しもさん株式会社）",
+          "headline": "足立区PTA後援の都立推薦対策講演会が11月23日に開催",
+          "points": [
+            "11月23日の祝日に、足立区立小中PTA連合会後援の都立高校推薦入試対策の無料講演会が実施される。",
+            "倍率の高い都立推薦選抜に向けて、保護者が早期に把握すべき具体的な対策や心構えを無料で学べる機会となる。"
+          ],
+          "takeaway": "推薦入試の合否を分ける作文や面接の配点傾向を早めに把握し、内申点アップに向けた直前の学校生活の過ごし方を親子で確認しましょう。",
+          "source": "PR TIMES",
+          "pub_date": "11/11 17:50",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9MYlRrd0FyRHZ3cnpyRWxnZmlQdk42Zl9fY190UEw4TFRYSWx1WlBLZVlYTWRwYk9lZ3dtWWlzMWhiUWVSMDdsMVRTZ1RxWXVNY1pzVDFiNGtWYjd2UjZfcWgya09KbzVuelE?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "首都圏大学入試の激変：東洋大改革と宿泊・CBT対策の要諦",
+        "summary": "今週は東洋大の2028年度基礎学力テスト型取りやめをはじめ、MARCHや医学部の定員動向が注目を集めました。また、大学入試センターによるBYOD型CBTの試行公表など、入試のデジタル化や制度改革が加速しています。",
+        "key_trends": "東洋大の入試見直しは、今後の外部検定や基礎テスト利用型に大きな影響を与えます。さらに、早慶など難関私大への期待が根強い中、総合型選抜の拡大や定員動向の緻密な把握が合格の鍵を握っています。",
+        "advice": "志望校の最新募集要項をいち早く確認し、一般選抜と併願戦略を再構築してください。高1・2年生は冬期講習を活用して今年度の苦手分野を克服し、共通テストに向けた宿泊手配も早めに着手しましょう。",
+        "analyzed_at": "11/14 09:19"
+      },
+      "news": [
+        {
+          "id": "f51ce3343f",
+          "category_id": "univ",
+          "title": "大学受験のホテル予約はいつから？半年〜1年前、共通テストは今【2027】",
+          "headline": "大学受験の宿泊手配は勝負の分かれ目！",
+          "points": [
+            "共通テストや一般選抜のホテルは、半年前から1年前の早期予約が不可欠です。",
+            "試験日程が近づくと満室になりやすく、遠方受験や複数日受験では致命的なリスクとなります。"
+          ],
+          "takeaway": "志望校の受験日程が固まり次第、キャンセル料発生日を確認して複数の宿泊候補地を直ちに確保してください。",
+          "source": "HotelBank",
+          "pub_date": "本日 06:01",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zeWJ4SDRDZnNYeFQ5WTlLZTNyNXlmaDVJRTVRT0hMYVo3RE5YWWcyVmREVUZmQm9pc0JVaEx1ZHZOZ285ZjVISzhvbnJVWm9ySUstQjlFejlVOFk5T1hqcDBuTnpiMzR2elZXU05yYW9Ba1ZmM1ljR3loSW8?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "df22d818f1",
+          "category_id": "univ",
+          "title": "大学入試センター、BYOD型CBTの試行結果を公表",
+          "headline": "大学入試センターがBYOD型CBTを試行",
+          "points": [
+            "大学入試センターが受験生所有端末を用いるCBT方式の試行結果を公式公表しました。",
+            "今後の新テスト導入を見据えたインフラ検証であり、将来的なデジタル化の動向に直結します。"
+          ],
+          "takeaway": "現中高生はペーパーテスト対策だけでなく、端末操作を伴うデジタル選抜への適応力を意識して学習を進めましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 17:45",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92Q2FKSzR1TXB0bzFhYXE1azljUFFvU2ZOYUFSWTRjdkFiWHo0M25aNGRjMHVjY2VzOGYzTklHdmZOTWRLenJ2MnpDN3FaUG5SeHZKakdTYzRWSXhSdmxnc0RMTVo5QQ?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b75f212a13",
+          "category_id": "univ",
+          "title": "早慶に進学して欲しい（大学受験 全般）",
+          "headline": "難関私大「早慶進学」への根強い期待と戦略",
+          "points": [
+            "保護者や受験生の間で、依然として早慶両校への進学ステータスと高い評価が続いています。",
+            "一般選抜の枠が狭まる中、付属校や指定校推薦も含めた早期からの綿密な併願戦略が勝負を分けます。"
+          ],
+          "takeaway": "高1・高2段階から模試の志望校判定を意識し、英語の外部検定や内申点対策など多面的なアプローチを講じましょう。",
+          "source": "インターエデュ・ドットコム",
+          "pub_date": "昨日 11:04",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0LXdjLUVUdjFMb1NGQkpCaE5ySDAwZElsSjk2ZTNJdC0wVmlYT1U2WGpNa3A3VkF4S19aazdUNHdCazl3YmJ1UXB2dkRvS1ZHV19NWWxyV1A3eVB1SkVEUllLeEdZbzdaWmxrUWQyUnVZeEU?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "4135fe477e",
+          "category_id": "univ",
+          "title": "【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ",
+          "headline": "東洋大、2028年度入試より基礎学力テスト型を取りやめ",
+          "points": [
+            "東洋大学は2028年度一般選抜において、外部の基礎学力テストを利用する方式を廃止することを決定した。",
+            "首都圏難関私大で進む一般選抜の方式見直しの一環であり、今後は独自試験や共通テスト利用へ比重が移行する可能性がある。"
+          ],
+          "takeaway": "2028年以降の受験生は外部検定や基礎テスト併用策の見直しが必要。最新の募集要項や動向を早期に確認し、個別試験対策を重点的に進めましょう。",
+          "source": "リセマム",
+          "pub_date": "11/12 14:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5lN0ZJS3loZmtWNkh6eGFVV0Y2dDBiLWVHMG10RlhYeTNJMXlzZVlrQnYzZ1lsR0swT2VhMjVqUXlOZWVDbjlGTnRNM2NQSUQyc1hEdGptOW1aa2pl?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b335cf0c36",
+          "category_id": "univ",
+          "title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意",
+          "headline": "厚胤塾が12月7日冬期講習開講",
+          "points": [
+            "高1・2年生向けの総復習や先取り学習から共通テスト、難関医学部対策まで網羅した多彩な冬期特別講座を提供。",
+            "受験の天王山となる冬期に個々の目標と学力レベルに最適化された指導で、効率的な実力強化を図る。"
+          ],
+          "takeaway": "高1・2年生は冬期講習で今年度の苦手分野を完全に払拭し、新学年に向けた先取り学習で周囲に差をつけましょう。",
+          "source": "PR TIMES",
+          "pub_date": "11/09 09:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16dHhLbERsZXcwTU1fOVctakJONVFxVktKVU1yTEFNalAtTUhDTkdqbTZaMDRhZkZqZFJpQmgxc1A5aUNHOHlnVjhQQmcwMnhoclNMYWF6UGdGSEM1TzZKMzduWHptYXp2cWc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "c01d6cebf4",
+          "category_id": "univ",
+          "title": "【2027年度大学入試】MARCHで合格者数が増える大学・学部は？｜高校生専門塾の講師が詳しく解説（ダイヤモンド教育ラボ）",
+          "headline": "2027年度MARCH入試の動向と合格者数の予測",
+          "points": [
+            "2027年度入試におけるMARCH各大学・学部の合格者数増減トレンドを高校生専門塾の講師が詳細に解説している。",
+            "私立大学の定員厳格化の緩和や新課程導入に伴う受験生の動向変化が各大学の合格者数に与える影響が注目される。"
+          ],
+          "takeaway": "志望校の最新の定員動向や合格者数の変化を早めに把握し、一般選抜と総合型選抜の併願戦略を柔軟に再構築しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/22 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SZDZaeksxZUh0SVNfcVdoNGdsYV81c043TlZKSkxJdk5XdzF2d1EyY0NFcFMxVkxoOE5nVHVyblJiTHdBNGhSZC02ZHA4ZUtjZm1XYWdBTGxtUktROFBfNXA4a2RQOVItcGhsQUdPS01vRlBYT2hRajRkcnYtRGM?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    }
+  }
+}
