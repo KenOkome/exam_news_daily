@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-16",
+  "updated_at": "11月16日 08:22",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "千葉・首都圏中学受験の最新動向と直前対策のポイント",
+        "summary": "直近1週間は、塾選びの盲点や医学部合格率ランキング、埼玉・千葉の私立学校合同相談会など、多角的な情報が公開されました。直前期の過去問対策と併願戦略の重要性が一層高まっています。",
+        "key_trends": "埼玉私立5校の合同相談会や開智所沢の動向など、前哨戦となる埼玉・千葉入試に向けた情報収集が活発化。また、医学部合格率などの出口実績を学校選びの軸に据える傾向が強まっています。",
+        "advice": "合格実績や評判だけでなく、子どもの性格適性に合うサポート体制か個別指導等の併用を面談で確認しましょう。埼玉・千葉の併願校は出願基準や過去問対策を直接質問し情報を得てください。",
+        "analyzed_at": "11/16 08:22"
+      },
+      "news": [
+        {
+          "id": "73c392abf1",
+          "category_id": "junior",
+          "title": "「中学受験中は、いつもピンチだった…」元SAPIXママ2人が赤裸々に語る“本音”。合格実績だけじゃなかった塾選びの盲点",
+          "headline": "合格実績の裏に潜む塾選びの盲点と本音",
+          "points": [
+            "元SAPIX保護者が合格実績や進度だけでない大手塾のサポート体制のリアルな苦労と本音を赤裸々に告白している。",
+            "偏差値や合格者数だけでは見えない、我が子と塾・校風との相性を見極める重要性を示唆する貴重な体験談である。"
+          ],
+          "takeaway": "塾の合格実績や評判だけでなく、我が子の性格に合うサポート体制か、個別指導等の併用が必要かを面談で確認しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/14 20:41",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qS3ZwRE5xN1pVWlVEcVdldXRNY0FaYTNTS0kwUldfeTB1YTZYWlREYWhwTVIyVU90TTlubHJOVVhfd25VLWpYRjQ0dFVKeHM2aFI2anJJWVdZUWx6d0dxeENheDJ3SkctNjlGN0RCZFRBWXFGTDhIRXhfY1pXb0E?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "ceb0515340",
+          "category_id": "junior",
+          "title": "2026 有名私立中学入試のヒント／2026.11.14放送分",
+          "headline": "千葉テレビが発信する2026年有名私立中学入試の直前傾向と対策ヒント",
+          "points": [
+            "2026年入試を控えた首都圏および千葉県内の有名私立中学の動向と直前対策のヒントをテレビ番組で詳細に解説している。",
+            "最新の出題傾向の変化や、直前期の効率的な学習スケジュール策定において保護者が必ず押さえておきたい重要情報が含まれる。"
+          ],
+          "takeaway": "放送内容の要点を家庭での過去問演習の進め方や直前期のモチベーション管理に直ちに反映させ、合格力を引き上げましょう。",
+          "source": "千葉テレビ放送",
+          "pub_date": "11/14 19:45",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5EeDBob1lPa1ZxMFRXMVpTLXhtcmxzbWdOeFBKYVZmcEJBRFIyaS1JSk9SN1F1QlFHV2VFcE5jWVJSd0ozUmRlczNlOEFEZURVUGNjQ2NfNC1OeGtHSkZMODlB?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "4a483a0fd5",
+          "category_id": "junior",
+          "title": "「中学受験をしなかったことは正解か」 公立高からの東大合格者が本音で明かす中受のメリット・デメリット",
+          "headline": "公立高から東大合格者が語る中学受験のメリット・デメリットと進路の正解",
+          "points": [
+            "中学受験をあえて回避し公立高校から東大へ進学した実体験に基づき、中受のメリットとデメリットを生々しく本音で検証している。",
+            "早期の受験勉強による恩恵だけでなく、公立ルート特有の自由な環境や自己管理能力の重要性が浮き彫りになっている。"
+          ],
+          "takeaway": "中学受験が各家庭にとって絶対唯一の正解とは限らない点を理解し、子どもの性格適性に合わせた柔軟な進路選択を検討してください。",
+          "source": "新潮QUE",
+          "pub_date": "11/14 07:05",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQMW5Ca2FrRDhZTUQ5UXlhdGhzVHBUdUhyTDlTZ29XcEFteTl3eFZHNEZBNmo3V0pxOGRQeEZHNkVYSUZIeXZPWjFKaDR2MFox?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "cf5842b383",
+          "category_id": "junior",
+          "title": "【中学受験】開智所沢ら埼玉私立5校の合同相談会、池袋11/22",
+          "headline": "開智所沢など埼玉私立5校の合同相談会が池袋で11/22開催",
+          "points": [
+            "開智所沢をはじめとする注目度の高い埼玉県の私立中学校5校が都内で個別相談会を実施する。",
+            "アクセスの良い池袋会場で、埼玉難関校の最新入試傾向やカリキュラムの特色をまとめて効率よく確認できる。"
+          ],
+          "takeaway": "埼玉入試を併願校として検討している東京・千葉の家庭は、複数校の出願基準や過去問対策を直接質問し情報を得ましょう。",
+          "source": "リセマム",
+          "pub_date": "11/13 14:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81R2NXV29XdHdjYWl1QWttMmdkV1dVV2R3TXhGVGRfbFdTdGtnUVZyc25vVFQyQjR3Q0pjX0ZIZ3FpdkFZQ0VJdmxsNXNEOGM4c1MxS2swdmVDclFF?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "09a7718834",
+          "category_id": "junior",
+          "title": "「医学部」合格率が高い「首都圏中高一貫校」ランキング トップ2の女子校は？【2026年版】",
+          "headline": "2026年版「医学部合格率が高い首都圏中高一貫校」ランキング",
+          "points": [
+            "首都圏の中高一貫校における医学部合格実績を徹底分析し、ランキング上位の女子校などの特徴を明らかにした。",
+            "難関医学部への進学に強い学校のカリキュラムや、進路指導における独自のサポート体制が可視化されている。"
+          ],
+          "takeaway": "将来の医学部進学を視野に入れている家庭は、単なる合格者数だけでなく卒業生数に対する現役合格率を学校選びの軸に据えましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/13 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjeVcwWVpfY1hIcmZJeEJGMnVMeGNDM19RTTVLWDktNWRUZXp1RVAzNld3a0FaUUtqWnUwLTI3cFpYa1dXSjM2cW9GMk9rQ3Q2cHZneExzT19KUVRq?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "308800f11a",
+          "category_id": "junior",
+          "title": "【中学受験2027】千葉県私立中学の入試日程・定員・偏差値まとめ（男女）",
+          "headline": "2027年中学受験向け千葉県私立の最新日程と偏差値",
+          "points": [
+            "2027年入試に向けた千葉県内私立中学校の男女別入試日程、募集定員、最新の偏差値データを網羅している。",
+            "千葉エリアの早期化する私立入試の動向を把握し、埼玉・東京との併願戦略を早めに立てる基礎資料となる。"
+          ],
+          "takeaway": "最新の募集定員や日程を確認し、前哨戦となる千葉・埼玉入試のスケジュールから逆算した長期的な併願作戦を今から立てましょう。",
+          "source": "リセマム",
+          "pub_date": "10/28 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hUlN6WFlXSTZ3S1lMVFR6cllWYkp4Y2pGZlBycktuWkNHSUNkdTUzMlktNTgwX05jMWRXUGEtRUl3dXFEd1J3Q1RfV3FraUFJd2tDNDdObklDYjRw?oc=5",
+          "is_new": false,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "首都圏高校入試の最新動向：探究学習と多様化する判定制度の攻略",
+        "summary": "今週は都立高校における探究学習支援の本格化や、ミネルバ大生との交流などグローバル化が加速。また、北園高などで内申不問の10対0判定が拡大し、埼玉では私立高校希望率の上昇や無償化の影響など制度変化が顕著です。",
+        "key_trends": "都立高の探究活動の質向上や外部連携プログラムの導入が進み、総合型選抜への対応が鍵に。内申不問の10対0判定の拡大は当日点重視の受験生に朗報ですが、埼玉県を含めた私立無償化の拡充が併願戦略に大きな影響を与えています。",
+        "advice": "内申点に不安のある生徒は、10対0判定実施校の過去問演習を早めに開始してください。また、私立無償化を見据えた柔軟な併願プランの検討や、志望校の外部連携・探究プログラムの有無を確認し、個別相談を活用しましょう。",
+        "analyzed_at": "11/16 08:22"
+      },
+      "news": [
+        {
+          "id": "26f9987c9e",
+          "category_id": "high",
+          "title": "世界の大学生と学び合う、都立高校生～ミネルバ大学生との交流を通じて探究・進路の視野を世界へ～|11月",
+          "headline": "都立高生がミネルバ大生と交流し探究と進路の視野を拡大",
+          "points": [
+            "東京都教育委員会が11月に実施する世界的な学びの機会である",
+            "先進的な探究活動を通じて生徒がグローバルな進路選択を意識する契機となる"
+          ],
+          "takeaway": "難関グローバル大学を目指す生徒にとって動機付けになるため海外大進学実績のある学校の動向を個別面談で確認しましょう。",
+          "source": "東京都教育委員会",
+          "pub_date": "11/13 19:03",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5mcG0tanQ2U20ySjNzSE0wUTVjN0pXekNzRGZsRkhWaWc1QjhlVkYtajZaVDFNV2UySEFIMmd0emFxQ0todXEzWEVkVzl5SnlQVnZjbDloeVZyY1AtSXVMOW1xVlVBWk5QRS1TWllOMk5fQm1fTHlvOWhVZTdiZw?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b9a4297b44",
+          "category_id": "high",
+          "title": "トモノカイ、東京都教育委員会の探究学習支援事業を受託 都立高校等5校で通年支援を実施",
+          "headline": "トモノカイが都立高5校の探究学習支援事業を受託し通年サポート",
+          "points": [
+            "東京都教育委員会の委託を受けトモノカイが都立高校等5校で通年支援を行う",
+            "外部の専門的な知見を活用した質の高い探究プログラムが学校現場に導入される"
+          ],
+          "takeaway": "総合型選抜入試で必須となる探究活動の質が学校によって異なるため志望校選択時は外部連携プログラムの有無も確認しましょう。",
+          "source": "Infoseek",
+          "pub_date": "11/13 16:31",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5TjN2WnRJOUVUaDAxQzdHZko0c2U3d1oya2tKMHhYQkRIelZ1cldUTG95MWtNZ2dhZklkU1hWYVBQSVEtSFhpOUtpeHJuOUlzUDJURU5KTk5YZHVIdmttZjhRVGtRdlVaSzdNWXctVTJKQQ?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "c6dbf152e4",
+          "category_id": "high",
+          "title": "「不登校から高校・大学進学を目指したい」都立高校の入試対策もわかる無料オンライン入塾説明会を開催",
+          "headline": "不登校からの進学：無料オンライン入塾説明会開催",
+          "points": [
+            "不登校を経験した生徒の高校・大学進学をサポートする無料オンライン入塾説明会が開催された。",
+            "都立高校などの実際の入試対策や合格に向けた具体的なステップが解説され、保護者の不安解消に寄与する。"
+          ],
+          "takeaway": "不登校からの進学では、出席日数や内申点の補完、個別相談の活用が鍵です。早めの情報収集と外部支援の利用を検討しましょう。",
+          "source": "Mantan Web",
+          "pub_date": "11/09 15:20",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZExEM3g2NGZuZkFzNy0tNW5SblFtcmh6enpKZ1ZUOU1CQXpiN2s4SHQwMndNOWp6TjRnVmU0XzE0YjVERTZYTFQ2S0l3V0hrZFhVcnRDcExPeklQaWJCWHI3VzhzeDEwUDZ3c0Njbi12cHpwSnpfcnRJUGt4RUpBbWZ6cFdkcVFq?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "20c89d6278",
+          "category_id": "high",
+          "title": "【令和9年度入試】 第1回調査から出願時まで、倍率はどう変化するか＜前編＞",
+          "headline": "令和9年度入試へ向けて追う倍率の変動",
+          "points": [
+            "第1回進路希望調査から実際の出願時までの倍率の変化傾向を詳細に分析している。",
+            "埼玉県内の高校受験生を対象に、志望校決定プロセスにおける実用的なデータを提供。"
+          ],
+          "takeaway": "初期の希望調査の倍率だけに惑わされず、出願時の変動予測を見据えた併願校戦略を早めに立てましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "10/30 16:00",
+          "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNX3ZWX2p3TnMzNUF5ZW1NR21YMmx1RW9IajF1SmE1LVRHYWR2aUI0S19nUXh5OTY2bTBsV0hSSkVkMnhkOHU1dHdCWktsbm8zdmw3RXZ0UExXcHVBWGNTbkM4Q0lzVVNRTWFEbW45UnE4TVc1MXBNRVRCYkt0Q3ViYVhzanhHajFWV19adVRMeC1POHNrWFdGWExkNTRWRjlyekt3X1hPSExncU93bEV5SnBqU21yOHJRRDN1SVZBeUZldmVtMVpJbTdHbzI5bFNIQW5neXhDY2lXcngzSklGREVLZDZZeGtaQWNuTWtZQlF0T0dfd1NHR2lSWHI5aXFFcG5aWnNyUGE1SkJOclhLcGVRM0FHVXBaRWIzM3VEeTEzX3VjWmRwZkp6M0ZTU0ZweEtoWjZoZzR5QkRrM3ZIb2dqdV9nS1BoMEZTLUpCdVBmdVllemRhZXNR?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "c2df1083e0",
+          "category_id": "high",
+          "title": "【埼玉県公立入試2027】埼玉県教委、10月の進路希望状況調査を公表 進む「公立離れ」 私立高校希望率は2年連続上昇 無償化拡充が影響か",
+          "headline": "埼玉県公立入試2027：私立希望率が2年連続上昇の背景",
+          "points": [
+            "10月の進路希望調査で私立高校の希望率が上昇し、授業料無償化の拡充が主な要因として影響している。",
+            "公立離れの傾向が進むことで、埼玉県の私立併願作戦や入試難易度のバランスに大きな変化が生じている。"
+          ],
+          "takeaway": "私立無償化の恩恵を見据え、初期の段階から第一志望だけでなく魅力ある私立校を含めた柔軟な併願プランを組みましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "10/29 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1zaEp6ZUwtR1VuUjdkdTc5SUsxOU40Yk1YRHAwMFJ5Si1fbkJQRGFkTURydXh4dXpncmJaMkdDZkIzVng1N2dpU1FR?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "8da3d51bc7",
+          "category_id": "high",
+          "title": "都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校",
+          "headline": "都立高入試の内申不問10対0判定が北園など3校に拡大",
+          "points": [
+            "2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。",
+            "当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。"
+          ],
+          "takeaway": "内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。",
+          "source": "月刊私塾界",
+          "pub_date": "10/21 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "首都圏大学入試：CBT導入と私大動向の激変",
+        "summary": "大学入試センターによるBYOD型CBT試行の公表をはじめ、東洋大の基礎学力テスト型廃止やMARCH・早慶の動向など、入試制度と選抜方式の大きな転換期を迎えています。文系比率の上昇や総合型選抜の影響もあり、受験環境は多様化と複雑化を極めています。",
+        "key_trends": "東洋大が2028年度より基礎学力テスト型を取りやめるなど、私立大の入試方式見直しが加速しています。また、センターによるBYOD型CBTの試行は、将来的なデジタル選抜への移行を示唆しており、ペーパーテスト対策からの脱却が急務となっています。",
+        "advice": "現中高生は端末操作を伴うデジタル選抜への適応力を意識した学習を進めましょう。直近の受験生は、宿泊手配の早期完了など実務的な準備を万全にしつつ、志望校の最新の入試方式変更情報を正確に把握して出願戦略を再確認してください。",
+        "analyzed_at": "11/16 08:22"
+      },
+      "news": [
+        {
+          "id": "df22d818f1",
+          "category_id": "univ",
+          "title": "大学入試センター、BYOD型CBTの試行結果を公表",
+          "headline": "大学入試センターがBYOD型CBTを試行",
+          "points": [
+            "大学入試センターが受験生所有端末を用いるCBT方式の試行結果を公式公表しました。",
+            "今後の新テスト導入を見据えたインフラ検証であり、将来的なデジタル化の動向に直結します。"
+          ],
+          "takeaway": "現中高生はペーパーテスト対策だけでなく、端末操作を伴うデジタル選抜への適応力を意識して学習を進めましょう。",
+          "source": "リセマム",
+          "pub_date": "11/13 17:45",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92Q2FKSzR1TXB0bzFhYXE1azljUFFvU2ZOYUFSWTRjdkFiWHo0M25aNGRjMHVjY2VzOGYzTklHdmZOTWRLenJ2MnpDN3FaUG5SeHZKakdTYzRWSXhSdmxnc0RMTVo5QQ?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    }
+  }
+}
