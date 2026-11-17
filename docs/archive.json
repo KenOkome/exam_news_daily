@@ -1,7 +1,145 @@
 {
-  "updated_at": "2026-11-16T08:22:40.458097+09:00",
-  "count": 112,
+  "updated_at": "2026-11-17T11:28:14.914660+09:00",
+  "count": 119,
   "articles": {
+    "d5d18fc394": {
+      "id": "d5d18fc394",
+      "category_id": "high",
+      "title": "税への思い書にパフォーマンスー川越女子高校",
+      "raw_title": "税への思い書にパフォーマンスー川越女子高校 - 埼玉新聞社 高校受験ナビ",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQek9QZXJJYk5zQTRWeEJ6YkVoZ0RnSktBRWVSMTIzTDlzeml6dHhka0ZRV2VTR01OMVlJbWMtQTZTc3JiYnBRRzRkdzdka2ZSbVUwRE01QnltUG4tb1hOT1pLVUV0cEFyMF9IeHhROUNZamwzV0ExMGRMV1E1MFJGeWkyZnJLbzIxLUQ3b2tEWG44TnlSTzAzY2dCVG5lamdWdHhtcXVsRzJfV1pNc1VlTXlsSVRoU252UGFCODYwUlZNcjlmM1VMYy1XT1Bic2J1Zk9pVVF6LTVQZkdyYXBrMFNXcnVzdHRtSTlRRjN3X1lCbzdLUUkwMHVrbEtkSlVMOXNyUy03cUE0c1dFOHI5a1RSMFdXQ3dWVm9ZZm4wMHQ3X21GbTZ3V0Z0Y3Boemo4NnprUFNmXzJta2xqLU1RRDZxTDdXVEUxSTZNM0FobXJhN1lOOGc?oc=5",
+      "pub_date": "本日 09:53",
+      "pub_iso": "2026-11-17T09:53:39+09:00",
+      "pub_ts": 1794876819,
+      "is_new": true,
+      "source": "埼玉新聞社 高校受験ナビ",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "score": 14.0,
+      "headline": "川越女子高の税作文で知る探究力評価",
+      "points": [
+        "川越女子高校で税に関する作文を通じて社会的視野を広げる表現活動を実施。",
+        "単なる暗記型学習から脱却し自らの思考を言語化する探究型学習の重要性を示唆。"
+      ],
+      "takeaway": "北辰テストや一般入試の国語記述対策として、日頃から社会問題に対する自分の意見を短い文章でまとめる練習を家庭でも取り入れましょう。",
+      "is_ai_summary": true
+    },
+    "75eb4b208d": {
+      "id": "75eb4b208d",
+      "category_id": "junior",
+      "title": "【中学受験の良問・理科】「今年7月、小惑星『トリフネ』を撮影した小惑星探査機の名前は？」麻布や駒場東邦で類題の「小惑星探査」の問題 | 中学受験塾「進学館ルータス」からの挑戦状",
+      "raw_title": "【中学受験の良問・理科】「今年7月、小惑星『トリフネ』を撮影した小惑星探査機の名前は？」麻布や駒場東邦で類題の「小惑星探査」の問題 | 中学受験塾「進学館ルータス」からの挑戦状 - ダイヤモンド・オンライン",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5hNjZnNk95RTBLLVY0MGZsa0lZaEdqcVNlSUVPX2dCZWY3elEwaVRvOUMwSngzdlhmbGVISFJDeDkxaEg0R3lFS3lhbHM?oc=5",
+      "pub_date": "本日 04:05",
+      "pub_iso": "2026-11-17T04:05:00+09:00",
+      "pub_ts": 1794855900,
+      "is_new": true,
+      "source": "ダイヤモンド・オンライン",
+      "badge_label": "📍千葉注目",
+      "badge_cls": "badge-chiba",
+      "score": 18.0,
+      "headline": "麻布・駒東などの難関校でねじこまれる時事「小惑星探査」対策",
+      "points": [
+        "最新の宇宙開発ニュースを背景に、探査機の名前や観測対象などの知識を問う理科の良問が出題されている。",
+        "麻布や駒場東邦など難関校では、時事問題と基礎科学知識を融合させた思考力記述が好まれる傾向が強い。"
+      ],
+      "takeaway": "ニュースで見た天体や探査機の名称を覚えるだけでなく、なぜそのミッションが必要なのか背景まで調べさせましょう。",
+      "is_ai_summary": true
+    },
+    "1e3174c1ce": {
+      "id": "1e3174c1ce",
+      "category_id": "junior",
+      "title": "【中学受験】「1月入試を模試代わりに受験」は本当にタイパがいい？ ベテラン講師が明かすデメリット（All About）",
+      "raw_title": "【中学受験】「1月入試を模試代わりに受験」は本当にタイパがいい？ ベテラン講師が明かすデメリット（All About） - Yahoo!ニュース",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BSzNVM1RTNkdFbmNwU1VycDNRQnhpbDBucllTeVRLWGx2dExISXJwWktPZ2djUWY4V1ZlNmVVVzRJOVl4akpKWWR2dTZQbkFEM09rTXVwWGNHV0ZxUXFfNHVwX1JmVlM5NGtTbGNGaDAwSVlqRHlwc1dybEZERmc?oc=5",
+      "pub_date": "昨日 21:25",
+      "pub_iso": "2026-11-16T21:25:00+09:00",
+      "pub_ts": 1794831900,
+      "is_new": true,
+      "source": "Yahoo!ニュース",
+      "badge_label": "📊模試・倍率",
+      "badge_cls": "badge-exam",
+      "score": 23.0,
+      "headline": "「1月入試を模試代わりにする」タイパ受験の隠れた重大リスク",
+      "points": [
+        "1月校を力試しや単なる模試代わりに受験することは、不合格時の精神的ダメージなど大きなデメリットを伴う。",
+        "本番特有の緊張感に呑まれ、本来の実力を発揮できないまま2月を迎えるメンタル面の崩壊リスクに注意が必要。"
+      ],
+      "takeaway": "1月受験は合格を確実に取り自信をつける場と位置づけ、安易な記念受験や全敗リスクのある無謀な出願は避けましょう。",
+      "is_ai_summary": true
+    },
+    "2baf636668": {
+      "id": "2baf636668",
+      "category_id": "junior",
+      "title": "オリコンニュース：保護者がおすすめする首都圏の中学受験塾（集団・個別・公立中高一貫校対策）、2026年の最新総合1位は？",
+      "raw_title": "オリコンニュース：保護者がおすすめする首都圏の中学受験塾（集団・個別・公立中高一貫校対策）、2026年の最新総合1位は？ - 毎日新聞",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5NVNJR0NORTRyQVpXdmN6M0FqLTh3Y2k4dWwyaWRsTE5veGVSMTZtQWZrUHdOX1pOY1R6TzI3S3BDalZpTGhHekRxdGZfZTlUSnl1MDcwWU0xeDZnUUFnR3JETmdlOGZ0?oc=5",
+      "pub_date": "昨日 12:00",
+      "pub_iso": "2026-11-16T12:00:00+09:00",
+      "pub_ts": 1794798000,
+      "is_new": true,
+      "source": "毎日新聞",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "score": 18.5,
+      "headline": "2026年最新！保護者が選ぶ首都圏の中学受験塾ランキング1位は",
+      "points": [
+        "集団・個別・公立中高一貫校対策の各部門において、保護者の満足度を反映した最新の塾評価が発表された。",
+        "合格実績だけでなく、講師の指導力や面倒見の良さ、志望校別サポート体制がランキング選定の大きな鍵。"
+      ],
+      "takeaway": "他家の評価に惑わされず、お子様の性格や学力特性に最も合致する指導スタイルの塾を体験授業等でしっかり見極めましょう。",
+      "is_ai_summary": true
+    },
+    "c0ba8fd38b": {
+      "id": "c0ba8fd38b",
+      "category_id": "junior",
+      "title": "【無料セミナー】東京個別指導学院が主催 首都圏の小学3年生～5年生の保護者対象 中学受験の志望校選びと模試活用法、算数＆国語の効果的な学習法を専門家が解説",
+      "raw_title": "【無料セミナー】東京個別指導学院が主催 首都圏の小学3年生～5年生の保護者対象 中学受験の志望校選びと模試活用法、算数＆国語の効果的な学習法を専門家が解説 - PR TIMES",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40cDNvTVdnTWp0RGdnZVpnY2ticUJ5WDdlU3BiaEhxRVBQbjh3dnl1OWQtRzZRMlVMeEcwV1gtWER3RUJpWnJ1OEJOdWJwcmxKTnRVdVBfdXF3dUdaeXdJeGhHMDJfU045RUE?oc=5",
+      "pub_date": "昨日 11:11",
+      "pub_iso": "2026-11-16T11:11:04+09:00",
+      "pub_ts": 1794795064,
+      "is_new": true,
+      "source": "PR TIMES",
+      "badge_label": "📊模試・倍率",
+      "badge_cls": "badge-exam",
+      "score": 17.0,
+      "headline": "小3〜5年生保護者必見！志望校選びと模試活用を学ぶ無料セミナー",
+      "points": [
+        "東京個別指導学院主催のもと、中学受験の志望校選びの基準と模試データの効果的な活用法が専門家により解説される。",
+        "算数と国語の基礎固めから応用への橋渡しとなる、低・中学年期からの具体的な学習アプローチが学べる。"
+      ],
+      "takeaway": "低学年のうちから正しい学習習慣と模試の復習サイクルを確立するため、保護者は最新の受験情報を積極的に取りに行こう。",
+      "is_ai_summary": true
+    },
+    "62a54578cb": {
+      "id": "62a54578cb",
+      "category_id": "junior",
+      "title": "【中学受験】今週末行ける中高一貫「学校見学」11/21-23…渋渋、都市大等々力など10校",
+      "raw_title": "【中学受験】今週末行ける中高一貫「学校見学」11/21-23…渋渋、都市大等々力など10校 - リセマム",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWRjZubjVuRWtCWW1hNV8zN3QyYjV4NVFWZWtlY0cwYVlfNDlxLWsyd0VkWERnc2IxTVctWV9lTEpOdGFHUmpjNFd0eEhtUTI2R2o4N2hfYlhuS3ZF?oc=5",
+      "pub_date": "昨日 10:15",
+      "pub_iso": "2026-11-16T10:15:03+09:00",
+      "pub_ts": 1794791703,
+      "is_new": true,
+      "source": "リセマム",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "score": 14.0,
+      "headline": "今週末11月21〜23日開催！渋渋・都市大等々力の学校見学",
+      "points": [
+        "渋渋や都市大等々力など人気校を含む計10校で、今週末にキャンパスの雰囲気や生徒の様子を直接確認できる。",
+        "秋以降の学校見学は、パンフレットではわからないリアルな校風や通学動線の最終確認として極めて重要。"
+      ],
+      "takeaway": "志望校の文化祭や説明会に足を運び、モチベーションを高めると同時に、子ども自身が通いたくなる環境かを確かめましょう。",
+      "is_ai_summary": true
+    },
     "73c392abf1": {
       "id": "73c392abf1",
       "category_id": "junior",
@@ -86,12 +224,12 @@
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
       "score": 14.5,
-      "headline": "大学受験の宿泊手配は勝負の分かれ目！",
+      "headline": "大学受験のホテル予約はいつから？半年〜1年前、共通テストは今…",
       "points": [
-        "共通テストや一般選抜のホテルは、半年前から1年前の早期予約が不可欠です。",
-        "試験日程が近づくと満室になりやすく、遠方受験や複数日受験では致命的なリスクとなります。"
+        "HotelBankによる「大学受験のホテル予約はいつから？半年〜1年前、共通テストは今【2027】」の最新レポートです。",
+        "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
       ],
-      "takeaway": "志望校の受験日程が固まり次第、キャンセル料発生日を確認して複数の宿泊候補地を直ちに確保してください。",
+      "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
       "is_ai_summary": true
     },
     "26f9987c9e": {
@@ -155,12 +293,35 @@
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
       "score": 8.5,
-      "headline": "大学入試センターがBYOD型CBTを試行",
+      "headline": "大学入試センター、BYOD型CBTの試行結果を公表",
       "points": [
-        "大学入試センターが受験生所有端末を用いるCBT方式の試行結果を公式公表しました。",
-        "今後の新テスト導入を見据えたインフラ検証であり、将来的なデジタル化の動向に直結します。"
+        "リセマムによる「大学入試センター、BYOD型CBTの試行結果を公表」の最新レポートです。",
+        "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
       ],
-      "takeaway": "現中高生はペーパーテスト対策だけでなく、端末操作を伴うデジタル選抜への適応力を意識して学習を進めましょう。",
+      "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+      "is_ai_summary": true
+    },
+    "cc8fa56ce8": {
+      "id": "cc8fa56ce8",
+      "category_id": "high",
+      "title": "世界の大学生と学び合う、都立高校生～ミネルバ大学生との交流を通じて視野を世界へ～|11月",
+      "raw_title": "世界の大学生と学び合う、都立高校生～ミネルバ大学生との交流を通じて視野を世界へ～|11月 - 都庁総合ホームページ",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5odzVhS1hXUHhVd0cycVgydnlpSzdxV2NkazFPZHJtaS1mRGhkMTZ0MWJwdndxVF9Ca0lERk5KRzM2SWEtSEFaQXB5eFJEQjBYNUFZeHQzZWkwS1M2cFVDc09fTk41RVpiVk5WRlNoa0htZjha?oc=5",
+      "pub_date": "11/13 17:00",
+      "pub_iso": "2026-11-13T17:00:00+09:00",
+      "pub_ts": 1794556800,
+      "is_new": false,
+      "source": "都庁総合ホームページ",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "score": 10.5,
+      "headline": "都立高がミネルバ大生と国際交流を開始",
+      "points": [
+        "都立高校生が世界最高峰のミネルバ大学の学生と交流しグローバルな視野を育成。",
+        "新大学入試や総合型選抜で重視される多様性理解や英語発信力の強化を狙う。"
+      ],
+      "takeaway": "都立進学指導重点校などの上位校を目指す生徒は、英検準1級レベルの語学力に加え世界基準の課題について議論する姿勢が求められます。",
       "is_ai_summary": true
     },
     "b9a4297b44": {
@@ -246,7 +407,7 @@
       "source": "みんなの学校新聞",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
-      "score": 12.5,
+      "score": 8.5,
       "headline": "埼玉県知事が文科相に高校無償化に伴う公立高改革支援と給食費無償化を要望",
       "points": [
         "埼玉県知事が高校無償化を契機とした公立高校のさらなる改革支援を文科省へ直接要望した",
@@ -270,12 +431,12 @@
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
       "score": 14.0,
-      "headline": "難関私大「早慶進学」への根強い期待と戦略",
+      "headline": "早慶に進学して欲しい（大学受験 全般）",
       "points": [
-        "保護者や受験生の間で、依然として早慶両校への進学ステータスと高い評価が続いています。",
-        "一般選抜の枠が狭まる中、付属校や指定校推薦も含めた早期からの綿密な併願戦略が勝負を分けます。"
+        "インターエデュ・ドットコムによる「早慶に進学して欲しい（大学受験 全般）」の最新レポートです。",
+        "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
       ],
-      "takeaway": "高1・高2段階から模試の志望校判定を意識し、英語の外部検定や内申点対策など多面的なアプローチを講じましょう。",
+      "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
       "is_ai_summary": true
     },
     "baa3d2663a": {
@@ -408,12 +569,12 @@
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
       "score": 10.5,
-      "headline": "東洋大、2028年度入試より基礎学力テスト型を取りやめ",
+      "headline": "【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ",
       "points": [
-        "東洋大学は2028年度一般選抜において、外部の基礎学力テストを利用する方式を廃止することを決定した。",
-        "首都圏難関私大で進む一般選抜の方式見直しの一環であり、今後は独自試験や共通テスト利用へ比重が移行する可能性がある。"
+        "リセマムによる「【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ」の最新レポートです。",
+        "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
       ],
-      "takeaway": "2028年以降の受験生は外部検定や基礎テスト併用策の見直しが必要。最新の募集要項や動向を早期に確認し、個別試験対策を重点的に進めましょう。",
+      "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
       "is_ai_summary": true
     },
     "f331c11739": {
@@ -799,12 +960,12 @@
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
       "score": 9.5,
-      "headline": "厚胤塾が12月7日冬期講習開講",
+      "headline": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講…",
       "points": [
-        "高1・2年生向けの総復習や先取り学習から共通テスト、難関医学部対策まで網羅した多彩な冬期特別講座を提供。",
-        "受験の天王山となる冬期に個々の目標と学力レベルに最適化された指導で、効率的な実力強化を図る。"
+        "PR TIMESによる「最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意」の最新レポートです。",
+        "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
       ],
-      "takeaway": "高1・2年生は冬期講習で今年度の苦手分野を完全に払拭し、新学年に向けた先取り学習で周囲に差をつけましょう。",
+      "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
       "is_ai_summary": true
     },
     "06764a6d06": {
@@ -912,12 +1073,12 @@
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
       "score": 13.0,
-      "headline": "総合型選抜が広げる入試格差の現実と対策",
+      "headline": "入試日程・募集定員・出願手続きの重要情報",
       "points": [
-        "総合型選抜入試において都市部と地方間や家庭の経済力による情報・準備の格差が課題となっている。",
-        "受験塾リザプロの孫辰洋氏が、格差を埋めるための具体的な支援のあり方や対策について言及した。"
+        "「都市と地方、親の経済力…入試をめぐる「格差」どう埋める　総合型選抜の大学受験塾「リザプロ」孫辰洋さん」（ｄメニューニュース）に関するスケジュールや選抜要項の詳細が案内されています。",
+        "都市と地方、親の経済力…入試をめぐる「格差」どう埋める 総合型選抜の大学受験塾「リザプロ」孫辰洋さん ｄメニューニュース"
       ],
-      "takeaway": "総合型選抜は早期の対策と情報収集が合否を左右するため、経済的負担を抑えたオンライン塾や自治体の支援制度の活用を検討してください。",
+      "takeaway": "出願開始日・締切日・合格発表後の手続き期限を親子・教室で共有し、カレンダーに書き込んでダブルチェックを行いましょう。",
       "is_ai_summary": true
     },
     "bc75f5044e": {

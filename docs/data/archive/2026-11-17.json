@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-17",
+  "updated_at": "11月17日 11:28",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "千葉・首都圏中学受験の最新動向と直前対策AI調査レポート",
+        "summary": "直近1週間は、難関校の時事問題対策から塾選びのランキング、1月入試のタイパ受験に関するリスクまで多岐にわたる重要な情報が配信されました。本番に向けた学習の総仕上げと戦略の見直しが急務となっています。",
+        "key_trends": "麻布や駒東などの難関校で小惑星探査などの時事問題への深い背景理解が求められる一方、1月入試の安易な模試代わり受験には全敗リスク等のデメリットが指摘されています。また、最新の塾ランキングや合同相談会も活発です。",
+        "advice": "1月受験は合格を確実に取り自信をつける場と位置づけ、安易な記念受験は避けてください。また、ニュースの天体等はミッションの背景まで調べ、今週末開催の学校見学を活用してモチベーションを高めましょう。",
+        "analyzed_at": "11/17 11:28"
+      },
+      "news": [
+        {
+          "id": "75eb4b208d",
+          "category_id": "junior",
+          "title": "【中学受験の良問・理科】「今年7月、小惑星『トリフネ』を撮影した小惑星探査機の名前は？」麻布や駒場東邦で類題の「小惑星探査」の問題 | 中学受験塾「進学館ルータス」からの挑戦状",
+          "headline": "麻布・駒東などの難関校でねじこまれる時事「小惑星探査」対策",
+          "points": [
+            "最新の宇宙開発ニュースを背景に、探査機の名前や観測対象などの知識を問う理科の良問が出題されている。",
+            "麻布や駒場東邦など難関校では、時事問題と基礎科学知識を融合させた思考力記述が好まれる傾向が強い。"
+          ],
+          "takeaway": "ニュースで見た天体や探査機の名称を覚えるだけでなく、なぜそのミッションが必要なのか背景まで調べさせましょう。",
+          "source": "ダイヤモンド・オンライン",
+          "pub_date": "本日 04:05",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5hNjZnNk95RTBLLVY0MGZsa0lZaEdqcVNlSUVPX2dCZWY3elEwaVRvOUMwSngzdlhmbGVISFJDeDkxaEg0R3lFS3lhbHM?oc=5",
+          "is_new": true,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        },
+        {
+          "id": "1e3174c1ce",
+          "category_id": "junior",
+          "title": "【中学受験】「1月入試を模試代わりに受験」は本当にタイパがいい？ ベテラン講師が明かすデメリット（All About）",
+          "headline": "「1月入試を模試代わりにする」タイパ受験の隠れた重大リスク",
+          "points": [
+            "1月校を力試しや単なる模試代わりに受験することは、不合格時の精神的ダメージなど大きなデメリットを伴う。",
+            "本番特有の緊張感に呑まれ、本来の実力を発揮できないまま2月を迎えるメンタル面の崩壊リスクに注意が必要。"
+          ],
+          "takeaway": "1月受験は合格を確実に取り自信をつける場と位置づけ、安易な記念受験や全敗リスクのある無謀な出願は避けましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "昨日 21:25",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BSzNVM1RTNkdFbmNwU1VycDNRQnhpbDBucllTeVRLWGx2dExISXJwWktPZ2djUWY4V1ZlNmVVVzRJOVl4akpKWWR2dTZQbkFEM09rTXVwWGNHV0ZxUXFfNHVwX1JmVlM5NGtTbGNGaDAwSVlqRHlwc1dybEZERmc?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "2baf636668",
+          "category_id": "junior",
+          "title": "オリコンニュース：保護者がおすすめする首都圏の中学受験塾（集団・個別・公立中高一貫校対策）、2026年の最新総合1位は？",
+          "headline": "2026年最新！保護者が選ぶ首都圏の中学受験塾ランキング1位は",
+          "points": [
+            "集団・個別・公立中高一貫校対策の各部門において、保護者の満足度を反映した最新の塾評価が発表された。",
+            "合格実績だけでなく、講師の指導力や面倒見の良さ、志望校別サポート体制がランキング選定の大きな鍵。"
+          ],
+          "takeaway": "他家の評価に惑わされず、お子様の性格や学力特性に最も合致する指導スタイルの塾を体験授業等でしっかり見極めましょう。",
+          "source": "毎日新聞",
+          "pub_date": "昨日 12:00",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5NVNJR0NORTRyQVpXdmN6M0FqLTh3Y2k4dWwyaWRsTE5veGVSMTZtQWZrUHdOX1pOY1R6TzI3S3BDalZpTGhHekRxdGZfZTlUSnl1MDcwWU0xeDZnUUFnR3JETmdlOGZ0?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "c0ba8fd38b",
+          "category_id": "junior",
+          "title": "【無料セミナー】東京個別指導学院が主催 首都圏の小学3年生～5年生の保護者対象 中学受験の志望校選びと模試活用法、算数＆国語の効果的な学習法を専門家が解説",
+          "headline": "小3〜5年生保護者必見！志望校選びと模試活用を学ぶ無料セミナー",
+          "points": [
+            "東京個別指導学院主催のもと、中学受験の志望校選びの基準と模試データの効果的な活用法が専門家により解説される。",
+            "算数と国語の基礎固めから応用への橋渡しとなる、低・中学年期からの具体的な学習アプローチが学べる。"
+          ],
+          "takeaway": "低学年のうちから正しい学習習慣と模試の復習サイクルを確立するため、保護者は最新の受験情報を積極的に取りに行こう。",
+          "source": "PR TIMES",
+          "pub_date": "昨日 11:11",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40cDNvTVdnTWp0RGdnZVpnY2ticUJ5WDdlU3BiaEhxRVBQbjh3dnl1OWQtRzZRMlVMeEcwV1gtWER3RUJpWnJ1OEJOdWJwcmxKTnRVdVBfdXF3dUdaeXdJeGhHMDJfU045RUE?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "62a54578cb",
+          "category_id": "junior",
+          "title": "【中学受験】今週末行ける中高一貫「学校見学」11/21-23…渋渋、都市大等々力など10校",
+          "headline": "今週末11月21〜23日開催！渋渋・都市大等々力の学校見学",
+          "points": [
+            "渋渋や都市大等々力など人気校を含む計10校で、今週末にキャンパスの雰囲気や生徒の様子を直接確認できる。",
+            "秋以降の学校見学は、パンフレットではわからないリアルな校風や通学動線の最終確認として極めて重要。"
+          ],
+          "takeaway": "志望校の文化祭や説明会に足を運び、モチベーションを高めると同時に、子ども自身が通いたくなる環境かを確かめましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 10:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWRjZubjVuRWtCWW1hNV8zN3QyYjV4NVFWZWtlY0cwYVlfNDlxLWsyd0VkWERnc2IxTVctWV9lTEpOdGFHUmpjNFd0eEhtUTI2R2o4N2hfYlhuS3ZF?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "4a483a0fd5",
+          "category_id": "junior",
+          "title": "「中学受験をしなかったことは正解か」 公立高からの東大合格者が本音で明かす中受のメリット・デメリット",
+          "headline": "公立高から東大合格者が語る中学受験のメリット・デメリットと進路の正解",
+          "points": [
+            "中学受験をあえて回避し公立高校から東大へ進学した実体験に基づき、中受のメリットとデメリットを生々しく本音で検証している。",
+            "早期の受験勉強による恩恵だけでなく、公立ルート特有の自由な環境や自己管理能力の重要性が浮き彫りになっている。"
+          ],
+          "takeaway": "中学受験が各家庭にとって絶対唯一の正解とは限らない点を理解し、子どもの性格適性に合わせた柔軟な進路選択を検討してください。",
+          "source": "新潮QUE",
+          "pub_date": "11/14 07:05",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQMW5Ca2FrRDhZTUQ5UXlhdGhzVHBUdUhyTDlTZ29XcEFteTl3eFZHNEZBNmo3V0pxOGRQeEZHNkVYSUZIeXZPWjFKaDR2MFox?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "首都圏高校入試：私立優位の構造変化と入試制度の多様化",
+        "summary": "埼玉県では私立希望率が2年連続で上昇し無償化の影響が鮮明化。都立高では内申不問の「10対0」判定枠の拡大やグローバル探究の導入など、公立・私立双方で選抜基準と教育内容の大きな構造変化が進んでいる。",
+        "key_trends": "埼玉県の私立希望率上昇や知事による公立改革の要望に加え、都立高では北園高校などでの内申不問10対0判定の拡大やミネルバ大生との国際交流など、多様化する評価軸に合わせた学校選びと併願戦略が不可欠となっている。",
+        "advice": "内申点に不安のある生徒は内申不問の対象校の過去問演習を急ぎましょう。また、初期の希望調査の倍率に惑わされず、無償化の動向を踏まえた柔軟な併願プランを早期に確立することが合格への鍵となります。",
+        "analyzed_at": "11/17 11:28"
+      },
+      "news": [
+        {
+          "id": "d5d18fc394",
+          "category_id": "high",
+          "title": "税への思い書にパフォーマンスー川越女子高校",
+          "headline": "川越女子高の税作文で知る探究力評価",
+          "points": [
+            "川越女子高校で税に関する作文を通じて社会的視野を広げる表現活動を実施。",
+            "単なる暗記型学習から脱却し自らの思考を言語化する探究型学習の重要性を示唆。"
+          ],
+          "takeaway": "北辰テストや一般入試の国語記述対策として、日頃から社会問題に対する自分の意見を短い文章でまとめる練習を家庭でも取り入れましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "本日 09:53",
+          "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQek9QZXJJYk5zQTRWeEJ6YkVoZ0RnSktBRWVSMTIzTDlzeml6dHhka0ZRV2VTR01OMVlJbWMtQTZTc3JiYnBRRzRkdzdka2ZSbVUwRE01QnltUG4tb1hOT1pLVUV0cEFyMF9IeHhROUNZamwzV0ExMGRMV1E1MFJGeWkyZnJLbzIxLUQ3b2tEWG44TnlSTzAzY2dCVG5lamdWdHhtcXVsRzJfV1pNc1VlTXlsSVRoU252UGFCODYwUlZNcjlmM1VMYy1XT1Bic2J1Zk9pVVF6LTVQZkdyYXBrMFNXcnVzdHRtSTlRRjN3X1lCbzdLUUkwMHVrbEtkSlVMOXNyUy03cUE0c1dFOHI5a1RSMFdXQ3dWVm9ZZm4wMHQ3X21GbTZ3V0Z0Y3Boemo4NnprUFNmXzJta2xqLU1RRDZxTDdXVEUxSTZNM0FobXJhN1lOOGc?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "cc8fa56ce8",
+          "category_id": "high",
+          "title": "世界の大学生と学び合う、都立高校生～ミネルバ大学生との交流を通じて視野を世界へ～|11月",
+          "headline": "都立高がミネルバ大生と国際交流を開始",
+          "points": [
+            "都立高校生が世界最高峰のミネルバ大学の学生と交流しグローバルな視野を育成。",
+            "新大学入試や総合型選抜で重視される多様性理解や英語発信力の強化を狙う。"
+          ],
+          "takeaway": "都立進学指導重点校などの上位校を目指す生徒は、英検準1級レベルの語学力に加え世界基準の課題について議論する姿勢が求められます。",
+          "source": "都庁総合ホームページ",
+          "pub_date": "11/13 17:00",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5odzVhS1hXUHhVd0cycVgydnlpSzdxV2NkazFPZHJtaS1mRGhkMTZ0MWJwdndxVF9Ca0lERk5KRzM2SWEtSEFaQXB5eFJEQjBYNUFZeHQzZWkwS1M2cFVDc09fTk41RVpiVk5WRlNoa0htZjha?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "3cc2709ab6",
+          "category_id": "high",
+          "title": "高校無償化で公立高校の改革支援を 埼玉県知事が文科相に要望 給食費の完全無償化も",
+          "headline": "埼玉県知事が文科相に高校無償化に伴う公立高改革支援と給食費無償化を要望",
+          "points": [
+            "埼玉県知事が高校無償化を契機とした公立高校のさらなる改革支援を文科省へ直接要望した",
+            "あわせて教育格差の是正に向けた給食費の完全無償化の実現も強く働きかけている"
+          ],
+          "takeaway": "今後の自治体ごとの財政支援や公立高の設備・教育内容の格差が変化する可能性があるため埼玉県の教育予算動向に注目しましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "11/13 12:59",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1GWXpOaDh6a3dRb3VQU3hpVmN6VGducUZyVnJ3R1RvN3JOXzBrdmg5ajNIMVF5NzVwcGowc0I1aElkc1libnplSXNn?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "20c89d6278",
+          "category_id": "high",
+          "title": "【令和9年度入試】 第1回調査から出願時まで、倍率はどう変化するか＜前編＞",
+          "headline": "令和9年度入試へ向けて追う倍率の変動",
+          "points": [
+            "第1回進路希望調査から実際の出願時までの倍率の変化傾向を詳細に分析している。",
+            "埼玉県内の高校受験生を対象に、志望校決定プロセスにおける実用的なデータを提供。"
+          ],
+          "takeaway": "初期の希望調査の倍率だけに惑わされず、出願時の変動予測を見据えた併願校戦略を早めに立てましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "10/30 16:00",
+          "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNX3ZWX2p3TnMzNUF5ZW1NR21YMmx1RW9IajF1SmE1LVRHYWR2aUI0S19nUXh5OTY2bTBsV0hSSkVkMnhkOHU1dHdCWktsbm8zdmw3RXZ0UExXcHVBWGNTbkM4Q0lzVVNRTWFEbW45UnE4TVc1MXBNRVRCYkt0Q3ViYVhzanhHajFWV19adVRMeC1POHNrWFdGWExkNTRWRjlyekt3X1hPSExncU93bEV5SnBqU21yOHJRRDN1SVZBeUZldmVtMVpJbTdHbzI5bFNIQW5neXhDY2lXcngzSklGREVLZDZZeGtaQWNuTWtZQlF0T0dfd1NHR2lSWHI5aXFFcG5aWnNyUGE1SkJOclhLcGVRM0FHVXBaRWIzM3VEeTEzX3VjWmRwZkp6M0ZTU0ZweEtoWjZoZzR5QkRrM3ZIb2dqdV9nS1BoMEZTLUpCdVBmdVllemRhZXNR?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "c2df1083e0",
+          "category_id": "high",
+          "title": "【埼玉県公立入試2027】埼玉県教委、10月の進路希望状況調査を公表 進む「公立離れ」 私立高校希望率は2年連続上昇 無償化拡充が影響か",
+          "headline": "埼玉県公立入試2027：私立希望率が2年連続上昇の背景",
+          "points": [
+            "10月の進路希望調査で私立高校の希望率が上昇し、授業料無償化の拡充が主な要因として影響している。",
+            "公立離れの傾向が進むことで、埼玉県の私立併願作戦や入試難易度のバランスに大きな変化が生じている。"
+          ],
+          "takeaway": "私立無償化の恩恵を見据え、初期の段階から第一志望だけでなく魅力ある私立校を含めた柔軟な併願プランを組みましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "10/29 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1zaEp6ZUwtR1VuUjdkdTc5SUsxOU40Yk1YRHAwMFJ5Si1fbkJQRGFkTURydXh4dXpncmJaMkdDZkIzVng1N2dpU1FR?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "8da3d51bc7",
+          "category_id": "high",
+          "title": "都立高校入試、内申点を使わない「10：０」判定を北園・武蔵野北で併用 ２０２７年度は計３校",
+          "headline": "都立高入試の内申不問10対0判定が北園など3校に拡大",
+          "points": [
+            "2027年度入試より北園高校や武蔵野北高校などで内申点を見ない学力検査のみの10対0判定が計3校で実施される。",
+            "当日点重視の受験生にとって選択肢が広がり、内申に不安がある生徒の逆転合格のチャンスが大きく増加する。"
+          ],
+          "takeaway": "内申点対策に苦しむ生徒には当日点特化の学習プランを提案し、対象校の過去問演習を早めにスタートさせましょう。",
+          "source": "月刊私塾界",
+          "pub_date": "10/21 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xNGQ0Z1dyVGRtbmhNTGtQOGdrWG5MVFJ1YUF6eTNaMklNZkZ5WUFpeHdLZV9TMHYxdFhuZFBVVGNvbFp5UHo3REIxSnhybVRSYXc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "analyzed_at": "11/17 11:28",
+        "title": "大学受験のホテル予約はいつから？半年〜1年前、共通テストは今…",
+        "summary": "直近の大学受験では、「大学受験のホテル予約はいつから？半年〜1年前、共通テ / 大学入試センター、BYOD型CBTの試行結果を公表 / 早慶に進学して欲しい（大学受験 全般）」など受験生・保護者にとって見逃せない重要ニュースが相次いで報じられています。",
+        "key_trends": "新課程共通テストの「情報Ⅰ」対応や国公立大・難関私立大の総合型・学校推薦型選抜の定員増が大きな焦点となっています。",
+        "advice": "共通テストと個別学力検査の配点比率を再確認し、基礎典型問題のスピード向上と記述答案作成の訓練を並行しましょう。"
+      },
+      "news": [
+        {
+          "id": "f51ce3343f",
+          "category_id": "univ",
+          "title": "大学受験のホテル予約はいつから？半年〜1年前、共通テストは今【2027】",
+          "headline": "大学受験のホテル予約はいつから？半年〜1年前、共通テストは今…",
+          "points": [
+            "HotelBankによる「大学受験のホテル予約はいつから？半年〜1年前、共通テストは今【2027】」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "HotelBank",
+          "pub_date": "昨日 06:01",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zeWJ4SDRDZnNYeFQ5WTlLZTNyNXlmaDVJRTVRT0hMYVo3RE5YWWcyVmREVUZmQm9pc0JVaEx1ZHZOZ285ZjVISzhvbnJVWm9ySUstQjlFejlVOFk5T1hqcDBuTnpiMzR2elZXU05yYW9Ba1ZmM1ljR3loSW8?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "df22d818f1",
+          "category_id": "univ",
+          "title": "大学入試センター、BYOD型CBTの試行結果を公表",
+          "headline": "大学入試センター、BYOD型CBTの試行結果を公表",
+          "points": [
+            "リセマムによる「大学入試センター、BYOD型CBTの試行結果を公表」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "リセマム",
+          "pub_date": "11/13 17:45",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92Q2FKSzR1TXB0bzFhYXE1azljUFFvU2ZOYUFSWTRjdkFiWHo0M25aNGRjMHVjY2VzOGYzTklHdmZOTWRLenJ2MnpDN3FaUG5SeHZKakdTYzRWSXhSdmxnc0RMTVo5QQ?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b75f212a13",
+          "category_id": "univ",
+          "title": "早慶に進学して欲しい（大学受験 全般）",
+          "headline": "早慶に進学して欲しい（大学受験 全般）",
+          "points": [
+            "インターエデュ・ドットコムによる「早慶に進学して欲しい（大学受験 全般）」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "インターエデュ・ドットコム",
+          "pub_date": "昨日 11:04",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0LXdjLUVUdjFMb1NGQkpCaE5ySDAwZElsSjk2ZTNJdC0wVmlYT1U2WGpNa3A3VkF4S19aazdUNHdCazl3YmJ1UXB2dkRvS1ZHV19NWWxyV1A3eVB1SkVEUllLeEdZbzdaWmxrUWQyUnVZeEU?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "4135fe477e",
+          "category_id": "univ",
+          "title": "【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ",
+          "headline": "【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ",
+          "points": [
+            "リセマムによる「【大学受験2028】東洋大、基礎学力テスト型入試を取りやめ」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "リセマム",
+          "pub_date": "11/12 14:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5lN0ZJS3loZmtWNkh6eGFVV0Y2dDBiLWVHMG10RlhYeTNJMXlzZVlrQnYzZ1lsR0swT2VhMjVqUXlOZWVDbjlGTnRNM2NQSUQyc1hEdGptOW1aa2pl?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b335cf0c36",
+          "category_id": "univ",
+          "title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意",
+          "headline": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講…",
+          "points": [
+            "PR TIMESによる「最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "PR TIMES",
+          "pub_date": "11/09 09:00",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16dHhLbERsZXcwTU1fOVctakJONVFxVktKVU1yTEFNalAtTUhDTkdqbTZaMDRhZkZqZFJpQmgxc1A5aUNHOHlnVjhQQmcwMnhoclNMYWF6UGdGSEM1TzZKMzduWHptYXp2cWc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "2a9357def5",
+          "category_id": "univ",
+          "title": "都市と地方、親の経済力…入試をめぐる「格差」どう埋める　総合型選抜の大学受験塾「リザプロ」孫辰洋さん",
+          "headline": "入試日程・募集定員・出願手続きの重要情報",
+          "points": [
+            "「都市と地方、親の経済力…入試をめぐる「格差」どう埋める　総合型選抜の大学受験塾「リザプロ」孫辰洋さん」（ｄメニューニュース）に関するスケジュールや選抜要項の詳細が案内されています。",
+            "都市と地方、親の経済力…入試をめぐる「格差」どう埋める 総合型選抜の大学受験塾「リザプロ」孫辰洋さん ｄメニューニュース"
+          ],
+          "takeaway": "出願開始日・締切日・合格発表後の手続き期限を親子・教室で共有し、カレンダーに書き込んでダブルチェックを行いましょう。",
+          "source": "ｄメニューニュース",
+          "pub_date": "11/08 05:00",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DWTJ0cy1NRDFSV0F2cXRnVnZ2Z0NLTmFwQ2NCM1FZQ1JxZmpXRkZScVB5UHVYZXNCWWsxdkhhSjUybTBjbmJLRlZ3UmJ6bFBSdHloNUo1QUczNU5aakRaazV5LWhqRnN2Q2IwVFFWZ2VsZ2_SAXhBVV95cUxNRnVveERQY1NyelZMeHo3bXlVOHNLRktnOEd0c1FnZ2dYUlNjZFl3dTJVLU01dXFCN0dBSGRnNDk0VXEyQ0Y1M1ZNWTRzNHlUb1FMX21Cb1NPRGJyeGdIc0xSbUZ6M1B2Z3h6UWt2dExDX3lNRnRwMmI?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    }
+  }
+}
