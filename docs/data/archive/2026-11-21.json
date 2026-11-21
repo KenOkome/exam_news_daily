@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-21",
+  "updated_at": "11月21日 09:47",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "加熱する中学受験と多様化する選択肢：今週の動向分析",
+        "summary": "過熱する受験環境への警鐘や難関中辞退の事例が報じられる一方、女子美の2回入試化や吉祥女子の好調、ボリュームゾーン向けの2月午後入試など、首都圏の入試日程や学校選びの多様化が鮮明になっています。",
+        "key_trends": "女子美の2回入試化や吉祥女子の好調など女子校の動向が活発です。また、早稲田大合格率ランキングでの公立一貫校の躍進や、難関中を辞退して公立進学を選ぶ家庭の本音など、進路の多様性が注目されています。",
+        "advice": "模試の偏差値だけに一喜一憂せず、家庭の教育方針に沿った志望校選びを徹底してください。特に女子校の回数変更や2月午後入試の併願パターンは、移動負担や合流時間を考慮して早めに再構築を行いましょう。",
+        "analyzed_at": "11/21 09:47"
+      },
+      "news": [
+        {
+          "id": "8b4e7d0cce",
+          "category_id": "junior",
+          "title": "「偏差値アップ」「競争で勝つ」中学受験はもう限界 「みんなやっているから」の受験から立ち止まって 教育のプロが警鐘〈中学受験〉",
+          "headline": "過熱する中学受験に教育のプロが警鐘",
+          "points": [
+            "偏差値や競争原理主義に囚われた「みんなやっている」という同調圧力型の受験熱が限界に達していると指摘された。",
+            "子どもの適性や主体性を無視した早期化・高額化する受験勉強が家庭や児童の精神面に与える負の影響が懸念されている。"
+          ],
+          "takeaway": "模試の偏差値だけに一喜一憂せず、我が子が本当に学びたい環境か再点検し、家庭の軸に沿った志望校選びを徹底しましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "昨日 17:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5PaGQtN3ZuNEVGdzBzN1ZoSHZSV2JISko4RFlNQzhXalYzVTl0RjRkSnNrWFhsdkNoODVmLUlWTmN2S01WMk5UV21KRUlIRTRiQlJUdVE4c0pVSnk5?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "6fc7525650",
+          "category_id": "junior",
+          "title": "2回入試になる「女子美」、お得な「トキワ松」、初回が好調な「吉祥女子」、八王子の2校復活できるか？東京女子校2【首都圏中学入試2027】 (ダイヤモンド・オンライン)",
+          "headline": "女子美の2回化と吉祥女子の好調",
+          "points": [
+            "女子美が2回入試へ移行し、トキワ松がお得感のある日程で志願者集中の構えを見せている。",
+            "吉祥女子の初回入試が好調を維持し、八王子エリアの女子校復活動向も注目を集めている。"
+          ],
+          "takeaway": "志望校の回数変更や日程の有利不利を確認し、併願パターンの再構築を早めに進めましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "昨日 08:57",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN3pNM1hrU3Z4bVBNVXZZa0hIMlJmTUV1d2FCNHJCX3h6Mk9RWTFwVHVUOGgxNHRrU1B2bU5lMFB3WXZVQk5KOVF5MXpfeDJDVmVrR0REeDJmZnJwUDVfdjNsbVA0eDEyYXE0azRRRUQ4RmZLdklGNWR4bzJ4OG13TzlzZUwxVmM4TDVQTFRB?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "463bf52283",
+          "category_id": "junior",
+          "title": "早稲田大への「合格率」が高い首都圏中高一貫校ランキング 「御三家」を抑えて3位に躍進した公立一貫校は？【2026年版】",
+          "headline": "早稲田大合格率ランキングで公立躍進",
+          "points": [
+            "首都圏中高一貫校における早稲田大学への合格率ランキングが公表された。",
+            "伝統的な御三家を抑えて公立一貫校が3位に躍進し、進学実績の勢力図に変化が生じている。"
+          ],
+          "takeaway": "中高一貫校選びでは大学合格数だけでなく在籍者数に対する合格率の実績も重視して学校研究を行いましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "昨日 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41SmdBekhOVjI3X3k5RXJtQ2R4NXRXZFZ1bEpUNlBxaHd4VzZtZmtOaGg1enBBcy03cmtuT0Ntb3RNS0c4VEFqNzBxY0w0OWFzYi02cGYyQk5wdVpM?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "ab9ecf3a4a",
+          "category_id": "junior",
+          "title": "「中学受験で未来なんか決まらない」難関中学を辞退して公立に進んだ長男。3度の受験に伴走した母の本音",
+          "headline": "難関中辞退と公立進選択の本音に迫る",
+          "points": [
+            "難関中学に合格しながら辞退して公立中学校へ進学した実例とその背景が語られている。",
+            "3度の受験に伴走した母親の実体験から、中学受験が人生のゴールではない本質が問われている。"
+          ],
+          "takeaway": "合否や偏差値に囚われず、子どもの心身の健康と長期的な成長を見据えた進路選択の軸を家庭内で共有しましょう。",
+          "source": "OTONA SALONE",
+          "pub_date": "11/19 20:31",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5ycmktWDhxU1lEVDh1SXFmd0o2OGxOSnZOYkNaRkFueDBmR09tX2tzQzJmR1lDRUp1RHVTMnJTTXJzbi05VWc?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "a8c4bd2308",
+          "category_id": "junior",
+          "title": "大手塾の特待生だった長男は「第二志望じゃ納得がいかない」と公立中学へ。大学生になった今、母が思うこと",
+          "headline": "特待生の長男が公立中へ進んだ実体験と教訓",
+          "points": [
+            "大手塾で特待生だった優秀な長男が、第二志望への不満からあえて公立中学進学を選択したリアルなドラマが描かれている。",
+            "大学進学時には納得のいく進路を切り開いており、中学受験の結果が人生のゴールではないという教訓が示されている。"
+          ],
+          "takeaway": "不合格や妥協進学がもたらす心理的リスクを想定し、万が一の進路でも前向きにリカバリーできる長期的な視野を持ちましょう。",
+          "source": "OTONA SALONE",
+          "pub_date": "11/19 20:30",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE14Ym9SQ0ZKUEZKT21kdFJ3djBEQ0pQQWRsem00SUxDT0dnV2xwYWZydHpVWGVJVHFPNEFrWmtDYlZtSUtUaEE?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "6ca3e9430b",
+          "category_id": "junior",
+          "title": "【中学受験2027】ボリュゾにお勧め！東京・神奈川の2/2午後入試を行う学校（まとめ）女子版（リセマム）",
+          "headline": "ボリュゾ向け東京神奈川の2月2日午後",
+          "points": [
+            "ボリュームゾーン層の受験生を対象に、東京と神奈川で2月2日午後に実施される女子校入試がまとまった。",
+            "複数回のチャンスを活かすことで、中堅上位校の合格可能性を最大限に高める戦略が可能になる。"
+          ],
+          "takeaway": "午後入試の出願校は午前校の合流時間や移動負担を考慮し、第2志望以下の現実的な選択肢として確保しましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/19 13:15",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vV3NZaTVyNGxQUFVJT3BseGQ0N1NIaU52dnhkX3JESThtOURoNkgzNnBUOWhQVEsxRlpaQjlPV1pydFJjdWJreG5IcnZORFZEZDRKdDZfMFJUMkRpeG9EUldNejJ1NGFxTEp3ckNXV2ZSMmdkRTN1ZnM4MC1CQ2c?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "首都圏の2027年度高校入試：千葉の評価方法公表と制度改革の波及",
+        "summary": "今週は千葉県立高校の2027年度選抜・評価方法の公表や神奈川県の学級減発表など、首都圏全体で中長期的な入試制度改革が相次ぎました。また、埼玉県知事による高校無償化の交付金要請など家庭の経済支援を巡る動きも注目されています。",
+        "key_trends": "千葉県の新中2生に向けた評価基準公表や、神奈川県立高39校での大規模な学級減決定など、進路選択に直結する重要な変更が続いています。私立無償化の動向や埼玉の私立希望率上昇も含め、早期の併願戦略見直しが不可欠です。",
+        "advice": "新中2・中3生は、千葉県の新たな評価方法や志望校の募集定員情報を今すぐ確認し、内申点対策と基礎学力の定着を急ぎましょう。初期の倍率や変動予測に惑わされない柔軟な出願プランを、保護者と塾の面談を活用して早期に構築してください。",
+        "analyzed_at": "11/21 09:47"
+      },
+      "news": [
+        {
+          "id": "45c0abb0f3",
+          "category_id": "high",
+          "title": "県高校書道展 開幕 22日まで",
+          "headline": "埼玉県高校書道展が開幕、芸術系進学への登竜門",
+          "points": [
+            "埼玉新聞社主催の県高校書道展が22日まで開催され、県内高校生の熱意ある作品が一堂に会している。",
+            "芸術科や書道部所属の受験生にとっては、他校のハイレベルな作品に触れ感性を磨く貴重な機会となる。"
+          ],
+          "takeaway": "芸術系の進学や推薦入試を視野に入れる生徒は、作品展に足を運びモチベーション向上や表現の参考にしよう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "11/18 09:59",
+          "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZ3huSEU3RzNHUWxFbjUxRlIwZGNDS3d1cXo3Y0RUMjcxaEZlMEpQdzlWdjA3MUFkMXVoUlFUZGQwYkdUcDMtemZQSzd2d2g5SHVTbEpuYmJ0cEljTFlDVS1pZUlZRnBOMTJ6RkpNUmZNUHQ3OV9VbE9ZZ1J1YVd2M2FtWkFIQ2w5UzFTY1VUNV9HN21YSTBwazZ6WUNzWDZpUU0yYWNZaDdCTXdpVWdxblA3WVpZbFRfQmtuZ0dRZWl4RUhGb2xyQlVaYUNDTHBYdWxGb1ZiY05nZVRpY25uWk1mbW5yc3RtSE5SVzFn?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "a6f522f8a9",
+          "category_id": "high",
+          "title": "埼玉県知事、文科相へ要望…高校無償化で交付金全額を",
+          "headline": "埼玉県知事が文科相に高校無償化の交付金全額確保を要請",
+          "points": [
+            "埼玉県知事が文部科学大臣に対し、高校授業料無償化に伴う地方交付金の全額確保を直接強く要望した。",
+            "国の制度改正が自治体の財政や私立・県立高校の教育環境整備、保護者の負担軽減に直結する重要な動き。"
+          ],
+          "takeaway": "家庭の教育費負担や私立高校の就学支援金制度に影響を与えるため、今後の国の予算案や自治体の対応を注視。",
+          "source": "リセマム",
+          "pub_date": "11/17 14:15",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAyUEcxQXZjMUstV2ZOM1FvQmVPUzBZeGJDbG4yRkI4LW12bGZUVlRyZnVzanpkbFVQdXVQMTVQanB5RnBURXZUR1BtMzU2R20yeGtwQ1F0RjhQLTk2OVNXVklsYVVpdw?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "b83b1737e8",
+          "category_id": "high",
+          "title": "【高校受験2027】千葉県立高、選抜・評価方法を公表（リセマム）",
+          "headline": "【高校受験2027】千葉県立高校の選抜・評価方法が公表",
+          "points": [
+            "2027年度（令和9年度）入試に向けた千葉県立高校の新たな選抜・評価方法の全容が正式に公表された。",
+            "学力検査だけでなく調査書の評価基準や各校の独自検査内容の変更点が受験生や指導現場に大きな影響を与える。"
+          ],
+          "takeaway": "新中2生は現時点から変更後の評価基準を意識し、内申点対策と早期の基礎学力定着に向けた学習計画を立てよう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/17 12:15",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CSHhxLUFLdnh4dDNIZnBmZjU5V2l1ODRkN3lTeWlCUlpfd09UM1hLMGRabS1PSmJnRThyUm8teEJaaldzMkw2aFdaLWJ3RlVNT0tJb1pjRkhhaXBCY0g1LVAxYUpwQllVTExnZHFRRURTcVY4SHAwVjBQYWh1RmM?oc=5",
+          "is_new": false,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        },
+        {
+          "id": "d75b2f36b9",
+          "category_id": "high",
+          "title": "群馬県公立高校入試、ウェブ出願の基本情報登録始まる PHPの脆弱性は点検済み",
+          "headline": "群馬県公立高校ウェブ出願開始、脆弱性点検済みで安全に登録を",
+          "points": [
+            "群馬県公立高校入試のウェブ出願に向けた基本情報の登録手続きが開始された。",
+            "懸念されたPHPの脆弱性については事前点検が完了しており安全に利用可能。"
+          ],
+          "takeaway": "出願直前のトラブルを防ぐため、システムが空いている早期の段階で基本情報の登録と動作確認を確実に済ませましょう。",
+          "source": "みんなの学校新聞",
+          "pub_date": "11/02 17:00",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBUdVcxbk9tQkN1VVF4dl8weDlYbzM3cDN3YkNPbmZZVm55bVdUbkRKX2FNMlB1NzBUUm5hODVWTHVUT3V5dEg4SVVR?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "20c89d6278",
+          "category_id": "high",
+          "title": "【令和9年度入試】 第1回調査から出願時まで、倍率はどう変化するか＜前編＞",
+          "headline": "令和9年度入試へ向けて追う倍率の変動",
+          "points": [
+            "第1回進路希望調査から実際の出願時までの倍率の変化傾向を詳細に分析している。",
+            "埼玉県内の高校受験生を対象に、志望校決定プロセスにおける実用的なデータを提供。"
+          ],
+          "takeaway": "初期の希望調査の倍率だけに惑わされず、出願時の変動予測を見据えた併願校戦略を早めに立てましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "10/30 16:00",
+          "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNX3ZWX2p3TnMzNUF5ZW1NR21YMmx1RW9IajF1SmE1LVRHYWR2aUI0S19nUXh5OTY2bTBsV0hSSkVkMnhkOHU1dHdCWktsbm8zdmw3RXZ0UExXcHVBWGNTbkM4Q0lzVVNRTWFEbW45UnE4TVc1MXBNRVRCYkt0Q3ViYVhzanhHajFWV19adVRMeC1POHNrWFdGWExkNTRWRjlyekt3X1hPSExncU93bEV5SnBqU21yOHJRRDN1SVZBeUZldmVtMVpJbTdHbzI5bFNIQW5neXhDY2lXcngzSklGREVLZDZZeGtaQWNuTWtZQlF0T0dfd1NHR2lSWHI5aXFFcG5aWnNyUGE1SkJOclhLcGVRM0FHVXBaRWIzM3VEeTEzX3VjWmRwZkp6M0ZTU0ZweEtoWjZoZzR5QkRrM3ZIb2dqdV9nS1BoMEZTLUpCdVBmdVllemRhZXNR?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "bcfa645a54",
+          "category_id": "high",
+          "title": "神奈川県立高校、全日制３９校で学級減 県教委、２７年度の募集定員を決定",
+          "headline": "神奈川県立高2027年度募集定員、全日制39校で大規模な学級減へ",
+          "points": [
+            "神奈川県教委は2027年度入試に向け、全日制39校で学級減を行う募集定員を決定した。",
+            "少子化や地域別の志願動向の変化を背景に、主要校でも合格倍率の上昇が懸念される。"
+          ],
+          "takeaway": "志望校が学級減の対象に含まれるか早期に確認し、安全校を含めた出願戦略の柔軟な見直しと早めの対策を進めましょう。",
+          "source": "カナロコ",
+          "pub_date": "10/24 16:00",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5U2xXS0NKNjZCV2czWExvRzhCRjNMTlFWOS13U05DNG12TTdlUDFnVHRLTGdDWWZKNDJXenFsT1owdXZlVmVTSF8wRzFyMzBxeXJCNFZjbnNuLVltYzZwR2Uyak1oQjlIN21ZVg?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "進研模試結果とCBT・不正対策の動向",
+        "summary": "過去1週間は、2027年受験の基準となる進研模試10月版の公開や、大学入試センターによるBYOD型CBTの課題検証が注目されました。また、国内外で入試におけるAI不正防止や検定料に関する関心が高まっています。",
+        "key_trends": "大学入試のCBT化に向けた端末持参方式の課題や、東洋大の基礎学力テスト型入試取りやめなど、入試方式や制度の変化が鮮明になっています。また、国内外で厳格な不正対策が求められる潮流が強まっています。",
+        "advice": "進研模試返却後は判定に一喜一憂せず、志望校との差分を分析して冬期講習までの克服計画を立ててください。また、志望校に必要な教科数を早めに確定させ、検定料や出願プランを親子で綿密に確認しましょう。",
+        "analyzed_at": "11/21 09:47"
+      },
+      "news": [
+        {
+          "id": "f5d2253696",
+          "category_id": "univ",
+          "title": "【大学受験2027】進研模試「合格可能性偏差値」10月版",
+          "headline": "2027年受験の基準となる進研模試10月版公開",
+          "points": [
+            "高2秋の進研模試合格可能性偏差値10月版が発表され本格的な志望校選定の基準となる",
+            "首都圏の難関大を目指す受験生にとって現時点での立ち位置を把握する重要な指標"
+          ],
+          "takeaway": "返却後は判定に一喜一憂せず志望校との差分を分析し苦手分野を冬期講習までに克服する計画を立てましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 10:07",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBTLXFNMk9wVEpsRWVOM2J0ZHZoNkFMX1ltUjdvdjdES3NWdV8takFVSTBqV3NocXYwNTl5OFhvTzg4elNYaGVGWkN1X2Q0eWxYTHEwczdxamFRVmpM?oc=5",
+          "is_new": true,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        },
+        {
+          "id": "7839c76aff",
+          "category_id": "univ",
+          "title": "“AIカンニング”相次ぐ韓国で大学入試の共通テスト控え、受験生に注意喚起（2026年11月18日掲載）",
+          "headline": "韓国の大学入試直前、AIカンニング防止へ異例の警告",
+          "points": [
+            "生成AI等を用いた高度な不正行為の急増を受け、韓国当局が入試を控える受験生に厳重な注意喚起を発令した。",
+            "日本でも共通テストや各大学の個別試験において、デジタル機器を用いた新手の不正対策が喫緊の課題となっている。"
+          ],
+          "takeaway": "通信機能を持つウェアラブル端末や小型イヤホン等の持ち込みは厳禁であることを再確認し、不正を疑われない環境づくりを家庭でも徹底しましょう。",
+          "source": "日テレNEWS NNN",
+          "pub_date": "11/18 17:24",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaHdCNWpzalVlWjc5LXdPRW1DSGJkZnBuVk5IXzBIN0VkMk50VmNNYjdTcFFoa1pvTkFMNDJabjA0OFF4eFR3c0FHWkd4bVNwaWQwM0ZhYlZlWWIza1RDeHdyWWdEMnpqcUFOTWkyM25tQTJ1a0l6NlIyV1ZvM0F2SXBwRGU?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "0f3f363492",
+          "category_id": "univ",
+          "title": "大学入試センター、持参端末によるＣＢＴを検証 事前支援とトラブル対応に課題",
+          "headline": "大学入試のCBT化へ、端末持参方式の課題が浮き彫りに",
+          "points": [
+            "大学入試センターが個人所有端末を活用するBYOD型CBTの検証結果を公表した。",
+            "受験生への事前支援体制の構築や、当日機材トラブル時の迅速な対応に課題が残る。"
+          ],
+          "takeaway": "将来的なCBT導入を見据え、家庭でのPCやタブレット等の操作スキル向上とトラブル時の連絡手順を確認しておきましょう。",
+          "source": "月刊私塾界",
+          "pub_date": "11/17 11:54",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04MW5tR1lHSGVEa18yc3NyT2pYNUJzVDQ1MEZrM0IxLVBLUmhPLTNSUGhNN2dobFNiUi1wRG90eDk4ekVlUFVlbmRmaTB3WVhOS3c?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "8bc08c3d6e",
+          "category_id": "univ",
+          "title": "【大学入試】共通テスト検定料は教科数で変わる？3教科以上は1万8000円（LIMO）",
+          "headline": "共通テスト検定料は3教科以上で1万8000円",
+          "points": [
+            "大学入学共通テストの検定料は受験教科数に応じて金額が異なり、3教科以上の場合は1万8000円となる。",
+            "出願時の教科数選択は受験生の経済的負担や併願戦略に直結するため、事前の正確な確認が不可欠である。"
+          ],
+          "takeaway": "志望校の受験に必要な教科数を早めに確定させ、検定料の予算と出願プランを親子で綿密に確認してください。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/25 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82a2lsNkpNR3ZQUVdCS0k5Nk13bU1KTmZxck81VjlGcmdyNDkxcTd2ZkR4UmhfVTVfMldQZEM2UjR0MXF0QTFvRGJuRnJzcVFuMlY0cUp0d0JQQmtPaUZUdDF6SUtXeC01ZzJfSkxOSDVCSEd6UnZfS2lkenVGcjQ?oc=5",
+          "is_new": false,
+          "badge_label": "🏅英語・検定",
+          "badge_cls": "badge-cert"
+        }
+      ]
+    }
+  }
+}

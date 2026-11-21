@@ -1,7 +1,30 @@
 {
-  "updated_at": "2026-11-20T10:15:17.953153+09:00",
+  "updated_at": "2026-11-21T09:47:25.657682+09:00",
   "count": 120,
   "articles": {
+    "8b4e7d0cce": {
+      "id": "8b4e7d0cce",
+      "category_id": "junior",
+      "title": "「偏差値アップ」「競争で勝つ」中学受験はもう限界 「みんなやっているから」の受験から立ち止まって 教育のプロが警鐘〈中学受験〉",
+      "raw_title": "「偏差値アップ」「競争で勝つ」中学受験はもう限界 「みんなやっているから」の受験から立ち止まって 教育のプロが警鐘〈中学受験〉 - AERA DIGITAL",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5PaGQtN3ZuNEVGdzBzN1ZoSHZSV2JISko4RFlNQzhXalYzVTl0RjRkSnNrWFhsdkNoODVmLUlWTmN2S01WMk5UV21KRUlIRTRiQlJUdVE4c0pVSnk5?oc=5",
+      "pub_date": "昨日 17:00",
+      "pub_iso": "2026-11-20T17:00:00+09:00",
+      "pub_ts": 1795161600,
+      "is_new": true,
+      "source": "AERA DIGITAL",
+      "badge_label": "📊模試・倍率",
+      "badge_cls": "badge-exam",
+      "score": 16.0,
+      "headline": "過熱する中学受験に教育のプロが警鐘",
+      "points": [
+        "偏差値や競争原理主義に囚われた「みんなやっている」という同調圧力型の受験熱が限界に達していると指摘された。",
+        "子どもの適性や主体性を無視した早期化・高額化する受験勉強が家庭や児童の精神面に与える負の影響が懸念されている。"
+      ],
+      "takeaway": "模試の偏差値だけに一喜一憂せず、我が子が本当に学びたい環境か再点検し、家庭の軸に沿った志望校選びを徹底しましょう。",
+      "is_ai_summary": true
+    },
     "f5d2253696": {
       "id": "f5d2253696",
       "category_id": "univ",
@@ -9,7 +32,7 @@
       "raw_title": "【大学受験2027】進研模試「合格可能性偏差値」10月版 - リセマム",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBTLXFNMk9wVEpsRWVOM2J0ZHZoNkFMX1ltUjdvdjdES3NWdV8takFVSTBqV3NocXYwNTl5OFhvTzg4elNYaGVGWkN1X2Q0eWxYTHEwczdxamFRVmpM?oc=5",
-      "pub_date": "本日 10:07",
+      "pub_date": "昨日 10:07",
       "pub_iso": "2026-11-20T10:07:53+09:00",
       "pub_ts": 1795136873,
       "is_new": true,
@@ -28,18 +51,18 @@
     "6fc7525650": {
       "id": "6fc7525650",
       "category_id": "junior",
-      "title": "2回入試になる「女子美」、お得な「トキワ松」、初回が好調な「吉祥女子」、八王子の2校復活できるか？東京女子校2【首都圏中学入試2027】（ダイヤモンド・オンライン）",
-      "raw_title": "2回入試になる「女子美」、お得な「トキワ松」、初回が好調な「吉祥女子」、八王子の2校復活できるか？東京女子校2【首都圏中学入試2027】（ダイヤモンド・オンライン） - Yahoo!ニュース",
+      "title": "2回入試になる「女子美」、お得な「トキワ松」、初回が好調な「吉祥女子」、八王子の2校復活できるか？東京女子校2【首都圏中学入試2027】 (ダイヤモンド・オンライン)",
+      "raw_title": "2回入試になる「女子美」、お得な「トキワ松」、初回が好調な「吉祥女子」、八王子の2校復活できるか？東京女子校2【首都圏中学入試2027】 (ダイヤモンド・オンライン) - Yahoo!ニュース",
       "description": "",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wVUtyMmhDQjd0ZWI0OFZMelk0LXZYVmZvR0Q2TFYxaThZdFNZV21LZ2daZjVGbDRPRlJwSVZBZ1plamo1bzJiT2ZQekgwUEZ1eExRc1Zpd0RXNW10QzVsRlA0WE9ITFF6U0RMVlptRVZrLXYzQU9mRjdmN3ROZEU?oc=5",
-      "pub_date": "本日 08:00",
-      "pub_iso": "2026-11-20T08:00:33+09:00",
-      "pub_ts": 1795129233,
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN3pNM1hrU3Z4bVBNVXZZa0hIMlJmTUV1d2FCNHJCX3h6Mk9RWTFwVHVUOGgxNHRrU1B2bU5lMFB3WXZVQk5KOVF5MXpfeDJDVmVrR0REeDJmZnJwUDVfdjNsbVA0eDEyYXE0azRRRUQ4RmZLdklGNWR4bzJ4OG13TzlzZUwxVmM4TDVQTFRB?oc=5",
+      "pub_date": "昨日 08:57",
+      "pub_iso": "2026-11-20T08:57:08+09:00",
+      "pub_ts": 1795132628,
       "is_new": true,
       "source": "Yahoo!ニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
-      "score": 20.5,
+      "score": 16.5,
       "headline": "女子美の2回化と吉祥女子の好調",
       "points": [
         "女子美が2回入試へ移行し、トキワ松がお得感のある日程で志願者集中の構えを見せている。",
@@ -55,14 +78,14 @@
       "raw_title": "早稲田大への「合格率」が高い首都圏中高一貫校ランキング 「御三家」を抑えて3位に躍進した公立一貫校は？【2026年版】 - AERA DIGITAL",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41SmdBekhOVjI3X3k5RXJtQ2R4NXRXZFZ1bEpUNlBxaHd4VzZtZmtOaGg1enBBcy03cmtuT0Ntb3RNS0c4VEFqNzBxY0w0OWFzYi02cGYyQk5wdVpM?oc=5",
-      "pub_date": "本日 06:30",
+      "pub_date": "昨日 06:30",
       "pub_iso": "2026-11-20T06:30:00+09:00",
       "pub_ts": 1795123800,
       "is_new": true,
       "source": "AERA DIGITAL",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
-      "score": 23.0,
+      "score": 19.0,
       "headline": "早稲田大合格率ランキングで公立躍進",
       "points": [
         "首都圏中高一貫校における早稲田大学への合格率ランキングが公表された。",
@@ -78,20 +101,43 @@
       "raw_title": "「中学受験で未来なんか決まらない」難関中学を辞退して公立に進んだ長男。3度の受験に伴走した母の本音 - OTONA SALONE",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5ycmktWDhxU1lEVDh1SXFmd0o2OGxOSnZOYkNaRkFueDBmR09tX2tzQzJmR1lDRUp1RHVTMnJTTXJzbi05VWc?oc=5",
-      "pub_date": "昨日 20:31",
+      "pub_date": "11/19 20:31",
       "pub_iso": "2026-11-19T20:31:53+09:00",
       "pub_ts": 1795087913,
-      "is_new": true,
+      "is_new": false,
       "source": "OTONA SALONE",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
-      "score": 20.5,
+      "score": 16.5,
       "headline": "難関中辞退と公立進選択の本音に迫る",
       "points": [
         "難関中学に合格しながら辞退して公立中学校へ進学した実例とその背景が語られている。",
         "3度の受験に伴走した母親の実体験から、中学受験が人生のゴールではない本質が問われている。"
       ],
       "takeaway": "合否や偏差値に囚われず、子どもの心身の健康と長期的な成長を見据えた進路選択の軸を家庭内で共有しましょう。",
+      "is_ai_summary": true
+    },
+    "a8c4bd2308": {
+      "id": "a8c4bd2308",
+      "category_id": "junior",
+      "title": "大手塾の特待生だった長男は「第二志望じゃ納得がいかない」と公立中学へ。大学生になった今、母が思うこと",
+      "raw_title": "大手塾の特待生だった長男は「第二志望じゃ納得がいかない」と公立中学へ。大学生になった今、母が思うこと - OTONA SALONE",
+      "description": "",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE14Ym9SQ0ZKUEZKT21kdFJ3djBEQ0pQQWRsem00SUxDT0dnV2xwYWZydHpVWGVJVHFPNEFrWmtDYlZtSUtUaEE?oc=5",
+      "pub_date": "11/19 20:30",
+      "pub_iso": "2026-11-19T20:30:48+09:00",
+      "pub_ts": 1795087848,
+      "is_new": false,
+      "source": "OTONA SALONE",
+      "badge_label": "💡学習・戦略",
+      "badge_cls": "badge-strategy",
+      "score": 14.5,
+      "headline": "特待生の長男が公立中へ進んだ実体験と教訓",
+      "points": [
+        "大手塾で特待生だった優秀な長男が、第二志望への不満からあえて公立中学進学を選択したリアルなドラマが描かれている。",
+        "大学進学時には納得のいく進路を切り開いており、中学受験の結果が人生のゴールではないという教訓が示されている。"
+      ],
+      "takeaway": "不合格や妥協進学がもたらす心理的リスクを想定し、万が一の進路でも前向きにリカバリーできる長期的な視野を持ちましょう。",
       "is_ai_summary": true
     },
     "6ca3e9430b": {
@@ -101,14 +147,14 @@
       "raw_title": "【中学受験2027】ボリュゾにお勧め！東京・神奈川の2/2午後入試を行う学校（まとめ）女子版（リセマム） - Yahoo!ニュース",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vV3NZaTVyNGxQUFVJT3BseGQ0N1NIaU52dnhkX3JESThtOURoNkgzNnBUOWhQVEsxRlpaQjlPV1pydFJjdWJreG5IcnZORFZEZDRKdDZfMFJUMkRpeG9EUldNejJ1NGFxTEp3ckNXV2ZSMmdkRTN1ZnM4MC1CQ2c?oc=5",
-      "pub_date": "昨日 13:15",
+      "pub_date": "11/19 13:15",
       "pub_iso": "2026-11-19T13:15:02+09:00",
       "pub_ts": 1795061702,
-      "is_new": true,
+      "is_new": false,
       "source": "Yahoo!ニュース",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
-      "score": 18.5,
+      "score": 14.5,
       "headline": "ボリュゾ向け東京神奈川の2月2日午後",
       "points": [
         "ボリュームゾーン層の受験生を対象に、東京と神奈川で2月2日午後に実施される女子校入試がまとまった。",
@@ -154,7 +200,7 @@
       "source": "日テレNEWS NNN",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
-      "score": 17.0,
+      "score": 13.0,
       "headline": "韓国の大学入試直前、AIカンニング防止へ異例の警告",
       "points": [
         "生成AI等を用いた高度な不正行為の急増を受け、韓国当局が入試を控える受験生に厳重な注意喚起を発令した。",
@@ -315,7 +361,7 @@
       "source": "リセマム",
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
-      "score": 10.0,
+      "score": 6.0,
       "headline": "埼玉県知事が文科相に高校無償化の交付金全額確保を要請",
       "points": [
         "埼玉県知事が文部科学大臣に対し、高校授業料無償化に伴う地方交付金の全額確保を直接強く要望した。",
@@ -354,14 +400,14 @@
       "raw_title": "大学入試センター、持参端末によるＣＢＴを検証 事前支援とトラブル対応に課題 - 月刊私塾界",
       "description": "",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04MW5tR1lHSGVEa18yc3NyT2pYNUJzVDQ1MEZrM0IxLVBLUmhPLTNSUGhNN2dobFNiUi1wRG90eDk4ekVlUFVlbmRmaTB3WVhOS3c?oc=5",
-      "pub_date": "昨日 11:54",
+      "pub_date": "11/17 11:54",
       "pub_iso": "2026-11-17T11:54:34+09:00",
       "pub_ts": 1794884074,
-      "is_new": true,
+      "is_new": false,
       "source": "月刊私塾界",
       "badge_label": "💡学習・戦略",
       "badge_cls": "badge-strategy",
-      "score": 16.5,
+      "score": 8.5,
       "headline": "大学入試のCBT化へ、端末持参方式の課題が浮き彫りに",
       "points": [
         "大学入試センターが個人所有端末を活用するBYOD型CBTの検証結果を公表した。",
@@ -2064,13 +2110,13 @@
       "badge_label": "📝制度・日程",
       "badge_cls": "badge-system",
       "score": 8.5,
-      "headline": "入試日程・募集定員・出願手続きの重要情報",
+      "headline": "群馬県公立高校ウェブ出願開始、脆弱性点検済みで安全に登録を",
       "points": [
-        "「群馬県公立高校入試、ウェブ出願の基本情報登録始まる PHPの脆弱性は点検済み」（みんなの学校新聞）に関するスケジュールや選抜要項の詳細が案内されています。",
-        "Web出願の事前登録期間や必要書類（調査書等）の準備、併願パターン別の手続き締切日の確認が重要です。"
+        "群馬県公立高校入試のウェブ出願に向けた基本情報の登録手続きが開始された。",
+        "懸念されたPHPの脆弱性については事前点検が完了しており安全に利用可能。"
       ],
-      "takeaway": "出願開始日・締切日・合格発表後の手続き期限を親子・教室で共有し、カレンダーに書き込んでダブルチェックを行いましょう。",
-      "is_ai_summary": false
+      "takeaway": "出願直前のトラブルを防ぐため、システムが空いている早期の段階で基本情報の登録と動作確認を確実に済ませましょう。",
+      "is_ai_summary": true
     },
     "54dde8181c": {
       "id": "54dde8181c",
@@ -2667,50 +2713,6 @@
         "首都圏入試の早期化や千葉エリア特有の併願パターン変化に対応するため、正確な数値把握が合格への鍵となる。"
       ],
       "takeaway": "最新の偏差値と定員を基に、安全校と挑戦校のバランスを見直した上で、早期の過去問演習計画を立てましょう。",
-      "is_ai_summary": true
-    },
-    "d50a72c5db": {
-      "id": "d50a72c5db",
-      "category_id": "high",
-      "title": "＜令和９年度神奈川県公立高校入試＞速報！募集定員【学習塾ステップ】",
-      "raw_title": "＜令和９年度神奈川県公立高校入試＞速報！募集定員【学習塾ステップ】 - YouTube",
-      "description": "",
-      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5PYmtNWW9VWlhScEZLd21EUGlsajJEZDN1WkpQeWh3UzM5LW90ZzFXcmx6cVRFZ1BkV01IQkx6UWpHZw?oc=5",
-      "pub_date": "10/27 20:38",
-      "pub_iso": "2026-10-27T20:38:42+09:00",
-      "pub_ts": 1793101122,
-      "is_new": false,
-      "source": "YouTube",
-      "badge_label": "📝制度・日程",
-      "badge_cls": "badge-system",
-      "headline": "令和9年度神奈川県公立高校入試の募集定員が発表",
-      "points": [
-        "学習塾ステップにより、令和9年度入試における神奈川県立高校の募集定員速報いち早く公開された。",
-        "近年の受検者動向を踏まえた各校の定員増減は、志望校選びや模試の志望校判定に直結する重要な情報となる。"
-      ],
-      "takeaway": "最新の定員変化を確認し、志望校の合格ライン変動を予測して秋以降の学習計画をブラッシュアップしましょう。",
-      "is_ai_summary": true
-    },
-    "8e6c26adf1": {
-      "id": "8e6c26adf1",
-      "category_id": "univ",
-      "title": "【大学受験2027】聖学院大が新入試、外国ルーツ生徒の学びを支援",
-      "raw_title": "【大学受験2027】聖学院大が新入試、外国ルーツ生徒の学びを支援 - リセマム",
-      "description": "",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMWHdleVZISlVmbHFORXloZTV2T05JTno0STJLbnFscUtXd2hxb21YcEtkUnBCQll3QVlIT193ODkzSnh2ck92RmtvSHZudFpOZGNPcXlxWnNBb2JB?oc=5",
-      "pub_date": "10/27 19:45",
-      "pub_iso": "2026-10-27T19:45:03+09:00",
-      "pub_ts": 1793097903,
-      "is_new": false,
-      "source": "リセマム",
-      "badge_label": "💡学習・戦略",
-      "badge_cls": "badge-strategy",
-      "headline": "聖学院大が2027年新入試で外国ルーツの生徒支援を導入",
-      "points": [
-        "2027年度入試より外国ルーツを持つ生徒の多様な学びを支える新たな選抜方式を導入する。",
-        "グローバル化が進む大学受験において、バックグラウンドに配慮した評価軸が注目されている。"
-      ],
-      "takeaway": "外国ルーツの生徒を持つ家庭は、2027年以降の総合型や推薦の出願資格を早めに確認しておこう。",
       "is_ai_summary": true
     }
   }
