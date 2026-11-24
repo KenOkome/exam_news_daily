@@ -1,0 +1,328 @@
+{
+  "date": "2026-11-24",
+  "updated_at": "11月24日 13:17",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "【中学受験調査】首都圏入試の多様化と直前期の戦略的学校見学",
+        "summary": "直近1週間は、新タイプ入試や英語入試の急増、公立一貫校の大学合格力躍進など、中学受験の多様化が浮き彫りになりました。また、大手塾トップが語る長期戦略や佐藤ママらが説く親のサポート論など、直前期に向けた実践的な情報が交錯しています。",
+        "key_trends": "明大世田谷・城北・大妻などの入試変更や女子美の2回化、吉祥女子の好調など私立中の動向が活発です。さらに公立一貫校の早稲田大合格率ランクインや英語入試・新タイプ入試の増加は、今後の学校選びや併願戦略に大きな影響を与えています。",
+        "advice": "今週末開催の学校見学を直前期の気分転換と志望校の最終確認に活用しましょう。また、完全な自立を促すのではなく、短時間でも愛情が伝わる毎日の声かけや体調管理を継続し、千葉・埼玉の初陣を見据えた現実的な併願作戦を固めてください。",
+        "analyzed_at": "11/24 13:17"
+      },
+      "news": [
+        {
+          "id": "90c7343137",
+          "category_id": "junior",
+          "title": "【中学受験】今週末行ける中高一貫「学校見学」11/28-29…栄光学園、明大明治など10校",
+          "headline": "今週末開催の中高一貫校見学情報",
+          "points": [
+            "11月28日と29日に栄光学園や明大明治など首都圏の注目校10校で学校見学が実施されます。",
+            "直前期のモチベーション維持や志望校最終決定に向け、実際のキャンパスの雰囲気を体感できる貴重な機会です。"
+          ],
+          "takeaway": "直前期の気分転換を兼ねて、志望校の校風を直接肌で感じ直すラストチャンスとして活用しましょう。",
+          "source": "リセマム",
+          "pub_date": "本日 10:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaQm1BcXdyR1dTbWt4Q05OcEVnVjR1NE9DcHhMUkY0ZFRaakdpWnBHaE9yZmwxSEcycVpWdm85TE1vSlFZZjNFZGJvWmc4LXVNSVl4blNUOUZkQm9D?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "f810128146",
+          "category_id": "junior",
+          "title": "2026年の経営者：私塾を源流に中学受験を支える――茂呂真理子 日能研社長CEO兼COO",
+          "headline": "日能研社長が語る中学受験の変遷",
+          "points": [
+            "私塾を源流に持つ日能研の茂呂真理子社長CEO兼COOが、現代の中学受験を支える役割について語っています。",
+            "激変する社会環境の中、長年の指導実績に基づく教育理念や今後の業界展望が示されている注目インタビューです。"
+          ],
+          "takeaway": "大手塾のトップの考え方から、今後のトレンドや長期的な受験戦略の軸を読み取り保護者会等で共有しましょう。",
+          "source": "週刊エコノミスト Online",
+          "pub_date": "本日 05:04",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9IWWgwSmpsUHlYMkZQQmdTU3lydjFEMDZSSDd6aHJOU3VQdGFJWE5sTklneG5ReEJ0T1p6eUJhN3BxWjhFYmo1UU9LSGhrYmpmd2ppYnhoM3Rabm84eHAtRlBQN0lnTDd2Q0ZEOHM3WHRFUVJEZ0xWRVZzNjB2eHM?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "19fc33952c",
+          "category_id": "junior",
+          "title": "中学受験、親が忙しくても「ちょっとだけ手をかけてあげる」と子どもは温かいものを感じる 佐藤ママ×安浪京子さんが語る〈中学受験〉",
+          "headline": "佐藤ママ×安浪京子が説く親の関わり方",
+          "points": [
+            "多忙な保護者でもちょっとしたサポートを重ねることで、子どもが温もりを感じ安心感を得られると語られています。",
+            "佐藤ママと安浪京子氏という著名な専門家が、直前期の親子関係のあり方やメンタルケアの極意を伝授しています。"
+          ],
+          "takeaway": "完全に手を離すのではなく、毎日の声かけや体調管理など短時間でも愛情が伝わるサポートを継続しましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "昨日 17:03",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iNVpoVWZUQmdqRjN6Q3R5R2RzeDFVQVE4UTk3VEdqTUpicERGOENNSDFDR1g4eUlfNFVXZWtqVDVFYUd5VnZPWVVUalA3THRaUjRFRjlmbHM4OS1B?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "814dcb1fcf",
+          "category_id": "junior",
+          "title": "中学受験で増える“新タイプ入試”のメリットは？ 「合格しても、うまくいかなかったとしても主体性が育つ」と受験のプロ〈中学受験〉",
+          "headline": "主体性が育つ中学受験の新タイプ入試のメリット",
+          "points": [
+            "思考力や表現力を重視する新タイプ入試は、合否に関わらず受験生の主体的な学びの姿勢を育てる。",
+            "従来の暗記中心から脱却した入試問題が、これからの時代に必要な根本的な学力を引き出している。"
+          ],
+          "takeaway": "合否だけに囚われず、記述・探究型入試の過去問に挑戦することで、子どもの思考力や自ら学ぶ姿勢を大きく伸ばしましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/21 17:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9faTZzYVpFaS1aRC10SlZjSXJrZzZSdVZpYnRKdTlNWUExSUNNMkNUdXZ5RThtMVM4bWFPSEE2RnFDdTRkVDY1SGhwcTg4dC1BWTRFRXkyY2xEazlv?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "463bf52283",
+          "category_id": "junior",
+          "title": "早稲田大への「合格率」が高い首都圏中高一貫校ランキング 「御三家」を抑えて3位に躍進した公立一貫校は？【2026年版】",
+          "headline": "早稲田大合格率ランキングで公立躍進",
+          "points": [
+            "首都圏中高一貫校における早稲田大学への合格率ランキングが公表された。",
+            "伝統的な御三家を抑えて公立一貫校が3位に躍進し、進学実績の勢力図に変化が生じている。"
+          ],
+          "takeaway": "中高一貫校選びでは大学合格数だけでなく在籍者数に対する合格率の実績も重視して学校研究を行いましょう。",
+          "source": "AERA DIGITAL",
+          "pub_date": "11/20 06:30",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41SmdBekhOVjI3X3k5RXJtQ2R4NXRXZFZ1bEpUNlBxaHd4VzZtZmtOaGg1enBBcy03cmtuT0Ntb3RNS0c4VEFqNzBxY0w0OWFzYi02cGYyQk5wdVpM?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "308800f11a",
+          "category_id": "junior",
+          "title": "【中学受験2027】千葉県私立中学の入試日程・定員・偏差値まとめ（男女）",
+          "headline": "2027年千葉県私立中入試日程と定員",
+          "points": [
+            "2027年中学受験に向け、千葉県内私立中学校の入試日程や定員および偏差値データが総まとめされています。",
+            "年々変化する千葉エリアの併願パターンや難易度の基準をいち早く把握できる重要な最新情報です。"
+          ],
+          "takeaway": "千葉入試は首都圏の初陣として重要です。早い段階でデータを網羅し、現実的な併願作戦の立案に役立てましょう。",
+          "source": "リセマム",
+          "pub_date": "10/28 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hUlN6WFlXSTZ3S1lMVFR6cllWYkp4Y2pGZlBycktuWkNHSUNkdTUzMlktNTgwX05jMWRXUGEtRUl3dXFEd1J3Q1RfV3FraUFJd2tDNDdObklDYjRw?oc=5",
+          "is_new": false,
+          "badge_label": "📍千葉注目",
+          "badge_cls": "badge-chiba"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "首都圏高校入試の最新動向：多様化する受検選択肢とデータ分析の重要性",
+        "summary": "今週は内申不要の都立チャレンジスクールや神奈川の定時制入試データ、公立中卒業生進路が注目を集めました。また、千葉県の選抜方法公表や埼玉県等の出願・無償化を巡る動きもあり、多様化する選抜基準への対応が急務となっています。",
+        "key_trends": "不登校生徒向けの都立チャレンジスクールやエンカレッジスクールが注目され、学力検査以外の評価方法への対策が不可欠です。さらに、神奈川の定時制データや埼玉県等の倍率変動予測を踏まえた、多角的な併願校選びが求められています。",
+        "advice": "公開された模試や定時制の平均点、進路データを活用し、自身の基礎学力の定着度を客観的に確認しましょう。初期の倍率に惑わされず、出願時の変動を見据えた併願校の再検討と過去問対策を早めに進めてください。",
+        "analyzed_at": "11/24 13:17"
+      },
+      "news": [
+        {
+          "id": "aff370a6c5",
+          "category_id": "high",
+          "title": "【11/26無料オンライン開催】不登校から東京都立高校へ！内申点に頼らない高校受験、チャレンジスクール・エンカレッジスクールを徹底解説",
+          "headline": "不登校からの都立挑戦！内申不要の学校群",
+          "points": [
+            "11月26日に不登校経験者向けの都立チャレンジスクールやエンカレッジスクールを徹底解説する無料オンラインセミナーが開催される",
+            "中学の評定に自信がない生徒や不登校を経験した受験生にとって、新たな一般・特別選抜の選択肢として非常に重要な情報となる"
+          ],
+          "takeaway": "内申点に不安のある生徒は、作文や面接など学力検査以外の評価方法を確認し、早期に出願準備と過去問対策を進めましょう。",
+          "source": "PR TIMES",
+          "pub_date": "本日 11:30",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wQzcwNm1ycEE4b08zYkViSkZZQkh0NHlGVzQ0VXBPNU4yMTlrbXZLLTQtdjlrbTd6cWpSVmc1dGVVLXFoMDF3aGRVQkV0VFpwS2ZkNXQ2dVZqeG5WaVZZTndtUTNwT2swZmc?oc=5",
+          "is_new": true,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "a1544f4152",
+          "category_id": "high",
+          "title": "「税に関する高校生の作文」表彰式",
+          "headline": "高校生の税の作文表彰式で思考力を評価",
+          "points": [
+            "埼玉県内で「税に関する高校生の作文」の表彰式が開催され、生徒たちの優れた作品が称えられた",
+            "社会的なテーマに対する高校生の関心の高さや、主権者教育としての作文コンクールの重要性を示すニュースである"
+          ],
+          "takeaway": "推薦入試や総合型選抜を控える受験生は、こうした社会問題への関心や作文力が入試の自己PRに直結することを意識しましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "本日 10:44",
+          "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOVVhETmJ6Y2s0M3RSc0xLcDdjR3lZckhPWmtHMmM5N05vN1VablBaNHY1N282bjdNUW9tWkFpNUtlYWlNNFpiRzVURElIOVdaTC1XQkxyOHIxUTlWM252TDJiLW9lYndPSDFVN1BsWjJ1VFRvdV9PemY1eHoyWllrZHZQWTN0ZmpVSUtvcDFXR1FTSzdTSjY3SGRrbUEtelR6LTJUTHZKMGp3Y2VGbl80VXcyN1ZYTzUtZHZZTGRpVmgwcUhtUGJCMzlpNUlVaEhfalBiNFlESk1XdzNVdVk0YnpPMlpsS3hPOUtENlFNcjByMW9ubGtWanlseEF4V01RVkRsaG04X0ZLeFNETGtXUUpOc1JORmxrWXc?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "998d903e0a",
+          "category_id": "high",
+          "title": "関東高校囲碁県予選2026 結果",
+          "headline": "関東高校囲碁県予選2026の結果が判明",
+          "points": [
+            "2026年度の関東高校囲碁県予選の結果が発表され、各校の代表選手や優秀な成績を収めた生徒が決定した",
+            "部活動における知的な競技の活性化と、難関校受験生も多く所属する囲碁部でのハイレベルな戦いが浮き彫りになった"
+          ],
+          "takeaway": "文武両道を掲げる進学校では部活の実績がモチベーション管理に直結するため、部活引退時期と受験勉強の切り替えを逆算しよう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "本日 10:44",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNN2oyU3ZDUm01aTRqUlNHRG1OWXVHZnNnOTFZYUc2TUJJRlFlNlEtVDRjZmxQMk10ZGZ4Y1kxa09abmNDdm1OdzdGWmdxalRqZktjUnlYUjlVVkxwXzJrUFNZMzVOSG9SZWxoTDJNZm04enFFZFhXWlk5Z1kwcXRUY21DNGM5N2Z6aHhYbm9TNWxfS2hlQUJKbWIwSmlySEhqSmFJY05KdHZ0dkQ0a05oVnJGZjFQdlQtM2RDdlZ1YTM2V19tSUJrZnEwY3h1NkYyXzJUSlZuUHVKMEZ0a1VxTFZlUV9vbmpnei1DMDA0SQ?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "3952206c1b",
+          "category_id": "high",
+          "title": "神奈川の公立高校入試（定時制） ２０２６年度の平均点と得点分布 データで見る高校入試",
+          "headline": "神奈川公立定時制入試の平均点・分布公開",
+          "points": [
+            "神奈川県教育委員会等より2026年度の公立高校定時制入試における平均点と詳細な得点分布データが発表された",
+            "多様な学びの受け皿となる定時制の難易度や学力層の傾向を正確に把握し、適切な志望校選定を行うための必須データとなる"
+          ],
+          "takeaway": "定時制を視野に入れる受験生は、公開された平均点と自身の模試の得点を比較し、基礎学力の定着度を確認して対策を練りましょう。",
+          "source": "カナロコ",
+          "pub_date": "本日 05:00",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00bjYxTi1sOWo3VzJweVNubTRHMTBxbUhYXzMtTW55b1JGYjlyZUdXbG9DWVZRMF85dFBZZF9WeWVXTnF6b3lSdGp4TVFNbFNIRkcyVzRiNzN4UFlJOU84MU0xY2F4a3hhV19mXw?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "0d8dd083b9",
+          "category_id": "high",
+          "title": "神奈川の中学生の進路先、注目点は？２０２６年春の公立中卒業生まとめ データで見る高校入試",
+          "headline": "神奈川公立中卒業生の進路データ解読",
+          "points": [
+            "2026年春の公立中学校卒業生の進路動向に関する最新データが公開された。",
+            "私立高の授業料無償化や共通選抜の制度変更を見据えた受験生の動きが注目される。"
+          ],
+          "takeaway": "志望校選びの基準が変わるため、最新の私立動向と公立倍率の変化を早めに比較検討しましょう。",
+          "source": "カナロコ",
+          "pub_date": "昨日 05:00",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TWHdXS3dNMFFQeDZOVXVnRE5pNk1yeVlOcWIxMWNTRTMxRDJDd2RHVVdpSlV3dEdlMWpuN29WcXNSQ1A5aEFMaXhBYVRJcm1ERjdWbjIwZEtmQ0UyWkxzbmxwUkJEbHZFYk1ZXw?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "20c89d6278",
+          "category_id": "high",
+          "title": "【令和9年度入試】 第1回調査から出願時まで、倍率はどう変化するか＜前編＞",
+          "headline": "令和9年度入試へ向けて追う倍率の変動",
+          "points": [
+            "第1回進路希望調査から実際の出願時までの倍率の変化傾向を詳細に分析している。",
+            "埼玉県内の高校受験生を対象に、志望校決定プロセスにおける実用的なデータを提供。"
+          ],
+          "takeaway": "初期の希望調査の倍率だけに惑わされず、出願時の変動予測を見据えた併願校戦略を早めに立てましょう。",
+          "source": "埼玉新聞社 高校受験ナビ",
+          "pub_date": "10/30 16:00",
+          "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNX3ZWX2p3TnMzNUF5ZW1NR21YMmx1RW9IajF1SmE1LVRHYWR2aUI0S19nUXh5OTY2bTBsV0hSSkVkMnhkOHU1dHdCWktsbm8zdmw3RXZ0UExXcHVBWGNTbkM4Q0lzVVNRTWFEbW45UnE4TVc1MXBNRVRCYkt0Q3ViYVhzanhHajFWV19adVRMeC1POHNrWFdGWExkNTRWRjlyekt3X1hPSExncU93bEV5SnBqU21yOHJRRDN1SVZBeUZldmVtMVpJbTdHbzI5bFNIQW5neXhDY2lXcngzSklGREVLZDZZeGtaQWNuTWtZQlF0T0dfd1NHR2lSWHI5aXFFcG5aWnNyUGE1SkJOclhLcGVRM0FHVXBaRWIzM3VEeTEzX3VjWmRwZkp6M0ZTU0ZweEtoWjZoZzR5QkRrM3ZIb2dqdV9nS1BoMEZTLUpCdVBmdVllemRhZXNR?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "首都圏難関大志向と総合型選抜の歪み、今週の入試動向分析",
+        "summary": "直近1週間は2027年入試に向けた東大志望者増など難関大志向の鮮明化や、総合型選抜における経済・体験格差の歪みが浮き彫りとなった。また、首都圏受験塾ランキングの発表もあり、戦略的な情報収集が急務となっている。",
+        "key_trends": "東大志望者増を中心とした国公立の難関大志向が鮮明化する一方、総合型選抜では不透明な基準や塾への依存、経済・体験格差が課題として指摘されている。また、塾選びではランキングの総合点だけでなく個別適性の見極めが重要である。",
+        "advice": "高1・高2生は早期の模試活用で基礎固めを徹底し難関大の水準に備えよ。総合型選抜利用者は塾への過度な依存を避け高校と密に連携を。塾選びは体験授業を活用し適性を必ず確認すること。",
+        "analyzed_at": "11/24 13:17"
+      },
+      "news": [
+        {
+          "id": "561a8dfcd9",
+          "category_id": "univ",
+          "title": "オリコンニュース：首都圏の大学受験塾＆個別指導塾2026年最新版、現役高校生、大学生のおすすめは？",
+          "headline": "首都圏受験塾ランキング2026最新版発表",
+          "points": [
+            "現役高校生と大学生を対象とした首都圏の大学受験塾および個別指導塾の最新おすすめランキングが公開された。",
+            "多様化する大学入試や新課程への対応力を背景に、指導スタイル別の満足度や評判が詳細に比較されている。"
+          ],
+          "takeaway": "塾選びの際はランキングの総合点だけでなく、子どもの性格や志望校のレベル、集団・個別の適性に合致するかを体験授業で必ず確認してください。",
+          "source": "毎日新聞",
+          "pub_date": "昨日 10:00",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SdVplTEVWX2p3WHNTUmptSGxYOWFXRjJXZDFqY29Cb0hZLU4wQVhGZEgwS3VGNkpzeVhocTVKYWZLdGgxRWNndG0wMlZIU0JtTTFIMFNvcGFMaGQ2WmdHT2g3QmdNeTZM?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "f39b8ec471",
+          "category_id": "univ",
+          "title": "韓国教育相が辞意表明 大学入試「準備不十分」",
+          "headline": "韓国教育相が辞意表明、入試混乱の責任",
+          "points": [
+            "韓国の教育相が入試準備の不十分さを理由に辞意を表明し政権の大きな痛手となる。",
+            "国家規模の入試制度における直前の混乱は受験生の心理面に大きな動揺を与える。"
+          ],
+          "takeaway": "海外の入試トラブルも他山の石とし、日本の受験生は情報に惑わされず自身の学習計画に集中させることが重要。",
+          "source": "東京新聞",
+          "pub_date": "11/22 14:11",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12Z2xYWm9fenYxLVVCLXVSaWYyVDQzZnpXa2ZzTjdVYWFRQ3pQcHNDUHpMQklEZGNvWlY1YWdFcHJ5Rjl0SnBxRG1CYjJEUU1nRldr?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "3242ace9a9",
+          "category_id": "univ",
+          "title": "2027年大学入試予測・国公立編 東大志望者が大幅増、「難関大志向」が鮮明に（高校生新聞）",
+          "headline": "2027年国公立入試は東大志望者増で難関大志向が鮮明化",
+          "points": [
+            "東大をはじめとする難関国公立大学の志望者が大幅に増加する傾向が予測されています。",
+            "安定志向の裏返しとして、上位層を中心にトップ校への挑戦を譲らない難関大志向が強まっています。"
+          ],
+          "takeaway": "高1・高2段階から基礎固めを徹底し、早期の模試活用で難関大の要求水準に届く学力を計画的に養成してください。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/21 18:01",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1X3VESU9hS2ZVVm9uUkx0RktLZnNZME5lMHpYNjZqbW5nWXctaWJqNFNoOGtPbkltTUd5M1AxcTYwR3BsOE1Pc0loZThlb1hRd0hFX3VVSXM5TUkyc1h1QXBrQ3E4aFNodk83a0NKbG5McmhRdFgxR01zZFVEMXc?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "e2dcbe15c5",
+          "category_id": "univ",
+          "title": "「200万円払っても落ちた」大学入試“総合型選抜”の合格基準は不透明？ 塾依存や経済・体験格差の壁 専門家は「むしろ高校側の情報不足」指摘も…広がる“歪み”制度の現状とは（ABEMA TIMES）",
+          "headline": "総合型選抜の不透明さと経済・体験格差の歪みが浮き彫りに",
+          "points": [
+            "高額な塾費用や課外活動の格差が合否に影響するという総合型選抜特有の構造的課題が指摘されています。",
+            "専門家からは、制度自体の問題だけでなく、高校側の情報提供や指導体制の不足も原因として挙げられています。"
+          ],
+          "takeaway": "総合型選抜を利用する際は、塾への過度な依存を避け、高校の進路指導部と密に連携して独自の実績作りを進めましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/21 17:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKdGNpTS1fOEpGdnB0eFNncE10bl9Sekc1MXJlb1pHU2F0Z3ZmWkdjeXlDaWl4X1F4a256eUpNYVEyLUV5aFNuYUZhcGZMZjBjdmpBM0cyQlJBdkZna1hvOVVBRWkwVFR2NmVpX0R0ZnM2cW5vVjgtbGhBZG03WXc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "aac4de6d06",
+          "category_id": "univ",
+          "title": "“AIカンニング”相次ぐ韓国で大学入試の共通テスト控え、受験生に注意喚起（2026年11月18日掲載）｜日テレNEWS NNN",
+          "headline": "韓国の共通テストでAIカンニング懸念と厳戒態勢が波紋",
+          "points": [
+            "韓国の大学修学能力試験において、AI機器を用いた巧妙な不正行為に対する注意喚起が相次いで発令されました。",
+            "テクノロジーの急速な発展に伴い、国内外のペーパーテスト全般で公平性担保の仕組み作りが急務となっています。"
+          ],
+          "takeaway": "試験の厳格化が進むグローバルな動向を念頭に置き、受験生は公正な努力をベースとした実力勝負の対策に集中しましょう。",
+          "source": "日テレNEWS NNN",
+          "pub_date": "11/18 17:24",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaHdCNWpzalVlWjc5LXdPRW1DSGJkZnBuVk5IXzBIN0VkMk50VmNNYjdTcFFoa1pvTkFMNDJabjA0OFF4eFR3c0FHWkd4bVNwaWQwM0ZhYlZlWWIza1RDeHdyWWdEMnpqcUFOTWkyM25tQTJ1a0l6NlIyV1ZvM0F2SXBwRGU?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    }
+  }
+}
