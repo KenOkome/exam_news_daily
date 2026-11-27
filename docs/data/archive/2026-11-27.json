@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-27",
+  "updated_at": "11月27日 11:09",
+  "categories": {
+    "junior": {
+      "report": {
+        "title": "首都圏中学受験：2027年入試へ向けて模試データと併願戦略の全貌",
+        "summary": "直近1週間は四谷大塚第5回合不合判定テストの偏差値判明やSAPIX本部長による最新動向解説が相次ぎました。千葉県立中の志願者増傾向もみられ、模試の判定と併願パターンの見直しが本格化しています。",
+        "key_trends": "慶應中等部や広尾学園小石川、安田学園などの共学校で狙い目入試回への注目が高まっています。また、英語入試ガイドの公開や時事問題対策講座の本格化など、多様化する入試形式への対応が急務です。",
+        "advice": "直近の模試偏差値と過去問の正答率を突き合わせ、得点源と失点分野のギャップを埋める対策を徹底してください。複数回入試校は相性を見極め、出願回を早期に確定させましょう。",
+        "analyzed_at": "11/27 11:09"
+      },
+      "news": [
+        {
+          "id": "5a6c6acd8c",
+          "category_id": "junior",
+          "title": "難関中学校で類題の実績！─2027年度中学入試に向けて、2026年重大ニュースを“得点源”にするTOMAS「コレ時事オンライン講座」配信中",
+          "headline": "TOMAS、2026年時事を的中へ導くオンライン講座配信",
+          "points": [
+            "2027年度中学入試を見据え、2026年の重大ニュースを難関校の合格点へと直結させる特化型講座。",
+            "過去の難関中での高い類題的中実績を背景に、効率的な時事問題対策として直前期の得点源を確立。"
+          ],
+          "takeaway": "時事問題の対策を後回しにせず、今のうちから重要ニュースの背景まで深く理解する学習を取り入れましょう。",
+          "source": "PR TIMES",
+          "pub_date": "昨日 18:30",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14bERMc2lZSFVGTjYyNndnMVlwa3kySHhBRXh0QW5fMXo0WGNwWXB5TG0tdGYyVHpad1F2Yk9LRXlBcWFtTHFmeENxTXRNeFhhM1I5U1UwVUhLRzVfU1VxblhNLTI4MFZRUnc?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "1fba16c5f6",
+          "category_id": "junior",
+          "title": "【2027年中学受験】何が変わる？ 午後入試・英語・併願校選び…SAPIX本部長が最新動向を解説（リセマム）",
+          "headline": "SAPIX本部長が読み解く2027年中学受験の最新動向",
+          "points": [
+            "2027年入試における午後入試の拡大、英語導入校の増加、併願校選びの劇的な変化を詳細に解説。",
+            "首都圏の上位校・難関校を目指す受験生に向け、多様化する入試制度への戦略的な適応法を提示。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえ、併願パターンの早期見直しと英語型入試・午後枠の活用可能性を検討してください。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "昨日 14:45",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9manVEQmR1ekNUQVJoUXQ1Vi1mOUdfcWpJOE1fcHhqUUtCUjZqMWltZnh0dTlfYjM0bzlpSlRHWV9yMGw0U0lDTWZ1c0VaQUpJSU9LTGg1MDNGSmJxZ2VqWGZEa0RFUklYM1kyNk82YXhNUFFPbXEwZ2VHOXpvN0k?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "0e15aa7bae",
+          "category_id": "junior",
+          "title": "【中学受験2027】人気校の併願先は…四谷大塚「第5回合不合」トップ20",
+          "headline": "四谷大塚合不合から分析する最難関校の併願戦略",
+          "points": [
+            "第5回合不合判定テストのデータに基づき、人気校の具体的な併願先上位20校が判明した。",
+            "首都圏の難関校を目指す受験生にとって、最新の併願パターンを把握することは直前期の出願校選定に直結する。"
+          ],
+          "takeaway": "模試の判定だけでなく、上位校の実際の併願動向を踏まえて第2志望以下の過去問演習の優先順位を再調整してください。",
+          "source": "リセマム",
+          "pub_date": "昨日 10:45",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vVG14bHItajJUNjVrZHJMS3dQRld1NWlsTm1CWVBKYUlESFMwSEJfT3hBZE51R2tpeTZUaTg3V01qaDlxMnQzXzVuY2gydGRwZml3cDFiTG1jMm5k?oc=5",
+          "is_new": true,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "11314dff2c",
+          "category_id": "junior",
+          "title": "【中学受験2027】四谷大塚、第5回合不合判定テスト（11/15実施）偏差値…筑駒74・桜蔭70",
+          "headline": "第5回合不合テストの難関校最新偏差値が判明",
+          "points": [
+            "四谷大塚が11月15日に実施した第5回合不合判定テストの偏差値が公表され、筑駒が74、桜蔭が70となった。",
+            "秋以降の受験生全体の学力層の移動や志望校別の位置づけを正確に測るための極めて重要な指標となる。"
+          ],
+          "takeaway": "今回の偏差値と判定を直近の過去問正答率と突き合わせ、得点源と失点分野のギャップを早期に埋める対策を徹底しましょう。",
+          "source": "リセマム",
+          "pub_date": "11/25 19:03",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IWm83cDRTc0xROFU2NzhydnU3dHUzd0UtY3BrVTJvSnB3djMyMDVfR3Rja2FkN2JGRkZKcWZIa0QxVUlJV3R1Y1JHUGJiMFB2cWFvaWF5bFYxeTRw?oc=5",
+          "is_new": false,
+          "badge_label": "📊模試・倍率",
+          "badge_cls": "badge-exam"
+        },
+        {
+          "id": "c76a224e70",
+          "category_id": "junior",
+          "title": "【中学受験】帰国生・英語入試ガイド無料公開、120校を網羅",
+          "headline": "帰国生・英語入試120校網羅ガイドが無料公開",
+          "points": [
+            "全国120校の中学校における帰国生入試および英語入試の情報を網羅したガイドが新たに無料公開された。",
+            "グローバル教育に力を入れる私立中が増加する中、英語資格や帰国生枠の選択肢を広げる貴重な資料となる。"
+          ],
+          "takeaway": "帰国生や英語選択を視野に入れている場合は、出願資格や試験形式の細かい違いをこのガイドで早めに確認しておきましょう。",
+          "source": "リセマム",
+          "pub_date": "11/25 13:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rOW1kQjdyenZZM1RZdEgteDdha1NDSEpzYUZvRnZrRkxGU0pMZUJKa2RoUURBTnFDZGRUOFJTRy1qY3M2ajhfamRZRHFOWUZ3eE1yV2xoSUpLdGRZ?oc=5",
+          "is_new": false,
+          "badge_label": "🏅英語・検定",
+          "badge_cls": "badge-cert"
+        },
+        {
+          "id": "b51503b384",
+          "category_id": "junior",
+          "title": "女子人気が高まる「慶應義塾中等部」、好調な「広尾学園小石川」「安田学園」の狙い目入試回 東京共学校1【首都圏中学入試2027】",
+          "headline": "慶應中等部と広尾小石川・安田学園の狙い目入試回",
+          "points": [
+            "女子人気が急上昇する慶應中等部をはじめ、好調な広尾学園小石川や安田学園の具体的な狙い目入試回が解説された。",
+            "東京の共学校人気が過熱する中で、合格確率を高めるための正確な入試回選びが合否を分けるカギになる。"
+          ],
+          "takeaway": "志望校の倍率変動を見据え、複数回チャンスがある学校はどの回を受験するか過去問の相性も含めて今すぐ決定してください。",
+          "source": "ダイヤモンド・オンライン",
+          "pub_date": "11/24 16:00",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE16cVFNczlTRm9sU2pWa2lySmRVek4xeWdSV013VHdpV2Y2UVJuSnJSRlU0QktCVnptc3dNVGsxTXAyaFdtMmJZU19QYTc?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "high": {
+      "report": {
+        "title": "【高校受験】内申不要の都立入試と首都圏の最新動向分析",
+        "summary": "今週は内申点に頼らない都立のチャレンジスクールやエンカレッジスクールに関するセミナーが開催され、不登校等の生徒に対する多様な受検選択肢が注目を集めました。また、都立高の部活動におけるプロ指導導入やESAT-Jの実施など、教育環境の充実に向けた動きが活発化しています。",
+        "key_trends": "東京都では内申点に不安のある生徒向けの受験制度や不登校支援校への関心が高まり、早期の出願準備と過去問対策の重要性が増しています。さらに、神奈川や埼玉など首都圏全体で公立・私立の進路データの分析が進み、多様化するニーズに合わせた学校選びが求められています。",
+        "advice": "内申点に不安がある場合は、作文や面接など学力検査以外の評価方法を確認し、早めに出願準備と過去問対策を進めましょう。また、志望校を選ぶ際は進学実績だけでなく、部活動の指導体制やプロ派遣の実績なども含めて3年間打ち込める環境かをチェックすることが重要です。",
+        "analyzed_at": "11/27 11:09"
+      },
+      "news": [
+        {
+          "id": "7f562c95aa",
+          "category_id": "high",
+          "title": "個別指導塾「キズキ共育塾」、「内申点に頼らない東京都の高校受験」26日開催",
+          "headline": "内申点不要の都立受験を解説！キズキ共育塾が26日セミナー",
+          "points": [
+            "キズキ共育塾が不登校や起立性調節障害の生徒を対象とした「内申点に頼らない東京都の高校受験セミナー」を26日に開催する。",
+            "オール1や不登校の経歴があっても受験可能な学校選びや、本番の学力検査で逆転合格を狙う具体的な学習戦略が明かされる。"
+          ],
+          "takeaway": "内申点で不利な生徒は一般入試や推薦の仕組みを早めに理解し、当日の学力試験一発勝負に特化した対策を今から計画的に進めましょう。",
+          "source": "ICT教育ニュース",
+          "pub_date": "11/25 15:18",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fTlNQVV9UNzNvdWF2VXRfeVlTd1B6aU9wcm9mbHAzbFFUVEdxaG9NYi1UbDhWclNIbXZfb3kteVVpcWNzaFRKYW5HZndXNTVQcm85UFVFZGVSZw?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "aff370a6c5",
+          "category_id": "high",
+          "title": "【11/26無料オンライン開催】不登校から東京都立高校へ！内申点に頼らない高校受験、チャレンジスクール・エンカレッジスクールを徹底解説",
+          "headline": "不登校からの都立挑戦！内申不要の学校群",
+          "points": [
+            "11月26日に不登校経験者向けの都立チャレンジスクールやエンカレッジスクールを徹底解説する無料オンラインセミナーが開催される",
+            "中学の評定に自信がない生徒や不登校を経験した受験生にとって、新たな一般・特別選抜の選択肢として非常に重要な情報となる"
+          ],
+          "takeaway": "内申点に不安のある生徒は、作文や面接など学力検査以外の評価方法を確認し、早期に出願準備と過去問対策を進めましょう。",
+          "source": "Excite エキサイト",
+          "pub_date": "11/24 23:45",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5TRmZ1ZU5zM0dfUk8wekp5TVNLdHBJRkhwZVRzUGdqNzZ4U3pVWWxQU3FSaEdTclVRTXVVS3ZMMjF4OVRxNjNiQk5udGozWFo1ZDJ3SjNYNUpfTnhIR0xsQnMtcjB1WU9rWTRSSzAwWHJrSk5m?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "a6234f8b74",
+          "category_id": "high",
+          "title": "都立高の部活動強化事業でプロが指導",
+          "headline": "都立高の部活動強化事業でプロ指導が導入へ、魅力向上へ",
+          "points": [
+            "東京都教育委員会が進める都立高校の部活動強化事業の一環として、外部の専門家やプロ指導者による本格的な指導が導入される。",
+            "少子化が進む中で都立高校の魅力を高め、文武両道を志す中学生の進路選択において部活動環境も重要な判断材料となる。"
+          ],
+          "takeaway": "志望校選びでは進学実績だけでなく部活動の指導体制やプロ派遣の実績も確認し、3年間打ち込める環境があるかをチェックしましょう。",
+          "source": "日本教育新聞電子版 NIKKYOWEB",
+          "pub_date": "11/24 16:49",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXVmVabEJ6Y3dPTlRxR2lrTTM2T0NYY0s2R2ZfbFZsTDBKSVhxTTNQZ3Z3UjQ4cHduOHlYRWhSUHNCa0RrNkh3czBMUVJ4d1hmSG1V?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "1445ad4961",
+          "category_id": "high",
+          "title": "【高校受験2027】東京都の英語スピーキング「ESAT-J」6.7万人が受験 (リセマム)",
+          "headline": "都の英語スピーキングテストESAT-J、6.7万人が受験",
+          "points": [
+            "東京都の都立高校入試で活用される英語スピーキングテスト「ESAT-J」に約6万7千人の生徒が受験し、大規模な実施となった。",
+            "スピーキングテストの結果は都立高校の総合得点に換算・加算されるため、合否を分ける重要な得点源として位置づけられている。"
+          ],
+          "takeaway": "中学1・2年生からタブレット等を用いた発話練習や英検の面接対策を重ね、本番で確実に高得点を取れる実践力を磨いておきましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/24 11:45",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVmhBRXROdllMT0d2UFFjelBubkxkSkdTaWF0WmtZR0FRc3pfWjNKbnhsbE9STzE1bXVOVmFkZE42dG9KODBmUVRObHlHRE1uQkpVNXFxZHlWRmZ2ZHRxdHV1ZnFwRFNNak00NFRQcDBYNHZwVmtjOTBSb2NDaFRHYW43ZFVrLVJOT29FWE53?oc=5",
+          "is_new": false,
+          "badge_label": "🏅英語・検定",
+          "badge_cls": "badge-cert"
+        },
+        {
+          "id": "3952206c1b",
+          "category_id": "high",
+          "title": "神奈川の公立高校入試（定時制） ２０２６年度の平均点と得点分布 データで見る高校入試",
+          "headline": "神奈川公立定時制入試の平均点・分布公開",
+          "points": [
+            "神奈川県教育委員会等より2026年度の公立高校定時制入試における平均点と詳細な得点分布データが発表された",
+            "多様な学びの受け皿となる定時制の難易度や学力層の傾向を正確に把握し、適切な志望校選定を行うための必須データとなる"
+          ],
+          "takeaway": "定時制を視野に入れる受験生は、公開された平均点と自身の模試の得点を比較し、基礎学力の定着度を確認して対策を練りましょう。",
+          "source": "カナロコ",
+          "pub_date": "11/24 05:00",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00bjYxTi1sOWo3VzJweVNubTRHMTBxbUhYXzMtTW55b1JGYjlyZUdXbG9DWVZRMF85dFBZZF9WeWVXTnF6b3lSdGp4TVFNbFNIRkcyVzRiNzN4UFlJOU84MU0xY2F4a3hhV19mXw?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "0d8dd083b9",
+          "category_id": "high",
+          "title": "神奈川の中学生の進路先、注目点は？２０２６年春の公立中卒業生まとめ データで見る高校入試",
+          "headline": "神奈川公立中卒業生の進路データ解読",
+          "points": [
+            "2026年春の公立中学校卒業生の進路動向に関する最新データが公開された。",
+            "私立高の授業料無償化や共通選抜の制度変更を見据えた受験生の動きが注目される。"
+          ],
+          "takeaway": "志望校選びの基準が変わるため、最新の私立動向と公立倍率の変化を早めに比較検討しましょう。",
+          "source": "カナロコ",
+          "pub_date": "11/23 05:00",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TWHdXS3dNMFFQeDZOVXVnRE5pNk1yeVlOcWIxMWNTRTMxRDJDd2RHVVdpSlV3dEdlMWpuN29WcXNSQ1A5aEFMaXhBYVRJcm1ERjdWbjIwZEtmQ0UyWkxzbmxwUkJEbHZFYk1ZXw?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        }
+      ]
+    },
+    "univ": {
+      "report": {
+        "title": "2027年入試の動向と総合型選抜の実態分析",
+        "summary": "直近1週間では、2027年入試に向けた国公立の難関大志向の強まりや学外試験場の縮小傾向が鮮明となった。また、総合型選抜における経済・体験格差や評価基準の不透明さが議論を呼んでおり、受験戦略の見直しが急務である。",
+        "key_trends": "2027年入試では東大志望者増など難関大志向が強まり、国公立50・私立372大学で学外試験場の縮小が顕著に。さらに総合型選抜では評定の重要性と情報格差の課題が浮き彫りになり、出願先選定や対策への影響が大きい。",
+        "advice": "高1・高2生は学外会場減少を想定し、遠方受験なら宿泊先の早期確保と移動リスクのシミュレーションを始めましょう。また、総合型選抜を見据えて定期テスト対策を徹底し、高い評定を死守することが不可欠です。",
+        "analyzed_at": "11/27 11:09"
+      },
+      "news": [
+        {
+          "id": "4d7c13aab6",
+          "category_id": "univ",
+          "title": "【大学受験2027】学外試験場は減少…国公立50・私立372大学が設置",
+          "headline": "大学入試2027：学外試験場の縮小傾向が顕著に",
+          "points": [
+            "国公立50大学・私立372大学が学外試験場を設置し、地方受験や移動の選択肢が従来より制限される。",
+            "本会場での受験が基本となるため、宿泊手配や交通経路の複数確保など早い段階でのスケジュール調整が不可欠。"
+          ],
+          "takeaway": "高2生は2027年入試での学外会場減少を想定し、遠方受験なら宿泊先の早期確保と移動リスクのシミュレーションを今から始めましょう。",
+          "source": "リセマム",
+          "pub_date": "昨日 15:15",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHMWtuOGNxUHBRMFNvTjFod3F1eFVJRzVjUDgzNDBXYW84V1RmSGlCZXMtU2VGN2RMVm94UVVhZVM3MGhOQWJYMWRUYWsweGl3TVNCakYxSFpKYkR4?oc=5",
+          "is_new": true,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "b335cf0c36",
+          "category_id": "univ",
+          "title": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意",
+          "headline": "最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講…",
+          "points": [
+            "PR TIMESによる「最難関大学受験専門塾「厚胤塾」、12月7日から冬期講習を開講。高校1・2年生の総復習・先取りから共通テスト・医学部対策まで、冬期特別講座をご用意」の最新レポートです。",
+            "大学受験における志望校選びや直前期の学習戦略に関わる重要トピックが取り上げられています。"
+          ],
+          "takeaway": "最新の入試トレンドを踏まえつつ、志望校の過去問分析と日々の基礎定着をぶれずに継続していきましょう。",
+          "source": "共同通信PRワイヤー",
+          "pub_date": "11/25 18:00",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8ySEF2cUhDVERPbHJtaVBQQVBRTkpEbmJfMUQzNkFmRmoxT0QzVjh3bjh6MUNBbEtWcWdXR2pzVkMzLWRRTTRRUnZnMk82SW1HUFh1N0ZpRDA0OFU?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "80840d95e1",
+          "category_id": "univ",
+          "title": "現役高校生、大学生のおすすめは？ 近畿の大学受験塾・予備校＆個別指導塾、2026年最新ランキング",
+          "headline": "近畿の大学受験塾ランキング2026",
+          "points": [
+            "現役高校生や大学生を対象にした近畿圏のおすすめ予備校や個別指導塾の最新情報が公開された。",
+            "多様化する受験ニーズに対応するため、指導形態や合格実績に基づく塾選びの重要性が高まっている。"
+          ],
+          "takeaway": "志望校や生徒の学力特性に合わせ、集団と個別指導のどちらが適しているかを早めに見極めて塾を選択しましょう。",
+          "source": "Infoseek",
+          "pub_date": "11/25 12:00",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54aDBXYjNnbzRsWVlNdS1XajJuNFljRWNZZkk0UUYyODhWY2xyM09tNGhsc0JUTVRCbEJfTE5NcmF5WWVGLUNHTG4zVTdZQ0RBeHE5cnNzbzFMSDh0RmVaRw?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "3242ace9a9",
+          "category_id": "univ",
+          "title": "2027年大学入試予測・国公立編 東大志望者が大幅増、「難関大志向」が鮮明に（高校生新聞）",
+          "headline": "2027年国公立入試は東大志望者増で難関大志向が鮮明化",
+          "points": [
+            "東大をはじめとする難関国公立大学の志望者が大幅に増加する傾向が予測されています。",
+            "安定志向の裏返しとして、上位層を中心にトップ校への挑戦を譲らない難関大志向が強まっています。"
+          ],
+          "takeaway": "高1・高2段階から基礎固めを徹底し、早期の模試活用で難関大の要求水準に届く学力を計画的に養成してください。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/21 18:01",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1X3VESU9hS2ZVVm9uUkx0RktLZnNZME5lMHpYNjZqbW5nWXctaWJqNFNoOGtPbkltTUd5M1AxcTYwR3BsOE1Pc0loZThlb1hRd0hFX3VVSXM5TUkyc1h1QXBrQ3E4aFNodk83a0NKbG5McmhRdFgxR01zZFVEMXc?oc=5",
+          "is_new": false,
+          "badge_label": "💡学習・戦略",
+          "badge_cls": "badge-strategy"
+        },
+        {
+          "id": "e2dcbe15c5",
+          "category_id": "univ",
+          "title": "「200万円払っても落ちた」大学入試“総合型選抜”の合格基準は不透明？ 塾依存や経済・体験格差の壁 専門家は「むしろ高校側の情報不足」指摘も…広がる“歪み”制度の現状とは（ABEMA TIMES）",
+          "headline": "総合型選抜の不透明さと経済・体験格差の歪みが浮き彫りに",
+          "points": [
+            "高額な塾費用や課外活動の格差が合否に影響するという総合型選抜特有の構造的課題が指摘されています。",
+            "専門家からは、制度自体の問題だけでなく、高校側の情報提供や指導体制の不足も原因として挙げられています。"
+          ],
+          "takeaway": "総合型選抜を利用する際は、塾への過度な依存を避け、高校の進路指導部と密に連携して独自の実績作りを進めましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "11/21 17:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKdGNpTS1fOEpGdnB0eFNncE10bl9Sekc1MXJlb1pHU2F0Z3ZmWkdjeXlDaWl4X1F4a256eUpNYVEyLUV5aFNuYUZhcGZMZjBjdmpBM0cyQlJBdkZna1hvOVVBRWkwVFR2NmVpX0R0ZnM2cW5vVjgtbGhBZG03WXc?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        },
+        {
+          "id": "8c9cb35c7f",
+          "category_id": "univ",
+          "title": "慶應義塾大学の総合型選抜は「評定」が重要？ 合格者3人が語る合格のポイントは【座談会】（ダイヤモンド教育ラボ）",
+          "headline": "慶應総合型選抜：合格の鍵は評定平均と一貫した熱意",
+          "points": [
+            "慶應義塾大学の総合型選抜において、日々の学習結果を示す「評定」の重要性が合格者の座談会で改めて浮き彫りに。",
+            "単なる活動実績だけでなく、高校時代の地道な学業継続と自己PRのストーリーが合格を大きく左右する要因となる。"
+          ],
+          "takeaway": "評定は総合型の出願資格や足切り対策に直結します。定期テスト対策を妥協せず、高1・高2時点から高い評定を死守させましょう。",
+          "source": "Yahoo!ニュース",
+          "pub_date": "10/31 16:00",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5bUpVeDJoRWtzNjhXb1V0WWY4RWNyUGNVdGhodnFaZWxtajc5QnU4ajAxbFlta0J6elV3LWZJRHNfS0lvbmkxZ05kUzVVeldWN25kWnVrME1Yam53OEpiWk8wbk9vaHk3UDZGbkplMzNQYnBkeFRoQTE2X0pyNVE?oc=5",
+          "is_new": false,
+          "badge_label": "📝制度・日程",
+          "badge_cls": "badge-system"
+        }
+      ]
+    }
+  }
+}
